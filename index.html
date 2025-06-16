@@ -7,47 +7,69 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f2f2f2;
+      background-color: #f6f6f6;
       margin: 0;
-      padding: 0;
     }
+
     .header {
       background-color: #4CAF50;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px 40px;
     }
-    .container {
+
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .card-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      padding: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: 40px auto;
+      padding: 0 20px;
     }
+
     .card {
-      background-color: white;
-      padding: 30px;
+      background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-    .card a {
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
       text-decoration: none;
       color: #333;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      padding: 20px;
       font-size: 20px;
       font-weight: bold;
+      text-align: center;
     }
+
     .footer {
       text-align: center;
-      color: #777;
       font-size: 14px;
-      padding: 20px;
+      color: #888;
+      padding: 30px;
     }
   </style>
 </head>
@@ -55,14 +77,29 @@
 
   <div class="header">
     <h1>Welcome to CEC English Camp</h1>
-    <p>Let’s learn English through stories and grammar!</p>
+    <p>Learn English through stories, grammar, and joyful lessons</p>
   </div>
 
-  <div class="container">
-    <div class="card"><a href="story1.html">📖 소설 읽기</a></div>
-    <div class="card"><a href="content/grammar/g24.html">🧠 문법 학습</a></div>
-    <div class="card"><a href="pricing.html">💵 수강료 안내</a></div>
-    <div class="card"><a href="testimonials.html">⭐ 후기 모음</a></div>
+  <div class="card-grid">
+    <a href="story1.html" class="card">
+      <img src="assets/img/story.jpg" alt="Story">
+      <div class="card-title">Learn through Stories</div>
+    </a>
+
+    <a href="content/grammar/g24.html" class="card">
+      <img src="assets/img/grammar.jpg" alt="Grammar">
+      <div class="card-title">Grammar Practice</div>
+    </a>
+
+    <a href="pricing.html" class="card">
+      <img src="assets/img/tuition.jpg" alt="Tuition">
+      <div class="card-title">Tuition & Fees</div>
+    </a>
+
+    <a href="testimonial.html" class="card">
+      <img src="assets/img/testimonial.jpg" alt="Testimonial">
+      <div class="card-title">Student Testimonial</div>
+    </a>
   </div>
 
   <div class="footer">
