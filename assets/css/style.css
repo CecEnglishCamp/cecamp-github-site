@@ -26,21 +26,46 @@ section {
   max-width: 1200px;
   margin: auto;
 }
-
 .hero {
-  background: url('../img/hero-banner.jpg') center/cover no-repeat;
+  background: url('../img/hero-banner.jpg') center center no-repeat;
+  background-size: cover;
   height: 90vh;
-  color: white;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* 어둡게 반투명 배경 */
+  z-index: 1;
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 .hero h1 {
   font-size: 3rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+  font-family: 'Segoe UI Bold', sans-serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-family: 'Segoe UI Italic', sans-serif;
+}
+
+
+
+
 }
 
 .about, .programs, .testimonials, .pricing, .how-it-works, .contact {
