@@ -1,27 +1,46 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI Bold', sans-serif;
+}
+
+em {
+  font-family: 'Segoe UI Italic', sans-serif;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Hero Section */
 .hero {
   background-image: url('../img/hero-banner.jpg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
-  height: 100vh;
+  background-position: center;
+  padding: 100px 20px;
+  height: auto;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  text-align: left;
-  padding-left: 5%;
+  justify-content: flex-end;
+  text-align: right;
   color: white;
   position: relative;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* 살짝 어둡게 */
-  z-index: 0;
 }
 
 .hero h1,
@@ -32,6 +51,69 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.hero p {
-  max-width: 400px;
+/* General Section Layout */
+.about,
+.programs,
+.testimonials,
+.pricing,
+.how-it-works,
+.contact {
+  padding: 60px 20px;
+}
+
+.about img,
+.programs img,
+.testimonials img,
+.pricing img,
+.how-it-works img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Cards */
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Segoe UI Bold', sans-serif;
+}
+
+form button:hover {
+  background-color: #218838;
 }
