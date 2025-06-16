@@ -28,19 +28,21 @@ section {
 }
 
 /* Hero Section */
- .hero {
+.hero {
   background-image: url('../img/hero-banner.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; /* 🔧 추가 */
-  height: 100vh;
+  background-repeat: no-repeat;
+  height: 70vh; /* ✅ 기존 100vh → 70vh로 줄임 */
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* 오른쪽 정렬이면 center → flex-end */
+  justify-content: flex-end;
   text-align: right;
   padding: 0 2rem;
   color: white;
   position: relative;
+}
+
 }
 
 .hero h1,
