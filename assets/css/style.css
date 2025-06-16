@@ -28,17 +28,17 @@ section {
 }
 
 /* Hero Section */
-.hero {
+ .hero {
   background-image: url('../img/hero-banner.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  padding: 100px 20px;
-  height: auto;
+  background-repeat: no-repeat; /* 🔧 추가 */
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end; /* 오른쪽 정렬이면 center → flex-end */
   text-align: right;
+  padding: 0 2rem;
   color: white;
   position: relative;
 }
