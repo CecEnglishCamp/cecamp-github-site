@@ -1,4 +1,4 @@
-/* Reset & Base */
+/* Reset and basic styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,116 +6,163 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-  color: #333;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
-}
-
-h1, h2, h3 {
-  font-family: 'Segoe UI Bold', sans-serif;
-}
-
-em {
-  font-family: 'Segoe UI Italic', sans-serif;
-}
-
-/* Section Styling */
-section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
+  color: #333;
+  background-color: #fdfdfd;
 }
 
 /* Hero Section */
 .hero {
-  background-image: url('../img/hero-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 70vh; /* ✅ 기존 100vh → 70vh로 줄임 */
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: right;
-  padding: 0 2rem;
-  color: white;
-  position: relative;
-}
-
-}
-
-.hero h1,
-.hero p {
-  position: relative;
-  z-index: 1;
-  font-family: 'Segoe UI', sans-serif;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-/* General Section Layout */
-.about,
-.programs,
-.testimonials,
-.pricing,
-.how-it-works,
-.contact {
-  padding: 60px 20px;
-}
-
-.about img,
-.programs img,
-.testimonials img,
-.pricing img,
-.how-it-works img {
-  max-width: 100%;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* Cards */
-.card {
-  background: #f9f9f9;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-/* Contact Form */
-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: auto;
+  align-items: center;
+  text-align: center;
+  background-color: #f0f8ff;
+  padding: 40px 20px;
 }
 
-form input,
-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
+.hero-image {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #2a4d9b;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Section layout */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-image {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.section-content {
+  flex: 1;
+}
+
+/* Programs */
+.programs .program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.program-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.program-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonial-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.testimonial {
+  flex: 1;
+  min-width: 280px;
+  background-color: #fff8e1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Pricing */
+.pricing-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pricing-card {
+  background-color: #f2f2ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.pricing-card img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 10px;
 }
 
-form button {
-  background-color: #28a745;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  font-family: 'Segoe UI Bold', sans-serif;
+/* How it works */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-form button:hover {
-  background-color: #218838;
+.steps img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  background-color: #e8f5e9;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.contact-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
 }
