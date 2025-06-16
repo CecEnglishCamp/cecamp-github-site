@@ -4,29 +4,69 @@
   <meta charset="UTF-8">
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- 상단 메뉴바 -->
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="story1.html">Stories</a>
-    <a href="content/grammar/g24.html">Grammar</a>
-    <a href="contact.html">Contact</a>
+  <div class="header">
+    <h1>Welcome to CEC English Camp</h1>
+    <p>Let’s learn English through stories and grammar!</p>
   </div>
 
-  <!-- 메인 컨테이너 -->
   <div class="container">
-    <h1 style="text-align: center;">Welcome to CEC English Camp</h1>
-    <p style="text-align: center;">소설과 문법으로 배우는 쉽고 즐거운 영어 학습</p>
+    <div class="card"><a href="story1.html">📖 소설 읽기</a></div>
+    <div class="card"><a href="content/grammar/g24.html">🧠 문법 학습</a></div>
+    <div class="card"><a href="pricing.html">💵 수강료 안내</a></div>
+    <div class="card"><a href="testimonials.html">⭐ 후기 모음</a></div>
+  </div>
 
-    <!-- 카드형 링크 -->
-    <div class="card-grid">
-      <a href="story1.html" class="card">📘 소설로 영어 배우기</a>
-      <a href="content/grammar/g24.html" class="card">📖 문법 학습 시작하기</a>
-      <a href="pricing.html" class="card">💰 수강료 안내 보기</a>
-      <a href="testimonials.html" class="card">🌟 수강 후기 확인하기</a>
-    </div>
+  <div class="footer">
+    © 2025 CEC English Camp. All rights reserved.
   </div>
 
 </body>
