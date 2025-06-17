@@ -57,7 +57,7 @@ body {
 
 .hero-text {
   position: absolute;
-  top: 85%; /* 기존보다 더 아래로 */
+  top: 82%; /* 기존보다 더 아래로 */
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
