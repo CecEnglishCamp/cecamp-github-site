@@ -15,8 +15,9 @@ body {
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
   padding: 16px 5%;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -56,15 +57,15 @@ body {
 
 .hero-text {
   position: absolute;
-  top: 52%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.45);
-  padding: 24px 32px;
+  padding: 20px 28px;
   border-radius: 16px;
-  max-width: 540px;
+  max-width: 520px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +79,6 @@ body {
 
 .hero-text p {
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   line-height: 1.4;
 }
