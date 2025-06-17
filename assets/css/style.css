@@ -183,6 +183,27 @@ p {
   .pricing-card {
     width: 90%;
   }
+/* About Section Layout */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 60px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-image {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+}
 
   .steps img {
     width: 140px;
