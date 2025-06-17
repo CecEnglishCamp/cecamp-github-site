@@ -1,10 +1,9 @@
-/* General Reset */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
   background-color: #fff;
   color: #222;
+  line-height: 1.6;
 }
 
 /* Navbar */
@@ -14,81 +13,77 @@ body {
   width: 100%;
   background-color: #ffffffee;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0.8rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  z-index: 100;
+  z-index: 10;
 }
 
 .navbar .logo img {
-  height: 48px;
+  height: 40px;
+  margin-right: 2rem;
 }
 
-.navbar .nav-links a {
-  margin-left: 1.5rem;
+.navbar a {
+  margin: 0 1rem;
   text-decoration: none;
-  color: #222;
+  color: #000;
   font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-  position: relative;
-  width: 100%;
   height: 100vh;
-  overflow: hidden;
-}
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background: url('hero-banner.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 5rem;
 }
 
 .hero-text {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.55);
   padding: 2rem 3rem;
-  border-radius: 12px;
+  border-radius: 15px;
   text-align: center;
-  max-width: 80%;
+  color: #fff;
+  max-width: 800px;
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-text p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-style: italic;
 }
 
-/* Scroll Text Board */
+/* Glass Scroll Panel */
 .glass-board {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(50, 50, 50, 0.7);
-  padding: 0.5rem 0;
+  background-color: rgba(60, 60, 60, 0.7);
+  padding: 0.6rem 0;
   overflow: hidden;
-  z-index: 50;
+  z-index: 5;
 }
 
 .scroll-text {
   white-space: nowrap;
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-left 20s linear infinite;
+  overflow: hidden;
+  animation: scroll-left 25s linear infinite;
   color: white;
   font-size: 1rem;
-  font-weight: 400;
-  user-select: none;
+  padding-left: 100%;
 }
 
 .glass-board:hover .scroll-text {
@@ -104,40 +99,7 @@ body {
   }
 }
 
-/* About Section */
-.section.about {
-  padding: 5rem 2rem;
-  background: #fff;
-  text-align: center;
-}
-
-.about-content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
+/* About Section (optional if you're using) */
 .about-image img {
-  max-height: 150px;
-  margin-bottom: 1.5rem;
-}
-
-.about-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.about-text p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.cta-button {
-  background: #2d8f2d;
-  color: #fff;
-  padding: 0.6rem 1.4rem;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
+  width: 180px;
 }
