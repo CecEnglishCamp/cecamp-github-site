@@ -1,51 +1,115 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="CEC Logo" />
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">We Are</a></li>
+        <li><a href="#services">Programs</a></li>
+        <li><a href="#testimonials">What They Say</a></li>
+        <li><a href="#pricing">Plans & Fees</a></li>
+        <li><a href="#how">How It Flows</a></li>
+        <li><a href="#contact">Get in Touch</a></li>
+      </ul>
+    </nav>
+    <a class="contact-button" href="#contact">Get in Touch</a>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="assets/images/hero-banner.jpg" alt="Hero Banner" class="hero-image" />
+  <section id="home" class="hero">
+    <img src="hero-banner.jpg" alt="Hero Banner" class="hero-image">
     <div class="hero-text">
-      <h1>Welcome to CEC English Camp</h1>
-      <p>Your Journey to English Fluency Begins Here</p>
+      <h1>ENGLISH THAT KIDS ENJOY</h1>
+      <p>Welcome to CecEnglishCamp — where language learning is fun, meaningful, and full of imagination.</p>
+      <a href="#contact" class="cta-button">Book a Session</a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about">
-    <img src="assets/images/about-section.jpg" class="about-img" alt="About Us" />
-    <div class="section-content">
-      <h2>About Our Program</h2>
-      <p>CEC offers immersive English learning for students of all levels. We focus on grammar, conversation, and cultural understanding through creative storytelling.</p>
+  <section id="about" class="section">
+    <h2>We Are</h2>
+    <p>CEC English Camp is built for young learners. Whether your child is just starting out or looking to grow beyond the basics, our story-based lessons bring English to life.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Programs</h2>
+    <p>We offer a curriculum across four levels (A1–B2), covering grammar, vocabulary, speaking, and listening — all through fun visuals and conversations.</p>
+  </section>
+
+  <section id="testimonials" class="section">
+    <h2>What They Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <img src="testimonial1.jpg" alt="Brandon Vega">
+        <h3>Brandon Vega</h3>
+        <p class="subtitle">Smith Family</p>
+        <p>CEC English Camp has transformed my child's learning experience. Stories, visuals, and interaction — all in one!</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="testimonial2.jpg" alt="Chris Wei">
+        <h3>Chris Wei</h3>
+        <p class="subtitle">Fremont School</p>
+        <p>The creative grammar lessons are a hit! It's fun, structured, and practical for young learners.</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="testimonial3.jpg" alt="Karen Weiss">
+        <h3>Karen Weiss</h3>
+        <p class="subtitle">Johnson Family</p>
+        <p>My son enjoys learning English now. He loves the storytelling and adventure-based lessons.</p>
+      </div>
     </div>
   </section>
-<!-- Programs Section -->
-<section class="programs">
-  <h2>Our Programs</h2>
-  <div class="program-grid">
-    <div class="program-card">
-      <img src="assets/images/program1.jpg" alt="Program 1" />
-      <h3>Grammar Base Camp</h3>
-      <p>Step-by-step CEFR-aligned grammar training from A1 to B2.</p>
-    </div>
-    <div class="program-card">
-      <img src="assets/images/program2.jpg" alt="Program 2" />
-      <h3>Story-Based Learning</h3>
-      <p>Learn English through engaging stories like <em>Robot & Me</em> and <em>Jump</em>.</p>
-    </div>
-    <div class="program-card">
-      <img src="assets/images/program3.jpg" alt="Program 3" />
-      <h3>Conversation Practice</h3>
-      <p>Interactive speaking sessions powered by AI tutors and characters.</p>
-    </div>
-  </div>
-</section>
 
+  <section id="pricing" class="section">
+    <h2>Plans & Fees</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <img src="pricing1.jpg" alt="Grammar Adventures">
+        <h3>Grammar Adventures</h3>
+        <p class="subtitle">Free</p>
+        <p>Explore grammar through fun stories. A great start — always free!</p>
+        <a href="#" class="read-more">Read more</a>
+      </div>
+      <div class="pricing-card">
+        <img src="pricing2.jpg" alt="StoryQuest Workshops">
+        <h3>StoryQuest Workshops</h3>
+        <p class="subtitle">$25/month</p>
+        <p>Write and read your own stories — and learn grammar naturally!</p>
+        <a href="#" class="read-more">Read more</a>
+      </div>
+      <div class="pricing-card">
+        <img src="pricing3.jpg" alt="Grammar Games">
+        <h3>Grammar Games</h3>
+        <p class="subtitle">$50/month</p>
+        <p>Interactive games that make grammar exciting and memorable!</p>
+        <a href="#" class="read-more">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <h2>How It Flows</h2>
+    <p>Choose your level, start a unit, and chat with our AI-powered tutors — anytime, anywhere.</p>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="cta-banner">
+      <h2>Let's talk</h2>
+      <p>We would love to hear from you!</p>
+      <a href="mailto:hello@cecenglishcamp.com" class="cta-button-alt">Get in Touch</a>
+    </div>
+  </section>
 </body>
 </html>
