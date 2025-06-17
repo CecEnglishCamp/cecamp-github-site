@@ -41,6 +41,25 @@ p {
   margin-left: 20px;       /* ✅ 텍스트와의 간격 확보 */
   border-radius: 12px;
 }
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+}
+
+.about img {
+  width: 50%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.about .section-content {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
 }
 
