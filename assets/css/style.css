@@ -6,7 +6,6 @@ body {
   color: #222;
 }
 
-/* 전체 요소에 폰트 강제 적용 */
 h1, h2, h3, p, a, li, button {
   font-family: 'Segoe UI', sans-serif;
 }
@@ -32,7 +31,7 @@ h1, h2, h3, p, a, li, button {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.4rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -77,9 +76,9 @@ h1, h2, h3, p, a, li, button {
 
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   color: white;
   background: rgba(0, 0, 0, 0.6);
   padding: 2rem;
@@ -117,7 +116,7 @@ h1, h2, h3, p, a, li, button {
 }
 
 .about-image img {
-  width: 300px;
+  width: 240px;   /* 로봇 그림 크기 줄임 */
   border-radius: 16px;
 }
 
@@ -137,7 +136,7 @@ h1, h2, h3, p, a, li, button {
   line-height: 1.6;
 }
 
-/* 반응형 */
+/* Responsive */
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -146,7 +145,7 @@ h1, h2, h3, p, a, li, button {
 
   .about-image img {
     width: 100%;
-    max-width: 300px;
+    max-width: 220px;
   }
 
   .hero-text {
