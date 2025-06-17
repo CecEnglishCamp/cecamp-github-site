@@ -1,10 +1,21 @@
-/* 기본 세팅 */
+/* 기본 글꼴 설정 */
 body {
-  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #222;
+  font-weight: 400; /* Regular */
+}
+
+/* 제목 */
+h1, h2, h3, .hero-text h1 {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700; /* Bold */
+}
+
+/* 강조 텍스트 */
+.italic, em {
+  font-style: italic;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 }
 
 /* 네비게이션 바 */
