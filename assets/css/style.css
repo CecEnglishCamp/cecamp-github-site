@@ -57,7 +57,7 @@ body {
 
 .hero-text {
   position: absolute;
-  top: 420px;
+  top: 400px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
