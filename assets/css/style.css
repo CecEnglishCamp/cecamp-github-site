@@ -1,27 +1,10 @@
-/* Global Styles */
+/* Reset */
 body {
-  font-family: "Segoe UI", sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #222;
   line-height: 1.6;
-  background-color: #ffffff;
-  color: #333;
-}
-
-/* Section Base */
-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-/* Headings */
-h1, h2, h3 {
-  font-family: "Segoe UI Bold", sans-serif;
-  margin-bottom: 15px;
-}
-
-p {
-  font-family: "Segoe UI", sans-serif;
 }
 
 /* Hero Section */
@@ -31,36 +14,9 @@ p {
 
 .hero-image {
   width: 100%;
-  max-height: 750px;
-  object-fit: contain;
+  max-height: 480px;
+  object-fit: cover;
   display: block;
-
-.about img {
-  width: 50%;
-  float: right;            /* ✅ 오른쪽 정렬 */
-  margin-left: 20px;       /* ✅ 텍스트와의 간격 확보 */
-  border-radius: 12px;
-}
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 40px;
-}
-
-.about img {
-  width: 50%;
-  max-width: 400px;
-  border-radius: 12px;
-}
-
-.about .section-content {
-  flex: 1;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
 }
 
 .hero-text {
@@ -69,143 +25,25 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
   border-radius: 12px;
+  text-align: center;
 }
 
-/* Section Images */
-.section-image {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-/* Program Cards */
-.program-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.program-card {
-  background: #f9f9f9;
-  padding: 20px;
-  width: 280px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.program-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-/* Testimonial Section */
-.testimonial-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.testimonial {
-  background: #f0f0f0;
-  padding: 20px;
-  width: 280px;
-  border-radius: 10px;
-}
-
-.testimonial img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-/* Pricing Section */
-.pricing-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.pricing-card {
-  background: #fefefe;
-  padding: 20px;
-  width: 260px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-}
-
-.pricing-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-/* How It Works */
-.steps {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.steps img {
-  width: 180px;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Contact */
-.contact-icon {
-  width: 80px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-text {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  .program-card,
-  .testimonial,
-  .pricing-card {
-    width: 90%;
-  }
-/* About Section Layout */
+/* About Section */
 .about {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 60px;
+  padding: 40px;
 }
 
-.about-text {
-  flex: 1;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.about-image {
-  width: 40%;
-  max-width: 300px;
-  height: auto;
+.about img {
+  width: 300px;
   border-radius: 12px;
+  margin-right: 40px;
 }
 
-  .steps img {
-    width: 140px;
-  }
+.section-content {
+  max-width: 600px;
 }
