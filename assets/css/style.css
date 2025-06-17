@@ -1,79 +1,110 @@
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Navigation */
+/* Header / Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 5%;
   background-color: white;
-  padding: 20px 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-  height: 50px;
+  height: 48px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 32px;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: #333;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: bold;
 }
 
 /* Hero Section */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 40px;
-  background-color: #fafafa;
-  flex-wrap: wrap;
-}
-
-.hero-content {
-  max-width: 50%;
-}
-
-.hero-content h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.hero-content p {
-  font-style: italic;
-  margin-bottom: 15px;
-}
-
-.hero-content ul {
-  list-style: none;
-  line-height: 1.6;
-  font-size: 1rem;
-  margin-left: 0;
+  position: relative;
 }
 
 .hero-image {
-  width: 45%;
-  height: auto;
-  border-radius: 10px;
+  width: 100%;
+  max-height: 600px;
   object-fit: cover;
-  margin-top: 20px;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 24px;
+  border-radius: 16px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 60px 5%;
+  gap: 40px;
+  background-color: #fff;
+}
+
+.about-img {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.section-content {
+  flex: 1;
+}
+
+.section-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.section-content ul {
+  list-style: none;
+}
+
+.section-content li {
+  margin-bottom: 12px;
+  font-size: 1rem;
 }
