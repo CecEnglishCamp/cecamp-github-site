@@ -57,7 +57,7 @@ body {
 
 .hero-text {
   position: absolute;
-  top: 400px;
+  top: 420px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -67,7 +67,7 @@ body {
   padding: 24px;
   border-radius: 16px;
   max-width: 600px;
-  width: 100%;
+  width: 99%;
   text-align: center;
   color: white;
 }
