@@ -216,5 +216,11 @@ body {
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
+
+    /* 로고 크기 설정 */
+.navbar .logo img {
+  height: 48px;
+}
+
   }
 }
