@@ -2,60 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hero Box Text Shift</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 600px;
-      background-image: url('https://cdn.pixabay.com/photo/2020/04/22/16/20/children-5071471_1280.jpg'); /* 예시 이미지 */
-      background-size: cover;
-      background-position: center;
-    }
-
-    .hero-text {
-      position: absolute;
-      top: 70%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0,0,0,0.5);
-      color: white;
-      padding: 24px 30px;
-      border-radius: 16px;
-      text-align: center;
-      width: 90%;
-      max-width: 600px;
-    }
-
-    .line1 {
-      margin-top: 0px;
-    }
-
-    .line2 {
-      margin-top: 12px;
-    }
-
-    .line3 {
-      margin-top: 20px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEC English Camp</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <!-- Header -->
+  <header class="navbar">
+    <img src="assets/images/logo.png" alt="CEC Logo" class="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
   <section class="hero">
+    <img src="assets/images/hero-banner.jpg" alt="Hero Banner" class="hero-image" />
     <div class="hero-text">
-      <h1 class="line1">Welcome to CEC English Camp</h1>
-      <p class="line2"><em>Your Journey to English Fluency Begins Here</em></p>
-      <p class="line3">📚 Discover story-based lessons — from A1 to B2.</p>
-      <p class="line3">🚀 Practice grammar, speaking, confidence — with Robo AI.</p>
+      <h1>Welcome to CEC English Camp</h1>
+      <p><em>Your Journey to English Fluency Begins Here</em></p>
+      <p class="fade-in">📚 Discover story-based lessons — from A1 to B2.</p>
+      <p class="fade-in delay">🚀 Practice grammar, speaking, confidence — with Robo AI.</p>
     </div>
   </section>
-
 </body>
 </html>
