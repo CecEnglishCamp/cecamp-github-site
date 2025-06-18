@@ -46,57 +46,49 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
+}
+
+.hero-image {
   width: 100%;
-  height: 620px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('assets/images/hero-banner.jpg');
-  background-size: cover;
-  background-position: center;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-text {
   position: absolute;
-  top: 70%; /* 전체 박스 아래로 이동 */
+  top: 75%; /* 이 값을 조절하면 전체 hero 박스가 이동 */
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 24px;
+  padding: 20px;
   border-radius: 16px;
-  text-align: left; /* ← or center depending on preference */
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px; /* 줄 간격 조절 가능 */
+  text-align: center;
+  max-width: 640px;
+  width: 95%;
+  line-height: 1.6;
 }
 
 .hero-text h1 {
   font-size: 28px;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
-.hero-text p {
+.hero-text em {
+  font-style: italic;
   font-size: 16px;
-  margin: 0;
+  display: block;
+  margin-bottom: 10px;
 }
 
-}
-
-
-.hero-image {
-
-
-}
-
-.hero-text h1 {
-  font-size: 28px;
-  margin-bottom: 12px;
-}
-
-.hero-text p {
+/* 줄별 조정 */
+.hero-text .line1 {
   font-size: 16px;
   margin-bottom: 6px;
-  line-height: 1.4;
+}
+
+.hero-text .line2 {
+  font-size: 16px;
+  margin-top: 6px;
 }
