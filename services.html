@@ -1,66 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services - CecEnglishCamp</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f6f9fc;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1 {
-      color: #2b6cb0;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 20px;
-      background-color: #fff;
-      padding: 20px;
-      border-left: 6px solid #2b6cb0;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-    }
-    a {
-      color: #6b46c1;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="services.html">Services</a>
-</nav>
-<hr />
-  
-  <h1>Our Services</h1>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
 
-  <ul>
-    <li>
-      <strong>📖 Engaging Short Novels</strong><br />
-      Kids explore grammar naturally through exciting stories designed for young readers.
-    </li>
-    <li>
-      <strong>📝 Creative Writing Workshops</strong><br />
-      Children practice writing their own stories, building confidence and structure.
-    </li>
-    <li>
-      <strong>🎲 Grammar Games</strong><br />
-      Learning grammar through interactive games that make learning fun and memorable.
-    </li>
-    <li>
-      <strong>📚 Reading Comprehension Sessions</strong><br />
-      Improve vocabulary, understanding, and fluency through guided reading.
-    </li>
-  </ul>
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-  <p><a href="index.html">← Back to Home</a></p>
-</body>
-</html>
+.logo {
+  height: 48px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.typing {
+  font-size: 20px;
+  margin-top: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  width: 100%;
+  animation: typing 4s steps(40, end) infinite, blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+.about-section {
+  padding: 60px 24px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.about-section img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.about-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.about-section h3 {
+  font-size: 26px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.about-section p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.programs-section {
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.programs-section .section-label {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.programs-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.program-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 24px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
