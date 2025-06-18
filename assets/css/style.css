@@ -1,104 +1,124 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Reset & Typography */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  color: #222;
-  background-color: #fff;
+  background-color: #fafafa;
+  color: #333;
 }
 
-header {
+/* Navigation Bar */
+nav {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ddd;
+  padding: 20px 60px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.logo {
+nav img {
   height: 40px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  margin: 0;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none;
-  color: #222;
+  color: #333;
   font-weight: bold;
 }
 
-.hero-image {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+nav ul li a:hover {
+  color: #0e864d;
 }
 
-.section {
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.subtitle {
-  font-style: italic;
-  color: #555;
-}
-
-.description {
-  margin-top: 10px;
-  color: #444;
-}
-
-.card-container {
+/* Hero Section */
+.hero {
+  background: url('../hero-banner.jpg') center/cover no-repeat;
+  height: 480px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
+  text-align: center;
+  color: white;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  width: 280px;
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* What We Do Section */
+section#programs {
+  padding: 80px 0;
+  background-color: #f9fafb;
+}
+
+section#programs h4 {
+  color: #16a34a;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section#programs h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.program-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.program-cards .card {
+  background: white;
+  border-radius: 16px;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
   overflow: hidden;
-  transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.program-cards .card:hover {
+  transform: translateY(-4px);
 }
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
 }
 
 .card h5 {
-  margin: 20px 0 10px;
-  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+  padding: 20px 20px 0;
 }
 
 .card p {
+  margin: 10px 20px 20px;
+  font-size: 15px;
   color: #555;
-  padding: 0 20px 20px;
 }
 
+/* Footer */
 footer {
-  background-color: #f0f0f0;
-  padding: 20px;
   text-align: center;
+  padding: 40px;
   font-size: 14px;
-  color: #666;
+  color: #888;
 }
