@@ -41,3 +41,33 @@ body {
   color: #333;
   line-height: 1.6;
 }
+.robo-reveal-section {
+  background-image: url('../img/robo-glass.jpg'); /* 당신이 세 번째로 올린 이미지 파일명 */
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.overlay-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 600px;
+  text-align: center;
+}
+
+.overlay-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
