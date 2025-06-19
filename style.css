@@ -48,7 +48,7 @@ body {
   white-space: nowrap;
   animation: scroll-left 15s linear infinite;
   position:relative;
-  top:90px;
+  top:100px;
 }
 
 @keyframes scroll-left {
