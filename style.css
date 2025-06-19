@@ -1,62 +1,37 @@
-/* Reset & 기본 설정 */
-* {
+/* Reset & Font */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
-  color: #333;
-  line-height: 1.6;
 }
 
-/* 히어로 배너 */
+/* Hero Banner */
 .hero-banner {
   background: url("assets/img/hero-banner.jpg") center/cover no-repeat;
-  height: 500px;
+  height: 550px;
   position: relative;
+  border: 4px solid #000;
 }
 .hero-overlay {
   position: absolute;
-  bottom: 10%;
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0,0,0,0.5);
-  padding: 30px 40px;
-  border-radius: 8px;
   text-align: center;
+  color: #fff;
 }
 .hero-overlay h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2.8em;
-  color: #fff;
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: bold;
 }
 .hero-overlay p {
   font-size: 1.2em;
-  color: #eee;
+  margin: 5px 0;
 }
 
-/* 공지 박스 (스크린 모양 확장) */
-.update-section {
-  display: flex;
-  justify-content: center;
-  margin: -60px auto 40px;
-}
-.update-box {
-  width: 80%;
-  max-width: 800px;
-  border: 3px solid #000;
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  font-size: 1.1em;
-  position: relative;
-  top: -30px;
-}
-
-/* 소개 섹션 */
+/* About Section */
 .about-section {
   padding: 60px 20px;
   background-color: #f8f8f8;
@@ -64,40 +39,45 @@ body {
 .about-row {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
   justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 .about-image img {
   width: 300px;
   height: auto;
-  border: 4px solid #000;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 .about-text {
   max-width: 500px;
+  font-size: 1.1em;
 }
 .about-text h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  margin-top: 0;
 }
 
-/* 반응형 조정 */
-@media (max-width: 768px) {
-  .hero-banner {
-    height: 400px;
-  }
-  .hero-overlay {
-    bottom: 5%;
-    padding: 20px;
-  }
-  .hero-overlay h1 {
-    font-size: 2.2em;
-  }
-  .about-row {
-    flex-direction: column;
-  }
-  .update-box {
-    width: 90%;
-  }
+/* Programs Section */
+.programs-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.programs-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.program-card {
+  width: 300px;
+}
+.program-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.program-card p {
+  margin: 12px 0 0 0;
+  font-size: 1.1em;
 }
