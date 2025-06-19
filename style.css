@@ -1,67 +1,103 @@
-/* 1. Hero 섹션 높이 키우기 + 텍스트 턱 근처 위치로 */
-.hero {
+/* Reset & 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 히어로 배너 */
+.hero-banner {
+  background: url("assets/img/hero-banner.jpg") center/cover no-repeat;
+  height: 500px;
   position: relative;
-  background: url('assets/img/hero-banner.jpg') center/cover no-repeat;
-  height: 500px;              /* 기존보다 더 크게 */
-  display: flex;
-  align-items: flex-end;       /* 텍스트 아래쪽 위치 */
-  justify-content: center;
 }
 .hero-overlay {
-  background: rgba(0,0,0,0.4);
-  padding: 20px 40px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.5);
+  padding: 30px 40px;
   border-radius: 8px;
-  margin-bottom: 40px;        /* 턱 위치 근처 */
+  text-align: center;
 }
 .hero-overlay h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.8em;
   color: #fff;
-  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 .hero-overlay p {
-  color: #eee;
   font-size: 1.2em;
+  color: #eee;
 }
 
-/* 2. 이미지 카드 테두리 */
-.about-image img, .program-card img {
-  width: 300px;
-  height: auto;
-  border: 4px solid #000;     /* 검정 테두리 */
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/* 3. 컴퓨터 스크린 공지 박스 */
-.screen-notice {
+/* 공지 박스 (스크린 모양 확장) */
+.update-section {
   display: flex;
   justify-content: center;
-  padding: 40px 0;
-  background-color: #fdfdfd;
+  margin: -60px auto 40px;
 }
-.notice-box {
-  width: 60%;
+.update-box {
+  width: 80%;
   max-width: 800px;
-  background: #fff;
-  border: 2px solid #333;
+  border: 3px solid #000;
   padding: 20px;
-  font-size: 1.1em;
+  background: #fff;
   text-align: center;
-  border-radius: 8px;
+  font-size: 1.1em;
+  position: relative;
+  top: -30px;
 }
 
-/* 4. Hero와 About 사이 간격 */
-section.about {
-  padding-top: 60px;
+/* 소개 섹션 */
+.about-section {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
 }
-
-/* 5. About 섹션 이미지 + 텍스트 레이아웃 유지 */
 .about-row {
   display: flex;
   align-items: center;
-  gap: 40px;
   flex-wrap: wrap;
-  padding: 40px 20px;
+  gap: 40px;
+  justify-content: center;
+}
+.about-image img {
+  width: 300px;
+  height: auto;
+  border: 4px solid #000;
+  border-radius: 8px;
 }
 .about-text {
   max-width: 500px;
+}
+.about-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 400px;
+  }
+  .hero-overlay {
+    bottom: 5%;
+    padding: 20px;
+  }
+  .hero-overlay h1 {
+    font-size: 2.2em;
+  }
+  .about-row {
+    flex-direction: column;
+  }
+  .update-box {
+    width: 90%;
+  }
 }
