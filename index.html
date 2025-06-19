@@ -42,68 +42,78 @@
 </section>
 
 <style>
-.about-section {
-  background: #f8f9fa;
-  padding: 60px 20px;
-  text-align: center;
-}
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title">About CEC English Camp</h2>
+    <p class="about-text">
+      At CEC English Camp, we believe in the power of imagination and innovation. Our robots,
+      <strong>Robo</strong> and <strong>Jump</strong>, guide children through story-based English learning
+      adventures filled with wonder and discovery.
+    </p>
+    <div class="robot-gallery">
+      <div class="robot">
+        <img src="about.jpg" alt="About CEC" class="glow-eye" />
+      </div>
+      <div class="robot">
+        <img src="robo.jpg" alt="Robo Character" class="glow-logo" />
+      </div>
+    </div>
+  </div>
+</section>
 
-.about-content h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.about-content p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-}
-
-.about-images {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.robot-image {
-  max-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.robot-image:hover {
-  transform: scale(1.05);
-}
-
-/* Glowing Eyes Animation */
-.animate-glow-eyes {
-  animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    filter: brightness(1);
+<style>
+  .about-section {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
   }
-  to {
-    filter: brightness(1.5);
+  .section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
-}
+  .about-text {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #333;
+  }
+  .robot-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .robot img {
+    width: 260px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
 
-/* Logo Pulse Animation */
-.animate-logo-pulse {
-  animation: pulse 1.5s infinite ease-in-out;
-}
+  .glow-eye {
+    animation: glow 1.6s ease-in-out infinite alternate;
+  }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
+  .glow-logo {
+    animation: pulse 2.5s ease-in-out infinite;
   }
-  50% {
-    transform: scale(1.05);
+
+  @keyframes glow {
+    from { filter: brightness(1.1); }
+    to   { filter: brightness(2.3); }
   }
-}
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.07);
+    }
+  }
+</style>
+
 </style>
 
 </body>
