@@ -47,8 +47,8 @@ body {
   overflow: hidden;
   white-space: nowrap;
   animation: scroll-left 15s linear infinite;
-  position:relative;
-  top:100px;
+
+  transform:translateY(60px);
 }
 
 @keyframes scroll-left {
