@@ -38,7 +38,7 @@ body {
 /* Notice Glass Box */
 .notice-glass {
   width: 60% !important;
-  margin: 0 auto !important;
+  margin: 80px auto !important;
   padding: 20px !important;
   background: rgba(50, 50, 50, 0.5) !important;
   color: white !important;
@@ -48,7 +48,7 @@ body {
   overflow: hidden !important;
   white-space: nowrap !important;
   animation: scroll-left 15s linear infinite !important;
-  transform: translateY(80px) !important; /* 가장 핵심입니다 */
+  transform: none !important; /* 가장 핵심입니다 */
   position: relative !important;
 }
 
