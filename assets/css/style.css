@@ -13,6 +13,14 @@ body {
   padding: 80px 20px;
   font-size: 2em;
   font-weight: bold;
+  .hero-banner {
+  margin-bottom: 40px;  /* 👈 Hero 아래 여백 추가 */
+}
+
+.robo-reveal-section {
+  padding-top: 40px;    /* 👈 전환 섹션 위쪽에 공간 추가 */
+}
+
 }
 
 .about-section {
