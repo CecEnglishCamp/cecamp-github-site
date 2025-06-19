@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Georgia', serif;
   background-color: #f9f9f9;
 }
 
-/* Hero Banner */
-.hero-banner {
-  background-image: url('assets/img/hero-banner.jpg');
+/* Hero Section */
+.hero {
+  background-image: url("assets/img/hero-banner.jpg");
   background-size: cover;
   background-position: center;
   height: 95vh;
@@ -38,7 +38,9 @@ body {
 /* Notice Glass Box */
 .notice-glass {
   width: 60% !important;
-  margin: 80px auto !important;
+  margin-top: 80px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   padding: 20px !important;
   background: rgba(50, 50, 50, 0.5) !important;
   color: white !important;
@@ -47,11 +49,12 @@ body {
   text-align: center !important;
   overflow: hidden !important;
   white-space: nowrap !important;
-  animation: scroll-left 15s linear infinite !important;
-  transform: none !important; /* 가장 핵심입니다 */
   position: relative !important;
 }
 
+.notice-glass span {
+  display: inline-block;
+  animation: scroll-left 15s linear infinite !important;
 }
 
 @keyframes scroll-left {
@@ -62,29 +65,29 @@ body {
 /* About Section */
 .about-section {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  padding: 60px 20px;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #f4f4f4;
   gap: 50px;
-  background-color: #f3f3f3;
-  min-height: 100vh;
 }
 
 .about-section img {
-  width: 320px;
+  width: 350px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
 .about-text {
   max-width: 600px;
+  font-family: 'Georgia', serif;
 }
 
 .about-text h2 {
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .about-text p {
