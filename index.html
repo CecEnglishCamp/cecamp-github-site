@@ -30,6 +30,81 @@
       </div>
     </div>
   </section>
+   <section id="about" class="about-section">
+  <div class="about-content">
+    <h2>About CEC English Camp</h2>
+    <p>At CEC English Camp, we believe in the power of imagination and innovation. Our robots, Robo and Jump, guide children through story-based English learning adventures filled with wonder and discovery.</p>
+    <div class="about-images">
+      <img src="about.jpg" alt="About CEC" class="robot-image animate-glow-eyes" />
+      <img src="robo.jpg" alt="Robo Character" class="robot-image animate-logo-pulse" />
+    </div>
+  </div>
+</section>
+
+<style>
+.about-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.robot-image {
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.robot-image:hover {
+  transform: scale(1.05);
+}
+
+/* Glowing Eyes Animation */
+.animate-glow-eyes {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(1.5);
+  }
+}
+
+/* Logo Pulse Animation */
+.animate-logo-pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+</style>
 
 </body>
 </html>
