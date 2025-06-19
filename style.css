@@ -38,8 +38,6 @@ body {
 /* Notice Glass Box */
 .notice-glass {
   width: 60%;
-  margin: 30px auto;
-  margin-top:90px;important;
   padding: 20px;
   background: rgba(50, 50, 50, 0.5);
   color: white;
@@ -49,6 +47,8 @@ body {
   overflow: hidden;
   white-space: nowrap;
   animation: scroll-left 15s linear infinite;
+  position:relative;
+  top:80px;
 }
 
 @keyframes scroll-left {
