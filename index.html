@@ -27,29 +27,62 @@
 <body>
   <!-- Hero + Notice… (생략) -->
 
-  <!-- About Section 1 (이미지 왼쪽 / 텍스트 오른쪽) -->
-  <section class="about-section">
-    <div class="about-content">
-      <img src="assets/img/about.jpg" alt="Robo and Me" />
-      <div class="about-text">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEC English Camp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 기존 Hero, Notice 등 생략 -->
+
+  <!-- About / Episode 카드 모듈 -->
+  <section class="cards-container">
+    <!-- 카드 1: 이미지 왼쪽 / 텍스트 오른쪽 -->
+    <div class="card">
+      <div class="card-img">
+        <img src="assets/img/about.jpg" alt="Robo and Me">
+      </div>
+      <div class="card-text">
         <h2>About CEC English Camp</h2>
-        <p>We provide grammar, reading, speaking, and listening in one integrated experience...</p>
-        <!-- (기존 문장들) -->
+        <p>
+          We provide grammar, reading, speaking, and listening in one integrated experience...
+        </p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>
+            Our method uses captivating visuals and exciting narratives to inspire young learners…
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 2: 텍스트 왼쪽 / 이미지 오른쪽 -->
+    <div class="card reverse">
+      <div class="card-text">
+        <h2>Episode 1: The Hidden Warehouse Files</h2>
+        <p>
+          Our journey begins with <strong>Episode 1: The Hidden Warehouse Files</strong> — a short novel that blends action, humor, and heartwarming moments…
+        </p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>
+            Students follow the adventures of a lovable learning companion robot designed to help children overcome everyday challenges…
+          </p>
+        </div>
+      </div>
+      <div class="card-img">
+        <img src="assets/img/about2.jpg" alt="Robo and Jump">
       </div>
     </div>
   </section>
 
-  <!-- About Section 2 (텍스트 왼쪽 / 이미지 오른쪽) -->
-  <section class="about-section reverse">
-    <div class="about-content">
-      <div class="about-text">
-        <h2>Episode 1: The Hidden Warehouse Files</h2>
-        <p>Our journey begins with <strong>Episode 1: The Hidden Warehouse Files</strong> — a short novel that blends action, humor, and heartwarming moments…</p>
-        <!-- (기존 내용) -->
-      </div>
-      <img src="assets/img/about2.jpg" alt="Robo and Jump" />
-    </div>
-  </section>
+  <script src="script.js"></script>
+</body>
+</html>
 
   <!-- 프로그램 섹션은 제거 -->
 </body>
