@@ -4,7 +4,34 @@ body {
   background: #f8f8f8;
   color: #111;
 }
-/* 히어로 배너 */
+
+.navbar {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-list li a:hover {
+  color: #0077cc;
+}
+
+/* Hero */
 .hero {
   background-image: url("assets/img/hero-banner.jpg");
   background-size: cover;
@@ -17,8 +44,6 @@ body {
   border: 5px solid black;
   position: relative;
 }
-
-
 .hero-text {
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
@@ -27,8 +52,14 @@ body {
   border-radius: 8px;
   max-width: 90%;
 }
-/* 히어로 안의 텍스트 (검정 유리 패널) */
-/* 공지사항 유리 글래스 */
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+}
+.hero-text p {
+  font-size: 1.2em;
+}
 .notice-glass {
   width: 60%;
   margin-top: 30px;
@@ -43,28 +74,18 @@ body {
   position: relative;
   animation: scroll-left 15s linear infinite;
 }
-
-/* 유동 스크롤 애니메이션 */
 @keyframes scroll-left {
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
-}
-.hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  font-family: 'Georgia', serif;
-}
-.hero-text p {
-  font-size: 1.2em;
-}
+
+/* Cards */
 .cards-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
 }
-
 .card {
   display: flex;
   align-items: flex-start;
@@ -75,27 +96,22 @@ body {
   padding: 1.5rem;
   overflow: hidden;
 }
-
 .card.reverse {
   flex-direction: row-reverse;
 }
-
 .card-img img {
   width: 280px;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
-
 .card-text {
   flex: 1;
   padding: 1rem;
 }
-
 .card-text h2 {
   margin-top: 0;
 }
-
 .read-more {
   background: none;
   border: 1px solid #333;
@@ -105,52 +121,18 @@ body {
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
-
 .extra-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
-
 .extra-content.expanded {
-  max-height: 200px; /* adjust as needed */
+  max-height: 200px;
 }
-
 @media (max-width: 800px) {
-  .card,
-  .card.reverse {
+  .card, .card.reverse {
     flex-direction: column;
   }
-/* 네비게이션 바 스타일 */
-.navbar {
-  background-color: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-list li a:hover {
-  color: #0077cc;
-}
-
   .card-img img {
     width: 100%;
   }
