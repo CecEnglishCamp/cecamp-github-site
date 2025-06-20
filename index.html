@@ -7,79 +7,89 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <a href="#home">CEC English Camp</a>
-      <a href="#about">About</a>
-      <a href="#story">Story</a>
-      <a href="#programs">Programs</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <!-- Nav -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#testimonials">What They Say</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-text">
+      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
+      <p>CEC ENGLISH CAMP Launching Soon!</p>
+    </div>
+    <div class="notice-glass">
+      WELCOME TO CEC English Camp, New Grammar + Story Modules Launching Soon!
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h1>Welcome to CEC English Camp</h1>
-      <p>Learn English in a fun, immersive way with story-based programs!</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about-section" id="about">
-    <div class="about-image">
-      <img src="about4.jpg" alt="About Us Image" />
-    </div>
-    <div class="about-text">
-      <h2>About CEC English Camp</h2>
-      <p>
-        CEC English Camp is a unique, story-driven language program designed for elementary and middle school learners. We believe that language acquisition happens most naturally when students are engaged emotionally and intellectually. That's why our programs combine beautifully illustrated stories with core grammar, speaking, and writing practice.
-      </p>
-      <p><a href="#readmore">Read More...</a></p>
-    </div>
-  </section>
-
-  <!-- Story Section -->
-  <section class="story-section" id="story">
-    <div class="story-text">
-      <h2>Meet Robo and Miso</h2>
-      <p>
-        In a quiet backyard shed, Miso discovers a mysterious robot with glowing blue eyes. His name is Robo, and he remembers nothing. Together, they embark on an unforgettable journey to recover his memory — and uncover a secret hidden in the stars.
-      </p>
-    </div>
-    <div class="story-image">
-      <img src="program1.jpg" alt="Story Image" />
-    </div>
-  </section>
-
-  <!-- Programs Section -->
-  <section class="programs" id="programs">
-    <h2>Our Programs</h2>
-    <div class="program-cards">
-      <div class="program-card">
-        <img src="program1.jpg" alt="Grammar Program" />
-        <h3>Story-based Grammar</h3>
-        <p>Learn grammar naturally through exciting stories.</p>
+  <!-- About -->
+  <section id="about" class="cards-container">
+    <div class="card">
+      <div class="card-img">
+        <img src="assets/img/about.jpg" alt="Robo and Me" />
       </div>
-      <div class="program-card">
-        <img src="program2.jpg" alt="Speaking Program" />
-        <h3>Interactive Speaking</h3>
-        <p>Practice speaking in a fun and engaging way.</p>
+      <div class="card-text">
+        <h2>About CEC English Camp</h2>
+        <p>We provide grammar, reading, speaking, and listening in one integrated experience…</p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence naturally.</p>
+        </div>
       </div>
-      <div class="program-card">
-        <img src="program3.jpg" alt="Writing Program" />
-        <h3>Creative Writing</h3>
-        <p>Write your own stories and develop writing skills.</p>
+    </div>
+    <div class="card reverse">
+      <div class="card-img">
+        <img src="assets/img/about2.jpg" alt="Robo and Jump" />
+      </div>
+      <div class="card-text">
+        <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
+        <p>Our journey begins with <strong>Episode 1...</strong></p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>a short novel that blends action, humor, and heartwarming moments…</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <footer id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: contact@cecenglishcamp.org</p>
-    <p>Phone: +1 (123) 456-7890</p>
-  </footer>
+  <!-- Programs -->
+  <section id="programs" class="programs-section">
+    <h2>Programs</h2>
+    <div class="programs-container">
+      <div class="program-card" data-title="Program 1">
+        <img src="assets/img/prog1.jpg" alt="Program 1" />
+        <div class="prog-text">
+          <h3>Program 1</h3>
+          <p>Short description…</p>
+        </div>
+      </div>
+      <div class="program-card" data-title="Program 2">
+        <img src="assets/img/prog2.jpg" alt="Program 2" />
+        <div class="prog-text">
+          <h3>Program 2</h3>
+          <p>Short description…</p>
+        </div>
+      </div>
+      <div class="program-card" data-title="Program 3">
+        <img src="assets/img/prog3.jpg" alt="Program 3" />
+        <div class="prog-text">
+          <h3>Program 3</h3>
+          <p>Short description…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
