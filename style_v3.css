@@ -1,0 +1,127 @@
+
+/* V3 - Final Style Sheet for English Camp Site */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('hero-banner.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-box {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 80px;
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.25rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Scrolling Text Screen */
+.scrolling-box {
+  position: absolute;
+  bottom: 40px;
+  width: 90%;
+  max-width: 720px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.scrolling-box:hover .scrolling-text {
+  animation-play-state: paused;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 16s linear infinite;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about img {
+  width: 100%;
+  max-width: 780px;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 720px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Utility */
+section {
+  padding: 4rem 2rem;
+}
