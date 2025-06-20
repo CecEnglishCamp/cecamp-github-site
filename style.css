@@ -79,3 +79,34 @@
   line-height: 1.6;
   margin-bottom: 10px;
 }
+.about-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-content img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #222;
+}
