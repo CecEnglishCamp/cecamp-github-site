@@ -64,38 +64,102 @@
     </div>
 
   </section>
-  <!-- Programs 섹션 시작 -->
-<section id="programs" class="programs-section">
-  <h2>Programs</h2>
-  <div class="programs-container">
-    <div class="program-card" data-title="Program 1">
-      <img src="assets/img/prog1.jpg" alt="Program 1" />
-      <h3>Program 1</h3>
-      <p>Short description...</p>
-    </div>
-    <div class="program-card" data-title="Program 2">
-      <img src="assets/img/prog2.jpg" alt="Program 2" />
-      <h3>Program 2</h3>
-      <p>Short description...</p>
-    </div>
-    <div class="program-card" data-title="Program 3">
-      <img src="assets/img/prog3.jpg" alt="Program 3" />
-      <h3>Program 3</h3>
-      <p>Short description...</p>
-    </div>
-  </div>
-</section>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEC English Camp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<!-- 모달 윈도우 추가 -->
-<div id="program-modal" class="modal">
-  <div class="modal-content">
-    <span class="modal-close">&times;</span>
-    <h3 id="modal-title"></h3>
-    <p id="modal-description"></p>
-    <img id="modal-img" src="" alt="" />
-  </div>
-</div>
-<!-- Programs 섹션 끝 -->
+  <!-- Nav -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#testimonials">What They Say</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-text">
+      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
+      <p>CEC ENGLISH CAMP Launching Soon!</p>
+    </div>
+    <div class="notice-glass">
+      WELCOME TO CEC English Camp, New Grammar + Story Modules Launching Soon!
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="cards-container">
+    <div class="card">
+      <div class="card-img">
+        <img src="assets/img/about.jpg" alt="Robo and Me" />
+      </div>
+      <div class="card-text">
+        <h2>About CEC English Camp</h2>
+        <p>We provide grammar, reading, speaking, and listening in one integrated experience…</p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence naturally.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card reverse">
+      <div class="card-img">
+        <img src="assets/img/about2.jpg" alt="Robo and Jump" />
+      </div>
+      <div class="card-text">
+        <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
+        <p>Our journey begins with <strong>Episode 1...</strong></p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>a short novel that blends action, humor, and heartwarming moments…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="programs-section">
+    <h2>Programs</h2>
+    <div class="programs-container">
+      <div class="program-card" data-title="Program 1">
+        <img src="assets/img/prog1.jpg" alt="Program 1" />
+        <div class="prog-text">
+          <h3>Program 1</h3>
+          <p>Short description…</p>
+        </div>
+      </div>
+      <div class="program-card" data-title="Program 2">
+        <img src="assets/img/prog2.jpg" alt="Program 2" />
+        <div class="prog-text">
+          <h3>Program 2</h3>
+          <p>Short description…</p>
+        </div>
+      </div>
+      <div class="program-card" data-title="Program 3">
+        <img src="assets/img/prog3.jpg" alt="Program 3" />
+        <div class="prog-text">
+          <h3>Program 3</h3>
+          <p>Short description…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
   <script src="script.js"></script>
 </body>
