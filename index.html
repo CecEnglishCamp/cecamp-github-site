@@ -5,85 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
-  .cards-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.card {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #fafafa;
-}
-
-.card.reverse {
-  flex-direction: row-reverse;
-}
-
-.card-img img {
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.card-text {
-  flex: 1;
-  position: relative;
-}
-
-.card-text h2 {
-  margin-top: 0;
-}
-
-.card-text p {
-  margin-bottom: 0.5rem;
-}
-
-.read-more {
-  background: none;
-  border: 1px solid #333;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-.extra-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-
-.extra-content.expanded {
-  max-height: 200px; /* 필요에 따라 조정 */
-}
-
-@media (max-width: 800px) {
-  .card, .card.reverse {
-    flex-direction: column;
-  }
-  .card-img img {
-    width: 100%;
-  }
-}
 </head>
-  document.querySelectorAll('.read-more').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const extra = btn.nextElementSibling;
-    extra.classList.toggle('expanded');
-    btn.textContent = extra.classList.contains('expanded') ? 'Show Less' : 'Read More';
-  });
-});
-<script src="script.js"></script>
 <body>
+
   <header class="hero">
     <div class="hero-text">
       <h1>WELCOME TO CEC ENGLISH CAMP</h1>
@@ -92,81 +16,38 @@
     <div class="notice-glass">WELCOME TO CEC English Camp, New Grammar + Story Modules Launching Soon!</div>
   </header>
 
-  <!-- About Section 1 -->
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-  <script src="script.js"></script>
-
-<body>
-  <!-- Hero + Notice… (생략) -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- 기존 Hero, Notice 등 생략 -->
-
-  <!-- About / Episode 카드 모듈 -->
   <section class="cards-container">
-    <!-- 카드 1: 이미지 왼쪽 / 텍스트 오른쪽 -->
+    <!-- 카드 1: About -->
     <div class="card">
       <div class="card-img">
-        <img src="assets/img/about.jpg" alt="Robo and Me">
+        <img src="assets/img/about.jpg" alt="Robo and Me" />
       </div>
       <div class="card-text">
         <h2>About CEC English Camp</h2>
-        <p>
-          We provide grammar, reading, speaking, and listening in one integrated experience...
-        </p>
-        <button class="read-more">Read More</button>
+        <p>We provide grammar, reading, speaking, and listening in one integrated experience...</p>
         <div class="extra-content">
-          <p>
-            Our method uses captivating visuals and exciting narratives to inspire young learners…
-          </p>
+          <p>Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence naturally.</p>
         </div>
+        <button class="read-more">Read More</button>
       </div>
     </div>
 
-    <!-- 카드 2: 텍스트 왼쪽 / 이미지 오른쪽 -->
+    <!-- 카드 2: Episode 1 -->
     <div class="card reverse">
+      <div class="card-img">
+        <img src="assets/img/about2.jpg" alt="Robo and Jump" />
+      </div>
       <div class="card-text">
         <h2>Episode 1: The Hidden Warehouse Files</h2>
-        <p>
-          Our journey begins with <strong>Episode 1: The Hidden Warehouse Files</strong> — a short novel that blends action, humor, and heartwarming moments…
-        </p>
-        <button class="read-more">Read More</button>
+        <p>Our journey begins with <strong>Episode 1: The Hidden Warehouse Files</strong> — a short novel that blends action, humor, and heartwarming moments...</p>
         <div class="extra-content">
-          <p>
-            Students follow the adventures of a lovable learning companion robot designed to help children overcome everyday challenges…
-          </p>
+          <p>Students follow the adventures of a lovable learning companion robot designed to help children overcome everyday challenges. Every episode leaves them thinking: <em>"I wish I had a robot like that!"</em> The story supports learning all four core skills: <strong>Reading, Listening, Speaking, and Writing</strong>.</p>
         </div>
-      </div>
-      <div class="card-img">
-        <img src="assets/img/about2.jpg" alt="Robo and Jump">
+        <button class="read-more">Read More</button>
       </div>
     </div>
   </section>
 
   <script src="script.js"></script>
-</body>
-</html>
-
-  <!-- 프로그램 섹션은 제거 -->
-</body>
-</html>
-
-  </section>
 </body>
 </html>
