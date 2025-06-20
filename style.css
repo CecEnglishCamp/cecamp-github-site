@@ -110,3 +110,25 @@
   line-height: 1.7;
   color: #222;
 }
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 20px;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.about-content.reverse {
+  flex-direction: row-reverse;
+}
+.about-content img {
+  width: 48%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.about-text {
+  width: 52%;
+  padding: 0 20px;
+}
