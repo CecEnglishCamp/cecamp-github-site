@@ -66,7 +66,28 @@ body {
 @keyframes scroll-left {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
+} } /* ← 줄 69, keyframes 끝나는 지점 */
+
+// ⬇️ 여기에 다음을 삽입 ⬇️
+
+.extra-content {
+  display: none;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
 }
+
+.read-more {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+/* About Cards */  ← 줄 70부터 기존 About 섹션 시작
+.cards-container {
+
 
 /* About Cards */
 .cards-container {
