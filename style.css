@@ -1,158 +1,106 @@
-/* 기본 스타일 */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f8f8f8;
-  color: #111;
-}
-.navbar {
-  position: sticky;
-  top: 0;
-  background: white;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.navbar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-}
-.navbar a:hover {
-  color: #007acc;
+  color: #fff;
+  background-color: #111;
 }
 
-/* Hero */
 .hero {
-  background: url("assets/img/hero-banner.jpg") center/cover no-repeat;
-  height: 95vh;
+  position: relative;
+  height: 80vh;
+  background: url('hero-banner.jpg') no-repeat center center/cover;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.hero-text {
-  background: rgba(0,0,0,0.5);
-  padding: 2rem;
-  color: white;
-  border-radius: 8px;
-  max-width: 90%;
-  text-align: center;
-}
-.hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  font-family: 'Georgia', serif;
-}
-.hero-text p {
-  font-size: 1.2em;
-}
-.notice-glass {
-  margin-top: 30px;
-  padding: 15px 20px;
-  background: rgba(50,50,50,0.5);
-  color: white;
-  font-size: 1.1em;
-  border-radius: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: scroll-left 15s linear infinite;
-}
-@keyframes scroll-left {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* About Cards */
-.cards-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-}
-.card,
-.card.reverse {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-}
-.card-img img {
-  width: 280px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-.card.reverse { flex-direction: row-reverse; }
-.card-text {
-  flex: 1;
-}
-.read-more {
-  margin-top: 1rem;
-  background: none;
-  border: 1px solid #333;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.extra-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-.extra-content.expanded {
-  max-height: 200px;
-}
-@media (max-width: 800px) {
-  .card, .card.reverse { flex-direction: column; }
-}
-
-/* Programs Section */
-.programs-section {
-  padding: 2rem;
-  background: #fff;
-}
-.programs-container {
-  display: flex;
-  gap: 1.5rem;
   justify-content: center;
 }
-.program-card {
-  background: #f0f0f0;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  width: 30%;
-  transition: transform 0.3s, box-shadow 0.3s;
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
 }
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.about, .novel, .programs, .grammar {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-container,
+.novel-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img,
+.novel-img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.about-text,
+.novel-text {
+  max-width: 600px;
+}
+
+.about-summary {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#readMoreBtn {
+  margin-top: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.program-card {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
 .program-card img {
   width: 100%;
-  display: block;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
-.program-card .prog-text {
-  padding: 1rem;
-}
-.program-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-.program-card.active {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 80vw;
-  height: auto;
-  max-width: 600px;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-.program-card.active img {
-  height: auto;
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
 }
