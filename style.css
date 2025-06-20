@@ -92,6 +92,66 @@ body {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+/* 페이지 맨 아래 또는 About 섹션 바로 위에 붙여주세요 */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fafafa;
+}
+.card.reverse {
+  flex-direction: row-reverse;
+}
+.card-img img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.card-text {
+  flex: 1;
+  position: relative;
+}
+.card-text h2 {
+  margin-top: 0;
+}
+.card-text p {
+  margin-bottom: 0.5rem;
+}
+.read-more {
+  background: none;
+  border: 1px solid #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.extra-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.extra-content.expanded {
+  max-height: 200px; /* 필요에 따라 조정하세요 */
+}
+@media (max-width: 800px) {
+  .card, .card.reverse {
+    flex-direction: column;
+  }
+  .card-img img {
+    width: 100%;
+  }
+}
 
 /* Reverse layout for second about section */
 .about-section.reverse .about-content {
