@@ -8,88 +8,103 @@
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#testimonials">What They Say</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero -->
-  <header id="home" class="hero">
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="hero-banner.jpg" alt="Hero Banner" class="hero-image" />
     <div class="hero-text">
-      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
-      <p>CEC ENGLISH CAMP Launching Soon!</p>
+      <h1>CEC English Camp</h1>
+      <p>Where language meets imagination</p>
     </div>
-    <div class="notice-glass">
-      WELCOME TO CEC English Camp, New Grammar + Story Modules Launching Soon!
-    </div>
-  </header>
+  </section>
 
-  <!-- About -->
-  <section id="about" class="cards-container">
-    <div class="card">
-      <div class="card-img">
-        <img src="assets/img/about.jpg" alt="Robo and Me" />
-      </div>
-      <div class="card-text">
-        <h2>About CEC English Camp</h2>
-        <p>We provide grammar, reading, speaking, and listening in one integrated experience…</p>
-        <button class="read-more">Read More</button>
-        <div class="extra-content">
-          <p>Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence naturally.</p>
-        </div>
-      </div>
+  <!-- Moving Text Panel -->
+  <div class="moving-text-container">
+    <div class="moving-text" onmouseover="pauseText()" onmouseout="resumeText()">
+      Welcome to CEC English Camp - Explore English with stories, grammar, and AI-powered learning!
     </div>
-    <div class="card reverse">
-      <div class="card-img">
-        <img src="assets/img/about2.jpg" alt="Robo and Jump" />
+  </div>
+
+  <!-- About Section Summary -->
+  <section class="about">
+    <div class="about-image">
+      <img src="about.jpg" alt="About CEC" />
+    </div>
+    <div class="about-text">
+      <h2>About CEC English Camp</h2>
+      <p>
+        CEC English Camp is a creative and immersive program designed for young learners. We combine storytelling, interactive grammar lessons, and cutting-edge AI tools to make English fun and meaningful.
+      </p>
+      <a href="#about-more" class="read-more-btn">Read More</a>
+    </div>
+  </section>
+
+  <!-- About More Page (Expandable) -->
+  <section id="about-more" class="about-more">
+    <h2>More About Our Camp</h2>
+    <p>
+      At CEC English Camp, our mission is to nurture children's imagination and confidence through English. With original storylines like "Robot & Me" and "Jump & Me", learners experience language in action. Each level includes grammar, listening, speaking, and writing practice. Our instructors and AI partners support learners step-by-step, in class and online.
+    </p>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story">
+    <div class="story-image">
+      <img src="about4.jpg" alt="Jump Story" />
+    </div>
+    <div class="story-text">
+      <h2>Jump & Me: Episode 1</h2>
+      <p>
+        In a dusty warehouse corner, Miso discovers a forgotten robot named Jump. This is just the beginning of their amazing adventure!
+      </p>
+      <a href="#">Read Full Story</a>
+    </div>
+  </section>
+
+  <!-- Program Sections -->
+  <section class="programs">
+    <h2>Our Programs</h2>
+    <div class="program-list">
+      <div class="program-card">
+        <img src="program1.jpg" alt="Program 1" />
+        <h3>Program 1: Beginner English</h3>
+        <p>Story-based vocabulary and grammar practice for A1 learners.</p>
       </div>
-      <div class="card-text">
-        <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
-        <p>Our journey begins with <strong>Episode 1...</strong></p>
-        <button class="read-more">Read More</button>
-        <div class="extra-content">
-          <p>a short novel that blends action, humor, and heartwarming moments…</p>
-        </div>
+      <div class="program-card">
+        <img src="program2.jpg" alt="Program 2" />
+        <h3>Program 2: Story & Drama</h3>
+        <p>Learn through characters, emotions, and simple scripts.</p>
+      </div>
+      <div class="program-card">
+        <img src="program3.jpg" alt="Program 3" />
+        <h3>Program 3: Grammar Base Camp</h3>
+        <p>Level-based grammar courses from A1 to B2.</p>
       </div>
     </div>
   </section>
 
-  <!-- Programs -->
-  <section id="programs" class="programs-section">
-    <h2>Programs</h2>
-    <div class="programs-container">
-      <div class="program-card" data-title="Program 1">
-        <img src="assets/img/prog1.jpg" alt="Program 1" />
-        <div class="prog-text">
-          <h3>Program 1</h3>
-          <p>Short description…</p>
-        </div>
-      </div>
-      <div class="program-card" data-title="Program 2">
-        <img src="assets/img/prog2.jpg" alt="Program 2" />
-        <div class="prog-text">
-          <h3>Program 2</h3>
-          <p>Short description…</p>
-        </div>
-      </div>
-      <div class="program-card" data-title="Program 3">
-        <img src="assets/img/prog3.jpg" alt="Program 3" />
-        <div class="prog-text">
-          <h3>Program 3</h3>
-          <p>Short description…</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <script>
+    let text = document.querySelector(".moving-text");
+    let scrollInterval;
 
-  <script src="script.js"></script>
+    function startScrolling() {
+      scrollInterval = setInterval(() => {
+        text.scrollLeft += 1;
+        if (text.scrollLeft >= text.scrollWidth) {
+          text.scrollLeft = 0;
+        }
+      }, 20);
+    }
+
+    function pauseText() {
+      clearInterval(scrollInterval);
+    }
+
+    function resumeText() {
+      startScrolling();
+    }
+
+    window.onload = startScrolling;
+  </script>
+
 </body>
 </html>
