@@ -4,15 +4,20 @@ body {
   background: #f8f8f8;
   color: #111;
 }
-
+/* 히어로 배너 */
 .hero {
-  background: url("assets/img/hero-banner.jpg") no-repeat center center/cover;
-  height: 90vh;
+  background-image: url("assets/img/hero-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 5px solid black;
   position: relative;
 }
+
 
 .hero-text {
   text-align: center;
@@ -22,14 +27,37 @@ body {
   border-radius: 8px;
   max-width: 90%;
 }
-
+/* 히어로 안의 텍스트 (검정 유리 패널) */
+/* 공지사항 유리 글래스 */
 .notice-glass {
-  margin-top: 1rem;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  width: 60%;
+  margin-top: 30px;
+  padding: 15px 20px;
+  background: rgba(50, 50, 50, 0.5);
+  color: white;
+  font-size: 1.1em;
+  border-radius: 15px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation: scroll-left 15s linear infinite;
 }
 
+/* 유동 스크롤 애니메이션 */
+@keyframes scroll-left {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+}
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+}
+.hero-text p {
+  font-size: 1.2em;
+}
 .cards-container {
   display: flex;
   flex-direction: column;
