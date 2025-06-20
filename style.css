@@ -132,3 +132,46 @@
   width: 52%;
   padding: 0 20px;
 }
+/* style.css */
+
+.program-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.program-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.program-image img {
+  width: 48%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.program-text {
+  width: 48%;
+}
+
+.more-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.more-text.open {
+  max-height: 500px;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  background: none;
+  color: #007BFF;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
