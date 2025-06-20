@@ -1,56 +1,48 @@
+/* 기본 스타일 */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: #f8f8f8;
   color: #111;
 }
-
 .navbar {
-  background-color: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  background: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
-.nav-list {
+.navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+  gap: 20px;
 }
-.nav-list li a {
+.navbar a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-weight: 600;
 }
-.nav-list li a:hover {
-  color: #0077cc;
+.navbar a:hover {
+  color: #007acc;
 }
 
 /* Hero */
 .hero {
-  background-image: url("assets/img/hero-banner.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("assets/img/hero-banner.jpg") center/cover no-repeat;
   height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 5px solid black;
-  position: relative;
 }
 .hero-text {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0,0,0,0.5);
   padding: 2rem;
   color: white;
   border-radius: 8px;
   max-width: 90%;
+  text-align: center;
 }
 .hero-text h1 {
   font-size: 3em;
@@ -61,65 +53,53 @@ body {
   font-size: 1.2em;
 }
 .notice-glass {
-  width: 60%;
   margin-top: 30px;
   padding: 15px 20px;
-  background: rgba(50, 50, 50, 0.5);
+  background: rgba(50,50,50,0.5);
   color: white;
   font-size: 1.1em;
   border-radius: 15px;
-  text-align: center;
-  overflow: hidden;
   white-space: nowrap;
-  position: relative;
+  overflow: hidden;
   animation: scroll-left 15s linear infinite;
 }
 @keyframes scroll-left {
-  0%   { transform: translateX(100%); }
+  0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
 
-/* Cards */
+/* About Cards */
 .cards-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
 }
-.card {
+.card,
+.card.reverse {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  border: 1px solid #ddd;
-  border-radius: 12px;
   background: #fff;
+  border-radius: 12px;
   padding: 1.5rem;
-  overflow: hidden;
-}
-.card.reverse {
-  flex-direction: row-reverse;
 }
 .card-img img {
   width: 280px;
-  height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
+.card.reverse { flex-direction: row-reverse; }
 .card-text {
   flex: 1;
-  padding: 1rem;
-}
-.card-text h2 {
-  margin-top: 0;
 }
 .read-more {
+  margin-top: 1rem;
   background: none;
   border: 1px solid #333;
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
 }
 .extra-content {
   max-height: 0;
@@ -130,55 +110,49 @@ body {
   max-height: 200px;
 }
 @media (max-width: 800px) {
-  .card, .card.reverse {
-    flex-direction: column;
-  }
-  .card-img img {
-    width: 100%;
-  }
+  .card, .card.reverse { flex-direction: column; }
 }
-}  /* 기존 CSS 마지막 줄 */
 
+/* Programs Section */
 .programs-section {
-  padding: 4rem 2rem;
-  background-color: #fff;
+  padding: 2rem;
+  background: #fff;
 }
-
-.program-cards {
+.programs-container {
   display: flex;
+  gap: 1.5rem;
   justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
-
 .program-card {
-  width: 300px;
-  background: #f2f2f2;
-  border-radius: 12px;
+  background: #f0f0f0;
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-  transform: scale(1);
-  transition: transform 0.3s ease;
+  width: 30%;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
-.program-card:hover {
-  transform: scale(1.05);
-}
-
 .program-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  display: block;
 }
-
-.program-card .text {
+.program-card .prog-text {
   padding: 1rem;
 }
-
-.program-card h3 {
-  margin: 0 0 0.5rem 0;
+.program-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
-.program-card p {
-  margin: 0;
+.program-card.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: auto;
+  max-width: 600px;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.program-card.active img {
+  height: auto;
 }
