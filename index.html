@@ -77,6 +77,16 @@ A tremor jolted the ground. Robo’s eyes flickered rapidly. “Warning: unident
     </div>
   </div>
 </section>
+<!-- index.html 맨 아래에 추가 -->
+<script>
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const more = btn.previousElementSibling;
+      more.classList.toggle('open');
+      btn.textContent = more.classList.contains('open') ? 'Read Less' : 'Read More';
+    });
+  });
+</script>
 
   </section>
 </body>
