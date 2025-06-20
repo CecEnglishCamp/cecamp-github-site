@@ -2,57 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+  <!-- Header -->
   <header>
-    <h1>CEC English Camp</h1>
     <nav>
-      <a href="#home">Home</a>
+      <a href="#home">CEC English Camp</a>
       <a href="#about">About</a>
+      <a href="#story">Story</a>
       <a href="#programs">Programs</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero-section">
-    <img src="hero-banner.jpg" alt="Hero Image" class="hero-image"/>
+  <section class="hero" id="home">
     <div class="hero-text">
-      <h2>Welcome to CEC English Camp</h2>
+      <h1>Welcome to CEC English Camp</h1>
       <p>Learn English in a fun, immersive way with story-based programs!</p>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about-section">
-    <h2>About Us</h2>
-    <img src="about4.jpg" alt="About Image" class="about-image"/>
-    <p>
-      CEC English Camp is designed to provide creative, immersive English education for students of all ages.
-      Through story-driven lessons and interactive programs, students naturally absorb grammar, vocabulary, and speaking skills.
-    </p>
+  <section class="about-section" id="about">
+    <div class="about-image">
+      <img src="about4.jpg" alt="About Us Image" />
+    </div>
+    <div class="about-text">
+      <h2>About CEC English Camp</h2>
+      <p>
+        CEC English Camp is a unique, story-driven language program designed for elementary and middle school learners. We believe that language acquisition happens most naturally when students are engaged emotionally and intellectually. That's why our programs combine beautifully illustrated stories with core grammar, speaking, and writing practice.
+      </p>
+      <p><a href="#readmore">Read More...</a></p>
+    </div>
   </section>
 
-  <!-- Program Section -->
-  <section id="programs" class="programs-section">
+  <!-- Story Section -->
+  <section class="story-section" id="story">
+    <div class="story-text">
+      <h2>Meet Robo and Miso</h2>
+      <p>
+        In a quiet backyard shed, Miso discovers a mysterious robot with glowing blue eyes. His name is Robo, and he remembers nothing. Together, they embark on an unforgettable journey to recover his memory — and uncover a secret hidden in the stars.
+      </p>
+    </div>
+    <div class="story-image">
+      <img src="program1.jpg" alt="Story Image" />
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="programs" id="programs">
     <h2>Our Programs</h2>
-    <div class="program-grid">
+    <div class="program-cards">
       <div class="program-card">
-        <img src="program1.jpg" alt="Program 1" />
+        <img src="program1.jpg" alt="Grammar Program" />
         <h3>Story-based Grammar</h3>
         <p>Learn grammar naturally through exciting stories.</p>
       </div>
       <div class="program-card">
-        <img src="program2.jpg" alt="Program 2" />
+        <img src="program2.jpg" alt="Speaking Program" />
         <h3>Interactive Speaking</h3>
         <p>Practice speaking in a fun and engaging way.</p>
       </div>
       <div class="program-card">
-        <img src="program3.jpg" alt="Program 3" />
+        <img src="program3.jpg" alt="Writing Program" />
         <h3>Creative Writing</h3>
         <p>Write your own stories and develop writing skills.</p>
       </div>
@@ -60,11 +76,10 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact-section">
+  <footer id="contact">
     <h2>Contact Us</h2>
     <p>Email: contact@cecenglishcamp.org</p>
     <p>Phone: +1 (123) 456-7890</p>
-  </section>
-
+  </footer>
 </body>
 </html>
