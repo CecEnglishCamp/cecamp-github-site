@@ -4,30 +4,38 @@ document.querySelectorAll('.read-more').forEach(btn => {
     const extra = btn.nextElementSibling;
     extra.classList.toggle('expanded');
     btn.textContent = extra.classList.contains('expanded') ? 'Close' : 'Read More';
+    if (extra.classList.contains('expanded')) {
+      extra.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   });
 });
 
-// Program 카드 클릭 → 확대
+// Program 카드 클릭 → 모달 확대
 document.querySelectorAll('.program-card').forEach(card => {
   card.addEventListener('click', () => {
-    // 이미 열려있는 다른 카드 닫기
-    document.querySelectorAll('.program-card.active').forEach(openCard => {
-      if (openCard !== card) openCard.classList.remove('active');
+    // 다른 열려있는 카드 닫기
+    document.querySelectorAll('.program-card.active').forEach(open => {
+      if (open !== card) {
+        open.classList.remove('active');
+        const btn = open.querySelector('.close-btn');
+        if (btn) btn.remove();
+      }
     });
 
     card.classList.toggle('active');
-
-    // Close 버튼이 없는 경우 추가
-    if (!card.querySelector('.close-btn')) {
-      const closeBtn = document.createElement('button');
-      closeBtn.textContent = 'Close';
-      closeBtn.classList.add('close-btn');
-      closeBtn.addEventListener('click', (e) => {
-        e.stopPropagation(); // 부모 카드 클릭 이벤트 방지
+    if (card.classList.contains('active')) {
+      const btn = document.createElement('button');
+      btn.textContent = 'Close';
+      btn.classList.add('close-btn');
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
         card.classList.remove('active');
-        closeBtn.remove();
+        btn.remove();
       });
-      card.appendChild(closeBtn);
+      card.appendChild(btn);
+    } else {
+      const btn = card.querySelector('.close-btn');
+      if (btn) btn.remove();
     }
   });
 });
