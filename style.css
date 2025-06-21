@@ -53,8 +53,9 @@ body {
   margin-bottom: 10px;
   font-family: 'Georgia', serif;
 }
+/유리글찌/
 .notice-glass {
-  margin-top: 20px;
+  margin-top: 120px;  <----쥬동
   height: 40px;
   width: 100%;
   max-width: 700px;
