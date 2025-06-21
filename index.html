@@ -99,6 +99,17 @@
       </div>
     </div>
   </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const readMoreBtn = document.querySelector('.read-more');
+    const extraContent = document.querySelector('.extra-content');
+
+    readMoreBtn.addEventListener('click', function () {
+      extraContent.classList.toggle('show');
+      readMoreBtn.textContent = extraContent.classList.contains('show') ? 'Read Less' : 'Read More';
+    });
+  });
+</script>
 
   <script src="script.js"></script>
 </body>
