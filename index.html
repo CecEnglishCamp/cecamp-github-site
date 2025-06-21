@@ -2,66 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#testimonials">What They Say</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Nav -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#testimonials">What They Say</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-text">
+      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
+      <div class="notice-glass">
+        <div class="scrolling-text">WELCOME TO CEC English Camp – New Grammar + Story Modules Launching Soon!</div>
+      </div>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
-      <p class="scrolling-text">Camp, New Grammar + Story Modules Launching Soon!</p>
-    </div>
-  </section>
-
   <!-- About Section -->
-  <section id="about">
-    <div class="section-container">
-      <img src="about-section.jpg" alt="About CEC" />
-      <div class="text">
+  <section id="about" class="cards-container">
+    <div class="card">
+      <div class="card-img">
+        <img src="assets/img/about.jpg" alt="About CEC" />
+      </div>
+      <div class="card-text">
         <h2>About CEC English Camp</h2>
-        <p>We provide grammar, reading, speaking, and listening in one integrated experience...</p>
+        <p>We provide grammar, reading, speaking, and listening in one integrated experience…</p>
         <button class="read-more">Read More</button>
-        <div class="extra-text">
+        <div class="extra-content">
           <p>
-            At CEC English Camp, we believe learning should be meaningful and joyful. That’s why our programs combine storytelling, real-world topics, and interactive AI tools. Our curriculum is based on CEFR levels (A1–B2) and uses short novels, grammar coaching, and speaking tasks to build confidence in young learners. 
+            At CEC English Camp, we believe learning should be meaningful and joyful.
+            That’s why our programs combine storytelling, real-world topics, and interactive AI tools.
+            Our curriculum is based on CEFR levels (A1–B2) and uses short novels, grammar coaching,
+            and speaking tasks to build confidence in young learners.
           </p>
           <p>
-            Whether your child is just beginning or already speaking, our step-by-step structure adapts to their level. Each week includes themed vocabulary, real-life communication practice, and guidance from our warm team of story-based learning coaches.
+            Whether your child is just beginning or already speaking, our step-by-step structure adapts to their level.
+            Each week includes themed vocabulary, real-life communication practice, and guidance from our warm team
+            of story-based learning coaches.
           </p>
         </div>
       </div>
     </div>
-
-    <div class="section-container">
-      <img src="robo.jpg" alt="Robo Story" />
-      <div class="text">
+    <div class="card reverse">
+      <div class="card-img">
+        <img src="assets/img/about2.jpg" alt="Robo Story" />
+      </div>
+      <div class="card-text">
         <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
-        <p>Our journey begins with <strong>Episode 1…</strong></p>
+        <p>Our journey begins with <strong>Episode 1...</strong></p>
         <button class="read-more">Read More</button>
-        <div class="extra-text">
+        <div class="extra-content">
           <p>
-            Miso finds an old robot in her grandfather’s dusty warehouse. But this robot is no ordinary machine—it holds the key to a forgotten mission. From this moment on, Miso’s life is never the same.
-          </p>
-          <p>
-            Each episode of our novel series builds language naturally, while keeping learners excited for what happens next. From vocabulary highlights to grammar-in-context, students won’t even realize they’re learning.
+            A short novel that blends action, humor, and heartwarming moments.
+            In a dusty warehouse, a girl discovers a forgotten robot that changes her life.
+            Each story helps children improve their English while experiencing wonder, empathy, and excitement.
           </p>
         </div>
       </div>
@@ -69,80 +76,33 @@
   </section>
 
   <!-- Programs Section -->
-  <section id="programs">
+  <section id="programs" class="programs-section">
     <h2>Programs</h2>
     <div class="programs-container">
-      <div class="program-card">
-        <img src="program1.jpg" alt="Interactive English Learning" />
-        <h3>Interactive English Learning</h3>
-        <p>
-          Engaging activities that teach English through fun. My child looks forward to each session.
-        </p>
-        <div class="program-detail">
-          <p>
-            Children participate in story roleplays, puzzles, voice-based games, and AI chatbot speaking practice. We focus on confidence and connection first, building fluency step by step.
-          </p>
+      <div class="program-card" data-title="Interactive English Learning">
+        <img src="assets/img/program1.jpg" alt="Program 1" />
+        <div class="prog-text">
+          <h3>Interactive English Learning</h3>
+          <p>Engaging activities that teach English through fun games, role plays, and creative interaction. Students learn naturally by doing and speaking.</p>
         </div>
       </div>
-      <div class="program-card">
-        <img src="program2.jpg" alt="Reading Comprehension Programs" />
-        <h3>Reading Comprehension Programs</h3>
-        <p>
-          Short novels that captivate attention and reinforce grammar naturally.
-        </p>
-        <div class="program-detail">
-          <p>
-            Our story modules follow engaging characters across episodes. Each one targets specific grammar points and vocabulary through meaningful use—not drills or translation. Reading becomes a joy.
-          </p>
+      <div class="program-card" data-title="Reading Comprehension Programs">
+        <img src="assets/img/program2.jpg" alt="Program 2" />
+        <div class="prog-text">
+          <h3>Reading Comprehension Programs</h3>
+          <p>Short serialized novels help students build vocabulary and understanding, while emotionally engaging plots make reading enjoyable.</p>
         </div>
       </div>
-      <div class="program-card">
-        <img src="program3.jpg" alt="English Grammar" />
-        <h3>English Grammar</h3>
-        <p>
-          Clear and fun structure to improve writing and speaking skills.
-        </p>
-        <div class="program-detail">
-          <p>
-            From be-verbs to complex sentence structures, our curriculum introduces grammar using charts, visuals, examples, and creative speaking activities. Students learn to use it—not just memorize rules.
-          </p>
+      <div class="program-card" data-title="English Grammar">
+        <img src="assets/img/program3.jpg" alt="Program 3" />
+        <div class="prog-text">
+          <h3>English Grammar</h3>
+          <p>Grammar taught in context. Clear explanations, fun visuals, and immediate practice help students internalize rules with confidence.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Script -->
-  <script>
-    // Read More toggle
-    document.querySelectorAll('.read-more').forEach(button => {
-      button.addEventListener('click', () => {
-        const extra = button.nextElementSibling;
-        const isExpanded = extra.classList.toggle('expanded');
-        button.textContent = isExpanded ? 'Show Less' : 'Read More';
-        if (isExpanded) {
-          extra.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-
-    // Program Card Expand
-    document.querySelectorAll('.program-card').forEach(card => {
-      card.addEventListener('click', () => {
-        if (card.classList.contains('active')) return;
-        card.classList.add('active');
-        if (!card.querySelector('.close-btn')) {
-          const closeBtn = document.createElement('button');
-          closeBtn.textContent = 'Close';
-          closeBtn.className = 'close-btn';
-          closeBtn.onclick = () => {
-            card.classList.remove('active');
-            closeBtn.remove();
-          };
-          card.appendChild(closeBtn);
-        }
-      });
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
