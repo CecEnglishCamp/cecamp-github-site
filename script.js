@@ -1,41 +1,29 @@
-// Read More 기능
-document.querySelectorAll('.read-more').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const extra = btn.nextElementSibling;
-    extra.classList.toggle('expanded');
-    btn.textContent = extra.classList.contains('expanded') ? 'Close' : 'Read More';
-    if (extra.classList.contains('expanded')) {
-      extra.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  });
-});
+const programData = [
+  {
+    img: 'assets/img/program1.jpg',
+    title: 'Interactive English Learning',
+    desc: 'Engaging activities that teach English through fun. My child looks forward to each session.'
+  },
+  {
+    img: 'assets/img/program2.jpg',
+    title: 'Reading Comprehension Programs',
+    desc: 'The engaging short novels that captivate attention & reinforce grammar.'
+  },
+  {
+    img: 'assets/img/program3.jpg',
+    title: 'English Grammar',
+    desc: 'English Grammar helps kids communicate clearly, improving writing and speaking skills.'
+  }
+];
 
-// Program 카드 클릭 → 모달 확대
-document.querySelectorAll('.program-card').forEach(card => {
-  card.addEventListener('click', () => {
-    // 다른 열려있는 카드 닫기
-    document.querySelectorAll('.program-card.active').forEach(open => {
-      if (open !== card) {
-        open.classList.remove('active');
-        const btn = open.querySelector('.close-btn');
-        if (btn) btn.remove();
-      }
-    });
+function openModal(index) {
+  const modal = document.getElementById('programModal');
+  document.getElementById('modalImg').src = programData[index].img;
+  document.getElementById('modalTitle').innerText = programData[index].title;
+  document.getElementById('modalText').innerText = programData[index].desc;
+  modal.style.display = 'block';
+}
 
-    card.classList.toggle('active');
-    if (card.classList.contains('active')) {
-      const btn = document.createElement('button');
-      btn.textContent = 'Close';
-      btn.classList.add('close-btn');
-      btn.addEventListener('click', e => {
-        e.stopPropagation();
-        card.classList.remove('active');
-        btn.remove();
-      });
-      card.appendChild(btn);
-    } else {
-      const btn = card.querySelector('.close-btn');
-      if (btn) btn.remove();
-    }
-  });
-});
+function closeModal() {
+  document.getElementById('programModal').style.display = 'none';
+}
