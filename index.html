@@ -1,52 +1,63 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#episode">Episode</a>
-      <a href="#programs">Programs</a>
-    </nav>
-  </header>
 
-  <section id="home" class="home-section">
-    <div class="glass-screen" id="mainScreen">
-      <div class="screen-text" id="screenText">🤖 EP02: Hidden Warehouse Files — Coming Soon!</div>
+  <!-- ✅ Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#episode">Episode</a>
+    <a href="#programs">Programs</a>
+  </nav>
+
+  <!-- ✅ Hero Section with Glass Effect & Sliding Text -->
+  <div class="hero" id="home">
+    <img class="robot" src="assets/img/robot.png" alt="Robot Icon" />
+    <div class="glass-screen">
+      <span>🚀 Welcome to CEC English Camp – Where Imagination Takes Off!</span>
     </div>
-    <img src="assets/img/robot-icon.png" alt="robot" class="robot-icon" />
-  </section>
+  </div>
 
+  <!-- ✅ About Section -->
   <section id="about" class="content-section">
     <h2>About CEC English Camp</h2>
     <div class="card">
-      <img src="assets/img/about.jpg" alt="about" />
       <div class="text">
-        <p>We provide grammar, reading, speaking, and listening in one integrated experience...</p>
+        <p>
+          We provide grammar, reading, speaking, and listening in one integrated experience...
+        </p>
         <button class="toggle-btn" data-target="about">Show More</button>
-        <p class="more" id="about-more">Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence naturally.</p>
+        <p class="more" id="about-more">
+          Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence in English.
+        </p>
       </div>
     </div>
   </section>
 
+  <!-- ✅ Episode Section -->
   <section id="episode" class="content-section">
     <h2>Episode 1: The Hidden Warehouse Files</h2>
     <div class="card">
-      <img src="assets/img/episode1.jpg" alt="episode" />
+      <img src="assets/img/episode1.jpg" alt="Episode 1" />
       <div class="text">
-        <p>Our journey begins with Episode 1—a short novel that blends action, humor, and heartwarming moments...</p>
+        <p>
+          Our journey begins with Episode 1—a short novel that blends action, humor, and heartwarming moments...
+        </p>
         <button class="toggle-btn" data-target="episode">Show More</button>
-        <p class="more" id="episode-more">A group of friends discovers a mysterious robot inside an old warehouse. Through teamwork and curiosity, they unlock stories full of surprises and learning moments.</p>
+        <p class="more" id="episode-more">
+          A group of friends discovers a mysterious robot inside an old warehouse. Through teamwork and curiosity, they uncover its secrets and launch a mission of a lifetime.
+        </p>
       </div>
     </div>
   </section>
 
+  <!-- ✅ Programs Section -->
   <section id="programs" class="content-section">
     <h2>Programs</h2>
     <div class="program-list" id="programList">
@@ -54,12 +65,7 @@
     </div>
   </section>
 
+  <!-- ✅ Script 연결 -->
   <script src="script.js"></script>
-  <div class="glass-screen-full">
-  <div class="marquee-container">
-    <div class="marquee-text">Welcome to CEC English Camp!!  New Episodes Every Friday |</div>
-  </div>
-</div>
-
 </body>
 </html>
