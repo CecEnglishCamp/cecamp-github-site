@@ -50,7 +50,7 @@ body {
   text-align: center;
   color: white;
   max-width: 90%;
-  transform: translateY(180px); /* 👈 원래 위치로 복원 */
+  transform: translateY(200px); /* 👈 원래 위치로 복원 */
 }
 
 /* Read More 컨텐츠 - 유동적으로 확장 */
