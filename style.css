@@ -1,60 +1,108 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body, html {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* Video Background */
-.hero {
+/* Navigation */
+header {
+  background-color: #fff;
+  padding: 10px 0;
+  text-align: center;
   position: relative;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #111;
+}
+
+/* Hero Video Background */
+.hero-video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
+  z-index: -2;
   overflow: hidden;
 }
-.hero-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+
+.hero-video-background iframe {
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
-  z-index: 1;
+  pointer-events: none;
 }
 
-/* Glass Overlay */
-.glass-overlay {
-  position: absolute;
-  bottom: 5%;
+/* Glass Panel */
+.glass-panel {
+  position: fixed;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  padding: 20px 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  z-index: 2;
   width: 90%;
-  max-width: 800px;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  z-index: 5;
   overflow: hidden;
 }
 
-/* Scrolling Text */
 .scrolling-text {
   white-space: nowrap;
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
-  animation: scroll-left 20s linear infinite;
+  overflow: hidden;
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.scrolling-text p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 20s linear infinite;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Content Sections */
+.content-section {
+  background: #f9f9f9;
+  padding: 80px 40px;
+  margin-top: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  color: #444;
 }
