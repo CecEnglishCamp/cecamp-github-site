@@ -1,15 +1,25 @@
-// Read More 토글
+// Read More
 document.querySelectorAll('.read-more').forEach(btn => {
   btn.addEventListener('click', () => {
-    const txt = btn.previousElementSibling;
-    txt.style.maxHeight = txt.style.maxHeight === 'none' ? '100px' : 'none';
-    btn.textContent = txt.style.maxHeight === 'none' ? 'Show Less' : 'Read More';
+    const extra = btn.nextElementSibling;
+    extra.classList.toggle('expanded');
+    btn.textContent = extra.classList.contains('expanded') ? 'Show Less' : 'Read More';
   });
 });
 
-// 프로그램 카드 클릭 → 확대 / 축소
-document.querySelectorAll('.program-card').forEach(card => {
+// Program 카드 클릭 -> 확대 표시 (나머지 숨김)
+const programCards = document.querySelectorAll('.program-card');
+const container = document.querySelector('.programs-container');
+
+programCards.forEach(card => {
   card.addEventListener('click', () => {
-    card.classList.toggle('active');
+    const isActive = card.classList.contains('active');
+    programCards.forEach(c => c.classList.remove('active'));
+    if (!isActive) {
+      card.classList.add('active');
+      container.classList.add('active-mode');
+    } else {
+      container.classList.remove('active-mode');
+    }
   });
 });
