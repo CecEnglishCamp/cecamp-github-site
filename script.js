@@ -1,16 +1,19 @@
+// Read more 토글
 document.querySelectorAll('.read-more').forEach(btn => {
   btn.addEventListener('click', () => {
     const extra = btn.nextElementSibling;
-    extra.classList.toggle('show');
-    btn.textContent = extra.classList.contains('show') ? 'Show Less' : 'Read More';
+    extra.classList.toggle('expanded');
+    btn.textContent = extra.classList.contains('expanded') ? 'Show Less' : 'Read More';
   });
 });
 
-document.querySelectorAll('.prog-card').forEach(card => {
-  card.addEventListener('click', () => {
-    document.querySelectorAll('.prog-card.active').forEach(a => {
-      if (a !== card) a.classList.remove('active');
+// Programs 클릭 → 단독 보기 / 닫기
+document.querySelectorAll('.program-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const isActive = item.classList.toggle('active');
+    document.body.style.overflow = isActive ? 'hidden' : '';
+    document.querySelectorAll('.program-item').forEach(sib => {
+      if (sib !== item) sib.style.display = isActive ? 'none' : '';
     });
-    card.classList.toggle('active');
   });
 });
