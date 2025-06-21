@@ -50,7 +50,7 @@ body {
   text-align: center;
   color: white;
   max-width: 90%;
-  transform: translateY(200px); /* 👈 원래 위치로 복원 */
+  transform: translateY(220px); /* 👈 원래 위치로 복원 */
 }
 
 /* Read More 컨텐츠 - 유동적으로 확장 */
@@ -81,24 +81,18 @@ body {
   padding-left: 100%;
   animation: scroll-left 15s linear infinite;
 }
-
-.notice-glass span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-left 15s linear infinite;
-}
-
 @keyframes scroll-left {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
 
-/* About Section */
-.cards-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
+/* About 이미지 보이게 유지 */
+.card-img img {
+  display: block;
+  width: 280px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .card,
