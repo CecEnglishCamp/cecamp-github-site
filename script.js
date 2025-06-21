@@ -1,23 +1,16 @@
 document.querySelectorAll('.read-more').forEach(btn => {
   btn.addEventListener('click', () => {
-    const ex = btn.nextElementSibling;
-    ex.classList.toggle('expanded');
-    btn.textContent = ex.classList.contains('expanded') ? 'Show Less' : 'Read More';
+    const extra = btn.nextElementSibling;
+    extra.classList.toggle('show');
+    btn.textContent = extra.classList.contains('show') ? 'Show Less' : 'Read More';
   });
 });
 
-const cards = document.querySelectorAll('.program-card');
-const wrapper = document.querySelector('.programs-wrapper');
-
-cards.forEach(card => {
+document.querySelectorAll('.prog-card').forEach(card => {
   card.addEventListener('click', () => {
-    const active = card.classList.contains('active');
-    cards.forEach(c => c.classList.remove('active'));
-    if (!active) {
-      card.classList.add('active');
-      wrapper.classList.add('active-mode');
-    } else {
-      wrapper.classList.remove('active-mode');
-    }
+    document.querySelectorAll('.prog-card.active').forEach(a => {
+      if (a !== card) a.classList.remove('active');
+    });
+    card.classList.toggle('active');
   });
 });
