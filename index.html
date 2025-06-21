@@ -7,19 +7,61 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Nav -->
   <nav class="navbar">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Programs</a></li>
-      <li><a href="#">What They Say</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">How It Works</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <!-- 필요한 섹션 추가 -->
     </ul>
   </nav>
 
-  <section class="program-section">
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-text">
+      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
+      <p>CEC English Camp, New Grammar + Story Modules Launching Soon!</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="cards-container">
+    <div class="card">
+      <div class="card-img">
+        <img src="assets/img/about.jpg" alt="CEC English Camp" />
+      </div>
+      <div class="card-text">
+        <h2>About CEC English Camp</h2>
+        <p>We provide grammar, reading, speaking, and listening in one integrated experience...</p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>
+            At CEC English Camp, students immerse themselves in storytelling adventures while enhancing their English skills. We offer role-playing, visual aids, gamified grammar, and more.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reverse">
+      <div class="card-img">
+        <img src="assets/img/about2.jpg" alt="Hidden Warehouse Files" />
+      </div>
+      <div class="card-text">
+        <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
+        <p>Our journey begins with <strong>Episode 1...</strong></p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>
+            The children uncover an old warehouse full of mysterious AI robots. This adventure kickstarts their mission to decode hidden messages and solve linguistic puzzles!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="program-section">
     <h2>Programs</h2>
     <div class="programs">
       <div class="program-card" onclick="openModal(0)">
@@ -40,7 +82,7 @@
     </div>
   </section>
 
-  <!-- Modal -->
+  <!-- Modal for Programs -->
   <div id="programModal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
