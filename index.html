@@ -7,80 +7,66 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#episode">Episode</a></li>
+      <li><a href="#programs">Programs</a></li>
+    </ul>
+  </nav>
 
-  <header>
-    <nav>
-      <img src="assets/img/logo-icon.jpg" alt="Logo" class="logo" />
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#episode">Episode</a></li>
-        <li><a href="#programs">Programs</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero" id="home">
+  <header id="home" class="hero">
     <div class="hero-text">
       <h1>WELCOME TO CEC ENGLISH CAMP</h1>
       <p>Launching Soon!</p>
     </div>
-    <div class="marquee">
-      <p>CEC English Camp — New Grammar & Story Modules Coming Soon!</p>
+    <div class="notice-glass">
+      CEC English Camp — New Grammar &amp; Story Modules Coming Soon!
     </div>
-  </section>
+  </header>
 
-  <section class="about" id="about">
-    <div class="card">
-      <img src="assets/img/about.jpg" alt="About CEC" />
-      <div class="text">
-        <h2>About CEC English Camp</h2>
-        <p>We provide grammar, reading, speaking, and listening in one integrated experience...</p>
-        <button class="read-more">Read More</button>
-        <div class="extra">
-          Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence naturally. Each module is designed to be engaging and effective.
-        </div>
+  <section id="about" class="content-card">
+    <img src="assets/img/about.jpg" alt="About CEC English Camp" />
+    <div class="text">
+      <h2>About CEC English Camp</h2>
+      <p>We provide grammar, reading, speaking, and listening in one integrated experience...</p>
+      <button class="read-more">Read More</button>
+      <div class="extra-content">
+        <p>Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence naturally. Each module is designed to be engaging and effective.</p>
       </div>
     </div>
   </section>
 
-  <section class="episode" id="episode">
-    <div class="card">
-      <img src="assets/img/about2.jpg" alt="Episode Illustration" />
-      <div class="text">
-        <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
-        <p>Our journey begins with Episode 1—a short novel that blends action, humor, and heartwarming moments...</p>
-        <button class="read-more">Read More</button>
-        <div class="extra">
-          A group of friends discovers a mysterious robot inside an old warehouse. Through teamwork and curiosity, they unlock stories full of surprises and learning moments.
-        </div>
+  <section id="episode" class="content-card reverse">
+    <img src="assets/img/about2.jpg" alt="Episode 1: The Hidden Warehouse Files" />
+    <div class="text">
+      <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
+      <p>Our journey begins with Episode 1—a short novel that blends action, humor, and heartwarming moments...</p>
+      <button class="read-more">Read More</button>
+      <div class="extra-content">
+        <p>A group of friends discovers a mysterious robot inside an old warehouse. Through teamwork and curiosity, they unlock stories full of surprises and learning moments.</p>
       </div>
     </div>
   </section>
 
-  <section class="programs" id="programs">
+  <section id="programs" class="programs-section">
     <h2>Programs</h2>
-    <div class="cards">
-      <div class="prog-card">
+    <div class="programs-list">
+      <div class="program-item" data-title="Interactive English Learning">
         <img src="assets/img/program1.jpg" alt="Interactive English Learning" />
-        <div class="prog-text">
-          <h3>Interactive English Learning</h3>
-          <p>Engaging activities that teach English through fun.</p>
-        </div>
+        <h3>Interactive English Learning</h3>
+        <p>Engaging activities that teach English through fun.</p>
       </div>
-      <div class="prog-card">
-        <img src="assets/img/program2.jpg" alt="Reading Comprehension" />
-        <div class="prog-text">
-          <h3>Reading Comprehension</h3>
-          <p>Short novels that captivate attention & reinforce grammar.</p>
-        </div>
+      <div class="program-item" data-title="Reading Comprehension Programs">
+        <img src="assets/img/program2.jpg" alt="Reading Comprehension Programs" />
+        <h3>Reading Comprehension Programs</h3>
+        <p>Short novels that captivate attention &amp; reinforce grammar.</p>
       </div>
-      <div class="prog-card">
+      <div class="program-item" data-title="English Grammar">
         <img src="assets/img/program3.jpg" alt="English Grammar" />
-        <div class="prog-text">
-          <h3>English Grammar</h3>
-          <p>Clear & fun structure to improve writing and speaking skills.</p>
-        </div>
+        <h3>English Grammar</h3>
+        <p>Clear &amp; fun structure to improve writing and speaking skills.</p>
       </div>
     </div>
   </section>
