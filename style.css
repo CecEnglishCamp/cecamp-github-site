@@ -71,13 +71,15 @@ body {
   font-size: 3em;
   margin-bottom: 1rem;
 }
-
+/* 흘러가는 글씨(애니메이션) */
 .notice-glass {
-  margin-top: 1rem;
   overflow: hidden;
   white-space: nowrap;
-  position: relative;
-  height: 30px;
+}
+.notice-glass span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
 }
 
 .notice-glass span {
