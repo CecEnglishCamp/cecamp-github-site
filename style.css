@@ -55,7 +55,7 @@ body {
 }
 /유리글찌/
 .notice-glass {
-  margin-top: 120px;  <----쥬동
+  margin-top: 40px;  <----쥬동
   height: 40px;
   width: 100%;
   max-width: 700px;
@@ -70,9 +70,10 @@ body {
 .scrolling-text {
   white-space: nowrap;
   display: inline-block;
-  animation: scroll-left 15s linear infinite;
+  animation: scroll-left 12s linear infinite;
   color: white;
   font-size: 1em;
+  padding-right: 10px;
 }
 @keyframes scroll-left {
   0% { transform: translateX(100%); }
