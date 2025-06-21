@@ -58,7 +58,8 @@ body {
   height: 40px;
   width: 100%;
   max-width: 700px;
-  background: rgba(0,0,0,0.5);
+  background: transparent;
+  color: white;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
