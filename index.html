@@ -7,21 +7,50 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#episode">Episode</a></li>
+        <li><a href="#programs">Programs</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Hero Section with Glass Effect -->
-  <section class="hero">
-    <video autoplay muted loop class="hero-bg">
-      <source src="assets/robo.mp4.mp4" type="video/mp4" />
-    </video>
+  <!-- 🔹 YouTube Background Video -->
+  <div class="hero-video-background">
+    <iframe
+      src="https://www.youtube.com/embed/3meaSAB1Z6s?autoplay=1&mute=1&loop=1&playlist=3meaSAB1Z6s&controls=0&modestbranding=1&showinfo=0"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-    <div class="glass-overlay">
-      <div class="scrolling-text">
-        Welcome to CEC English Camp — Learn. Play. Create. &nbsp;&nbsp;•&nbsp;&nbsp;
-        🎬 Episode 1: Hidden Warehouse Files Now Available! &nbsp;&nbsp;•&nbsp;&nbsp;
-        ✨ Programs launching soon!
-      </div>
+  <!-- 🔹 Glass Panel with Scrolling Text -->
+  <section class="glass-panel">
+    <div class="scrolling-text">
+      <p> Welcome to CEC English Camp – Where Imagination Takes Off! | About Our Program | Episode 1 – The Hidden Warehouse Files | Explore, Learn, Imagine 🌟</p>
     </div>
   </section>
 
+  <!-- 🔹 About Section -->
+  <section id="about" class="content-section">
+    <h2>About CEC English Camp</h2>
+    <p>We provide grammar, reading, speaking, and listening in one integrated experience...</p>
+  </section>
+
+  <!-- 🔹 Episode Section -->
+  <section id="episode" class="content-section">
+    <h2>Episode 1: The Hidden Warehouse Files</h2>
+    <p>A group of friends discovers a mysterious robot inside an old warehouse. Through teamwork and curiosity, they uncover secrets!</p>
+  </section>
+
+  <!-- 🔹 Programs Section -->
+  <section id="programs" class="content-section">
+    <h2>Programs</h2>
+    <p>Engaging activities that teach English through fun.</p>
+  </section>
 </body>
 </html>
