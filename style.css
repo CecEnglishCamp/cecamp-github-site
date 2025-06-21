@@ -41,14 +41,30 @@ body {
   align-items: center;
 }
 
+/* ... 기본 스타일 동일, 아래는 변경된 부분만 ... */
+
 .hero-text {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem 3rem;
+  border-radius: 12px;
   text-align: center;
   color: white;
   max-width: 90%;
-  transform: translateY(100px);
+  transform: translateY(180px); /* 👈 원래 위치로 복원 */
+}
+
+/* Read More 컨텐츠 - 유동적으로 확장 */
+.extra-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, padding 0.4s ease;
+  padding: 0;
+}
+.extra-content.expanded {
+  max-height: 1000px; /* 충분한 확장 허용 */
+  padding-top: 1rem;
+}
+
 }
 
 .hero-text h1 {
