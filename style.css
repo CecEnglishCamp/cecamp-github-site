@@ -1,142 +1,148 @@
-/* style.css 전체 */
-* {
-  box-sizing: border-box;
+/* Reset and base styles */
+body {
   margin: 0;
-  padding: 0;
-}
-
-body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #0b0b0b;
+  color: #fff;
+  overflow-x: hidden;
 }
 
-/* 네비게이션 */
+/* Navigation */
 nav {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  gap: 40px;
+  padding: 1rem 0;
+  background-color: white;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 100;
 }
 
 nav a {
   text-decoration: none;
-  color: #000;
-  font-weight: bold;
+  color: black;
+  font-weight: 600;
 }
 
-/* HERO SECTION with glass effect */
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
-  height: 90vh;
-  background: url('assets/img/hero-banner.jpg') center/cover no-repeat;
+  height: 100vh;
+  background-image: url('assets/img/cec-hero.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   overflow: hidden;
 }
 
-/* 로봇 PNG 이미지 */
-.hero .robot {
+/* Robot image */
+.robot {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  width: 140px;
-  pointer-events: none;
-  image-rendering: crisp-edges;
+  width: 80px;
+  height: auto;
 }
 
-/* 유리 느낌 투명 박스 */
-.hero .glass-screen {
+/* Glass banner text (ticker) */
+.glass-screen {
   position: absolute;
-  top: 50px;
-  left: 0;
+  bottom: 30px;
   width: 100%;
-  padding: 20px 40px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px) saturate(160%);
-  -webkit-backdrop-filter: blur(10px) saturate(160%);
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 600;
-  white-space: nowrap;
   overflow: hidden;
+  height: 3.5rem;
+  z-index: 20;
+  pointer-events: none;
 }
 
-/* 흰 글씨가 오른쪽에서 왼쪽으로 흘러가도록 */
-.hero .glass-screen span {
+.glass-screen span {
   display: inline-block;
+  white-space: nowrap;
   padding-left: 100%;
-  animation: slide-text 15s linear infinite;
+  animation: slide-left 15s linear infinite;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-@keyframes slide-text {
-  0% {
+/* Scrolling text animation */
+@keyframes slide-left {
+  from {
     transform: translateX(0%);
   }
-  100% {
+  to {
     transform: translateX(-100%);
   }
 }
 
-/* Content section */
+/* Content Sections */
 .content-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 4rem 10%;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-.content-section h2 {
-  margin-bottom: 20px;
+h2 {
   font-size: 2rem;
-  color: #111;
+  margin-bottom: 1rem;
 }
 
-/* 카드 레이아웃 */
 .card {
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  margin-bottom: 30px;
+  gap: 1rem;
 }
 
 .card img {
   width: 100%;
+  max-width: 400px;
   height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.card .text {
-  padding: 20px;
+.text {
+  font-size: 1.1rem;
 }
 
-/* 버튼 */
-button.toggle-btn {
-  background-color: #0088cc;
+.more {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.toggle-btn {
+  background-color: #444;
   color: white;
   border: none;
-  padding: 10px 16px;
-  font-size: 0.95rem;
-  border-radius: 8px;
-  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: 600;
 }
 
-button.toggle-btn:hover {
-  background-color: #005f8a;
+.toggle-btn:hover {
+  background-color: #222;
 }
 
-/* Show more */
-p.more {
-  display: none;
-  margin-top: 10px;
-  color: #444;
+/* Responsive */
+@media (max-width: 768px) {
+  .glass-screen span {
+    font-size: 1.2rem;
+  }
+
+  .robot {
+    width: 60px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
