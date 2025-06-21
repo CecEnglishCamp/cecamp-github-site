@@ -1,39 +1,32 @@
-// 'Read More' 확장/축소
-document.querySelectorAll('.read-more').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const extra = btn.nextElementSibling;
-    extra.classList.toggle('expanded');
-    btn.textContent = extra.classList.contains('expanded') ? 'Close' : 'Read More';
+// About - Read More 기능
+document.querySelectorAll('.read-more').forEach(button => {
+  button.addEventListener('click', () => {
+    const extra = button.nextElementSibling;
+    const isExpanded = extra.classList.toggle('expanded');
+    button.textContent = isExpanded ? 'Show Less' : 'Read More';
+    if (isExpanded) {
+      extra.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   });
 });
 
-// Programs 모달 동작
-const programData = [
-  {
-    img: 'assets/img/program1.jpg',
-    title: 'Interactive English Learning',
-    desc: 'Engaging activities that teach English through fun. My child looks forward to each session.'
-  },
-  {
-    img: 'assets/img/program2.jpg',
-    title: 'Reading Comprehension Programs',
-    desc: 'The engaging short novels that captivate attention & reinforce grammar.'
-  },
-  {
-    img: 'assets/img/program3.jpg',
-    title: 'English Grammar',
-    desc: 'English Grammar helps kids communicate clearly, improving writing and speaking skills.'
-  }
-];
-
-function openModal(index) {
-  const modal = document.getElementById('programModal');
-  document.getElementById('modalImg').src = programData[index].img;
-  document.getElementById('modalTitle').innerText = programData[index].title;
-  document.getElementById('modalText').innerText = programData[index].desc;
-  modal.style.display = 'block';
-}
-
-function closeModal() {
-  document.getElementById('programModal').style.display = 'none';
-}
+// Programs 카드 클릭 → 모달처럼 확대
+document.querySelectorAll('.program-card').forEach(card => {
+  card.addEventListener('click', () => {
+    if (card.classList.contains('active')) {
+      card.classList.remove('active');
+      const closeBtn = card.querySelector('.close-btn');
+      if (closeBtn) closeBtn.remove();
+      return;
+    }
+    card.classList.add('active');
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = 'Close';
+    closeBtn.className = 'close-btn';
+    closeBtn.onclick = () => {
+      card.classList.remove('active');
+      closeBtn.remove();
+    };
+    card.appendChild(closeBtn);
+  });
+});
