@@ -193,3 +193,12 @@ body {
 .program-card.active img {
   height: auto;
 }
+.extra-content {
+  display: none;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.show {
+  display: block;
+}
