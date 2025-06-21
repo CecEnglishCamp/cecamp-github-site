@@ -146,17 +146,20 @@
     </div>
   </section>
 
-</script>
-
-  <script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('.read-more-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const target = btn.nextElementSibling;
+      const targetId = btn.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if (!target) return;
+
       const isVisible = target.style.display === 'block';
       target.style.display = isVisible ? 'none' : 'block';
       btn.textContent = isVisible ? 'Read More' : 'Read Less';
     });
   });
+});
 </script>
 </body>
 </html>
