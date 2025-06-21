@@ -1,94 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#testimonials">What They Say</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- Nav -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#testimonials">What They Say</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-text">
+      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
+      <div class="notice-glass">
+        <div class="scrolling-text">WELCOME TO CEC English Camp, New Grammar + Story Modules Launching Soon!</div>
+      </div>
+    </div>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-box">
-      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
-      <p>WELCOME TO CEC English Camp · New Grammar + Story Modules Launching Soon!</p>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <div class="content-card">
-      <img src="about.jpg" alt="About CEC" />
-      <div>
+  <!-- About Section -->
+  <section id="about" class="cards-container">
+    <div class="card">
+      <div class="card-img">
+        <img src="assets/img/about.jpg" alt="Robo and Me" />
+      </div>
+      <div class="card-text">
         <h2>About CEC English Camp</h2>
-        <p class="short-text">We provide grammar, reading, speaking, and listening in one integrated experience…</p>
-        <button class="read-more">Show More</button>
-        <p class="extra-text">
-          CEC English Camp offers a unique, joy-centered learning journey for children. We believe that language learning should be meaningful, connected to real life, and filled with positive emotional experiences. That’s why our curriculum is designed around short novels, interactive AI tasks, and everyday communication themes.
-          <br /><br />
-          Our multi-level system (CEFR A1–B2) ensures that each learner starts at their own level and progresses steadily. Weekly programs include thematic vocabulary, listening stories, drama-based role play, grammar coaching, writing prompts, and daily speaking practice with chatbot companions. We support our students through every stage of development with warm, human-centered guidance.
-        </p>
+        <p>We provide grammar, reading, speaking, and listening in one integrated experience…</p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence naturally.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card reverse">
+      <div class="card-img">
+        <img src="assets/img/about2.jpg" alt="Robo and Jump" />
+      </div>
+      <div class="card-text">
+        <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
+        <p>Our journey begins with <strong>Episode 1...</strong></p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>A short novel that blends action, humor, and heartwarming moments…</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="programs" class="section">
+  <!-- Programs Section -->
+  <section id="programs" class="programs-section">
     <h2>Programs</h2>
-    <div class="card-container">
-      <div class="card">
-        <img src="program1.jpg" alt="Interactive English Learning" />
-        <h3>Interactive English Learning</h3>
-        <p>
-          Engaging activities that teach English through fun games, role plays, and creative interaction. Students learn naturally by doing and speaking.
-        </p>
+    <div class="programs-container">
+      <div class="program-card" data-title="Interactive English Learning">
+        <img src="assets/img/program1.jpg" alt="Program 1" />
+        <div class="prog-text">
+          <h3>Interactive English Learning</h3>
+          <p>Engaging activities that teach English through fun. My child looks forward to each session.</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="program2.jpg" alt="Reading Comprehension Programs" />
-        <h3>Reading Comprehension Programs</h3>
-        <p>
-          Short serialized novels help students build vocabulary and understanding, while emotionally engaging plots make reading enjoyable. Includes guided reading, character role-play, and vocabulary extension tasks.
-        </p>
+      <div class="program-card" data-title="Reading Comprehension Programs">
+        <img src="assets/img/program2.jpg" alt="Program 2" />
+        <div class="prog-text">
+          <h3>Reading Comprehension Programs</h3>
+          <p>Short novels that captivate attention and reinforce grammar naturally.</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="program3.jpg" alt="English Grammar" />
-        <h3>English Grammar</h3>
-        <p>
-          Grammar taught in context. Clear explanations, fun visuals, and immediate practice help students internalize rules with confidence. Includes weekly review quizzes and sentence-building games.
-        </p>
+      <div class="program-card" data-title="English Grammar">
+        <img src="assets/img/program3.jpg" alt="Program 3" />
+        <div class="prog-text">
+          <h3>English Grammar</h3>
+          <p>Clear and fun structure to improve writing and speaking skills.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="story" class="section">
-    <div class="content-card">
-      <div>
-        <h2>Title: Robo, Jump & Me/ Season 1, Episode 1: The Hidden Warehouse Files</h2>
-        <p class="short-text">Our journey begins with <strong>Episode 1…</strong></p>
-        <button class="read-more">Show More</button>
-        <p class="extra-text">
-          A short novel that blends action, humor, and heartwarming moments. In a dusty warehouse, a girl discovers a forgotten robot that changes her life. Each story helps children improve their English while experiencing wonder, empathy, and excitement.
-          <br /><br />
-          This episode introduces Miso, a curious girl who accidentally activates an old AI robot named Robo. Together, they uncover a past filled with secrets—and begin their English learning adventure. This episode includes an illustrated e-book, listening MP3, role-play practice, and writing journal prompts.
-        </p>
-      </div>
-      <img src="robo.jpg" alt="Robo Story" />
-    </div>
-  </section>
+  <script src="script.js"></script>
 </body>
-
 </html>
