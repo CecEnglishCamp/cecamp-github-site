@@ -19,6 +19,7 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 0;
+  margin: 0;
 }
 
 .navbar a {
@@ -26,92 +27,71 @@ body {
   color: #333;
   font-weight: 600;
 }
-
 .navbar a:hover {
   color: #007acc;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   background: url("assets/img/hero-banner.jpg") center/cover no-repeat;
   height: 95vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-/* ... 기본 스타일 동일, 아래는 변경된 부분만 ... */
 
 .hero-text {
   background: rgba(0, 0, 0, 0.6);
   padding: 2rem 3rem;
   border-radius: 12px;
-  text-align: center;
   color: white;
   max-width: 90%;
-  transform: translateY(220px); /* 👈 원래 위치로 복원 */
-}
-
-/* Read More 컨텐츠 - 유동적으로 확장 */
-.extra-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.6s ease, padding 0.4s ease;
-  padding: 0;
-}
-.extra-content.expanded {
-  max-height: 1000px; /* 충분한 확장 허용 */
-  padding-top: 1rem;
-}
-
+  text-align: center;
+  transform: translateY(180px);
 }
 
 .hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 1rem;
+  font-size: 2.8em;
+  font-family: 'Georgia', serif;
+  margin-bottom: 10px;
 }
-/* 흘러가는 글씨(애니메이션) */
-.notice-glass {
-  overflow: hidden;
+
+.scroll-text {
+  font-size: 1.1em;
   white-space: nowrap;
-}
-.notice-glass span {
+  overflow: hidden;
   display: inline-block;
-  padding-left: 100%;
   animation: scroll-left 15s linear infinite;
 }
+
 @keyframes scroll-left {
-  0% { transform: translateX(0); }
+  0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
 
-/* About 이미지 보이게 유지 */
-.card-img img {
-  display: block;
-  width: 280px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
+/* About Section */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .card,
 .card.reverse {
   display: flex;
+  align-items: center;
   gap: 2rem;
   background: #fff;
   border-radius: 12px;
   padding: 1.5rem;
-  align-items: flex-start;
 }
 
 .card-img img {
-  display: block;
   width: 280px;
   height: auto;
+  border-radius: 8px;
   object-fit: cover;
-}
-
 }
 
 .card.reverse {
@@ -134,24 +114,13 @@ body {
 .extra-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.6s ease, padding 0.4s ease;
+  padding: 0;
 }
 
 .extra-content.expanded {
-  max-height: 500px;
-}
-
-.card.expanded {
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  max-height: 80vh;
-  overflow-y: auto;
-  z-index: 1000;
-  background: white;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  max-height: 1000px;
+  padding-top: 1rem;
 }
 
 @media (max-width: 800px) {
@@ -180,20 +149,50 @@ body {
   overflow: hidden;
   cursor: pointer;
   width: 30%;
-  min-width: 250px;
+  min-width: 260px;
   transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .program-card img {
   width: 100%;
+  height: 180px;
+  object-fit: cover;
   display: block;
 }
 
-.program-card .prog-text {
+.prog-text {
   padding: 1rem;
 }
 
 .program-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.program-card.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  max-width: 600px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background: white;
+}
+
+.program-card.active img {
+  height: auto;
+}
+
+.program-card .close-btn {
+  display: block;
+  margin: 10px auto 0;
+  background: transparent;
+  border: 1px solid #444;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }
