@@ -73,8 +73,8 @@ body {
   animation: scroll-left 12s linear infinite;
   color: white;
   font-size: 1em;
-  padding-right: 10px;
-}
+  padding-right: 100px;
+ }
 @keyframes scroll-left {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
