@@ -110,10 +110,12 @@ body {
 }
 
 .card-img img {
+  display: block;
   width: 280px;
-  height: 280px;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
+}
+
 }
 
 .card.reverse {
