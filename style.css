@@ -35,9 +35,9 @@ body {
   background: url("assets/img/hero-banner.jpg") center/cover no-repeat;
   height: 95vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 80px;
 }
 .hero-text {
   background: rgba(0,0,0,0.5);
@@ -52,18 +52,11 @@ body {
   margin-bottom: 10px;
   font-family: 'Georgia', serif;
 }
-.hero-text p {
-  font-size: 1.2em;
-}
-.notice-glass {
-  margin-top: 30px;
-  padding: 15px 20px;
-  background: rgba(50,50,50,0.5);
-  color: white;
-  font-size: 1.1em;
-  border-radius: 15px;
+.scroll-text {
+  margin-top: 1rem;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 1.1em;
   animation: scroll-left 15s linear infinite;
 }
 @keyframes scroll-left {
