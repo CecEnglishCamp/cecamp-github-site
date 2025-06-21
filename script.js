@@ -1,3 +1,13 @@
+// 'Read More' 확장/축소
+document.querySelectorAll('.read-more').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const extra = btn.nextElementSibling;
+    extra.classList.toggle('expanded');
+    btn.textContent = extra.classList.contains('expanded') ? 'Close' : 'Read More';
+  });
+});
+
+// Programs 모달 동작
 const programData = [
   {
     img: 'assets/img/program1.jpg',
