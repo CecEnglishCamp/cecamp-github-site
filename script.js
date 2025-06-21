@@ -1,4 +1,4 @@
-// About - Read More 기능
+// Read More 기능
 document.querySelectorAll('.read-more').forEach(button => {
   button.addEventListener('click', () => {
     const extra = button.nextElementSibling;
@@ -10,23 +10,22 @@ document.querySelectorAll('.read-more').forEach(button => {
   });
 });
 
-// Programs 카드 클릭 → 모달처럼 확대
+// Program 카드 클릭 시 확대 / 닫기
 document.querySelectorAll('.program-card').forEach(card => {
   card.addEventListener('click', () => {
-    if (card.classList.contains('active')) {
-      card.classList.remove('active');
-      const closeBtn = card.querySelector('.close-btn');
-      if (closeBtn) closeBtn.remove();
-      return;
-    }
+    if (card.classList.contains('active')) return;
+
     card.classList.add('active');
-    const closeBtn = document.createElement('button');
-    closeBtn.textContent = 'Close';
-    closeBtn.className = 'close-btn';
-    closeBtn.onclick = () => {
-      card.classList.remove('active');
-      closeBtn.remove();
-    };
-    card.appendChild(closeBtn);
+
+    if (!card.querySelector('.close-btn')) {
+      const closeBtn = document.createElement('button');
+      closeBtn.textContent = 'Close';
+      closeBtn.className = 'close-btn';
+      closeBtn.onclick = () => {
+        card.classList.remove('active');
+        closeBtn.remove();
+      };
+      card.appendChild(closeBtn);
+    }
   });
 });
