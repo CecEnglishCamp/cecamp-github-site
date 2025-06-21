@@ -1,19 +1,20 @@
-// Read more 토글
-document.querySelectorAll('.read-more').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const extra = btn.nextElementSibling;
-    extra.classList.toggle('expanded');
-    btn.textContent = extra.classList.contains('expanded') ? 'Show Less' : 'Read More';
-  });
-});
+const messages = [
+  "🤖 EP02: Hidden Warehouse Files — Coming Soon!",
+  "🔥 Flash Sale: Season 1 All Access!",
+  "📝 New Grammar Module Available Now!",
+];
 
-// Programs 클릭 → 단독 보기 / 닫기
-document.querySelectorAll('.program-item').forEach(item => {
-  item.addEventListener('click', () => {
-    const isActive = item.classList.toggle('active');
-    document.body.style.overflow = isActive ? 'hidden' : '';
-    document.querySelectorAll('.program-item').forEach(sib => {
-      if (sib !== item) sib.style.display = isActive ? 'none' : '';
-    });
-  });
-});
+let idx = 0;
+const msgEl = document.getElementById('message-line');
+
+function showNextMessage() {
+  msgEl.style.opacity = 0;
+  setTimeout(() => {
+    msgEl.textContent = messages[idx];
+    msgEl.style.opacity = 1;
+    idx = (idx + 1) % messages.length;
+  }, 1000);
+}
+
+setInterval(showNextMessage, 4000);
+showNextMessage();
