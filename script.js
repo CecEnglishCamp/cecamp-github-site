@@ -1,31 +1,15 @@
-// Read More 기능
-document.querySelectorAll('.read-more').forEach(button => {
-  button.addEventListener('click', () => {
-    const extra = button.nextElementSibling;
-    const isExpanded = extra.classList.toggle('expanded');
-    button.textContent = isExpanded ? 'Show Less' : 'Read More';
-    if (isExpanded) {
-      extra.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+// Read More 토글
+document.querySelectorAll('.read-more').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const txt = btn.previousElementSibling;
+    txt.style.maxHeight = txt.style.maxHeight === 'none' ? '100px' : 'none';
+    btn.textContent = txt.style.maxHeight === 'none' ? 'Show Less' : 'Read More';
   });
 });
 
-// Program 카드 클릭 시 확대 / 닫기
+// 프로그램 카드 클릭 → 확대 / 축소
 document.querySelectorAll('.program-card').forEach(card => {
   card.addEventListener('click', () => {
-    if (card.classList.contains('active')) return;
-
-    card.classList.add('active');
-
-    if (!card.querySelector('.close-btn')) {
-      const closeBtn = document.createElement('button');
-      closeBtn.textContent = 'Close';
-      closeBtn.className = 'close-btn';
-      closeBtn.onclick = () => {
-        card.classList.remove('active');
-        closeBtn.remove();
-      };
-      card.appendChild(closeBtn);
-    }
+    card.classList.toggle('active');
   });
 });
