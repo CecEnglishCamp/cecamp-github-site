@@ -1,94 +1,102 @@
+/* Reset & Global */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif; background: #f8f8f8; color: #111;
 }
 
+/* Navbar */
 .navbar {
-  background: white;
-  padding: 1rem;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+  background: #fff; border-bottom: 1px solid #ddd;
+  position: sticky; top: 0; z-index: 100;
 }
-
 .navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: flex; justify-content: center; gap: 2rem; padding: 1rem;
 }
-
 .navbar a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+  text-decoration: none; color: #333; font-weight: 600;
 }
 
-.program-section {
-  padding: 2rem;
+/* Hero */
+.hero {
+  background: url("assets/img/hero-banner.jpg") center/cover no-repeat;
+  height: 90vh; display: flex; justify-content: center; align-items: center;
+}
+.hero-text {
+  background: rgba(0, 0, 0, 0.5); padding: 2rem 3rem;
+  border-radius: 12px; color: #fff; text-align: center;
+  transform: translateY(100px); /* 아래로 위치 조정 */
+  animation: dropIn 0.7s ease-out forwards;
+}
+.hero-text h1 { font-size: 3em; margin-bottom: 10px; }
+@keyframes dropIn {
+  from { opacity: 0; transform: translateY(200px); }
+  to { opacity: 1; transform: translateY(100px);}
 }
 
-.programs {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
+/* About Cards */
+.cards-container {
+  display: flex; flex-direction: column; gap: 2rem; padding: 2rem;
 }
-
-.program-card {
-  background: #f4f4f4;
-  border-radius: 12px;
-  padding: 1rem;
-  width: 30%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.card, .card.reverse {
+  display: flex; align-items: center; background: #fff;
+  border-radius: 12px; overflow: hidden; padding: 1.5rem;
+}
+.card-img img {
+  width: 280px; height: auto; border-radius: 8px;
+  flex-shrink: 0;
+}
+.card.reverse { flex-direction: row-reverse; }
+.card-text { flex: 1; padding: 0 1rem; }
+.read-more {
+  margin: 1rem 0; padding: .5rem 1rem;
+  border: 1px solid #333; background: none; border-radius: 4px;
   cursor: pointer;
+}
+.extra-content {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+.extra-content.expanded {
+  max-height: 500px; padding-top: 1rem;
+}
+
+/* Programs Section */
+.program-section { padding: 2rem; background: #fff; }
+.programs {
+  display: flex; justify-content: space-around;
+  flex-wrap: wrap; gap: 1.5rem;
+}
+.program-card {
+  width: 30%; background: #f0f0f0;
+  border-radius: 10px; overflow: hidden;
+  padding: 1rem; cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
-
-.program-card:hover {
-  transform: scale(1.03);
-}
-
+.program-card:hover { transform: translateY(-8px); }
 .program-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  width: 100%; height: auto;
+  border-radius: 8px; display: block;
 }
 
-/* Modal Style */
+/* Modal */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  display: none; position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6); z-index: 200;
 }
-
 .modal-content {
-  background-color: white;
-  margin: 5% auto;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 900px;
+  background: #fff; margin: 5% auto;
+  padding: 2rem; width: 80%; max-width: 900px;
+  border-radius: 10px; position: relative;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-
 .modal-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  width: 100%; height: auto; border-radius: 8px;
 }
-
 .close {
-  position: absolute;
-  top: 30px;
-  right: 50px;
-  font-size: 2rem;
-  color: #333;
+  position: absolute; top: 15px; right: 25px;
+  font-size: 2rem; color: #333;
   cursor: pointer;
 }
