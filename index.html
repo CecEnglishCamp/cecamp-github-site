@@ -89,7 +89,78 @@
       </div>
     </div>
   </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEC English Camp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">What They Say</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
+      <p>CEC ENGLISH CAMP Launching Soon!</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="card">
+      <img src="https://via.placeholder.com/200x200" alt="Robot buddies" />
+      <div>
+        <h2>About CEC English Camp</h2>
+        <p>We provide grammar, reading, speaking, and listening in one integrated experience...</p>
+        <button class="read-more-btn" data-target="about">Read More</button>
+        <div class="extra-text" id="about">
+          <p>At CEC English Camp, students immerse themselves in storytelling adventures while enhancing their English skills. We offer role-playing, visual aids, gamified grammar, and more.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reverse">
+      <div>
+        <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
+        <p>Our journey begins with <strong>Episode 1...</strong></p>
+        <button class="read-more-btn" data-target="episode1">Read More</button>
+        <div class="extra-text" id="episode1">
+          <p>The children uncover an old warehouse full of mysterious AI robots. This adventure kickstarts their mission to decode hidden messages and solve linguistic puzzles!</p>
+        </div>
+      </div>
+      <img src="https://via.placeholder.com/200x300" alt="Robot episode art" />
+    </div>
+  </section>
 
   <script src="script.js"></script>
+</body>
+</html>
+
+  <script src="script.js"></script>
+  <script>
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.nextElementSibling;
+      const isVisible = target.style.display === 'block';
+      target.style.display = isVisible ? 'none' : 'block';
+      btn.textContent = isVisible ? 'Read More' : 'Read Less';
+    });
+  });
+</script>
+
 </body>
 </html>
