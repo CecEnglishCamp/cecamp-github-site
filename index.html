@@ -2,101 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Nav -->
   <nav class="navbar">
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#testimonials">What They Say</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Programs</a></li>
+      <li><a href="#">What They Say</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">How It Works</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero -->
-  <header id="home" class="hero">
-    <div class="hero-text">
-      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
-      <p class="scroll-text">WELCOME TO CEC English Camp, New Grammar + Story Modules Launching Soon!</p>
-    </div>
-  </header>
-
-  <!-- About -->
-  <section id="about" class="cards-container">
-    <!-- About #1 -->
-    <div class="card">
-      <div class="card-img"><img src="assets/img/about.jpg" alt="Robot buddies"></div>
-      <div class="card-text">
-        <h2>About CEC English Camp</h2>
-        <p>We provide grammar, reading, speaking, and listening in one integrated experience…</p>
-        <button class="read-more">Read More</button>
-        <div class="extra-content">
-          <p>At CEC English Camp, students immerse themselves in storytelling adventures while enhancing their English skills. We offer role-playing, visual aids, gamified grammar, and more.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- About #2 -->
-    <div class="card reverse">
-      <div class="card-img"><img src="assets/img/about2.jpg" alt="Warehouse Robots"></div>
-      <div class="card-text">
-        <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
-        <p>Our journey begins with <strong>Episode 1…</strong></p>
-        <button class="read-more">Read More</button>
-        <div class="extra-content">
-          <p>As the children sneak into the warehouse, they discover a robot who holds the secret to their future missions. The story unfolds with puzzles, teamwork, and language challenges designed to inspire English learning through adventure.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Programs -->
-  <section id="programs" class="programs-section">
+  <section class="program-section">
     <h2>Programs</h2>
-    <div class="programs-container">
-      <!-- 4 프로그램 카드 -->
-      <div class="program-card" data-title="Interactive English Learning">
-        <img src="assets/img/prog1.jpg" alt="Interactive English learning">
-        <div class="prog-text">
-          <h3>Interactive English Learning</h3>
-          <p>Engaging activities that teach English through fun. My child looks forward to each session.</p>
-        </div>
+    <div class="programs">
+      <div class="program-card" onclick="openModal(0)">
+        <img src="assets/img/program1.jpg" alt="Interactive English learning" />
+        <h3>Interactive English Learning</h3>
+        <p>Engaging activities that teach English through fun. My child looks forward to each session.</p>
       </div>
-
-      <div class="program-card" data-title="Reading Comprehension Programs">
-        <img src="assets/img/prog2.jpg" alt="Reading comprehension programs">
-        <div class="prog-text">
-          <h3>Reading Comprehension Programs</h3>
-          <p>The engaging short novels that captivate attention & reinforce grammar.</p>
-        </div>
+      <div class="program-card" onclick="openModal(1)">
+        <img src="assets/img/program2.jpg" alt="Reading comprehension programs" />
+        <h3>Reading Comprehension Programs</h3>
+        <p>The engaging short novels that captivate attention & reinforce grammar.</p>
       </div>
-
-      <div class="program-card" data-title="English Grammar">
-        <img src="assets/img/prog3.jpg" alt="English grammar">
-        <div class="prog-text">
-          <h3>English Grammar</h3>
-          <p>English Grammar helps kids communicate clearly, improving writing and speaking skills.</p>
-        </div>
-      </div>
-
-      <div class="program-card" data-title="Custom One-on-One">
-        <img src="assets/img/prog4.jpg" alt="Custom one-on-one">
-        <div class="prog-text">
-          <h3>Custom One‑on‑One</h3>
-          <p>Tailored private sessions to meet each child's specific needs and pace.</p>
-        </div>
+      <div class="program-card" onclick="openModal(2)">
+        <img src="assets/img/program3.jpg" alt="English grammar" />
+        <h3>English Grammar</h3>
+        <p>English Grammar helps kids communicate clearly, improving writing and speaking skills.</p>
       </div>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <!-- Modal -->
+  <div id="programModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
