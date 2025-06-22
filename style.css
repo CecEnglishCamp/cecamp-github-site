@@ -83,3 +83,33 @@ body, html {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1 1 300px;
+}
+
+.about-text h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.about-text p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
