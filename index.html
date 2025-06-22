@@ -8,48 +8,38 @@
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#episode">Episode</a></li>
-      <li><a href="#programs">Programs</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#episode">Episode</a></li>
+        <li><a href="#programs">Programs</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <div class="hero-video" id="home">
+  <!-- Hero Video Section -->
+  <section id="home" class="hero-section">
     <video autoplay muted loop playsinline>
       <source src="assets/video/robo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
     </video>
-    <div class="glass-banner">
-      <p>Welcome to CEC English Camp! New Episodes Out Now! </p>
+    <div class="glass-overlay">
+      <div class="scrolling-text">📢 Welcome to CEC English Camp! New Episodes Out Now! 📢</div>
     </div>
-  </div>
+  </section>
 
   <!-- About Section -->
   <section id="about">
-    <div class="about">
-      <img src="assets/images/about1.jpg" alt="About" />
-      <div>
-        <h2>About CEC</h2>
-        <p>
-          We provide grammar, reading, speaking, and listening in one integrated experience.
-        </p>
-      </div>
-    </div>
+    <h2>About CEC</h2>
+    <p>We provide grammar, reading, speaking, and listening in one integrated experience.</p>
   </section>
 
   <!-- Episode Section -->
   <section id="episode">
-    <div class="episode">
-      <div class="episode-text">
-        <h2>Season 1, Episode 1</h2>
-        <p>"The Hidden Warehouse" introduces our robot hero in action!</p>
-      </div>
-      <img src="assets/images/episode1.jpg" alt="Episode Preview" />
-    </div>
+    <h2>Season 1, Episode 1</h2>
+    <p>"The Hidden Warehouse" introduces our robot hero in action!</p>
+    <img src="assets/img/program1.jpg" alt="Episode" />
   </section>
 
   <!-- Programs Section -->
@@ -57,13 +47,12 @@
     <h2>Programs</h2>
     <ul>
       <li>🌟 Grammar Games</li>
-      <li>📚 Story Listening</li>
+      <li>📘 Story Listening</li>
       <li>🎙️ Speaking Missions</li>
       <li>🧠 Vocabulary Boost</li>
     </ul>
   </section>
-<!-- 마지막에 추가 -->
-<script src="script.js"></script>
 
+  <script src="script.js"></script>
 </body>
 </html>
