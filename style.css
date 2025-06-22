@@ -1,4 +1,4 @@
-/* 기본 설정 */
+/* Reset & base */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -6,114 +6,91 @@ body {
   color: #111;
 }
 
-/* 내비게이션 */
-nav {
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
+/* Navigation */
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding: 1rem;
+  background: #fff;
   margin: 0;
-  padding: 0;
-  gap: 40px;
+}
+
+nav ul li {
+  margin: 0 1rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 16px;
-  transition: color 0.3s;
+  color: #111;
+  font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: #0077cc;
-}
-
-/* 비디오 배경 */
-.hero-video {
+/* Hero section */
+.hero-section {
   position: relative;
+  height: 100vh;
   overflow: hidden;
 }
 
-.hero-video video {
-  width: 100%;
-  max-height: 80vh;
+.hero-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
   object-fit: cover;
-  display: block;
+  z-index: 1;
 }
 
-/* 유리 텍스트 영역 */
-.glass-banner {
+.glass-overlay {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 15px 0;
-  background: rgba(0, 0, 0, 0.3); /* 좀 더 연하게 조정 */
-  backdrop-filter: blur(8px);
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.4); /* Slight glassy look */
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  z-index: 2;
+  backdrop-filter: blur(6px);
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Section styles */
+section {
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-.glass-banner p {
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-}
-
-/* 콘텐츠 섹션 */
-section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* About 섹션 */
-.about {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.about img {
-  width: 220px;
-  height: auto;
-  border-radius: 12px;
-}
-
-/* 에피소드 섹션 */
-.episode {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.episode img {
-  width: 300px;
+section img {
+  max-width: 250px;
   border-radius: 10px;
 }
 
-.episode-text {
-  max-width: 600px;
+/* Program list */
+#programs ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* 반응형 */
-@media (max-width: 768px) {
-  .about, .episode {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .episode img {
-    width: 100%;
-  }
+#programs li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
