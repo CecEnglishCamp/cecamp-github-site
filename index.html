@@ -2,62 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
+  <nav>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#episode">Episode</a></li>
       <li><a href="#programs">Programs</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section with MP4 Background -->
-  <header id="home" class="hero">
-    <video autoplay muted loop playsinline class="hero-video">
-      <source src="assets/videos/robo.mp4" type="video/mp4" />
+  <!-- Hero Section -->
+  <div class="hero-video" id="home">
+    <video autoplay muted loop playsinline>
+      <source src="assets/video/robo.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    <div class="glass-overlay">
-      <p class="scroll-text">📢 Welcome to CEC English Camp! New Episodes Out Now! 📢</p>
+    <div class="glass-banner">
+      <p>Welcome to CEC English Camp! New Episodes Out Now! </p>
     </div>
-  </header>
+  </div>
 
   <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="card">
-      <div class="card-img">
-        <img src="assets/images/about.jpg" alt="About" />
-      </div>
-      <div class="card-text">
+  <section id="about">
+    <div class="about">
+      <img src="assets/images/about1.jpg" alt="About" />
+      <div>
         <h2>About CEC</h2>
-        <p>We provide grammar, reading, speaking, and listening in one integrated experience.</p>
+        <p>
+          We provide grammar, reading, speaking, and listening in one integrated experience.
+        </p>
       </div>
     </div>
+  </section>
 
-    <!-- Episode Section with MP4 -->
-    <div class="card reverse">
-      <video autoplay muted loop playsinline class="episode-video">
-        <source src="assets/videos/dancing.mp4" type="video/mp4" />
-      </video>
-      <div class="card-text">
+  <!-- Episode Section -->
+  <section id="episode">
+    <div class="episode">
+      <div class="episode-text">
         <h2>Season 1, Episode 1</h2>
         <p>"The Hidden Warehouse" introduces our robot hero in action!</p>
       </div>
+      <img src="assets/images/episode1.jpg" alt="Episode Preview" />
     </div>
   </section>
 
-  <!-- Programs Placeholder -->
-  <section id="programs" class="programs-section">
+  <!-- Programs Section -->
+  <section id="programs">
     <h2>Programs</h2>
-    <!-- Program cards would go here -->
+    <ul>
+      <li>🌟 Grammar Games</li>
+      <li>📚 Story Listening</li>
+      <li>🎙️ Speaking Missions</li>
+      <li>🧠 Vocabulary Boost</li>
+    </ul>
   </section>
 
-  <script src="script.js"></script>
 </body>
 </html>
