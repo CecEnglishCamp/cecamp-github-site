@@ -1,96 +1,87 @@
-/* Reset & base */
+/* Reset + Base */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
-  color: #111;
+  color: #222;
 }
 
-/* Navigation */
-nav ul {
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  padding: 1em 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  list-style: none;
-  padding: 1rem;
-  background: #fff;
+  gap: 2rem;
   margin: 0;
+  padding: 0;
 }
 
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
+.navbar a {
   text-decoration: none;
-  color: #111;
+  color: #222;
   font-weight: bold;
 }
 
-/* Hero section */
+/* Hero Section */
 .hero-section {
   position: relative;
-  height: 100vh;
   overflow: hidden;
 }
 
 .hero-section video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  max-height: 600px;
   object-fit: cover;
-  z-index: 1;
+  display: block;
 }
 
 .glass-overlay {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.4); /* Slight glassy look */
-  padding: 0.8rem 1.5rem;
-  border-radius: 20px;
-  z-index: 2;
-  backdrop-filter: blur(6px);
+  bottom: 2rem;
+  width: 100%;
+  text-align: center;
 }
 
 .scrolling-text {
-  white-space: nowrap;
-  animation: scroll-left 20s linear infinite;
-  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  display: inline-block;
+  border-radius: 20px;
   font-size: 1.2rem;
-  color: #fff;
+  font-weight: bold;
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* Section styles */
-section {
+/* Sections */
+.content-section {
   padding: 4rem 2rem;
   text-align: center;
 }
 
-section img {
-  max-width: 250px;
-  border-radius: 10px;
+.content-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-/* Program list */
-#programs ul {
+.content-section p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.content-section ul {
   list-style: none;
   padding: 0;
-}
-
-#programs li {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 2;
 }
