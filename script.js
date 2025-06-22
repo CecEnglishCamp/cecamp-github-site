@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const video = document.getElementById('episodeVideo');
-  let isExpanded = false;
+  const links = document.querySelectorAll('.navbar a');
+  const sections = document.querySelectorAll('.full-section');
 
-  video.addEventListener('click', () => {
-    if (!isExpanded) {
-      isExpanded = true;
-      video.pause();
-      video.removeAttribute('loop');
-      video.setAttribute('controls', 'true');
-      video.style.width = '90%';
-      video.style.maxWidth = '800px';
-      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+
+      // Hide all full sections
+      sections.forEach(sec => sec.classList.add('hidden'));
+
+      // Show target section
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.classList.remove('hidden');
+      }
+    });
   });
 });
