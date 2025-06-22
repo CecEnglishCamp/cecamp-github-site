@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const epi = document.getElementById('episodeVideo');
+  const video = document.getElementById('episodeVideo');
   let isExpanded = false;
 
-  epi.addEventListener('click', () => {
+  video.addEventListener('click', () => {
     if (!isExpanded) {
       isExpanded = true;
-      epi.pause(); // 자동 재생 멈춤
-      epi.removeAttribute('loop');
-      epi.setAttribute('controls', 'true');
-      epi.style.width = '90%';
-      epi.style.maxWidth = '800px';
-      epi.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      video.pause();
+      video.removeAttribute('loop');
+      video.setAttribute('controls', 'true');
+      video.style.width = '90%';
+      video.style.maxWidth = '800px';
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   });
 });
