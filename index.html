@@ -4,13 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
   <header>
-    <nav class="navbar">
-      <ul>
+    <nav>
+      <ul class="navbar">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#episode">Episode</a></li>
@@ -19,42 +18,38 @@
     </nav>
   </header>
 
-  <!-- Hero Video Section -->
+  <!-- 메인 비디오 영역 -->
   <section id="home" class="hero-section">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline class="background-video">
       <source src="assets/videos/robo.mp4" type="video/mp4" />
     </video>
-    <div class="scrolling-text">Welcome to CEC English Camp! New Episodes Out Now! </div>
+    <div class="scrolling-text">Welcome to CEC English Camp! New Episodes Out Now!</div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="content-section">
+  <!-- About -->
+  <section id="about" class="section">
     <h2>About CEC</h2>
     <p>We provide grammar, reading, speaking, and listening in one integrated experience.</p>
   </section>
 
-  <!-- Episode Section -->
-  <section id="episode" class="content-section">
+  <!-- Episode -->
+  <section id="episode" class="section">
     <h2>Season 1, Episode 1</h2>
     <p>"The Hidden Warehouse" introduces our robot hero in action!</p>
-    <div class="episode-video-wrapper">
-      <video id="episodeVideo" autoplay muted loop playsinline>
-        <source src="assets/videos/dancing.mp4" type="video/mp4" />
-      </video>
-    </div>
+    <video class="episode-video" autoplay muted loop playsinline>
+      <source src="assets/videos/dancing.mp4" type="video/mp4"/>
+    </video>
   </section>
 
-  <!-- Programs Section -->
-  <section id="programs" class="content-section">
+  <!-- Programs -->
+  <section id="programs" class="section">
     <h2>Programs</h2>
     <ul>
       <li>🌟 Grammar Games</li>
       <li>📘 Story Listening</li>
-      <li>🗣 Speaking Missions</li>
+      <li>🎤 Speaking Missions</li>
       <li>🧠 Vocabulary Boost</li>
     </ul>
   </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
