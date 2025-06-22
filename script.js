@@ -1,6 +1,4 @@
-// 🔁 스크롤 애니메이션은 CSS에서 자동 실행
-
-// 📌 섹션 이동
+// 섹션 전환
 document.querySelectorAll('.navbar a').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
@@ -10,16 +8,17 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
-// 📌 모달 팝업
+// 모달 팝업 작동
 const modal = document.getElementById("programModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalDescription = document.getElementById("modalDescription");
 
-document.querySelectorAll('.program-card .read-more').forEach((btn, index) => {
+document.querySelectorAll('.program-card .read-more').forEach(btn => {
   btn.addEventListener('click', e => {
     e.preventDefault();
-    modalTitle.textContent = btn.parentElement.querySelector('h3').textContent;
-    modalDescription.textContent = btn.previousElementSibling.textContent;
+    const card = btn.closest('.program-card');
+    modalTitle.textContent = card.querySelector('h3').textContent;
+    modalDescription.textContent = card.querySelector('p').textContent;
     modal.style.display = "block";
   });
 });
