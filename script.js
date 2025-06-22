@@ -1,14 +1,16 @@
-// Scroll to top on nav click
-document.querySelectorAll("nav a").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = this.getAttribute("href");
-    const target = document.querySelector(href);
-    if (target) {
-      window.scrollTo({
-        top: target.offsetTop - 60,
-        behavior: "smooth",
-      });
+document.addEventListener('DOMContentLoaded', () => {
+  const epi = document.getElementById('episodeVideo');
+  let isExpanded = false;
+
+  epi.addEventListener('click', () => {
+    if (!isExpanded) {
+      isExpanded = true;
+      epi.pause(); // 자동 재생 멈춤
+      epi.removeAttribute('loop');
+      epi.setAttribute('controls', 'true');
+      epi.style.width = '90%';
+      epi.style.maxWidth = '800px';
+      epi.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   });
 });
