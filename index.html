@@ -15,12 +15,17 @@
     <a href="#programs">Programs</a>
   </nav>
 
-  <section id="home" class="section home-section">
-    <video src="videos/robot-intro.mp4" autoplay muted loop></video>
-    <div class="scrolling-text">Welcome to CEC English Camp! New Episodes Out Now!</div>
-  </section>
+  <!-- 기존 섹션에 class="full-section" 추가 -->
+<section id="home" class="section home-section full-section">
+  <video autoplay muted loop playsinline>
+    <source src="assets/video/robo.mp4" type="video/mp4" />
+  </video>
+  <div class="glass-overlay">
+    <div class="scrolling-text">💬 Welcome to CEC English Camp! New Episodes Out Now! 💬</div>
+  </div>
+</section>
 
-  <section id="about" class="section full-section hidden">
+    <section id="about" class="section full-section hidden">
     <div class="content-container">
       <h2>About CEC</h2>
       <p>
