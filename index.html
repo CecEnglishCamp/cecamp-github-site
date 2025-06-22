@@ -4,52 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#episode">Episode</a></li>
-        <li><a href="#programs">Programs</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- 메인 비디오 영역 -->
-  <section id="home" class="hero-section">
-    <video autoplay muted loop playsinline class="background-video">
-      <source src="assets/videos/robo.mp4" type="video/mp4" />
-    </video>
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#episode">Episode</a>
+    <a href="#programs">Programs</a>
+  </nav>
+
+  <section id="home" class="section home-section">
+    <video src="videos/robot-intro.mp4" autoplay muted loop></video>
     <div class="scrolling-text">Welcome to CEC English Camp! New Episodes Out Now!</div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About CEC</h2>
-    <p>We provide grammar, reading, speaking, and listening in one integrated experience.</p>
+  <section id="about" class="section full-section hidden">
+    <div class="content-container">
+      <h2>About CEC</h2>
+      <p>
+        CEC is a fully integrated English learning program offering grammar, reading, speaking, and listening practice through immersive storytelling and interactive tasks. Our robot hero leads the way in a journey of adventure and education.
+      </p>
+    </div>
   </section>
 
-  <!-- Episode -->
-  <section id="episode" class="section">
-    <h2>Season 1, Episode 1</h2>
-    <p>"The Hidden Warehouse" introduces our robot hero in action!</p>
-    <video class="episode-video" autoplay muted loop playsinline>
-      <source src="assets/videos/dancing.mp4" type="video/mp4"/>
-    </video>
+  <section id="episode" class="section full-section hidden">
+    <div class="content-container episode-layout">
+      <div class="episode-media">
+        <img src="images/robot1.jpg" alt="Episode 1 Image" />
+      </div>
+      <div class="episode-text">
+        <h2>Season 1, Episode 1</h2>
+        <p>
+          “The Hidden Warehouse” introduces our brave little robot in an abandoned tech facility, where the mystery unfolds. In this episode, our hero discovers a clue that leads to the core mission of the English Camp journey.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <!-- Programs -->
-  <section id="programs" class="section">
-    <h2>Programs</h2>
-    <ul>
-      <li>🌟 Grammar Games</li>
-      <li>📘 Story Listening</li>
-      <li>🎤 Speaking Missions</li>
-      <li>🧠 Vocabulary Boost</li>
-    </ul>
+  <section id="programs" class="section full-section hidden">
+    <div class="content-container program-grid">
+      <div class="program-box">
+        <h3>🌟 Grammar Games</h3>
+        <p>Interactive grammar challenges with our robot instructor!</p>
+      </div>
+      <div class="program-box">
+        <h3>📘 Story Listening</h3>
+        <p>Listen to thrilling chapters and practice comprehension.</p>
+      </div>
+      <div class="program-box">
+        <h3>🎤 Speaking Missions</h3>
+        <p>Speak out loud and complete voice-based tasks!</p>
+      </div>
+      <div class="program-box">
+        <h3>🧠 Vocabulary Boost</h3>
+        <p>Power up your words with daily vocab flash missions.</p>
+      </div>
+    </div>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
