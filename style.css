@@ -1,174 +1,49 @@
-/* 기본 세팅 */
-body {
+/* style.css */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f8f8f8;
-  color: #111;
+  padding: 0;
 }
 
-/* 네비게이션 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .navbar {
+  background: white;
+  border-bottom: 1px solid #ccc;
   position: sticky;
   top: 0;
-  background: white;
+  z-index: 999;
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-  z-index: 100;
 }
+
 .navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 0;
+  gap: 40px;
 }
+
 .navbar a {
   text-decoration: none;
   color: #333;
-  font-weight: 600;
-}
-.navbar a:hover {
-  color: #007acc;
+  font-weight: bold;
 }
 
-/* Hero */
-.hero {
-  background: url("assets/img/hero-banner.jpg") center/cover no-repeat;
-  height: 95vh;
+.section {
+  min-height: 100vh;
+  padding: 60px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.hero-text {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  color: white;
-  border-radius: 12px;
-  max-width: 90%;
+  justify-content: center;
+  font-size: 2rem;
   text-align: center;
-}
-.hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  font-family: 'Georgia', serif;
-}
-.notice-glass {
-  margin-top: 20px;
-  height: 40px;
-  width: 100%;
-  max-width: 700px;
-  background: rgba(0,0,0,0.5);
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-}
-.scrolling-text {
-  white-space: nowrap;
-  display: inline-block;
-  animation: scroll-left 15s linear infinite;
-  color: white;
-  font-size: 1em;
-}
-@keyframes scroll-left {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* About */
-.cards-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-}
-.card,
-.card.reverse {
-  display: flex;
-  gap: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-}
-.card-img img {
-  width: 280px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-.card.reverse { flex-direction: row-reverse; }
-.card-text { flex: 1; }
-.read-more {
-  margin-top: 1rem;
-  background: none;
-  border: 1px solid #333;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.extra-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-.extra-content.expanded {
-  max-height: 300px;
-}
-@media (max-width: 800px) {
-  .card, .card.reverse { flex-direction: column; }
-}
-
-/* Programs */
-.programs-section {
-  padding: 2rem;
-  background: #fff;
-}
-.programs-container {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-}
-.program-card {
-  background: #f0f0f0;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  width: 30%;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.program-card img {
-  width: 100%;
-  display: block;
-}
-.program-card .prog-text {
-  padding: 1rem;
-}
-.program-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-.program-card.active {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 90vw;
-  max-width: 600px;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  background: white;
-}
-.program-card.active img {
-  height: auto;
-}
-.close-btn {
-  display: block;
-  width: 100%;
-  padding: 0.6rem;
-  margin-top: 1rem;
-  background: #eee;
-  border: none;
-  cursor: pointer;
-  border-top: 1px solid #ccc;
 }
