@@ -1,26 +1,117 @@
-/* Reset & 기본 스냅 */
-html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
-body { margin: 0; font-family: sans-serif; }
-.page-section { height: 100vh; scroll-snap-align: start; padding: 2rem; box-sizing: border-box; }
-
-/* 네비 */
-nav { position: fixed; top: 0; width: 100%; background: #111; z-index: 100; }
-nav ul { display: flex; list-style: none; margin: 0; padding: 1rem; }
-nav li { margin-right: 1rem; }
-nav a { color: #fff; text-decoration: none; }
-
-/* 플레이스홀더 */
-.media-placeholder { height: 300px; background: #ddd; display: flex; align-items: center; justify-content: center; margin: 1rem 0; }
-
-/* 카드 / 컨테이너 */
-.card-container, .steps-container, .testimonial-container {
-  display: flex; gap: 1rem; flex-wrap: wrap;
-}
-.card, .step, .testimonial {
-  background: #eee; padding: 1rem; flex: 1; min-width: 220px; text-align: center;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background-color: #fff;
 }
 
-/* 모달 */
-.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); }
-.modal-content { background: #fff; padding: 2rem; width: 80%; max-width: 500px; margin: 5rem auto; position: relative; }
-.close { position: absolute; top: 1rem; right: 1rem; cursor: pointer; }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 5rem 2rem;
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.faq {
+  padding: 4rem 2rem;
+}
+
+.faq-item {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.learn-more {
+  display: block;
+  margin-top: 0.5rem;
+  color: #333;
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+.modal .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cta {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+footer {
+  background: #0f1c11;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
