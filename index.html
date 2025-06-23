@@ -1,91 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="navbar">
+    <img src="assets/img/logo-icon.jpg" alt="CEC Logo" class="logo">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#episodes">Episodes</a>
+      <a href="#programs">Programs</a>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <video class="bg-video" autoplay muted loop>
-      <source src="assets/videos/robo.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-    <div class="glass-overlay">
-      <h1>Welcome to CEC English Camp!</h1>
-      <div class="scrolling-text">
-        <span>✨ New Episodes Out Now! | 📚 Learn with Fun! | 🧠 Boost Vocabulary | 🎯 Grammar Games 🚀</span>
+  <section id="home" class="section">
+    <div class="hero-section">
+      <video class="bg-video" autoplay muted loop>
+        <source src="assets/videos/robo.mp4" type="video/mp4" />
+      </video>
+      <div class="glass-overlay">
+        <h1>🚀 Welcome to CEC English Camp!</h1>
+        <div class="scrolling-text">
+          <span>✨ New Episodes Out Now! | 📚 Learn with Fun! | 🧠 Boost Vocabulary | 🎯 Grammar Games 🚀</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="section hidden">
     <div class="about-container">
-      <img src="assets/img/about.jpg" alt="About Image" class="about-image">
+      <img src="assets/img/about.jpg" alt="About CEC" class="about-image">
       <div class="about-text">
         <h2>About CEC English Camp</h2>
-        <p>CEC is a fully integrated English learning program—grammar, reading, speaking, listening—all wrapped in immersive storytelling. Our charming robo-tutors guide students through each step.</p>
+        <p>CEC is a fully integrated English learning program—grammar, reading, speaking, listening—all wrapped in immersive storytelling. ...</p>
       </div>
     </div>
   </section>
 
-  <!-- Episodes Section -->
-  <section id="episodes" class="section">
-    <h2>📼 Featured Episodes</h2>
-    <div class="episodes-grid">
-      <div class="episode-card">
-        <img src="assets/img/episode1.jpg" alt="Episode 1">
-        <h3>Episode 1: Robo’s First Day</h3>
+  <section id="episodes" class="section hidden">
+    <div class="episode-content">
+      <video class="episode-video" src="assets/videos/robo.mp4" controls></video>
+      <div class="episode-text">
+        <h2>Episode 1: Robo’s First Day</h2>
         <p>Join Robo on his first adventure to school!</p>
       </div>
-      <div class="episode-card">
-        <img src="assets/img/episode2.jpg" alt="Episode 2">
-        <h3>Episode 2: The Grammar Quest</h3>
-        <p>Explore verbs and nouns on a magical journey!</p>
-      </div>
-      <div class="episode-card">
-        <img src="assets/img/episode3.jpg" alt="Episode 3">
-        <h3>Episode 3: Robo and the Reading Race</h3>
-        <p>Can Robo finish the story before bedtime?</p>
-      </div>
     </div>
   </section>
 
-  <!-- Programs Section -->
-  <section id="programs" class="section">
-    <h2>🌟 Featured Programs</h2>
-    <div class="programs-grid">
-      <div class="program-card">
-        <img src="assets/img/program1.jpg" alt="Program 1">
-        <h3>Grammar Galaxy</h3>
-        <p>Explore grammar through fun space adventures!</p>
-        <button class="read-more">Read More</button>
-      </div>
-      <div class="program-card">
-        <img src="assets/img/program2.jpg" alt="Program 2">
-        <h3>Speaking Safari</h3>
-        <p>Roam the jungle while building speaking skills.</p>
-        <button class="read-more">Read More</button>
-      </div>
-      <div class="program-card">
-        <img src="assets/img/program3.jpg" alt="Program 3">
-        <h3>Reading Rocket</h3>
-        <p>Blast off into amazing reading missions!</p>
-        <button class="read-more">Read More</button>
-      </div>
+  <section id="programs" class="section hidden">
+    <h2>Featured Programs</h2>
+    <div class="program-card">
+      <img src="assets/img/program1.jpg" alt="Program 1">
+      <h3>Grammar Galaxy</h3>
+      <p>Explore grammar through fun space adventures!</p>
+      <button class="read-more">Read More</button>
+    </div>
+    <div class="program-card">
+      <img src="assets/img/program2.jpg" alt="Program 2">
+      <h3>Speaking Safari</h3>
+      <p>Roam the jungle while building speaking skills.</p>
+      <button class="read-more">Read More</button>
+    </div>
+    <div class="program-card">
+      <img src="assets/img/program3.jpg" alt="Program 3">
+      <h3>Reading Rocket</h3>
+      <p>Blast off into amazing reading missions!</p>
+      <button class="read-more">Read More</button>
     </div>
   </section>
 
-  <!-- Modal -->
-  <div id="programModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <h2 id="modalTitle">Modal Title</h2>
-      <p id="modalDescription">Modal description will appear here.</p>
+  <div id="progFullscreen" class="fullscreen-program hidden">
+    <button class="close-full">×</button>
+    <div class="program-content">
+      <img id="progImgFull" src="" alt="Program Full">
+      <div class="program-text">
+        <h2 id="progTitleFull"></h2>
+        <p id="progDescFull"></p>
+      </div>
     </div>
   </div>
 
