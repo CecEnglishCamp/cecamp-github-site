@@ -2,87 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Website Structure Test</title>
+  <title>Section Layouts</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      scroll-behavior: smooth;
-      font-family: Arial, sans-serif;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 15px 0;
-      text-align: center;
-      z-index: 999;
-    }
-    nav a {
-      color: white;
-      margin: 0 20px;
-      font-size: 18px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+
+    .section {
+      display: flex;
       height: 100vh;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .section.reverse { flex-direction: row-reverse; }
+
+    .image-box {
+      flex: 1;
+      background-color: #ccc;
+      height: 80%;
+      margin: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
-      font-size: 2em;
+      font-size: 24px;
+      color: #333;
     }
-    #home { background-color: #333; }
-    #about { background-color: #00796B; }
-    #episode { background-color: #388E3C; }
-    #programs { background-color: #F57C00; }
-    #testimonials { background-color: #5D4037; }
-    #pricing { background-color: #1976D2; }
-    #how { background-color: #455A64; }
-    #blog { background-color: #C2185B; }
-    #contact { background-color: #7B1FA2; }
-    footer {
-      background-color: #212121;
-      color: white;
-      text-align: center;
-      padding: 30px 10px;
+
+    .text-box {
+      flex: 1;
+      background-color: #fff;
+      height: 80%;
+      margin: 20px;
+      padding: 40px;
+      font-size: 18px;
+      line-height: 1.6;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
+    .programs {
+      padding: 50px;
+      background-color: #eee;
+    }
+
+    .card {
+      background-color: white;
+      margin: 30px auto;
+      max-width: 800px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      font-size: 20px;
+    }
+
   </style>
 </head>
 <body>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#episode">Episode</a>
-    <a href="#programs">Programs</a>
-    <a href="#testimonials">What They Say</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#how">How It Works</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- About Section -->
+  <div class="section" id="about">
+    <div class="image-box">ABOUT IMAGE</div>
+    <div class="text-box">
+      <h2>About Section</h2>
+      <p>This is a placeholder for About content. Text will expand vertically if needed.</p>
+    </div>
+  </div>
 
-  <section id="home">HOME SECTION</section>
-  <section id="about">ABOUT SECTION</section>
-  <section id="episode">EPISODE SECTION</section>
-  <section id="programs">PROGRAMS SECTION</section>
-  <section id="testimonials">WHAT THEY SAY</section>
-  <section id="pricing">PRICING SECTION</section>
-  <section id="how">HOW IT WORKS</section>
-  <section id="blog">BLOG SECTION</section>
-  <section id="contact">CONTACT SECTION</section>
+  <!-- Episode Section -->
+  <div class="section reverse" id="episode">
+    <div class="image-box">EPISODE IMAGE</div>
+    <div class="text-box">
+      <h2>Episode Section</h2>
+      <p>This is a placeholder for Episode content. Left is video or image, right is story text.</p>
+    </div>
+  </div>
 
-  <footer>
-    Schedule Appointment | Intake Form | FAQ | Resources | Privacy
-  </footer>
+  <!-- Programs Section -->
+  <div class="programs" id="programs">
+    <div class="card">Program Card 1</div>
+    <div class="card">Program Card 2</div>
+    <div class="card">Program Card 3</div>
+  </div>
 
 </body>
 </html>
