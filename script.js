@@ -1,24 +1,16 @@
-function toggleChatbot() {
-  const chatbot = document.getElementById('chatbot');
-  chatbot.style.display = chatbot.style.display === 'block' ? 'none' : 'block';
-}
+// 프로그램 모달 열기/닫기
+const modal = document.getElementById("program-modal");
+const openBtns = document.querySelectorAll("#programs .card button");
+const closeBtn = document.querySelector(".modal .close");
 
-function sendMessage() {
-  const input = document.getElementById('user-input');
-  const message = input.value.trim();
-  if (!message) return;
-
-  const chatBox = document.getElementById('chat-messages');
-  const userMsg = document.createElement('div');
-  userMsg.textContent = "You: " + message;
-  chatBox.appendChild(userMsg);
-
-  // Placeholder AI reply
-  const botMsg = document.createElement('div');
-  botMsg.textContent = "🤖 Gromi Bot: Thank you for your message!";
-  chatBox.appendChild(botMsg);
-
-  input.value = '';
-  chatBox.scrollTop = chatBox.scrollHeight;
-}
-
+openBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+});
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+window.addEventListener("click", event => {
+  if (event.target === modal) modal.style.display = "none";
+});
