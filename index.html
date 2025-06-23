@@ -1,98 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CC English Camp</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Multi‑Section SPA</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Programs</a></li>
-        <li><a href="#testimonials">What They Say</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#howitworks">How It Works</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><button onclick="showSection('home')">Home</button></li>
+        <li><button onclick="showSection('about')">About</button></li>
+        <li><button onclick="showSection('episode')">Episode</button></li>
+        <li><button onclick="showSection('programs')">Programs</button></li>
       </ul>
     </nav>
   </header>
 
-  <section id="hero">
-    <video autoplay muted loop class="background-video">
-      <source src="assets/video/robo.mp4" type="video/mp4" />
-    </video>
-    <div class="glass-screen">
-      <p class="scrolling-text">Welcome to CC English Camp</p>
-    </div>
-  </section>
+  <main>
+    <section id="home" class="page active">
+      <h1>HOME SECTION</h1>
+    </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <div class="about-content">
-      <img src="assets/images/about-placeholder.jpg" alt="About Image" />
-      <p>Lorem ipsum text about the camp.</p>
-    </div>
-  </section>
+    <section id="about" class="page">
+      <h1>ABOUT SECTION</h1>
+    </section>
 
-  <section id="services">
-    <h2>Programs</h2>
-    <div class="card-grid">
-      <!-- 3개 카드 -->
-    </div>
-  </section>
+    <section id="episode" class="page">
+      <h1>EPISODE SECTION</h1>
+    </section>
 
-  <section id="testimonials">
-    <h2>What They Say</h2>
-    <div class="card-grid">
-      <!-- 후기 카드 -->
-    </div>
-  </section>
+    <section id="programs" class="page">
+      <h1>PROGRAMS SECTION</h1>
+    </section>
+  </main>
 
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <div class="card-grid">
-      <!-- 요금 카드 -->
-    </div>
-  </section>
-
-  <section id="howitworks">
-    <h2>How It Works</h2>
-    <div class="card-grid">
-      <!-- 4개 카드 + Read More -->
-    </div>
-  </section>
-
-  <section id="blog">
-    <h2>Blog</h2>
-    <div class="card-grid">
-      <!-- 최신 글 카드 -->
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="buttons">
-      <button onclick="openModal('appointment')">Schedule Appointment</button>
-      <button onclick="openModal('intake')">Complete Intake</button>
-      <button onclick="openModal('faq')">FAQ</button>
-      <button onclick="openModal('resources')">Resources</button>
-      <button onclick="openModal('privacy')">Privacy Policy</button>
-    </div>
-  </section>
-
-  <!-- Modal Placeholder -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal()">&times;</span>
-      <div id="modal-body">Content goes here...</div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
