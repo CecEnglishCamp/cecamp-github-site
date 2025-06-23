@@ -1,43 +1,117 @@
-const faqData = [
-  {
-    title: "What age group is CecEnglishCamp designed for?",
-    content: "CecEnglishCamp is designed for children aged 7 to 14. Our engaging curriculum captivates young learners and nurtures their interest in the English language. We focus on fostering a love for reading and writing while enhancing grammar skills through careful instruction and immersive content."
-  },
-  {
-    title: "How does CecEnglishCamp integrate novels into learning?",
-    content: "At CecEnglishCamp, we believe storytelling is a powerful tool. We use carefully chosen novels to engage students, helping them learn grammar in context while inspiring imagination and critical thinking through discussion and activities."
-  },
-  {
-    title: "What can parents expect from the camp experience?",
-    content: "Parents can expect a nurturing environment that enhances their child's English communication. We balance fun and learning with group activities, writing exercises, and discussions that strengthen language skills and social confidence."
-  }
-];
-
-let currentIndex = 0;
-
-function openModal(index) {
-  currentIndex = index;
-  updateModal();
-  document.getElementById('faqModal').style.display = 'flex';
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background-color: #fff;
 }
 
-function closeModal() {
-  document.getElementById('faqModal').style.display = 'none';
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-function updateModal() {
-  const modalText = document.getElementById('modalText');
-  const modalIndex = document.getElementById('modalIndex');
-  modalText.innerHTML = `<h2>${faqData[currentIndex].title}</h2><p>${faqData[currentIndex].content}</p>`;
-  modalIndex.textContent = `${currentIndex + 1} / ${faqData.length}`;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % faqData.length;
-  updateModal();
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + faqData.length) % faqData.length;
-  updateModal();
+.btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 5rem 2rem;
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.faq {
+  padding: 4rem 2rem;
+}
+
+.faq-item {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.learn-more {
+  display: block;
+  margin-top: 0.5rem;
+  color: #333;
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+.modal .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cta {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+footer {
+  background: #0f1c11;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
 }
