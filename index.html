@@ -1,87 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Section Layouts</title>
+  <title>Fixed Layout Template</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; }
 
-    .section {
-      display: flex;
-      height: 100vh;
-      align-items: center;
-      padding: 50px;
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
+    nav a {
+      margin-right: 25px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
     }
 
-    .section.reverse { flex-direction: row-reverse; }
-
-    .image-box {
-      flex: 1;
-      background-color: #ccc;
-      height: 80%;
-      margin: 20px;
+    section {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 24px;
-      color: #333;
+      padding: 60px 20px;
+    }
+
+    .content-box {
+      display: flex;
+      width: 1180px;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 40px;
+      margin-bottom: 40px;
+    }
+
+    .image-box {
+      width: 560px;
+      height: 420px;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: #444;
+      border-radius: 8px;
     }
 
     .text-box {
-      flex: 1;
-      background-color: #fff;
-      height: 80%;
-      margin: 20px;
-      padding: 40px;
+      width: 560px;
+      min-height: 420px;
+      padding: 30px;
       font-size: 18px;
       line-height: 1.6;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: #fff;
     }
 
-    .programs {
-      padding: 50px;
-      background-color: #eee;
+    .program-section {
+      width: 1180px;
+      margin: 0 auto 60px;
     }
 
-    .card {
-      background-color: white;
-      margin: 30px auto;
-      max-width: 800px;
+    .program-card {
+      background: #fff;
       padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.07);
       font-size: 20px;
+      transition: 0.3s ease;
+    }
+
+    .program-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      background: #222;
+      color: #eee;
     }
 
   </style>
 </head>
 <body>
 
-  <!-- About Section -->
-  <div class="section" id="about">
-    <div class="image-box">ABOUT IMAGE</div>
-    <div class="text-box">
-      <h2>About Section</h2>
-      <p>This is a placeholder for About content. Text will expand vertically if needed.</p>
-    </div>
-  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#episode">Episode</a>
+    <a href="#programs">Programs</a>
+  </nav>
 
-  <!-- Episode Section -->
-  <div class="section reverse" id="episode">
-    <div class="image-box">EPISODE IMAGE</div>
-    <div class="text-box">
-      <h2>Episode Section</h2>
-      <p>This is a placeholder for Episode content. Left is video or image, right is story text.</p>
+  <section id="about">
+    <div class="content-box">
+      <div class="image-box">ABOUT IMAGE</div>
+      <div class="text-box">
+        <h2>About</h2>
+        <p>이 곳에 About 콘텐츠가 들어갑니다. 이미지와 텍스트의 비율은 고정입니다. 텍스트가 많을 경우 박스 안에서 스크롤 되도록 설정할 수도 있습니다.</p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Programs Section -->
-  <div class="programs" id="programs">
-    <div class="card">Program Card 1</div>
-    <div class="card">Program Card 2</div>
-    <div class="card">Program Card 3</div>
-  </div>
+  <section id="episode">
+    <div class="content-box">
+      <div class="image-box">EPISODE IMAGE</div>
+      <div class="text-box">
+        <h2>Episode</h2>
+        <p>에피소드 관련 이미지와 설명이 위치합니다. 콘텐츠가 바뀌어도 전체 크기 및 정렬은 유지됩니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="program-section">
+      <div class="program-card">Program Card 1</div>
+      <div class="program-card">Program Card 2</div>
+      <div class="program-card">Program Card 3</div>
+    </div>
+  </section>
+
+  <footer>
+    ⓒ 2025 Your Company — All rights reserved.
+  </footer>
 
 </body>
 </html>
