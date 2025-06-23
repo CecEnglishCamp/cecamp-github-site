@@ -4,86 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CecEnglishCamp</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <div class="logo">🤖</div>
+  <header class="navbar">
+    <div class="logo">📚 CecEnglishCamp</div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How It Works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#" class="btn">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
-    <h1>Your questions answered</h1>
-    <p>Discover more about our camp.</p>
+    <div class="hero-content">
+      <h1>Your questions answered</h1>
+      <p>Discover more about our camp.</p>
+    </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="faq">
-    <h2>Your questions answered here!</h2>
-    <div class="faq-list">
-      <div class="faq-item" onclick="openModal(0)">
-        <h3>What age group is CecEnglishCamp designed for?</h3>
-        <p>CecEnglishCamp is designed for children aged 7 to 14...</p>
-        <span class="learn-more">Learn more</span>
+  <section class="info-section">
+    <h2>Learn more about us</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Curriculum</h3>
+        <p>Engaging novels, grammar games, and writing practice.</p>
       </div>
-      <div class="faq-item" onclick="openModal(1)">
-        <h3>How does CecEnglishCamp integrate novels into learning?</h3>
-        <p>We believe that storytelling is a powerful tool for learning...</p>
-        <span class="learn-more">Learn more</span>
+      <div class="card">
+        <h3>For Ages 7–14</h3>
+        <p>Tailored learning experiences by age group.</p>
       </div>
-      <div class="faq-item" onclick="openModal(2)">
-        <h3>What can parents expect from the camp experience?</h3>
-        <p>Parents can expect a nurturing and enriching environment...</p>
-        <span class="learn-more">Learn more</span>
+      <div class="card">
+        <h3>Creative Expression</h3>
+        <p>Develop language and imagination with fun activities.</p>
       </div>
     </div>
   </section>
 
-  <!-- Modal -->
-  <div id="faqModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">×</span>
-      <div id="modalText"></div>
-      <div class="modal-nav">
-        <button onclick="prevSlide()">‹</button>
-        <span id="modalIndex">1 / 3</span>
-        <button onclick="nextSlide()">›</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Call to Action -->
-  <section class="cta">
-    <h4>We're here to help your child succeed!</h4>
-    <a href="#" class="btn">Get In Touch</a>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <ul class="footer-links">
-      <li><a href="#">Schedule Appointment</a></li>
-      <li><a href="#">Complete Intake</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
-    <p class="credit">Web design by <a href="http://www.b12.io/" target="_blank">B12</a></p>
+    <p>© 2025 CecEnglishCamp. All rights reserved.</p>
   </footer>
-
-  <script src="faq.js"></script>
 </body>
 </html>
