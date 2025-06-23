@@ -2,173 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-    }
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      z-index: 1000;
-    }
-    nav {
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-    }
-    nav img {
-      width: 40px;
-      margin-right: 15px;
-    }
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    section {
-      padding: 100px 20px 60px;
-      scroll-margin-top: 80px;
-    }
-    #home {
-      background: url('hero.jpg') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 160px 20px;
-    }
-    #about img {
-      width: 300px;
-      border-radius: 10px;
-    }
-    .about-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-    .episode {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-    .programs {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      width: 300px;
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .card button {
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #007BFF;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <nav>
-    <img src="robot-icon.png" alt="Logo" />
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#episodes">Episodes</a>
-    <a href="#programs">Programs</a>
+  <!-- Nav -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#testimonials">What They Say</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
-</header>
 
-<section id="home">
-  <h1>🚀 Welcome to CEC English Camp!</h1>
-  <p>📺 New Episodes Out Now! | 🧠 Boost Vocabulary! | 🎯 Grammar Games! </p>
-</section>
-
-<section id="about">
-  <div class="about-container">
-    <img src="about-image.jpg" alt="About CEC" />
-    <div>
-      <h2>About CEC English Camp</h2>
-      <p>
-        CEC is a fully integrated English learning program — grammar, reading, speaking, listening — all wrapped in immersive storytelling. Our charming robo-tutors guide students through each step.
-      </p>
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-text">
+      <h1>WELCOME TO CEC ENGLISH CAMP</h1>
+      <div class="notice-glass">
+        <div class="scrolling-text">WELCOME TO CEC English Camp, New Grammar + Story Modules Launching Soon!</div>
+      </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<section id="episodes">
-  <div class="episode">
-    <video width="320" height="240" controls>
-      <source src="robo1.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <div>
-      <h2>Episode 1: Robo’s First Day</h2>
-      <p>Join Robo on his first adventure to school! Explore verbs, nouns — all through fun stories!</p>
-    </div>
-  </div>
-</section>
-
-<section id="programs">
-  <div class="programs">
+  <!-- About Section -->
+  <section id="about" class="cards-container">
     <div class="card">
-      <img src="grammar.jpg" alt="Grammar Galaxy" />
-      <h3>Grammar Galaxy</h3>
-      <p>Explore grammar through space adventures!</p>
-      <button>Read More</button>
+      <div class="card-img">
+        <img src="assets/img/about.jpg" alt="Robo and Me" />
+      </div>
+      <div class="card-text">
+        <h2>About CEC English Camp</h2>
+        <p>We provide grammar, reading, speaking, and listening in one integrated experience…</p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>Our method uses captivating visuals and exciting narratives to inspire young learners and build confidence naturally.</p>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <img src="speaking.jpg" alt="Speaking Safari" />
-      <h3>Speaking Safari</h3>
-      <p>Roam the jungle while building speaking skills.</p>
-      <button>Read More</button>
+    <div class="card reverse">
+      <div class="card-img">
+        <img src="assets/img/about2.jpg" alt="Robo and Jump" />
+      </div>
+      <div class="card-text">
+        <h2>Season 1, Episode 1: The Hidden Warehouse Files</h2>
+        <p>Our journey begins with <strong>Episode 1...</strong></p>
+        <button class="read-more">Read More</button>
+        <div class="extra-content">
+          <p>A short novel that blends action, humor, and heartwarming moments…</p>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <img src="reading.jpg" alt="Reading Rocket" />
-      <h3>Reading Rocket</h3>
-      <p>Blast off into amazing reading missions!</p>
-      <button>Read More</button>
-    </div>
-  </div>
-</section>
+  </section>
 
-<script>
-  document.querySelectorAll('nav a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-</script>
+  <!-- Programs Section -->
+  <section id="programs" class="programs-section">
+    <h2>Programs</h2>
+    <div class="programs-container">
+      <div class="program-card" data-title="Interactive English Learning">
+        <img src="assets/img/program1.jpg" alt="Program 1" />
+        <div class="prog-text">
+          <h3>Interactive English Learning</h3>
+          <p>Engaging activities that teach English through fun. My child looks forward to each session.</p>
+        </div>
+      </div>
+      <div class="program-card" data-title="Reading Comprehension Programs">
+        <img src="assets/img/program2.jpg" alt="Program 2" />
+        <div class="prog-text">
+          <h3>Reading Comprehension Programs</h3>
+          <p>Short novels that captivate attention and reinforce grammar naturally.</p>
+        </div>
+      </div>
+      <div class="program-card" data-title="English Grammar">
+        <img src="assets/img/program3.jpg" alt="Program 3" />
+        <div class="prog-text">
+          <h3>English Grammar</h3>
+          <p>Clear and fun structure to improve writing and speaking skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
