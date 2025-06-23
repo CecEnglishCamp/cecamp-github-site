@@ -7,23 +7,91 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="navbar">
+  <header>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#episode">Episode</a></li>
-        <li><a href="#programs">Programs</a></li>
+        <li><a href="#services">Programs</a></li>
+        <li><a href="#testimonials">What They Say</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#howitworks">How It Works</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Sections -->
-  <section id="home" class="section">HOME SECTION</section>
-  <section id="about" class="section">ABOUT SECTION</section>
-  <section id="episode" class="section">EPISODE SECTION</section>
-  <section id="programs" class="section">PROGRAMS SECTION</section>
+  <section id="hero">
+    <video autoplay muted loop class="background-video">
+      <source src="assets/video/robo.mp4" type="video/mp4" />
+    </video>
+    <div class="glass-screen">
+      <p class="scrolling-text">Welcome to CC English Camp</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <img src="assets/images/about-placeholder.jpg" alt="About Image" />
+      <p>Lorem ipsum text about the camp.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Programs</h2>
+    <div class="card-grid">
+      <!-- 3개 카드 -->
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What They Say</h2>
+    <div class="card-grid">
+      <!-- 후기 카드 -->
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="card-grid">
+      <!-- 요금 카드 -->
+    </div>
+  </section>
+
+  <section id="howitworks">
+    <h2>How It Works</h2>
+    <div class="card-grid">
+      <!-- 4개 카드 + Read More -->
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="card-grid">
+      <!-- 최신 글 카드 -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="buttons">
+      <button onclick="openModal('appointment')">Schedule Appointment</button>
+      <button onclick="openModal('intake')">Complete Intake</button>
+      <button onclick="openModal('faq')">FAQ</button>
+      <button onclick="openModal('resources')">Resources</button>
+      <button onclick="openModal('privacy')">Privacy Policy</button>
+    </div>
+  </section>
+
+  <!-- Modal Placeholder -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <div id="modal-body">Content goes here...</div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
