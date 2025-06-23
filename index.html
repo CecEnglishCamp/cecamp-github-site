@@ -2,37 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Full Page Scroll Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chatbot Interface</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#testimonials">What They Say</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#howitworks">How It Works</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="home"><h1>Home</h1></section>
-    <section id="about"><h1>About</h1></section>
-    <section id="programs"><h1>Programs</h1></section>
-    <section id="testimonials"><h1>What They Say</h1></section>
-    <section id="pricing"><h1>Pricing</h1></section>
-    <section id="howitworks"><h1>How It Works</h1></section>
-    <section id="blog"><h1>Blog</h1></section>
-    <section id="contact"><h1>Contact</h1></section>
-  </main>
+  <!-- Main Content (Placeholder) -->
+  <div class="main-content">
+    <h1>Welcome to Our Website</h1>
+    <p>Explore the sections and chat anytime using the button below.</p>
+  </div>
 
-  <script src="main.js"></script>
+  <!-- Chatbot Button -->
+  <button class="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+
+  <!-- Chatbot Window -->
+  <div class="chatbot-window" id="chatbot">
+    <div class="chat-header">Ask Me Anything</div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-input-area">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <!-- Footer (Contact Info) -->
+  <footer>
+    <div class="footer-content">
+      📞 +1 (123) 456-7890 | ✉️ contact@gromi.com | 🌐 www.gromi.com
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
