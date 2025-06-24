@@ -1,36 +1,39 @@
-/* 기본 설정 */
+/* 전체 초기화 */
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   height: 100%;
   overflow: hidden;
+  background: black;
 }
 
-/* 비디오 백그라운드 설정 */
+/* 비디오 배경 */
 .video-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   z-index: -1;
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #bgVideo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.4);
+  width: 60vw;  /* 비디오 크기를 60%로 축소 */
+  height: auto;
+  opacity: 0.35;
 }
 
-/* 네비게이션 메뉴 */
+/* 네비게이션 */
 .main-header {
   background-color: black;
   padding: 10px 0;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .nav ul {
@@ -51,16 +54,15 @@ body, html {
   font-size: 16px;
 }
 
-/* 메인 타이틀 */
+/* 메인 타이틀 중앙 정렬 */
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  height: 90vh;
-  padding: 0 5%;
-  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  text-align: center;
+  z-index: 5;
 }
 
 .hero h1 {
@@ -68,21 +70,7 @@ body, html {
   margin: 0;
 }
 
-.scrolling-text {
-  font-size: 1.5em;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  animation: scrollText 15s linear infinite;
+.hero p {
+  font-size: 1.4em;
   margin-top: 20px;
-}
-
-/* 부드러운 텍스트 스크롤 애니메이션 */
-@keyframes scrollText {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
 }
