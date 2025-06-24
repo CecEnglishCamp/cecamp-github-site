@@ -141,3 +141,53 @@ nav ul li a {
   font-style: italic;
   color: #aaa;
 }
+.about-section {
+  background-color: #2aa84f; /* 녹색 배경 */
+  padding: 80px 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.about-text {
+  max-width: 500px;
+  margin-left: 40px;
+  color: white;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-text h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-cta {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
