@@ -1,58 +1,85 @@
+/* 리셋 및 폰트 설정 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
 }
 
-.hero-container {
+body {
+  font-family: 'Segoe UI', 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ✅ 상단 내비게이션 */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1rem 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #00ffcc;
+  color: black;
+}
+
+/* ✅ Hero 섹션 (배경 이미지) */
+.hero-section {
   position: relative;
   height: 100vh;
-  overflow: hidden;
-}
-
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: brightness(40%);
-  z-index: 1;
+  background-image: url("assets/img/robo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px; /* 메뉴바 높이 만큼 공간 확보 */
 }
 
 .hero-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5); /* 반투명 검정 */
+  background: rgba(0, 0, 0, 0.65);
   padding: 2rem 3rem;
-  border-radius: 12px;
-  text-align: center;
-  z-index: 2;
+  border-radius: 16px;
   color: white;
+  z-index: 2;
 }
 
 .hero-title {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
-  font-weight: normal;
   margin-bottom: 0.5rem;
 }
 
