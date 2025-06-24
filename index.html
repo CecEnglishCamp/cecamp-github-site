@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
   <nav id="navbar">
     <ul>
       <li><a href="#home">Home</a></li>
@@ -21,16 +23,20 @@
     </ul>
   </nav>
 
-  <section id="home" class="section black">
-    <h1>CEC English Camp</h1>
+  <section id="home" class="hero-section">
+    <video autoplay muted loop id="hero-video">
+      <source src="videos/robo.mp4" type="video/mp4"/>
+    </video>
+    <div class="hero-overlay">
+      <h1>CEC English Camp</h1>
+      <div class="scroll-text">We build confidence through storytelling 📚🤖</div>
+    </div>
   </section>
 
   <section id="about" class="section green">
-    <div class="section-row">
-      <div class="section-img">
-        <img src="assets/img/about.jpg" alt="About"/>
-      </div>
-      <div class="section-content">
+    <div class="container split">
+      <img src="assets/img/about.jpg" alt="About Image" class="half-img"/>
+      <div class="half-text">
         <h2>About</h2>
         <p>At CecEnglishCamp, we ignite a passion for English in kids through captivating short novels…</p>
       </div>
@@ -38,93 +44,87 @@
   </section>
 
   <section id="episode" class="section purple">
-    <div class="section-row reverse">
-      <div class="section-video">
-        <video controls src="assets/robo.mp4"></video>
-      </div>
-      <div class="section-content">
+    <div class="container split reverse">
+      <video controls class="half-video">
+        <source src="videos/dancing.mp4" type="video/mp4"/>
+      </video>
+      <div class="half-text">
         <h2>Episode 1</h2>
-        <p>In Taebaek’s winter of 2025, Miso lingered before the forsaken Jangseong Elementary School…</p>
+        <p>In Taebaek's winter of 2025, Mica lingered before the forsaken Jangseong Elementary School…</p>
       </div>
     </div>
   </section>
 
   <section id="program" class="section blue">
     <h2>Our Programs</h2>
-    <div class="program-grid">
+    <div class="card-group">
       <div class="card">
         <img src="assets/img/program1.jpg" alt="Mastery Through Narrative"/>
         <h3>Mastery Through Narrative</h3>
-        <button>Read More</button>
+        <a href="#">Read More</a>
       </div>
       <div class="card">
         <img src="assets/img/program2.jpg" alt="Integrated Literacy"/>
         <h3>Integrated Literacy</h3>
-        <button>Read More</button>
+        <a href="#">Read More</a>
       </div>
       <div class="card">
         <img src="assets/img/program3.jpg" alt="Fluency & Confidence"/>
         <h3>Fluency & Confidence</h3>
-        <button>Read More</button>
+        <a href="#">Read More</a>
       </div>
     </div>
   </section>
 
   <section id="testi" class="section lightgreen">
     <h2>What Parents Say</h2>
-    <blockquote>"CecEnglishCamp has transformed my child's understanding of English..."</blockquote>
-    <blockquote>"My daughter has improved her writing and comprehension..."</blockquote>
-    <blockquote>"This camp's environment encourages kids to express confidently..."</blockquote>
+    <ul>
+      <li>"CecEnglishCamp has transformed my child's understanding of English…"</li>
+      <li>"My daughter has improved her writing and comprehension…"</li>
+      <li>"This camp's environment encourages kids to express confidently…"</li>
+    </ul>
   </section>
 
   <section id="pricing" class="section red">
     <h2>Pricing</h2>
-    <div class="program-grid">
+    <div class="card-group">
       <div class="card">
         <img src="assets/img/price1.jpg" alt="Grammar Adventures"/>
-        <h3>Grammar Adventures</h3><p>Free</p>
+        <h3>Grammar Adventures</h3>
+        <p>Free</p>
       </div>
       <div class="card">
         <img src="assets/img/price2.jpg" alt="StoryQuest Workshop"/>
-        <h3>StoryQuest Workshop</h3><p>$25/month</p>
+        <h3>StoryQuest Workshop</h3>
+        <p>$25/month</p>
       </div>
       <div class="card">
         <img src="assets/img/price3.jpg" alt="Premium Plus"/>
-        <h3>Premium Plus</h3><p>Contact us</p>
+        <h3>Premium Plus</h3>
+        <p>Contact us</p>
       </div>
     </div>
   </section>
 
   <section id="works" class="section yellow">
     <h2>How It Works</h2>
-    <div class="image-grid">
-      <img src="assets/img/how1.jpg" alt="">
-      <img src="assets/img/how2.jpg" alt="">
-      <img src="assets/img/how3.jpg" alt="">
-      <img src="assets/img/how4.jpg" alt="">
+    <div class="card-group">
+      <img src="assets/img/how1.jpg" alt="Step 1"/>
+      <img src="assets/img/how2.jpg" alt="Step 2"/>
+      <img src="assets/img/how3.jpg" alt="Step 3"/>
     </div>
   </section>
 
   <section id="blog" class="section pink">
     <h2>Our Blog</h2>
     <img src="assets/img/blog1.jpg" alt="Blog Image"/>
-    <p>Unlock the power of short novels to transform your child's grammar skills...</p>
+    <p>Unlock the power of short novels to transform your child's grammar skills…</p>
   </section>
 
-  <section id="contact" class="section crimson">
+  <section id="contact" class="section darkred">
     <h2>Contact</h2>
-    <p>Email: info@cecenglishcamp.org</p>
-    <p>Phone: +82-10-1234-5678</p>
+    <p>Email us or call to learn more and register!</p>
   </section>
 
-  <footer class="footer dark">
-    <a href="#">Schedule Appointment</a> |
-    <a href="#">Complete Intake</a> |
-    <a href="#">FAQ</a> |
-    <a href="#">Resources</a> |
-    <a href="#">Privacy Policy</a>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
