@@ -1,86 +1,91 @@
-body {
+/* Reset */
+* {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #111;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar {
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  padding: 15px 0;
-  position: fixed;
+body, html {
   width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
 }
 
-.navbar ul {
-  list-style-type: none;
+nav ul {
+  list-style: none;
   display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-.navbar li a:hover {
-  color: #ffcc00;
-}
-
-.hero-section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  overflow: hidden;
+  padding: 1rem 0;
 }
 
-.black-bg {
-  background-color: #000;
+nav ul li {
+  margin: 0 1.2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #hero-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50vw;
-  height: auto;
-  transform: translate(-50%, -50%) scale(0.6);
-  opacity: 0.3;
+  width: 120vw;
+  height: 120vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0.25;
   z-index: 0;
 }
 
-.hero-overlay {
+.hero-content {
   position: relative;
-  text-align: center;
   z-index: 1;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.hero-overlay h1 {
-  font-size: 3rem;
+.hero-content h1 {
+  font-size: 3.5rem;
   font-weight: 700;
-  color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
-.scroll-left {
-  color: white;
+.slide-text {
+  font-size: 1.5rem;
+  animation: slide-left 15s linear infinite;
   white-space: nowrap;
-  overflow: hidden;
-  font-size: 1.3rem;
-  animation: scrollText 12s linear infinite;
+  display: inline-block;
 }
 
-@keyframes scrollText {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+@keyframes slide-left {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
 }
