@@ -1,131 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#episode">Episode</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#testi">What they say</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#works">How it works</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#episode">Episode</a></li>
-        <li><a href="#program">Program</a></li>
-        <li><a href="#testimonials">What they say</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#how">How it works</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <section id="home" class="section black">
+    <h1>CEC English Camp</h1>
+  </section>
 
-  <main>
-    <section id="home" class="section black">
-      <h1>CEC English Camp</h1>
-    </section>
-
-    <section id="about" class="section green">
-      <img src="images/robot-hug.png" alt="About Image" />
-      <h2>About</h2>
-      <p>At CecEnglishCamp, we ignite a passion for English in kids through captivating short novels...</p>
-    </section>
-
-    <section id="episode" class="section purple">
-      <video controls>
-        <source src="videos/episode1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <h2>Episode 1</h2>
-      <p>In Taebaek’s winter of 2025, Miso lingered before the forsaken Jangseong Elementary School...</p>
-    </section>
-
-    <section id="program" class="section blue">
-      <h2>Our Programs</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="images/program1.png" alt="Mastery Through Narrative" />
-          <h3>Mastery Through Narrative</h3>
-          <a href="#">Read More</a>
-        </div>
-        <div class="card">
-          <img src="images/program2.png" alt="Integrated Literacy" />
-          <h3>Integrated Literacy</h3>
-          <a href="#">Read More</a>
-        </div>
-        <div class="card">
-          <img src="images/program3.png" alt="Fluency & Confidence" />
-          <h3>Fluency & Confidence</h3>
-          <a href="#">Read More</a>
-        </div>
+  <section id="about" class="section green">
+    <div class="section-row">
+      <div class="section-img">
+        <img src="assets/img/about.jpg" alt="About"/>
       </div>
-    </section>
-
-    <section id="testimonials" class="section lightgreen">
-      <h2>What Parents Say</h2>
-      <p>"CecEnglishCamp has transformed my child's understanding of English..."</p>
-      <p>"My daughter has improved her writing and comprehension..."</p>
-      <p>"This camp's environment encourages kids to express confidently..."</p>
-    </section>
-
-    <section id="pricing" class="section red">
-      <h2>Pricing</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="images/price1.png" alt="Grammar Adventures" />
-          <h3>Grammar Adventures</h3>
-          <p>Free</p>
-        </div>
-        <div class="card">
-          <img src="images/price2.png" alt="StoryQuest Workshop" />
-          <h3>StoryQuest Workshop</h3>
-          <p>$25/month</p>
-        </div>
-        <div class="card">
-          <img src="images/price3.png" alt="Premium Plus" />
-          <h3>Premium Plus</h3>
-          <p>Contact us</p>
-        </div>
+      <div class="section-content">
+        <h2>About</h2>
+        <p>At CecEnglishCamp, we ignite a passion for English in kids through captivating short novels…</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="how" class="section yellow">
-      <h2>How It Works</h2>
-      <div class="image-grid">
-        <img src="images/how1.png" />
-        <img src="images/how2.png" />
-        <img src="images/how3.png" />
-        <img src="images/how4.png" />
+  <section id="episode" class="section purple">
+    <div class="section-row reverse">
+      <div class="section-video">
+        <video controls src="assets/robo.mp4"></video>
       </div>
-    </section>
+      <div class="section-content">
+        <h2>Episode 1</h2>
+        <p>In Taebaek’s winter of 2025, Miso lingered before the forsaken Jangseong Elementary School…</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="blog" class="section pink">
-      <h2>Our Blog</h2>
-      <img src="images/blog.png" alt="Blog Image" />
-      <p>Unlock the power of short novels to transform your child's grammar skills...</p>
-    </section>
+  <section id="program" class="section blue">
+    <h2>Our Programs</h2>
+    <div class="program-grid">
+      <div class="card">
+        <img src="assets/img/program1.jpg" alt="Mastery Through Narrative"/>
+        <h3>Mastery Through Narrative</h3>
+        <button>Read More</button>
+      </div>
+      <div class="card">
+        <img src="assets/img/program2.jpg" alt="Integrated Literacy"/>
+        <h3>Integrated Literacy</h3>
+        <button>Read More</button>
+      </div>
+      <div class="card">
+        <img src="assets/img/program3.jpg" alt="Fluency & Confidence"/>
+        <h3>Fluency & Confidence</h3>
+        <button>Read More</button>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="section darkred">
-      <h2>Contact</h2>
-      <p>Email: info@cecenglishcamp.org</p>
-      <p>Phone: +82-10-1234-5678</p>
-    </section>
-  </main>
+  <section id="testi" class="section lightgreen">
+    <h2>What Parents Say</h2>
+    <blockquote>"CecEnglishCamp has transformed my child's understanding of English..."</blockquote>
+    <blockquote>"My daughter has improved her writing and comprehension..."</blockquote>
+    <blockquote>"This camp's environment encourages kids to express confidently..."</blockquote>
+  </section>
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="#">Schedule Appointment</a></li>
-        <li><a href="#">Complete Intake</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-    </nav>
+  <section id="pricing" class="section red">
+    <h2>Pricing</h2>
+    <div class="program-grid">
+      <div class="card">
+        <img src="assets/img/price1.jpg" alt="Grammar Adventures"/>
+        <h3>Grammar Adventures</h3><p>Free</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/price2.jpg" alt="StoryQuest Workshop"/>
+        <h3>StoryQuest Workshop</h3><p>$25/month</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/price3.jpg" alt="Premium Plus"/>
+        <h3>Premium Plus</h3><p>Contact us</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="section yellow">
+    <h2>How It Works</h2>
+    <div class="image-grid">
+      <img src="assets/img/how1.jpg" alt="">
+      <img src="assets/img/how2.jpg" alt="">
+      <img src="assets/img/how3.jpg" alt="">
+      <img src="assets/img/how4.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="blog" class="section pink">
+    <h2>Our Blog</h2>
+    <img src="assets/img/blog1.jpg" alt="Blog Image"/>
+    <p>Unlock the power of short novels to transform your child's grammar skills...</p>
+  </section>
+
+  <section id="contact" class="section crimson">
+    <h2>Contact</h2>
+    <p>Email: info@cecenglishcamp.org</p>
+    <p>Phone: +82-10-1234-5678</p>
+  </section>
+
+  <footer class="footer dark">
+    <a href="#">Schedule Appointment</a> |
+    <a href="#">Complete Intake</a> |
+    <a href="#">FAQ</a> |
+    <a href="#">Resources</a> |
+    <a href="#">Privacy Policy</a>
   </footer>
 
   <script src="script.js"></script>
