@@ -1,79 +1,106 @@
+/* Font and Base Styles */
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #007a65;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #00725e;
   color: white;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
 .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 0.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
-  padding: 0.5rem 2rem;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .logo {
   height: 40px;
+  margin-right: 2rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-}
-
-.about-section {
+/* Hero Section */
+.hero {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5rem 2rem;
+  min-height: 80vh;
+  background-color: #00725e;
 }
 
-.about-container {
+.hero-content {
   display: flex;
+  flex-direction: row;
   gap: 3rem;
-  max-width: 1200px;
-  width: 100%;
+  align-items: center;
+  max-width: 1000px;
+  flex-wrap: wrap;
 }
 
-.about-image img {
-  width: 320px;
-  height: auto;
-  border-radius: 10px;
+.hero-image {
+  width: 300px;
+  border-radius: 12px;
 }
 
-.about-text h4 {
-  text-transform: uppercase;
-  font-weight: 600;
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h5 {
   font-size: 0.9rem;
-  color: #cfe7dd;
+  font-weight: bold;
+  color: #b2dfdb;
   margin-bottom: 0.5rem;
 }
 
-.about-text h2 {
-  font-size: 2rem;
-  margin: 0 0 1rem;
+.hero-text h1 {
+  font-size: 2.5rem;
   font-weight: 700;
+  margin: 0 0 1rem;
+  line-height: 1.3;
 }
 
-.about-text p {
+.hero-text p {
   font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  color: #f0f0f0;
+  line-height: 1.6;
+  color: #e0f2f1;
 }
 
-.about-text a {
-  color: white;
-  font-weight: 600;
-  text-decoration: underline;
+.hero-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: white;
+  color: #00725e;
+  border-radius: 5px;
+  font-weight: bold;
 }
