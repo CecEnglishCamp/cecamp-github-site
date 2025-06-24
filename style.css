@@ -1,71 +1,23 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.navbar {
-  background-color: rgba(0, 80, 90, 0.4); /* 유리처럼 살짝 푸른 빛 */
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  backdrop-filter: blur(6px);
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 30px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.hero-section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.hero-image {
-  width: auto;
-  height: 60%;
-  object-fit: contain;
-  margin-top: 60px; /* 안테나 안 짤리도록 */
-}
-
 .hero-glass {
   position: absolute;
   top: 55%;
   transform: translateY(-50%);
-  background: rgba(0, 80, 90, 0.35); /* 진한 유리 느낌 */
-  backdrop-filter: blur(10px);
-  padding: 40px 60px;
-  border-radius: 25px;
+  background: none; /* 배경 제거 */
+  padding: 0;
+  border-radius: 0;
   text-align: center;
-  box-shadow: 0 0 25px rgba(0, 80, 90, 0.25);
-  color: white;
+  animation: scrollText 12s linear infinite;
 }
 
 .hero-glass h1 {
   font-size: 42px;
+  color: white;
   margin-bottom: 10px;
 }
 
 .hero-glass h2 {
   font-size: 20px;
+  color: white;
   margin: 10px 0;
   font-weight: 400;
 }
@@ -73,4 +25,28 @@ body {
 .hero-glass p {
   font-size: 16px;
   font-style: italic;
+  color: white;
+}
+
+/* 새로운 진한 유리 효과 */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 30, 35, 0.6); /* 진한 유리 색 */
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+/* 텍스트 위로 올라오게 */
+.hero-glass {
+  z-index: 2;
+  position: relative;
+}
+
+/* 글씨 흘러가는 효과 (선택사항) */
+@keyframes scrollText {
+  0%   { transform: translateY(0%); }
+  100% { transform: translateY(-5%); }
 }
