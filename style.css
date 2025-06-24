@@ -1,62 +1,44 @@
-/* Base Styles */
+/* style.css */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background-color: #003f3f;
-  color: white;
+  background-color: #003f41;
+  color: #ffffff;
 }
 
-/* Header */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 40px;
-  background-color: #003f3f;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo img {
-  height: 40px;
+  padding: 10px 0;
+  background-color: #004849;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  gap: 20px;
 }
 
-nav ul li {
-  margin-left: 25px;
-}
-
-nav ul li a {
-  color: white;
+nav a {
   text-decoration: none;
+  color: #fff;
   font-weight: bold;
-  font-size: 16px;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
 .hero {
   position: relative;
-  height: 90vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  overflow: hidden;
-  margin-top: 60px;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 40px;
 }
 
-.hero video {
+.background-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -66,139 +48,40 @@ nav ul li a:hover {
   z-index: -1;
 }
 
-.hero-text {
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  padding: 40px;
+.hero-content {
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-  text-align: center;
-  max-width: 700px;
+  padding: 40px;
 }
 
-.hero-text h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.hero-text h5 {
-  font-size: 16px;
-  font-style: italic;
-  color: #aaffff;
-}
-
-.hero-text p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.scroll-text {
+.scrolling-text {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   width: 100%;
-  text-align: center;
-  font-size: 14px;
-  color: #ccffff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-/* Section: About */
-.about {
+.about-content,
+.episode-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 50px;
-  background-color: #004d4d;
-  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 80px;
 }
 
-.about-content {
-  display: flex;
-  max-width: 1200px;
-  gap: 50px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.about-content img {
-  width: 500px;
-  max-width: 100%;
-  border-radius: 16px;
-}
-
-.about-content div {
-  max-width: 600px;
-}
-
-.about-content h5 {
-  font-size: 18px;
-  font-style: italic;
-  color: #aaffff;
-}
-
-.about-content p {
-  font-size: 16px;
-  line-height: 1.6;
+.about-content img,
+.episode-content img {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 20px;
 }
 
 .read-more {
-  display: inline-block;
-  margin-top: 20px;
-  color: #00ffcc;
+  color: #00e6c3;
   font-weight: bold;
-  text-decoration: underline;
-}
-
-/* Section: Episode */
-.episode {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 50px;
-  background-color: #005555;
-  flex-wrap: wrap;
-}
-
-.episode-content {
-  display: flex;
-  max-width: 1200px;
-  gap: 50px;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-}
-
-.episode-content img {
-  width: 500px;
-  max-width: 100%;
-  border-radius: 16px;
-}
-
-.episode-text h5 {
-  font-size: 18px;
-  font-style: italic;
-  color: #aaffff;
-}
-
-.episode-text p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 900px) {
-  .about-content, .episode-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-text {
-    padding: 20px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  nav ul li {
-    margin: 10px;
-  }
+  text-decoration: none;
 }
