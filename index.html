@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+
+  <header class="navbar">
+    <img src="logo.png" alt="Logo" class="logo" />
     <nav>
-      <a href="#about">About</a>
-      <ul>
+      <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#">Episode</a></li>
         <li><a href="#">Programs</a></li>
         <li><a href="#">What They Say</a></li>
@@ -25,42 +26,24 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <!-- 이미지 또는 비디오 -->
-    <video autoplay muted loop class="robot">
-      <source src="robo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="about.jpg" alt="About Us" />
+      </div>
+      <div class="about-text">
+        <h4>Engaging English Learning</h4>
+        <h2>Discover the joy of language through stories</h2>
+        <p>
+          At CEC English Camp, we ignite a passion for English in kids through captivating short novels.
+          Our innovative approach focuses on grammar while making learning fun and engaging.
+          With a supportive environment, children develop their language skills, boost their confidence,
+          and build a lifelong love for reading.
+        </p>
+        <a href="#" class="about-link">Get in touch</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- 텍스트 상자 -->
-    <div class="glass-box">
-      <h1>CEC English Camp</h1>
-      <p>Unlock Your Future with English</p>
-      <p><em>Explore, Learn, and Grow</em></p>
-    </div>
-
-    <!-- 흘러가는 문구 -->
-    <div class="marquee">
-      <p>Explore Your Potential · Discover the World · Learn with Joy · Join Us Today ·</p>
-    </div>
-  </section><!-- About Section -->
-<section id="about" class="about-section">
-  <div class="about-container">
-    <div class="about-image">
-      <img src="about.jpg" alt="CEC English Camp" />
-    </div>
-    <div class="about-text">
-      <h2>Engaging English Learning</h2>
-      <h4>Discover the joy of language through stories</h4>
-      <p>
-        At CEC English Camp, we ignite a passion for English in kids through captivating short novels.
-        Our innovative approach focuses on grammar while making learning fun and engaging.
-        With a supportive environment, children develop their language skills, boost their confidence,
-        and build a lifelong love for reading.
-      </p>
-      <a href="#contact" class="about-cta">Get in touch</a>
-    </div>
-  </div>
-</section>
 </body>
 </html>
