@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Navbar -->
-  <div class="navbar">
-    <div class="navbar-content">
-      <img src="assets/img/robo.png" alt="Logo" class="logo" />
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
+  <header>
+    <div class="logo">
+      <img src="robo-icon.png" alt="Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#episode">Episode</a></li>
         <li><a href="#programs">Programs</a></li>
@@ -23,21 +23,64 @@
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-  </div>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
-  <section class="hero" id="about">
+  <section id="home" class="hero">
     <div class="hero-content">
-      <img src="assets/img/about.jpg" alt="About Us" class="hero-image"/>
+      <img src="hero-banner.jpg" class="hero-image" alt="Robot & Me" />
       <div class="hero-text">
         <h5>ENGAGING ENGLISH LEARNING</h5>
-        <h1>Discover the joy of language<br>through stories</h1>
-        <p>At CEC English Camp, we ignite a passion for English in kids through captivating short novels. Our innovative approach focuses on grammar while making learning fun and engaging. With a supportive environment, children develop their language skills, boost their confidence, and build a lifelong love for reading.</p>
-        <a href="#contact" class="hero-button">Get in touch</a>
+        <h1>Discover the joy of language<br/>through stories</h1>
+        <p>
+          At CEC English Camp, we ignite a passion for English in kids through
+          captivating short novels. Our innovative approach focuses on grammar
+          while making learning fun and engaging. With a supportive environment,
+          children develop their language skills, boost their confidence, and build
+          a lifelong love for reading.
+        </p>
+        <button class="cta-button">Get in touch</button>
       </div>
     </div>
   </section>
 
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <img src="about-section.jpg" alt="About Image" />
+      <div>
+        <h5>INTERACTIVE ENGLISH LEARNING</h5>
+        <p>
+          At CecEnglishCamp, we believe that learning English should be an exciting
+          adventure. Our interactive English learning sessions immerse kids in
+          captivating activities that not only teach grammar but also enhance their
+          comprehension and communication skills. Through role-playing, games, and
+          collaborative projects, children practice real-life conversations while
+          fostering their creativity. Our experienced instructors guide them every
+          step of the way, ensuring that each child feels confident and engaged.
+        </p>
+        <p>
+          By transforming the learning experience into a fun-filled journey, we help
+          young learners develop a lasting love for the English language.
+        </p>
+        <a href="#about-expanded" class="read-more">Schedule appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Episode Section -->
+  <section id="episode" class="episode">
+    <div class="episode-content">
+      <div class="episode-text">
+        <h5>STORY-BASED LEARNING</h5>
+        <p>
+          “점프와 나” 이야기는 매주 한 편씩 공개됩니다. 에피소드에는 한글 전체 스토리와 CEFR 기반 영어 학습 콘텐츠가 포함되어 있어요. 각 에피소드는 <strong>한글 이야기 → 영어 A1 / A2 / B1 / B2</strong>로 이어지며, 스토리 전체를 보고 싶은 분은 아래를 클릭해 주세요.
+        </p>
+        <a href="#episode-expanded" class="read-more">Read More</a>
+      </div>
+      <img src="episode.jpg" alt="Episode Preview" />
+    </div>
+  </section>
 </body>
 </html>
