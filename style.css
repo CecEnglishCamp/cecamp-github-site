@@ -1,91 +1,88 @@
-/* Reset */
-* {
+/* 기본 설정 */
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  width: 100%;
-  height: 100%;
   font-family: 'Poppins', sans-serif;
-  background-color: black;
-  color: white;
-  overflow-x: hidden;
-}
-
-header {
-  width: 100%;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-nav ul li {
-  margin: 0 1.2rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
-#hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 120vw;
-  height: 120vh;
+/* 비디오 백그라운드 설정 */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background-color: black;
+}
+
+#bgVideo {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transform: translate(-50%, -50%) scale(0.7);
-  opacity: 0.25;
-  z-index: 0;
+  filter: brightness(0.4);
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
+/* 네비게이션 메뉴 */
+.main-header {
+  background-color: black;
+  padding: 10px 0;
   text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.hero-content h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.slide-text {
-  font-size: 1.5rem;
-  animation: slide-left 15s linear infinite;
-  white-space: nowrap;
+.nav li {
   display: inline-block;
+  margin: 0 15px;
 }
 
-@keyframes slide-left {
-  0% {
-    transform: translateX(100vw);
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* 메인 타이틀 */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 90vh;
+  padding: 0 5%;
+  text-align: right;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin: 0;
+}
+
+.scrolling-text {
+  font-size: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: scrollText 15s linear infinite;
+  margin-top: 20px;
+}
+
+/* 부드러운 텍스트 스크롤 애니메이션 */
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
   }
-  100% {
-    transform: translateX(-100vw);
+  to {
+    transform: translateX(-100%);
   }
 }
