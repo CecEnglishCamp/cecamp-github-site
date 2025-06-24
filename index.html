@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="assets/img/robo.png" alt="Logo" />
+      <img src="robo-icon.png" alt="Logo" />
     </div>
     <nav>
       <ul>
@@ -26,34 +27,28 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section id="home" class="hero">
+    <video autoplay muted loop class="background-video">
+      <source src="hero-video.mp4" type="video/mp4">
+    </video>
+    <marquee class="scrolling-text">Welcome to CEC English Camp – Story-based Language Learning Adventures!</marquee>
     <div class="hero-content">
-      <video class="hero-video" autoplay muted loop>
-        <source src="assets/video/robo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="hero-text glass">
+      <div class="hero-text">
         <h5>ENGAGING ENGLISH LEARNING</h5>
-        <h1>Discover the joy of language<br/>through stories</h1>
+        <h1>Discover the joy of language<br />through stories</h1>
         <p>
-          At CEC English Camp, we ignite a passion for English in kids through
-          captivating short novels. Our innovative approach focuses on grammar
-          while making learning fun and engaging. With a supportive environment,
-          children develop their language skills, boost their confidence, and build
-          a lifelong love for reading.
+          At CEC English Camp, we ignite a passion for English in kids through captivating short novels. Our
+          innovative approach focuses on grammar while making learning fun and engaging. With a supportive environment,
+          children develop their language skills, boost their confidence, and build a lifelong love for reading.
         </p>
-      </div>
-      <div class="scroll-text">
-        <p>CEC English Camp · English through storytelling · Jump & Me · Robot & Me · Grammar Camp</p>
+        <button class="cta-button">Get in touch</button>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="about">
     <div class="about-content">
-      <img src="assets/img/about.jpg" alt="About Image" />
+      <img src="about-section.jpg" alt="About Image" />
       <div>
         <h5>INTERACTIVE ENGLISH LEARNING</h5>
         <p>
@@ -74,9 +69,9 @@
     </div>
   </section>
 
-  <!-- Episode Section -->
   <section id="episode" class="episode">
     <div class="episode-content">
+      <img src="episode.jpg" alt="Episode Preview" />
       <div class="episode-text">
         <h5>STORY-BASED LEARNING</h5>
         <p>
@@ -84,4 +79,7 @@
         </p>
         <a href="#episode-expanded" class="read-more">Read More</a>
       </div>
-      <img src="assets/img/episode.jpg" alt="Episode Preview"
+    </div>
+  </section>
+</body>
+</html>
