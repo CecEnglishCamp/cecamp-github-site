@@ -87,3 +87,57 @@ nav ul li a {
     transform: translateX(-100%);
   }
 }
+/* About Section */
+.about-section {
+  background-color: black;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  padding: 50px 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.about-text {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.get-in-touch {
+  margin-top: 15px;
+  font-style: italic;
+  color: #aaa;
+}
