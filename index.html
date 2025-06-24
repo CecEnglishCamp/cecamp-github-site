@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CEC English Camp</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEC Website Layout</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; }
 
     nav {
       position: fixed;
       top: 0;
-      left: 0;
       width: 100%;
       background-color: #111;
       color: white;
       display: flex;
-      justify-content: center;
-      gap: 20px;
+      justify-content: space-around;
       padding: 20px 0;
       z-index: 1000;
     }
@@ -36,58 +27,70 @@
     }
 
     .section {
-      display: flex;
       min-height: 100vh;
+      padding-top: 80px;
+      padding-left: 60px;
+      padding-right: 60px;
+      display: flex;
       align-items: center;
+      justify-content: space-between;
+    }
+
+    .home {
+      background-color: #cce7ff;
       justify-content: center;
-      padding: 100px 60px 60px; /* 상단 패딩 nav 대비 */
     }
 
-    .about-layout,
-    .episode-layout {
-      flex-direction: row;
-      gap: 60px;
-    }
-
-    .about-layout .image-area,
-    .episode-layout .image-area {
-      width: 45%;
-      height: 400px;
-      background: #ddd;
-    }
-
-    .about-layout .content-area,
-    .episode-layout .content-area {
-      width: 45%;
-    }
-
-    .vertical-programs {
-      flex-direction: column;
+    .about, .episode {
       gap: 40px;
     }
 
-    .vertical-programs .program-box {
-      height: 300px;
-      background: #f1f1f1;
-      padding: 30px;
+    .about {
+      background-color: #ffe0cc;
     }
 
-    section:nth-child(odd) {
-      background-color: #fafafa;
+    .episode {
+      background-color: #d0f0c0;
+      flex-direction: row-reverse;
     }
 
-    section:nth-child(even) {
+    .programs {
+      background-color: #f5f5dc;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .program-box {
+      width: 80%;
+      height: 200px;
       background-color: #ffffff;
+      border: 2px dashed #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
     }
+
+    .image-block, .text-block {
+      flex: 1;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed #555;
+    }
+
+    .image-block { background-color: #eee; }
+    .text-block { background-color: #fff; padding: 20px; }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#episode">Episodes</a>
+    <a href="#episode">Episode</a>
     <a href="#programs">Programs</a>
     <a href="#what">What They Say</a>
     <a href="#pricing">Pricing</a>
@@ -96,42 +99,35 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="section" style="justify-content:center;">
-    <h1>Home Section (로딩화면 또는 인트로 영상 자리)</h1>
+  <!-- Home -->
+  <section id="home" class="section home">
+    <h1>Home Section (Video or Main Banner)</h1>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section about-layout">
-    <div class="image-area">[ABOUT IMAGE]</div>
-    <div class="content-area">
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="image-block">[About Image]</div>
+    <div class="text-block">
       <h2>About</h2>
-      <p>CEC 캠프의 비전과 설명이 들어가는 섹션입니다.</p>
+      <p>Description content area for About section.</p>
     </div>
   </section>
 
-  <!-- Episode Section -->
-  <section id="episode" class="section episode-layout">
-    <div class="content-area">
+  <!-- Episode -->
+  <section id="episode" class="section episode">
+    <div class="image-block">[Episode Video/Image]</div>
+    <div class="text-block">
       <h2>Episode</h2>
-      <p>참가자들의 스토리와 동영상이 소개됩니다.</p>
+      <p>Text content related to episode or testimonial.</p>
     </div>
-    <div class="image-area">[EPISODE VIDEO]</div>
   </section>
 
-  <!-- Programs Section -->
-  <section id="programs" class="section vertical-programs">
+  <!-- Programs -->
+  <section id="programs" class="section programs">
     <div class="program-box">Program 1</div>
     <div class="program-box">Program 2</div>
     <div class="program-box">Program 3</div>
   </section>
-
-  <!-- Placeholder Sections -->
-  <section id="what" class="section"><h2>What They Say</h2></section>
-  <section id="pricing" class="section"><h2>Pricing</h2></section>
-  <section id="how" class="section"><h2>How It Works</h2></section>
-  <section id="blog" class="section"><h2>Blog</h2></section>
-  <section id="contact" class="section"><h2>Contact</h2></section>
 
 </body>
 </html>
