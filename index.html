@@ -1,79 +1,18 @@
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: white;
-}
-
-.navbar {
-  background-color: #91b4b8;
-  padding: 10px 0;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.navbar li {
-  margin: 0 15px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* 🎯 Hero Section */
-.hero-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url("hero-banner.jpg"); /* 로보 배경 */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 🎯 유리박스 */
-.hero-glass {
-  background: rgba(0, 30, 35, 0.7); /* 더 진한 유리색 */
-  padding: 30px 50px;
-  border-radius: 20px;
-  color: white;
-  backdrop-filter: blur(8px);
-  z-index: 2;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  min-width: 320px;
-}
-
-.hero-glass h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.hero-glass p {
-  font-size: 18px;
-  margin: 10px 0;
-  color: white;
-}
-
-.hero-glass em {
-  font-style: italic;
-  font-size: 16px;
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEC English Camp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="hero-section" id="home">
+    <div class="hero-glass">
+      <h1>CEC English Camp</h1>
+      <p>Unlock Your Future with English</p>
+      <p><em>Explore, Learn, and Grow</em></p>
+    </div>
+  </section>
+</body>
+</html>
