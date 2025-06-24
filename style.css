@@ -1,11 +1,16 @@
-/* 전체 초기화 */
-body, html {
+/* 기본 설정 */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
   height: 100%;
-  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
   background: black;
+  overflow: hidden;
 }
 
 /* 비디오 배경 */
@@ -22,9 +27,9 @@ body, html {
 }
 
 #bgVideo {
-  width: 60vw;  /* 비디오 크기를 60%로 축소 */
+  width: 60vw;
   height: auto;
-  opacity: 0.35;
+  opacity: 0.25;
 }
 
 /* 네비게이션 */
@@ -38,8 +43,6 @@ body, html {
 
 .nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .nav li {
@@ -48,13 +51,13 @@ body, html {
 }
 
 .nav a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-weight: 700;
   font-size: 16px;
 }
 
-/* 메인 타이틀 중앙 정렬 */
+/* 중앙 텍스트 */
 .hero {
   position: absolute;
   top: 50%;
@@ -62,15 +65,31 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  z-index: 5;
+  z-index: 2;
 }
 
 .hero h1 {
-  font-size: 3.5em;
-  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
-.hero p {
-  font-size: 1.4em;
+/* 부드럽게 흘러가는 문장 */
+.scroll-text {
   margin-top: 20px;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: scroll-left 15s linear infinite;
+}
+
+/* 애니메이션 키프레임 */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
