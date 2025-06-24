@@ -1,106 +1,143 @@
-/* Font and Base Styles */
-body {
+/* Reset and base */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #00725e;
-  color: white;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #006d5b;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  padding: 0.5rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-content {
+/* Header */
+header {
+  background: #000;
+  padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  width: 100%;
 }
-
-.logo {
+.logo img {
   height: 40px;
-  margin-right: 2rem;
 }
-
-.nav-links {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
+  gap: 25px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 2rem;
-  min-height: 80vh;
-  background-color: #00725e;
+  padding: 60px 30px;
 }
-
 .hero-content {
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  align-items: center;
-  max-width: 1000px;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
-
 .hero-image {
   width: 300px;
-  border-radius: 12px;
+  border-radius: 20px;
 }
-
 .hero-text {
   max-width: 600px;
 }
-
 .hero-text h5 {
-  font-size: 0.9rem;
+  font-size: 16px;
   font-weight: bold;
-  color: #b2dfdb;
-  margin-bottom: 0.5rem;
+  color: #c0f3e4;
 }
-
 .hero-text h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0 0 1rem;
-  line-height: 1.3;
-}
-
-.hero-text p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #e0f2f1;
-}
-
-.hero-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.7rem 1.5rem;
-  background-color: white;
-  color: #00725e;
-  border-radius: 5px;
+  font-size: 36px;
+  margin: 10px 0;
   font-weight: bold;
+}
+.hero-text p {
+  margin: 20px 0;
+}
+.cta-button {
+  background: white;
+  color: #006d5b;
+  padding: 12px 24px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cta-button:hover {
+  background: #e3fdf5;
+}
+
+/* About Section */
+.about {
+  background: #f6f6f6;
+  color: #222;
+  padding: 60px 30px;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.about-content img {
+  width: 300px;
+  border-radius: 16px;
+}
+.about-content h5 {
+  color: #1c8d53;
+  font-size: 16px;
+  font-weight: bold;
+}
+.about-content p {
+  margin: 10px 0;
+}
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1c8d53;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Episode Section */
+.episode {
+  background: #388e3c;
+  padding: 60px 30px;
+}
+.episode-content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.episode-content img {
+  width: 300px;
+  border-radius: 16px;
+}
+.episode-text {
+  max-width: 600px;
+}
+.episode-text h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #dcedc8;
+}
+.episode-text p {
+  margin: 20px 0;
+  color: #fff;
 }
