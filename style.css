@@ -35,21 +35,18 @@ body {
 
 .hero-section {
   position: relative;
-  text-align: center;
-}
-
-.hero-image {
-  width: 60%;
-  max-width: 800px;
-  height: auto;
-  margin-top: 40px;
+  width: 100%;
+  height: 100vh; /* 화면 전체 */
+  background-image: url("hero-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-glass {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: rgba(0, 30, 35, 0.7); /* 진한 유리 색 */
   padding: 30px 50px;
   border-radius: 20px;
