@@ -1,95 +1,76 @@
-/* Global Reset & Font */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Segoe UI', 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
-  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* ✅ Top Navigation */
 .navbar {
+  background-color: rgba(0, 80, 90, 0.4); /* 유리처럼 살짝 푸른 빛 */
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 1rem 0;
-  z-index: 1000;
-  text-align: center;
+  z-index: 10;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(6px);
 }
 
 .navbar ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 16px;
+  margin: 0;
   padding: 0;
+  display: flex;
+  gap: 30px;
 }
 
-.navbar ul li {
-  display: inline-block;
-}
-
-.navbar ul li a {
-  color: white;
+.navbar a {
   text-decoration: none;
+  color: white;
   font-weight: bold;
-  font-size: 0.95rem;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
+  font-size: 16px;
 }
 
-.navbar ul li a:hover {
-  background-color: #00ffcc;
-  color: black;
-}
-
-/* ✅ Hero Section */
 .hero-section {
   position: relative;
   height: 100vh;
-  background-image: url("assets/img/robo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: auto;
+  height: 60%;
+  object-fit: contain;
+  margin-top: 60px; /* 안테나 안 짤리도록 */
+}
+
+.hero-glass {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background: rgba(0, 80, 90, 0.35); /* 진한 유리 느낌 */
+  backdrop-filter: blur(10px);
+  padding: 40px 60px;
+  border-radius: 25px;
   text-align: center;
-  padding-top: 80px; /* space for navbar */
-}
-
-/* ✅ Hero Glass Box (light blue futuristic style) */
-.hero-box {
-  background: rgba(120, 200, 255, 0.15);
-  padding: 2rem 3rem;
-  border-radius: 20px;
-  backdrop-filter: blur(8px) saturate(160%);
-  -webkit-backdrop-filter: blur(8px) saturate(160%);
-  border: 1px solid rgba(120, 220, 255, 0.3);
+  box-shadow: 0 0 25px rgba(0, 80, 90, 0.25);
   color: white;
-  z-index: 2;
-  max-width: 90%;
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.hero-glass h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
-.hero-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.hero-glass h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 400;
 }
 
-.hero-subsubtitle {
-  font-size: 1.2rem;
+.hero-glass p {
+  font-size: 16px;
   font-style: italic;
 }
