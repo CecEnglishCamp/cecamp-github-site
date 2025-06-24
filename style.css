@@ -1,133 +1,86 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: white;
 }
 
-nav {
-  background-color: #111;
-  position: sticky;
-  top: 0;
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
   z-index: 1000;
 }
 
-nav ul {
+.navbar ul {
+  list-style-type: none;
   display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 1em;
+  gap: 30px;
   margin: 0;
+  padding: 0;
 }
 
-nav li {
-  margin: 0 1.5em;
-}
-
-nav a {
-  color: white;
+.navbar li a {
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #ffcc00;
 }
 
 .hero-section {
   position: relative;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
+.black-bg {
+  background-color: #000;
+}
+
 #hero-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  height: auto;
+  transform: translate(-50%, -50%) scale(0.6);
+  opacity: 0.3;
   z-index: 0;
 }
 
 .hero-overlay {
-  background-color: rgba(0,0,0,0.6);
   position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
   text-align: center;
+  z-index: 1;
 }
 
 .hero-overlay h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
 }
 
-.scroll-text {
-  font-size: 1.4em;
+.scroll-left {
+  color: white;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid white;
-  animation: typing 5s steps(30, end) infinite, blink 0.75s step-end infinite;
+  font-size: 1.3rem;
+  animation: scrollText 12s linear infinite;
 }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
-.section {
-  padding: 4em 2em;
-  color: white;
-}
-
-.green { background-color: #2e7d32; }
-.purple { background-color: #6a1b9a; }
-.blue { background-color: #1976d2; }
-.lightgreen { background-color: #aed581; color: black; }
-.red { background-color: #c62828; }
-.yellow { background-color: #fdd835; color: black; }
-.pink { background-color: #ec407a; }
-.darkred { background-color: #b71c1c; }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.split {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-}
-.reverse { flex-direction: row-reverse; }
-
-.half-img, .half-video {
-  width: 35%;
-  border-radius: 8px;
-}
-.half-text {
-  width: 65%;
-}
-
-.card-group {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2em;
-}
-
-.card {
-  background: white;
-  color: black;
-  border-radius: 10px;
-  padding: 1em;
-  text-align: center;
-  width: 260px;
-}
-.card img {
-  width: 100%;
-  border-radius: 10px;
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
