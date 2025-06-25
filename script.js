@@ -1,13 +1,10 @@
-```javascript
-// Read More Button Scroll Behavior
-document.querySelectorAll('.read-more').forEach(button => {
-  button.addEventListener('click', function (e) {
+// script.js
+
+document.querySelectorAll(".read-more").forEach(button => {
+  button.addEventListener("click", e => {
     e.preventDefault();
-    const targetId = this.getAttribute('data-target');
-    const targetSection = document.querySelector(targetId);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
+
+    // 추후 전체 페이지 확장 기능을 여기에 구현
+    alert("Read More section will expand here.");
   });
 });
-```
