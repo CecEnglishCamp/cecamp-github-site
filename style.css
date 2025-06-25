@@ -1,160 +1,108 @@
-/* Global Styles */
+```css
+/* 전체 배경 및 폰트 */
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #000;
-  color: #fff;
+  color: white;
 }
 
-ul {
+/* 네비게이션 바 */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 0.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   gap: 1.5rem;
-  justify-content: flex-end;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3rem;
-  background-color: #000;
-}
-
-nav img {
-  width: 100px;
-  height: auto;
-}
-
-nav a {
+.navbar ul li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #1effcc;
+  font-weight: bold;
 }
 
 /* Hero Section */
-.hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 5rem 3rem;
-  background-color: #000;
-  color: #fff;
-}
-
-.hero-container img {
-  max-width: 400px;
-  height: auto;
-}
-
-.hero-text h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-}
-
-/* About Section */
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 5rem 3rem;
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 3rem 0;
   background-color: #000;
 }
 
-.about-container img {
-  max-width: 400px;
+.hero-image {
+  width: 60%;
+  max-width: 800px;
   height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
-.about-text .subheading {
-  color: #1effcc;
-  font-weight: bold;
-  margin-bottom: 1rem;
+/* 섹션 공통 */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #111;
+  gap: 2rem;
 }
 
-.about-text h2 {
+.section:nth-of-type(even) {
+  background-color: #1a1a1a;
+}
+
+.section img {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.section-content {
+  max-width: 600px;
+  color: #e0f2f1;
+}
+
+.section-content h5 {
+  font-size: 1rem;
+  color: #80cbc4;
+  margin-bottom: 0.5rem;
+}
+
+.section-content h2 {
   font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-.about-text p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #ccc;
-}
-
-.cta-button {
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #c9fff8;
-  color: #004f43;
-  font-weight: bold;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #90f2e5;
-}
-
-/* Episode Section */
-.episode-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 5rem 3rem;
-  background-color: #000;
-}
-
-.episode-container img {
-  max-width: 300px;
-  height: auto;
-}
-
-.episode-text .subheading {
-  color: #1effcc;
-  font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.episode-text p {
-  font-size: 1rem;
+.section-content p {
   line-height: 1.6;
-  color: #ccc;
 }
 
-.read-more {
+.btn {
+  display: inline-block;
   margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #bafff3;
-  color: #004f43;
+  padding: 0.6rem 1.4rem;
+  background-color: #00bfa5;
+  color: white;
+  border-radius: 4px;
   font-weight: bold;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  text-decoration: none;
 }
 
-.read-more:hover {
-  background-color: #8de9d9;
+/* Read More 버튼 커스터마이징 */
+.read-more {
+  background-color: #00897b;
 }
+```
