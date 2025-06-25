@@ -1,10 +1,14 @@
-// script.js
+function openModal() {
+  document.getElementById("episodeModal").style.display = "block";
+}
 
-document.querySelectorAll(".read-more").forEach(button => {
-  button.addEventListener("click", e => {
-    e.preventDefault();
+function closeModal() {
+  document.getElementById("episodeModal").style.display = "none";
+}
 
-    // 추후 전체 페이지 확장 기능을 여기에 구현
-    alert("Read More section will expand here.");
+function showLevel(level) {
+  const levels = ["a1", "a2", "b1", "b2"];
+  levels.forEach(l => {
+    document.getElementById(l).style.display = (l === level) ? "block" : "none";
   });
-});
+}
