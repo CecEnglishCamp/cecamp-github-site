@@ -1,11 +1,11 @@
-function expandEpisode() {
-  alert("Read More section will expand here.");
-  // 향후 확장 콘텐츠가 여기에 삽입됩니다.
-}
+```javascript
+// script.js
 
+// "Read More" 버튼 클릭 시 알림창 (기본 시연용)
 document.querySelectorAll(".read-more").forEach(button => {
   button.addEventListener("click", e => {
     e.preventDefault();
-    expandEpisode();
+    alert("Read More section will expand here.");
   });
 });
+```
