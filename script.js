@@ -1,10 +1,13 @@
-// script.js
-
-// For 'Read More' button expansion placeholder
-
-document.querySelectorAll(".read-more").forEach(button => {
-  button.addEventListener("click", e => {
+```javascript
+// Read More Button Scroll Behavior
+document.querySelectorAll('.read-more').forEach(button => {
+  button.addEventListener('click', function (e) {
     e.preventDefault();
-    alert("Read More section will expand here.");
+    const targetId = this.getAttribute('data-target');
+    const targetSection = document.querySelector(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
   });
 });
+```
