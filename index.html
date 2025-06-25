@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Episode Section Preview</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Episode Demo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Episode Section -->
-  <section id="episode" class="episode-section">
-    <div class="episode-container">
-      <div class="episode-image">
-        <img src="assets/img/episode.jpg" alt="Episode Image">
+  <!-- Episode 카드 -->
+  <div class="card">
+    <img src="assets/img/episode.jpg" alt="Episode Image" />
+    <h3>Explore Real-life Scenarios</h3>
+    <p>Experience grammar and vocabulary through storytelling.</p>
+    <button onclick="openModal()">Read More</button>
+  </div>
+
+  <!-- 모달 -->
+  <div id="episodeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Explore Real-life Scenarios</h2>
+
+      <div class="level-selector">
+        <button onclick="showLevel('a1')">A1</button>
+        <button onclick="showLevel('a2')">A2</button>
+        <button onclick="showLevel('b1')">B1</button>
+        <button onclick="showLevel('b2')">B2</button>
       </div>
-      <div class="episode-text">
-        <h4>STORY-BASED LEARNING</h4>
-        <h2>Explore Real-life Scenarios<br>through Episodes</h2>
-        <p>
-          Our episodes bring grammar and vocabulary to life through vivid storytelling.
-          Learners engage with meaningful content that mirrors everyday communication,
-          encouraging comprehension, context, and confidence. Each episode is designed
-          to spark imagination while strengthening English fluency in a natural way.
-        </p>
-        <a href="#contact" class="episode-link">Learn more</a>
+
+      <div id="a1" class="level-content">
+        <h4>A1 Level</h4>
+        <p>This is a simple story using basic words for beginners.</p>
+      </div>
+      <div id="a2" class="level-content" style="display: none;">
+        <h4>A2 Level</h4>
+        <p>This version adds more vocabulary and longer sentences.</p>
+      </div>
+      <div id="b1" class="level-content" style="display: none;">
+        <h4>B1 Level</h4>
+        <p>This story includes more complex grammar and expressions.</p>
+      </div>
+      <div id="b2" class="level-content" style="display: none;">
+        <h4>B2 Level</h4>
+        <p>This version features academic vocabulary and natural phrasing.</p>
       </div>
     </div>
-  </section>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
