@@ -1,12 +1,10 @@
 // script.js
-document.querySelectorAll(".read-more").forEach(button => {
-  button.addEventListener("click", e => {
-    e.preventDefault();
-    const targetId = button.getAttribute("href").replace("#", "");
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      targetSection.style.display = "block";
-      targetSection.scrollIntoView({ behavior: "smooth" });
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".read-more").forEach(button => {
+    button.addEventListener("click", e => {
+      e.preventDefault();
+      alert("Read More section will expand here.");
+      // 향후 실제 콘텐츠 확장 기능 삽입 예정
+    });
   });
 });
