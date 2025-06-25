@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <div class="logo">CecEnglishCamp</div>
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <div class="logo">CecEnglishCamp</div>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#episode">Episode</a></li>
@@ -25,44 +26,76 @@
   </header>
 
   <main>
-    <section id="home" class="section">
+
+    <section id="home" class="section center">
       <h1>Welcome to CecEnglishCamp</h1>
       <p>Unlock your child’s English potential through storytelling</p>
-      <img src="assets/img/a1.jpg" alt="Home Image" />
+      <img src="assets/img/home.jpg" alt="home image">
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section center">
       <h2>About Us</h2>
       <h3>Fun & Effective English Learning</h3>
-      <p>We believe kids learn best through stories. Our camp is designed to help children build English skills through imagination, creativity, and structured storytelling.</p>
-      <img src="assets/img/a2.jpg" alt="About Image" />
+      <p>We believe kids learn best through stories. Our camp helps children build English skills through imagination, creativity, and structured storytelling.</p>
+      <img src="assets/img/about.jpg" alt="about image">
     </section>
 
-    <section id="episode" class="section purple-bg">
+    <section id="episode" class="section center purple">
       <h2>Story-based Learning</h2>
       <h3>Explore Real-life Scenarios through Episodes</h3>
-      <p>Our episodes bring grammar and vocabulary to life through vivid storytelling. Learners engage with meaningful content that mirrors everyday communication.</p>
-      <img src="assets/img/b1.jpg" alt="Episode Image" />
-      <a href="#programs" class="btn">Read More</a>
+      <p>Our episodes bring grammar and vocabulary to life through vivid storytelling.</p>
+      <img src="assets/img/episode.jpg" alt="episode image">
+      <button class="orange-button">Read More</button>
     </section>
 
-    <section id="programs" class="section">
+    <section id="programs" class="section center">
       <h2>Engaging Language Learning</h2>
       <h3>Unlock English skills through stories</h3>
-      <img src="assets/img/b2.jpg" alt="Program Image" />
-      <p><strong>Interactive English learning</strong><br/>Engaging activities that teach English through fun. My child looks forward to each session, excited to explore new stories and learn.</p>
+      <img src="assets/img/program.jpg" alt="program image">
+      <h4>Interactive English learning</h4>
+      <p>Engaging activities that teach English through fun.</p>
     </section>
+
+    <section id="testimonials" class="section vertical">
+      <h2>What Parents Say</h2>
+      <h3>Hear from our happy campers!</h3>
+
+      <div class="testimonial">
+        <h4>Brandon Vega</h4>
+        <p class="small">Smith Family</p>
+        <p>
+          CecEnglishCamp has transformed my child’s understanding of English in such a short time. The engaging short novels not only captivate their attention but also reinforce grammar concepts effectively.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <h4>Chris Wei</h4>
+        <p class="small">Fremont School District</p>
+        <p>
+          As an educator, I appreciate the innovative approach that CecEnglishCamp takes in teaching English. The supportive environment encourages students to express themselves confidently.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <h4>Karen Weiss</h4>
+        <p class="small">Johnson Family</p>
+        <p>
+          CecEnglishCamp has been a fantastic experience for my son. He not only learned grammar but developed a love for reading. This camp is a gem!
+        </p>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <ul class="footer-menu">
-      <li><a href="#">Schedule Appointment</a></li>
-      <li><a href="#">Complete Intake</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">Resources</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
-    <p>&copy; 2025 CecEnglishCamp. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Schedule Appointment</a>
+      <a href="#">Complete Intake</a>
+      <a href="#">FAQ</a>
+      <a href="#">Resources</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p>© 2025 CecEnglishCamp. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
