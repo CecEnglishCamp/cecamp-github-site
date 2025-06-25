@@ -5,13 +5,13 @@ body {
   background-color: #ffffff;
 }
 
-.about-section {
-  background-color: #2ecc40;
+.episode-section {
+  background-color: #f3e5f5; /* 연보라색 */
   padding: 100px 0;
-  color: white;
+  color: #333;
 }
 
-.about-container {
+.episode-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,51 +22,51 @@ body {
   flex-wrap: wrap;
 }
 
-.about-text {
+.episode-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.episode-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.episode-text {
   flex: 1;
   min-width: 300px;
 }
 
-.about-text h4 {
+.episode-text h4 {
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
-  color: white;
+  color: #555;
   opacity: 0.9;
 }
 
-.about-text h2 {
+.episode-text h2 {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 1.5rem;
 }
 
-.about-text p {
+.episode-text p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
-.about-link {
-  color: white;
+.episode-link {
+  color: #333;
   text-decoration: underline;
   font-weight: 500;
   transition: opacity 0.3s ease;
 }
 
-.about-link:hover {
-  opacity: 0.8;
-}
-
-.about-image {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
+.episode-link:hover {
+  opacity: 0.6;
 }
