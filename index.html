@@ -9,7 +9,7 @@
 <body>
 
   <header>
-    <div class="logo">CecEnglishCamp</div>
+    <h1>CecEnglishCamp</h1>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -18,106 +18,85 @@
         <li><a href="#programs">Programs</a></li>
         <li><a href="#testimonials">What they say</a></li>
         <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#howitworks">How it works</a></li>
+        <li><a href="#how">How it works</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home" class="section center">
-    <h1>Welcome to <strong>CecEnglishCamp</strong></h1>
-    <p>Unlock your child’s English potential through storytelling</p>
-    <img src="images/home.jpg" alt="home image" />
-  </section>
-
-  <section id="about" class="section center">
-    <h2>About Us</h2>
-    <h3>Fun & Effective English Learning</h3>
-    <p>We believe kids learn best through stories. Our camp helps children build English skills through imagination, creativity, and structured storytelling.</p>
-    <img src="images/about.jpg" alt="about image" />
-  </section>
-
-  <!-- Programs -->
-  <section id="programs" class="section">
+  <section id="programs">
     <h2>Programs</h2>
-    <div class="card-list vertical">
-      <div class="card">
-        <h3>Grammar Adventures</h3>
-        <p>Explore English grammar through captivating stories. <strong>Free</strong></p>
-        <a href="#program-detail-1" class="read-more">Read more</a>
-      </div>
-      <div class="card">
-        <h3>StoryQuest Workshops</h3>
-        <p>Ignite creativity and learn grammar in exciting workshops. <strong>$25/month</strong></p>
-        <a href="#program-detail-2" class="read-more">Read more</a>
-      </div>
-      <div class="card">
-        <h3>Grammar Games</h3>
-        <p>Transform grammar into fun games. <strong>$50/month</strong></p>
-        <a href="#program-detail-3" class="read-more">Read more</a>
-      </div>
+
+    <div class="card">
+      <h3>Grammar Adventures</h3>
+      <p>Explore English grammar through captivating stories. <strong>Free</strong></p>
+      <div class="more-content hidden">Includes access to weekly storybooks and basic quizzes.</div>
+      <button class="toggle-btn">Read more</button>
+    </div>
+
+    <div class="card">
+      <h3>StoryQuest Workshops</h3>
+      <p>Ignite creativity and learn grammar in exciting workshops. <strong>$25/month</strong></p>
+      <div class="more-content hidden">Includes interactive storytelling sessions and group feedback.</div>
+      <button class="toggle-btn">Read more</button>
+    </div>
+
+    <div class="card">
+      <h3>Grammar Games</h3>
+      <p>Transform grammar into fun games. <strong>$50/month</strong></p>
+      <div class="more-content hidden">Includes access to grammar-based game modules and challenges.</div>
+      <button class="toggle-btn">Read more</button>
     </div>
   </section>
 
-  <!-- What they say -->
-  <section id="testimonials" class="section">
+  <section id="episode">
+    <h2>Episode</h2>
+
+    <div class="card">
+      <h3>Episode 1</h3>
+      <p>A little fox finds a big word.</p>
+      <div class="more-content hidden">He learns how to use "because" in a sentence to explain things.</div>
+      <button class="toggle-btn">Read more</button>
+    </div>
+
+    <div class="card">
+      <h3>Episode 2</h3>
+      <p>Grandma's soup has a secret.</p>
+      <div class="more-content hidden">Adjectives help describe how tasty and warm it is!</div>
+      <button class="toggle-btn">Read more</button>
+    </div>
+
+    <div class="card">
+      <h3>Episode 3</h3>
+      <p>The robot who loved commas.</p>
+      <div class="more-content hidden">He teaches his friends how commas make things clearer.</div>
+      <button class="toggle-btn">Read more</button>
+    </div>
+
+    <div class="card">
+      <h3>Episode 4</h3>
+      <p>A jungle of question marks?</p>
+      <div class="more-content hidden">Animals ask questions and learn curiosity words.</div>
+      <button class="toggle-btn">Read more</button>
+    </div>
+  </section>
+
+  <section id="testimonials">
     <h2>What They Say</h2>
-    <div class="card-list vertical">
-      <div class="card">
-        <p>"My child now loves English thanks to CecCamp!"</p>
-        <strong>- Parent A</strong>
-      </div>
-      <div class="card">
-        <p>"The storytelling approach is genius. Highly recommended."</p>
-        <strong>- Parent B</strong>
-      </div>
-      <div class="card">
-        <p>"Best learning camp ever – my son improved drastically."</p>
-        <strong>- Parent C</strong>
-      </div>
+
+    <div class="card">
+      <p>"My child now loves English thanks to CecCamp!"</p>
+      <strong>- Parent A</strong>
     </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="section">
-    <h2>Pricing</h2>
-    <div class="card-list vertical">
-      <div class="card">
-        <h3>Grammar Adventures</h3>
-        <p>$0/month</p>
-        <p>Learn basic grammar via storybooks.</p>
-      </div>
-      <div class="card">
-        <h3>StoryQuest Workshops</h3>
-        <p>$25/month</p>
-        <p>Creative storytelling + grammar training.</p>
-      </div>
-      <div class="card">
-        <h3>Grammar Games</h3>
-        <p>$50/month</p>
-        <p>Interactive grammar games to boost fun and learning.</p>
-      </div>
+    <div class="card">
+      <p>"The storytelling approach is genius. Highly recommended."</p>
+      <strong>- Parent B</strong>
     </div>
-  </section>
-
-  <!-- Detailed Sections (anchors for read more) -->
-  <section id="program-detail-1" class="section detail">
-    <h2>Grammar Adventures</h2>
-    <p>Dive into the world of English grammar with our engaging short novels... (full content here)</p>
-    <img src="images/detail1.jpg" alt="Grammar Adventures">
-  </section>
-
-  <section id="program-detail-2" class="section detail">
-    <h2>StoryQuest Workshops</h2>
-    <p>Join our interactive workshops where kids embark on adventures while learning English grammar... (full content here)</p>
-    <img src="images/detail2.jpg" alt="StoryQuest Workshops">
-  </section>
-
-  <section id="program-detail-3" class="section detail">
-    <h2>Grammar Games</h2>
-    <p>Make grammar fun with interactive games... (full content here)</p>
-    <img src="images/detail3.jpg" alt="Grammar Games">
+    <div class="card">
+      <p>"Best learning camp ever – my son improved drastically."</p>
+      <strong>- Parent C</strong>
+    </div>
   </section>
 
   <script src="script.js"></script>
