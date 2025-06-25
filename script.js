@@ -1,17 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const readMoreLinks = document.querySelectorAll('.read-more');
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll('.toggle-btn');
 
-  readMoreLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 60,
-          behavior: 'smooth'
-        });
-      }
+  buttons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const content = this.previousElementSibling;
+      content.classList.toggle('visible');
+      this.textContent = content.classList.contains('visible') ? 'Show less' : 'Read more';
     });
   });
 });
