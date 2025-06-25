@@ -1,3 +1,10 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
 .about-section {
   background-color: #2ecc40;
   padding: 100px 0;
