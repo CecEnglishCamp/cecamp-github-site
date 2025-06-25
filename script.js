@@ -1,10 +1,11 @@
-// script.js
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".read-more").forEach(button => {
-    button.addEventListener("click", e => {
-      e.preventDefault();
-      alert("Read More section will expand here.");
-      // 향후 실제 콘텐츠 확장 기능 삽입 예정
-    });
+function expandEpisode() {
+  alert("Read More section will expand here.");
+  // 향후 확장 콘텐츠가 여기에 삽입됩니다.
+}
+
+document.querySelectorAll(".read-more").forEach(button => {
+  button.addEventListener("click", e => {
+    e.preventDefault();
+    expandEpisode();
   });
 });
