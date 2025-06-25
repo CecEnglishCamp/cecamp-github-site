@@ -1,3 +1,4 @@
+/* 에피소드 섹션 전체 */
 .episode {
   display: flex;
   align-items: center;
@@ -7,6 +8,7 @@
   flex-wrap: wrap;
 }
 
+/* 텍스트와 이미지 묶음 */
 .episode-content {
   display: flex;
   gap: 3rem;
@@ -15,6 +17,7 @@
   flex-wrap: wrap;
 }
 
+/* 텍스트 부분 */
 .episode-text {
   max-width: 500px;
 }
@@ -36,10 +39,12 @@
   border-radius: 12px;
 }
 
+/* 펼쳐진 전체 보기 */
 .episode-expanded {
   background-color: #004d40;
   padding: 4rem 2rem;
   color: white;
+  display: none;
 }
 
 .episode-expanded h2 {
