@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <nav>
+  <!-- Navigation -->
+  <header class="navbar">
     <div class="logo">CEC English Camp</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#episode">Episode</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#how">How it works</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#testimonial">What they say</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#episode">Episode</a>
+      <a href="#program">Program</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#how">How it works</a>
+      <a href="#blog">Blog</a>
+      <a href="#testimonials">What they say</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <!-- Home Section -->
-  <section id="home" class="section">
-    <div class="text">
+  <section id="home" class="section home-section">
+    <div class="home-content">
       <h1>Welcome to CEC English Camp</h1>
-      <p class="animated-line">
-        Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.
-      </p>
+      <p>Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</p>
     </div>
-    <div class="image">
-      <img src="assets/img/home.png" alt="Home Robot" />
-      <!-- 동영상으로 바꿀 경우: 
-      <video src="ass
+    <img src="assets/images/robot-home.png" alt="Robot Home" class="home-image" />
+  </section>
 
   <!-- About Section -->
-  <section id="about" class="section">
-    <div class="image about-image">
-      <img src="assets/img/about.png" alt="About Image" />
-    </div>
-    <div class="text about-text">
+  <section id="about" class="section about-section">
+    <img src="assets/images/about.png" alt="About Robot" class="about-image" />
+    <div class="about-content">
       <h2>Engaging English Learning</h2>
       <h3>Discover the joy of language through stories</h3>
       <p>
@@ -49,8 +45,26 @@
         With a supportive environment, children develop their language skills, boost their confidence,
         and build a lifelong love for reading. Join us in transforming the way young learners experience English!
       </p>
-      <button>Get in touch</button>
+      <button class="yellow-button">Get in touch</button>
     </div>
+  </section>
+
+  <!-- Episode Section -->
+  <section id="episode" class="section episode-section">
+    <div class="episode-content">
+      <h2>📘 점프 & 미소 – 시즌 1 / 에피소드 1</h2>
+      <h3>창고의 비밀 문서</h3>
+      <p>
+        “공이 어디 간 거지...”<br /><br />
+        미소는 낮게 중얼이며, 할아버지의 낡은 창고 문을 밀었다.<br /><br />
+        ...<br /><br />
+        ***“넌 이미, 해낼 수 있는 아이야.”***
+      </p>
+    </div>
+    <video class="episode-video" controls>
+      <source src="assets/videos/episode.mp4" type="video/mp4" />
+      브라우저가 video 태그를 지원하지 않습니다.
+    </video>
   </section>
 </body>
 </html>
