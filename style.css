@@ -1,92 +1,78 @@
-/* Reset & Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
   background-color: #000;
   color: #fff;
-  overflow-x: hidden;
 }
 
-/* Navigation Bar */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  background-color: #000;
-  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
-  z-index: 1000;
+  padding: 20px 40px;
+  background-color: #000;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .logo img {
-  width: 40px;
   height: 40px;
+  margin-right: 10px;
 }
 
 .nav-links {
-  display: flex;
   list-style: none;
-  gap: 1.5rem;
+  display: flex;
+  gap: 20px;
 }
 
-.nav-links a {
+.nav-links li a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #ffa500;
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 40px;
 }
 
-/* Hero Section */
-.hero-section {
+.home-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  padding: 120px 10%;
+  width: 100%;
+  max-width: 1200px;
+  gap: 60px;
 }
 
-.hero-text {
+.home-content .text {
   flex: 1;
+  padding-top: 40px;
 }
 
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.home-content .text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
-.hero-text p {
-  font-size: 1.2rem;
+.home-content .text p {
+  font-size: 18px;
   line-height: 1.6;
-  max-width: 600px;
 }
 
-.hero-image {
+.home-content .image {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
-.hero-image img {
-  width: 300px;
+.home-content .image img {
   max-width: 100%;
-  border-radius: 12px;
+  height: auto;
 }
