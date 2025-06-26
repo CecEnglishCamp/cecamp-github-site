@@ -1,110 +1,104 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: #000;
-  font-family: 'Segoe UI', sans-serif;
   color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 40px;
-  background-color: black;
+  padding: 1rem 2rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  font-size: 18px;
 }
 
 .logo img {
-  height: 40px;
+  width: 40px;
+  margin-right: 10px;
 }
 
-nav ul {
+nav .nav-links {
   list-style: none;
   display: flex;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
-  transform: translateX(-5%);
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-nav ul li a {
-  color: white;
+.nav-links a {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
 }
 
-.main-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px;
-}
-
-.text-section {
-  max-width: 50%;
-}
-
-.text-section h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.text-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  font-weight: 300;
-}
-
-.scrolling-text {
-  margin-top: 20px;
-  color: cyan;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
+.hero {
   position: relative;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.scrolling-text span {
+.hero-text {
+  max-width: 50%;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Robot Video */
+.home-video {
+  width: 45%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  z-index: 1;
+}
+
+/* Marquee Text */
+.marquee {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee p {
   display: inline-block;
+  padding-left: 100%;
   animation: scroll-left 15s linear infinite;
+  color: #00ffff;
+  font-weight: bold;
 }
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
 }
-
-.image-wrapper {
-  width: 462px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: -5%;
-  position: relative;
-}
-
-.robot-video {
-  width: 45%;
-  height: auto;
-  position: absolute;
-  right: 5%;
-  bottom: 10%;
-  z-index: 1;
-}
-
-
