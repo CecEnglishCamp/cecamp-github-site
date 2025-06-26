@@ -1,138 +1,209 @@
-body {
+/* Reset & 기본 설정 */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #000;
-  color: white;
-}
-
-.navbar {
-  background-color: #000;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.nav-links a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 60px;
-  height: 100vh;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.home-section {
-  background-color: black;
-  color: white;
-  flex-direction: row;
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+  scroll-behavior: smooth;
 }
 
-.home-content {
-  flex: 1;
-  text-align: left;
-  padding-right: 40px;
-}
-
-.home-content h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-.home-image {
-  flex: 1;
-  max-width: 500px;
-  height: auto;
-}
-
-.about-section {
-  background-color: black;
-  flex-direction: row;
-}
-
-.about-image {
-  max-width: 400px;
-  height: auto;
-  margin-right: 50px;
-}
-
-.about-content {
-  max-width: 600px;
-}
-
-.about-content h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.about-content h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.about-content p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.yellow-button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  font-size: 16px;
-  background-color: #f6a400;
-  color: white;
-  border: none;
-  cursor: pointer;
+/* 네비게이션 */
+nav {
+  position: fixed;
+  top: 0;
   width: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  z-index: 9999;
 }
 
-.episode-section {
-  background-color: #300047;
+nav .logo {
+  position: absolute;
+  left: 80px; /* W와 정렬 맞춤 */
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
   color: white;
-  flex-direction: row;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.episode-content {
-  flex: 1;
-  max-width: 600px;
-  margin-right: 40px;
+/* 섹션 기본 레이아웃 */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px 60px;
+  box-sizing: border-box;
+  background-color: #000;
+  overflow: hidden;
 }
 
-.episode-content h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+/* 텍스트 영역 */
+.section .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
 }
 
-.episode-content h3 {
-  font-size: 20px;
+.section .text h1 {
+  font-size: 2.8em;
+  font-weight: 900;
   margin-bottom: 20px;
-  color: #ddd;
+  line-height: 1.2;
+  color: white;
 }
 
-.episode-content p {
-  font-size: 16px;
+.section .text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: white;
+}
+
+/* 흘러가는 애니메이션 텍스트 */
+.animated-line {
+  margin-top: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: slideLeft 12s linear infinite;
+}
+
+/* 애니메이션 정의 */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 이미지 또는 비디오 */
+.section .image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .image img,
+.section .image video {
+  max-height: 80vh;
+  width: auto;
+  display: block;
+}
+Reset & 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* 네비게이션 */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  z-index: 9999;
+}
+
+nav .logo {
+  position: absolute;
+  left: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* 섹션 기본 레이아웃 */
+.section {
+  height: 100vh; /* 항상 한 화면 고정 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px 60px;
+  box-sizing: border-box;
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* 텍스트 영역 */
+.section .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.section .text h1 {
+  font-size: 2.8em;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: white;
+}
+
+.section .text p {
+  font-size: 1.1em;
+  margin-top: 10px;
   line-height: 1.6;
 }
 
-.episode-video {
-  flex: 1;
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
+/* 이미지 or 동영상 영역 */
+.section .image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .image img,
+.section .image video {
+  max-height: 80vh;
+  width: auto;
+  display: block;
 }
