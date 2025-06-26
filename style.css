@@ -1,3 +1,4 @@
+/* 기본 초기화 */
 * {
   margin: 0;
   padding: 0;
@@ -5,101 +6,99 @@
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
+  color: white;
 }
 
-header {
+/* 내비게이션 바 */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2rem;
+  background-color: black;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .logo img {
-  width: 40px;
-  margin-right: 10px;
+  height: 30px;
 }
 
-nav .nav-links {
+.logo span {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
-.nav-links a {
+nav ul li a {
   text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+  color: white;
+  font-weight: 500;
 }
 
-.hero {
-  position: relative;
-  padding: 5rem 2rem;
+/* 홈 섹션 */
+.home-section {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 5% 10%;
+  min-height: 90vh;
 }
 
-.hero-text {
-  max-width: 50%;
-  z-index: 2;
+.home-text {
+  width: 50%;
 }
 
-.hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.home-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
 }
 
-.hero-text p {
+.home-text p {
   font-size: 1.1rem;
-  color: #ddd;
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
-}
-/* 기존 코드 유지 위에 이 부분만 업데이트 */
-.home-video {
-  width: 45%;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  position: absolute;
-  top: 20%;
-  right: 5%;
-  z-index: 1;
-}
-
-/* Marquee Text */
+/* 글씨 흘러가기 */
 .marquee {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-  width: 90%;
   overflow: hidden;
   white-space: nowrap;
-}
-
-.marquee p {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-left 15s linear infinite;
-  color: #00ffff;
+  animation: marquee 10s linear infinite;
+  color: cyan;
   font-weight: bold;
 }
 
-@keyframes scroll-left {
+@keyframes marquee {
   0% {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
   }
+}
+
+/* 동영상 컨테이너 */
+.video-container {
+  width: 45%;
+  max-width: 600px;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
