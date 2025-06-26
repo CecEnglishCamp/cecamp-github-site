@@ -1,138 +1,142 @@
+/* 전체 글꼴 및 초기화 */
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #000;
-  color: white;
+  color: #fff;
 }
 
+/* 네비게이션 바 */
 .navbar {
   background-color: #000;
+  color: #fff;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
 .nav-links a {
   color: white;
-  margin-left: 20px;
   text-decoration: none;
-  font-size: 16px;
+  margin-left: 20px;
 }
 
-.section {
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   padding: 80px 60px;
-  height: 100vh;
-  box-sizing: border-box;
+  background-color: #000;
 }
 
-.home-section {
-  background-color: black;
-  color: white;
-  flex-direction: row;
+.hero-text {
+  max-width: 60%;
 }
 
-.home-content {
-  flex: 1;
-  text-align: left;
-  padding-right: 40px;
-}
-
-.home-content h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-.home-image {
-  flex: 1;
-  max-width: 500px;
-  height: auto;
-}
-
-.about-section {
-  background-color: black;
-  flex-direction: row;
-}
-
-.about-image {
-  max-width: 400px;
-  height: auto;
-  margin-right: 50px;
-}
-
-.about-content {
-  max-width: 600px;
-}
-
-.about-content h2 {
-  font-size: 36px;
+.hero-text h1 {
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.about-content h3 {
-  font-size: 20px;
   margin-bottom: 20px;
 }
 
-.about-content p {
-  font-size: 16px;
+.hero-img img {
+  width: 350px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 60px;
+  background-color: #000;
+}
+
+.about-img img {
+  width: 320px;
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about-text h3 {
+  font-weight: 500;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.about-text p {
   line-height: 1.6;
 }
 
-.yellow-button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  font-size: 16px;
-  background-color: #f6a400;
+.cta-button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  background-color: orange;
   color: white;
   border: none;
+  font-weight: bold;
   cursor: pointer;
-  width: 100%;
 }
 
-.episode-section {
-  background-color: #300047;
-  color: white;
-  flex-direction: row;
+/* Episode Section */
+.episode {
+  background-color: #320046;
+  padding: 100px 60px;
 }
 
 .episode-content {
-  flex: 1;
-  max-width: 600px;
-  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.episode-content h2 {
-  font-size: 28px;
+.episode-text {
+  width: 48%;
+}
+
+.episode-text h2, .episode-text h3 {
   margin-bottom: 10px;
 }
 
-.episode-content h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #ddd;
-}
-
-.episode-content p {
-  font-size: 16px;
-  line-height: 1.6;
+.episode-text p {
+  line-height: 1.8;
 }
 
 .episode-video {
-  flex: 1;
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
+  width: 48%;
+}
+
+.episode-video video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Read More buttons */
+.episode-text button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
