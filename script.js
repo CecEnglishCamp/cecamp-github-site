@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll('.toggle-btn');
+  const toggleButtons = document.querySelectorAll(".toggle-button");
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', function () {
-      const content = this.previousElementSibling;
-      content.classList.toggle('visible');
-      this.textContent = content.classList.contains('visible') ? 'Show less' : 'Read more';
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.previousElementSibling;
+      const isVisible = content.style.display === "block";
+
+      // 토글 동작
+      content.style.display = isVisible ? "none" : "block";
+      button.textContent = isVisible ? "Read more" : "Show less";
     });
   });
 });
