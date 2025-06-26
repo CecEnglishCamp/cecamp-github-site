@@ -1,18 +1,67 @@
-.section .text h2 {
+/* 재사용되는 section 설정 */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px 60px;
+  box-sizing: border-box;
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* 이미지/텍스트 균형 맞추기 */
+.section .image,
+.section .text {
+  width: 50%;
+  color: white;
+}
+
+/* 이미지 위치 약간 하향 */
+.about-image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.about-image img {
+  max-height: 80vh;
+  width: auto;
+  display: block;
+}
+
+/* 텍스트 수직 정렬 조정 */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+/* 제목 스타일 */
+.about-text h2 {
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 10px;
   color: white;
 }
 
-.section .text h3 {
+.about-text h3 {
   font-size: 1.2em;
   font-weight: 400;
   margin-bottom: 20px;
   color: #ccc;
 }
 
-.section .text button {
+.about-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: white;
+}
+
+/* 버튼 스타일 */
+.about-text button {
   margin-top: 30px;
   padding: 10px 20px;
   font-weight: 600;
@@ -23,6 +72,6 @@
   transition: background-color 0.3s ease;
 }
 
-.section .text button:hover {
+.about-text button:hover {
   background-color: #e06600;
 }
