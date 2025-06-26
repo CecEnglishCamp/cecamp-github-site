@@ -44,27 +44,26 @@ header {
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 100px 80px 60px;
 }
 
-/* Home Section */
+/* Home */
 .home-text {
   flex: 1;
+  padding-right: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 60px;
 }
 
 .home-text h1 {
   font-size: 3em;
   font-weight: 800;
   margin-bottom: 20px;
-  color: white;
 }
 
 .scrolling-text {
@@ -84,7 +83,7 @@ header {
   }
 }
 
-/* About Section */
+/* About */
 .about-image {
   flex: 1;
   display: flex;
@@ -105,7 +104,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
 }
 
 .about-text h2 {
@@ -141,8 +139,48 @@ header {
   background-color: #e06600;
 }
 
-/* 이미지 섹션 공통 */
-.image img {
-  max-width: 100%;
-  height: auto;
+/* Episode */
+.episode-section {
+  background-color: #2e003e;
+}
+
+.episode-text {
+  flex: 1;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.episode-text h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.episode-text h3 {
+  font-size: 1.3em;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.episode-text p {
+  font-size: 1em;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.video-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.video-box video {
+  max-height: 80vh;
+  width: auto;
+  border: 2px solid white;
+  border-radius: 10px;
 }
