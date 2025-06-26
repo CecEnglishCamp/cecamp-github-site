@@ -1,22 +1,21 @@
-<!-- index.md -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CecEnglishCamp</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>CEC English Camp</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <img src="assets/img/robo.png" alt="Logo" class="logo" />
+
+  <!-- NAVIGATION -->
+  <header class="navbar black">
     <nav>
-      <ul>
+      <ul class="nav-center white-text">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#episode">Episode</a></li>
-        <li><a href="#program">Program</a></li>
+        <li><a href="#programs">Programs</a></li>
         <li><a href="#testimonials">What they say</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#how">How it works</a></li>
@@ -26,114 +25,154 @@
     </nav>
   </header>
 
-  <section id="home">
-    <img src="assets/img/home.png" alt="Home Image">
-    <h1>Engaging English Lessons for Kids</h1>
-  </section>
-
-  <section id="about">
-    <img src="assets/img/about.png" alt="About Us">
-    <h2>About Us</h2>
-    <p>Our mission is to make English learning fun, immersive, and effective for young learners.</p>
-  </section>
-
-  <section id="episode">
-    <img src="assets/img/episode.jpg" alt="Episode">
-    <h2>Episodes</h2>
-    <p>Weekly adventures that teach grammar through exciting stories.</p>
-  </section>
-
-  <section id="program">
-    <h2>Programs</h2>
-    <div class="program-card">
-      <img src="assets/img/program1.jpg" alt="Program 1">
-      <h3>Grammar Adventures</h3>
-      <p>Free grammar-based storybooks with quizzes.</p>
-    </div>
-    <div class="program-card">
-      <img src="assets/img/program2.jpg" alt="Program 2">
-      <h3>StoryQuest Workshops</h3>
-      <p>$25/month workshops to boost creativity and grammar.</p>
-    </div>
-    <div class="program-card">
-      <img src="assets/img/program3.jpg" alt="Program 3">
-      <h3>Grammar Games</h3>
-      <p>$50/month fun grammar games and exercises.</p>
+  <!-- HOME -->
+  <section id="home" class="section black">
+    <div class="container row">
+      <img src="images/home.jpg" alt="home" class="half-img"/>
+      <div class="text-box">
+        <h1 class="white-text">Welcome to CEC English Camp</h1>
+        <p class="white-text">Experience creative, confident, and community-based English learning.</p>
+      </div>
     </div>
   </section>
 
-  <section id="testimonials">
-    <img src="assets/img/faq.png" alt="Testimonials">
-    <h2>What Parents Say</h2>
-    <p>"My kids love it! They're learning and laughing at the same time!"</p>
-  </section>
-
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <div class="pricing-plan">
-      <img src="assets/img/price1.jpg" alt="Free Plan">
-      <h3>Free</h3>
-      <p>Basic grammar adventures</p>
-    </div>
-    <div class="pricing-plan">
-      <img src="assets/img/price2.jpg" alt="Workshops Plan">
-      <h3>$25/month</h3>
-      <p>StoryQuest Workshops</p>
-    </div>
-    <div class="pricing-plan">
-      <img src="assets/img/price3.jpg" alt="Games Plan">
-      <h3>$50/month</h3>
-      <p>Grammar Games with coaching</p>
+  <!-- ABOUT -->
+  <section id="about" class="section black">
+    <div class="container row reverse">
+      <img src="images/about.jpg" alt="about" class="half-img"/>
+      <div class="text-box white-text">
+        <h2>About Us</h2>
+        <p>[About.txt에서 제공한 내용 삽입]</p>
+      </div>
     </div>
   </section>
 
-  <section id="how">
-    <h2>How It Works</h2>
-    <div class="how-step">
-      <img src="assets/img/how1.jpg" alt="Step 1">
-      <h3>Interactive Learning</h3>
-    </div>
-    <div class="how-step">
-      <img src="assets/img/how2.jpg" alt="Step 2">
-      <h3>Personalized Guidance</h3>
-    </div>
-    <div class="how-step">
-      <img src="assets/img/how3.jpg" alt="Step 3">
-      <h3>Creative Expression</h3>
-    </div>
-    <div class="how-step">
-      <img src="assets/img/how4.jpg" alt="Step 4">
-      <h3>Community Building</h3>
+  <!-- EPISODE -->
+  <section id="episode" class="section purple">
+    <div class="container row">
+      <div class="text-box white-text">
+        <h2>Episode</h2>
+        <p>[Episode 내용 삽입]</p>
+        <button onclick="expandContent('ep1')">Read More</button>
+        <div id="ep1" class="hidden">
+          <p>[Title Robo, Jump & Me 내용]</p>
+        </div>
+      </div>
+      <img src="images/episode.jpg" alt="episode" class="half-img"/>
     </div>
   </section>
 
-  <section id="blog">
-    <h2>Blog</h2>
-    <div class="blog-post">
-      <img src="assets/img/blog1.jpg" alt="Blog 1">
-      <h3>Tips for Learning English</h3>
-      <p>Simple ways to improve your child's English from home.</p>
+  <!-- PROGRAMS -->
+  <section id="programs" class="section green">
+    <div class="container row programs-grid">
+      <div class="program-card">
+        <img src="images/prog1.jpg" alt="Program 1"/>
+        <h3>Program 1</h3>
+        <p>Mastery Through Narrative</p>
+        <button onclick="expandContent('prog1')">Read More</button>
+        <div id="prog1" class="hidden">
+          <p>[Program 1 Mastery 내용]</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="images/prog2.jpg" alt="Program 2"/>
+        <h3>Program 2</h3>
+        <p>Integrated Literacy</p>
+        <button onclick="expandContent('prog2')">Read More</button>
+        <div id="prog2" class="hidden">
+          <p>[Program 2 내용]</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="images/prog3.jpg" alt="Program 3"/>
+        <h3>Program 3</h3>
+        <p>Fluency & Confidence</p>
+        <button onclick="expandContent('prog3')">Read More</button>
+        <div id="prog3" class="hidden">
+          <p>[Program 3 내용]</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="tel" name="phone" placeholder="Handphone" required>
-      <textarea name="message" placeholder="Your message"></textarea>
-      <input type="text" name="time" placeholder="Preferred time to contact">
-      <input type="text" name="hours" placeholder="Available hours">
-      <input type="text" name="location" placeholder="Location">
-      <button type="submit">Send</button>
-    </form>
+  <!-- WHAT THEY SAY -->
+  <section id="testimonials" class="section lightgreen">
+    <div class="container row testimonials-grid">
+      <div class="testimonial-card">
+        <img src="images/user1.jpg" alt="User"/>
+        <p>[What they say 1.txt]</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="images/user2.jpg" alt="User"/>
+        <p>[What they say 2.txt]</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="images/user3.jpg" alt="User"/>
+        <p>[What they say 3.txt]</p>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 CecEnglishCamp. All rights reserved.</p>
-  </footer>
+  <!-- PRICING -->
+  <section id="pricing" class="section red fullpage">
+    <div class="container pricing-grid">
+      <div class="pricing-card">
+        <img src="images/price1.jpg" alt="Price 1"/>
+        <p>[Pricing 1 내용 + Read More]</p>
+      </div>
+      <div class="pricing-card">
+        <img src="images/price2.jpg" alt="Price 2"/>
+        <p>[Pricing 2 내용]</p>
+      </div>
+      <div class="pricing-card">
+        <img src="images/price3.jpg" alt="Price 3"/>
+        <p>[Pricing 3 내용]</p>
+      </div>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section white fullpage">
+    <div class="container vertical-cards">
+      <div class="how-card">
+        <img src="images/how5.jpg" alt="how1"/>
+        <p>Creative expression</p>
+        <button onclick="expandContent('how1')">Read More</button>
+        <div id="how1" class="hidden">[How it works 5.txt]</div>
+      </div>
+      <div class="how-card">
+        <img src="images/how6.jpg" alt="how2"/>
+        <p>Community building</p>
+        <button onclick="expandContent('how2')">Read More</button>
+        <div id="how2" class="hidden">[How it works 6.txt]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="section blue fullpage">
+    <div class="container">
+      <h2 class="white-text">Blog</h2>
+      <p>Blog post preview here</p>
+      <button onclick="expandContent('blogPost')">Read More</button>
+      <div id="blogPost" class="hidden">[블로그 전체 본문]</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section black">
+    <div class="container">
+      <h2 class="white-text">Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name"/>
+        <input type="email" placeholder="Email"/>
+        <input type="text" placeholder="Phone"/>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+<script src="script.js"></script>
 </body>
 </html>
