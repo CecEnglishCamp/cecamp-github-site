@@ -67,7 +67,7 @@ nav .nav-links {
 }
 /* 기존 코드 유지 위에 이 부분만 업데이트 */
 .home-video {
-  width: 40%;
+  width: 50%;
   max-width: 100%;
   height: auto;
   object-fit: contain;
