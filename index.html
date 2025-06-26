@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navigation -->
   <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="assets/img/robo.png" alt="Robot Logo" />
-        <span>CEC English Camp</span>
-      </div>
+    <div class="logo-container">
+      <img src="assets/img/robo.png" alt="Robot Logo" class="logo" />
+      <span class="site-title">CEC English Camp</span>
+    </div>
+    <nav>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -27,24 +28,23 @@
     </nav>
   </header>
 
-  <section class="home">
-    <div class="home-content">
-      <div class="text">
-        <h1>Welcome to CEC English Camp</h1>
-        <p>
-          Empowering young learners through immersive English learning
-          experiences in a fun and dynamic camp environment.
-        </p>
-      </div>
-      <div class="image-wrapper">
-        <img src="assets/img/home.png" alt="Robot Home" class="robot-img" />
-        <div class="scrolling-text-wrapper">
-          <div class="scrolling-text">
-            Explore language through joy, imagination, and connection. 🚀📘✨
-          </div>
-        </div>
+  <!-- Main Section -->
+  <main class="main-container">
+    <div class="text-content">
+      <h1>Welcome to CEC English Camp</h1>
+      <p>
+        Empowering young learners through immersive English learning experiences
+        in a fun and dynamic camp environment.
+      </p>
+      <div class="scrolling-text">
+        <span>Explore language through joy, imagination, and connection. 🚀🟦✨</span>
       </div>
     </div>
-  </section>
+    <div class="image-wrapper">
+      <img src="assets/img/home.png" alt="Robot Home" class="robot-img" />
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
