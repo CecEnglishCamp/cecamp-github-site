@@ -1,18 +1,22 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">CEC English Camp</div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/images/home.png" alt="Robot Home" />
+      <span>CEC English Camp</span>
+    </div>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Episode</a></li>
         <li><a href="#">Program</a></li>
@@ -25,8 +29,9 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-text">
       <h1>Welcome to CEC English Camp</h1>
       <p>Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</p>
     </div>
@@ -35,45 +40,5 @@
     </div>
   </section>
 
-  <section class="about">
-    <div class="about-image">
-      <img src="assets/images/about.png" alt="About Robot" />
-    </div>
-    <div class="about-content">
-      <h2>Engaging English Learning</h2>
-      <h3>Discover the joy of language through stories</h3>
-      <p>
-        At CEC English Camp, we ignite a passion for English in kids through captivating short novels.
-        Our innovative approach focuses on grammar while making learning fun and engaging.
-        With a supportive environment, children develop their language skills, boost their confidence,
-        and build a lifelong love for reading. Join us in transforming the way young learners experience English!
-      </p>
-      <button>Get in touch</button>
-    </div>
-  </section>
-
-  <section class="episode">
-    <div class="episode-content">
-      <h2>📘 점프 & 미소 – 시즌 1 / 에피소드 1</h2>
-      <h3>창고의 비밀 문서</h3>
-      <p>
-        “공이 어디 간 거지…”<br />
-        미소는 낮게 중얼이며, 할아버지의 낡은 창고 문을 밀었다.
-        “공이 어디 간 거지…”<br />
-        미소는 낮게 중얼이며, 할아버지의 낡은 창고 문을 밀었다.
-        “공이 어디 간 거지…”<br />
-        미소는 낮게 중얼이며, 할아버지의 낡은 창고 문을 밀었다.
-      </p>
-      <button class="read-more">Read More</button>
-    </div>
-    <div class="episode-video">
-      <video controls width="85%">
-        <source src="assets/videos/episode.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </section>
-
 </body>
 </html>
-```
