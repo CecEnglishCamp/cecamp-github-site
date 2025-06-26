@@ -7,80 +7,119 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header>
+  <nav>
     <div class="logo">CEC English Camp</div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#episode">Episode</a></li>
-        <li><a href="#program">Program</a></li>
-      </ul>
-    </nav>
-  </header>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#episode">Episode</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#testimonial">What they say</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Home -->
-  <section id="home" class="section black-bg section-fixed">
-    <div class="section-content">
-      <div class="text-box left">
-        <h1>Welcome to CEC English Camp</h1>
-        <p>Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</p>
-      </div>
-      <div class="image-box right">
-        <img src="img/home.png" alt="Home Image" />
-      </div>
+  <section id="home" class="section dark">
+    <div class="text">
+      <h1>Welcome to CEC English Camp</h1>
+      <p>Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</p>
+    </div>
+    <div class="image"><img src="home.png" alt="Home Image" /></div>
+  </section>
+
+  <section id="about" class="section dark">
+    <div class="image"><img src="about.png" alt="About Image" /></div>
+    <div class="text">
+      <h2>About CEC</h2>
+      <p>CEC Camp is more than just a language camp. We provide an integrated environment where students learn to express themselves with confidence through guided storytelling, drama, and collaborative learning activities.</p>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section black-bg section-fixed">
-    <div class="section-content">
-      <div class="image-box left">
-        <img src="img/about.png" alt="About Image" />
-      </div>
-      <div class="text-box right">
-        <h2>About CEC</h2>
-        <p>CEC Camp is more than just a language camp. We provide an integrated environment where students learn to express themselves with confidence through guided storytelling, drama, and collaborative learning activities.</p>
-      </div>
+  <section id="episode" class="section purple">
+    <div class="text">
+      <h2>Robo, Jump & Me - Episode 1</h2>
+      <p>A thrilling story of a boy, a robot, and a journey into language and imagination.</p>
+      <button>Read More</button>
     </div>
+    <div class="image"><img src="episode.png" alt="Episode Image" /></div>
   </section>
 
-  <!-- Episode -->
-  <section id="episode" class="section purple-bg section-fixed">
-    <div class="section-content">
-      <div class="text-box left">
-        <h2>Robo, Jump & Me - Episode 1</h2>
-        <p>A thrilling story of a boy, a robot, and a journey into language and imagination.</p>
-        <a href="#" class="btn">Read More</a>
-      </div>
-      <div class="image-box right">
-        <img src="img/episode.jpg" alt="Episode Image" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Program -->
-  <section id="program" class="section green-bg section-fixed">
-    <div class="section-content program-grid">
+  <section id="program" class="section green">
+    <div class="cards">
       <div class="card">
-        <img src="img/program1.jpg" alt="Program 1" />
+        <img src="program1.png" alt="Program 1" />
         <h3>Mastery Through Narrative</h3>
         <p>Build language depth through story engagement and narrative production.</p>
-        <a href="#" class="btn">Read More</a>
+        <button>Read More</button>
       </div>
       <div class="card">
-        <img src="img/program2.jpg" alt="Program 2" />
+        <img src="program2.png" alt="Program 2" />
         <h3>Integrated Literacy</h3>
         <p>Combines speaking, reading, and writing into cohesive learning experiences.</p>
-        <a href="#" class="btn">Read More</a>
+        <button>Read More</button>
       </div>
       <div class="card">
-        <img src="img/program3.jpg" alt="Program 3" />
+        <img src="program3.png" alt="Program 3" />
         <h3>Fluency & Confident Expression</h3>
         <p>Focuses on performance, debates, and presentations to enhance fluency.</p>
-        <a href="#" class="btn">Read More</a>
+        <button>Read More</button>
       </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section orange">
+    <div class="text">
+      <h2>Pricing</h2>
+      <p>Choose a plan that fits your child’s learning journey. Simple and transparent pricing.</p>
+      <ul>
+        <li>Basic: $200</li>
+        <li>Standard: $350</li>
+        <li>Premium: $500</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how" class="section blue">
+    <div class="text">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Register online</li>
+        <li>Join orientation</li>
+        <li>Begin learning journey</li>
+        <li>Get progress reports</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="blog" class="section light">
+    <div class="image"><img src="blog.png" alt="Blog Image" /></div>
+    <div class="text">
+      <h2>Tips for Learning English</h2>
+      <p>Simple ways to improve your child’s English from home.</p>
+      <button>Read More</button>
+    </div>
+  </section>
+
+  <section id="testimonial" class="section dark">
+    <div class="text">
+      <h2>What Parents Say</h2>
+      <blockquote>"This camp transformed my child's confidence in English!"</blockquote>
+      <blockquote>"Creative and inspiring approach to language learning."</blockquote>
+    </div>
+  </section>
+
+  <section id="contact" class="section dark">
+    <div class="text">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 
