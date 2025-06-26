@@ -1,27 +1,95 @@
-/* 재사용되는 section 설정 */
-.section {
-  height: 100vh;
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* 네비게이션 바 */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 80px 60px;
-  box-sizing: border-box;
-  background-color: #000;
-  overflow: hidden;
+  padding: 15px 40px;
+  z-index: 999;
 }
 
-/* 이미지/텍스트 균형 맞추기 */
-.section .image,
-.section .text {
-  width: 50%;
+.logo {
+  font-weight: bold;
+  font-size: 18px;
   color: white;
 }
 
-/* 이미지 위치 약간 하향 */
-.about-image {
+.nav-links {
+  list-style: none;
   display: flex;
-  align-items: flex-start;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 80px 60px;
+}
+
+/* Home Section */
+.home-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding-right: 60px;
+}
+
+.home-text h1 {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.scrolling-text {
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: scrollText 12s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* About Section */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   padding-top: 40px;
 }
 
@@ -31,25 +99,24 @@
   display: block;
 }
 
-/* 텍스트 수직 정렬 조정 */
 .about-text {
+  flex: 1;
+  padding-left: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 40px;
-}
-
-/* 제목 스타일 */
-.about-text h2 {
-  font-size: 2em;
-  font-weight: 800;
-  margin-bottom: 10px;
   color: white;
 }
 
+.about-text h2 {
+  font-size: 2.4em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
 .about-text h3 {
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 500;
   margin-bottom: 20px;
   color: #ccc;
 }
@@ -57,21 +124,25 @@
 .about-text p {
   font-size: 1.1em;
   line-height: 1.6;
-  color: white;
+  margin-bottom: 30px;
 }
 
-/* 버튼 스타일 */
 .about-text button {
-  margin-top: 30px;
   padding: 10px 20px;
-  font-weight: 600;
-  border: none;
+  font-weight: bold;
   background-color: orange;
+  border: none;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .about-text button:hover {
   background-color: #e06600;
+}
+
+/* 이미지 섹션 공통 */
+.image img {
+  max-width: 100%;
+  height: auto;
 }
