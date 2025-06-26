@@ -1,105 +1,55 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: #fff;
-  color: #333;
+.how-it-works-section {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
 }
 
-header {
-  background: #f4f4f4;
-  padding: 20px 40px;
+.how-it-works-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.how-it-works-section .subtitle {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cards-grid {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #007bff;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  margin-top: 0;
-  color: #222;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
+  width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
   padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
 .card img {
   width: 100%;
-  height: auto;
-  border-radius: 6px;
+  border-radius: 8px;
   margin-bottom: 15px;
 }
 
-.card:hover {
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.toggle-content {
-  display: none;
-  margin-top: 10px;
+.card p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
 }
 
-.toggle-button {
-  margin-top: 10px;
-  padding: 8px 12px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.toggle-button:hover {
-  background-color: #0056b3;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 5px 0;
-  }
+.card a {
+  font-weight: bold;
+  color: #007BFF;
+  text-decoration: underline;
 }
