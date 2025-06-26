@@ -1,116 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
-
+/* 전체 페이지 어두운 배경 및 기본 설정 */
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
+  background-color: #000;
   font-family: 'Segoe UI', sans-serif;
+  color: #fff;
 }
 
+/* 상단 내비게이션 */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 12px 40px;
   background-color: black;
-  padding: 10px 40px;
-  position: relative;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
 }
 
 .logo {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.site-title {
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: bold;
+  font-size: 18px;
 }
 
-nav .nav-links {
+.logo img {
+  height: 40px;
+}
+
+nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-  padding: 0;
+  gap: 24px;
   margin: 0;
+  padding: 0;
+  transform: translateX(-5%); /* ← 중앙 정렬 */
 }
 
-.nav-links a {
+nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: 400;
-  transition: color 0.3s;
+  font-weight: 500;
+  font-size: 15px;
 }
 
-.nav-links a:hover {
-  color: cyan;
-}
-
+/* 메인 영역 */
 .main-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 60px;
-  min-height: calc(100vh - 60px);
-  box-sizing: border-box;
+  padding: 80px;
 }
 
-.text-content {
+.text-section {
   max-width: 50%;
 }
 
-h1 {
-  font-size: 36px;
+.text-section h1 {
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-p {
+.text-section p {
   font-size: 18px;
   line-height: 1.6;
+  font-weight: 300;
 }
 
-.image-wrapper {
-  width: 400px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.robot-img {
-  width: 100%;
-  height: auto;
-}
-
-/* Scrolling Text */
+/* 흘러가는 텍스트 */
 .scrolling-text {
   margin-top: 20px;
-  overflow: hidden;
+  color: cyan;
+  font-weight: 500;
   white-space: nowrap;
-  width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
 .scrolling-text span {
   display: inline-block;
-  padding-left: 0;
-  animation: scroll-left 12s linear infinite;
-  color: cyan;
-  font-weight: 500;
-  font-size: 16px;
+  animation: scroll-left 15s linear infinite;
 }
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
   }
+}
+
+/* 로봇 이미지 또는 동영상 */
+.image-wrapper {
+  width: 440px;             /* ← 5% 더 큼 */
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -5%;          /* ← 왼쪽으로 5% 이동 */
+  position: relative;
+}
+
+.robot-img,
+.robot-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
