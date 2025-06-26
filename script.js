@@ -1,4 +1,2 @@
-// Smooth scroll behavior already supported by CSS
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Page Loaded");
-});
+// Future enhancement: form handling, animation, etc.
+console.log("Script loaded.");
