@@ -1,54 +1,242 @@
-<section id="programs">
-  <h2>Programs</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEC English Camp</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
 
-  <!-- Card 1 -->
-  <div class="card">
-    <h3>Grammar Adventures</h3>
-    <img src="https://via.placeholder.com/600x200?text=Grammar+Adventures" alt="Grammar Adventures" class="card-image" />
-    <p>Explore English grammar through captivating stories. <strong>Free</strong></p>
+    header {
+      background: #f4f4f4;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-    <div class="more-content hidden">
-      <p>Includes access to weekly storybooks and basic quizzes.</p>
-      <ul>
-        <li>Interactive storytelling with grammar focus</li>
-        <li>Worksheets for parents & children</li>
-        <li>Perfect for ages 5–8</li>
-      </ul>
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    .card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+
+    .toggle-content {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .toggle-button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .toggle-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CEC EnglishCamp</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#episode">Episode</a>
+      <a href="#programs">Programs</a>
+      <a href="#testimonials">What they say</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to CEC EnglishCamp</h2>
+    <p>Unlock your child’s English potential through storytelling.</p>
+    <img src="home_image.jpg" alt="Home banner" />
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We believe kids learn best through stories. Our camp helps children build English skills through imagination, creativity, and structured storytelling.</p>
+    <img src="about_image.jpg" alt="About image" />
+  </section>
+
+  <section id="episode">
+    <h2>Episode Highlights</h2>
+
+    <div class="card">
+      <h3>Episode 1: The Talking Tree</h3>
+      <img src="episode1.jpg" alt="Episode 1" />
+      <p>A magical story where trees teach grammar!</p>
+      <div class="toggle-content">
+        <p>Children discover adjectives and descriptive language as the tree talks about seasons, colors, and feelings.</p>
+      </div>
+      <button class="toggle-button" onclick="toggleContent(this)">Read more</button>
     </div>
-    <button class="toggle-btn">Read more</button>
-  </div>
 
-  <!-- Card 2 -->
-  <div class="card">
-    <h3>StoryQuest Workshops</h3>
-    <img src="https://via.placeholder.com/600x200?text=StoryQuest+Workshops" alt="StoryQuest" class="card-image" />
-    <p>Ignite creativity and learn grammar in exciting workshops. <strong>$25/month</strong></p>
-
-    <div class="more-content hidden">
-      <p>These workshops combine fun storytelling with focused grammar training.</p>
-      <ul>
-        <li>Weekly live sessions</li>
-        <li>Creative writing exercises</li>
-        <li>Small group interaction</li>
-      </ul>
+    <div class="card">
+      <h3>Episode 2: Adventure Island</h3>
+      <img src="episode2.jpg" alt="Episode 2" />
+      <p>Join the journey to learn verbs through action-packed stories.</p>
+      <div class="toggle-content">
+        <p>Each island visit focuses on different verb forms—past, present, and future—disguised in fun tasks.</p>
+      </div>
+      <button class="toggle-button" onclick="toggleContent(this)">Read more</button>
     </div>
-    <button class="toggle-btn">Read more</button>
-  </div>
 
-  <!-- Card 3 -->
-  <div class="card">
-    <h3>Grammar Games</h3>
-    <img src="https://via.placeholder.com/600x200?text=Grammar+Games" alt="Grammar Games" class="card-image" />
-    <p>Transform grammar into fun games. <strong>$50/month</strong></p>
-
-    <div class="more-content hidden">
-      <p>Students play engaging games that reinforce grammar skills in a fun way.</p>
-      <ul>
-        <li>Game-based learning modules</li>
-        <li>Weekly grammar challenges</li>
-        <li>Leaderboard and badges</li>
-      </ul>
+    <div class="card">
+      <h3>Episode 3: Grammar Galaxy</h3>
+      <img src="episode3.jpg" alt="Episode 3" />
+      <p>Blast off with nouns and pronouns in space!</p>
+      <div class="toggle-content">
+        <p>Spaceships and aliens help kids recognize and use different noun types in sentences.</p>
+      </div>
+      <button class="toggle-button" onclick="toggleContent(this)">Read more</button>
     </div>
-    <button class="toggle-btn">Read more</button>
-  </div>
-</section>
+
+    <div class="card">
+      <h3>Episode 4: The Time Tunnel</h3>
+      <img src="episode4.jpg" alt="Episode 4" />
+      <p>Travel through time to explore tenses.</p>
+      <div class="toggle-content">
+        <p>From the dinosaur age to the future, each stop helps children form past, present, and future tense sentences.</p>
+      </div>
+      <button class="toggle-button" onclick="toggleContent(this)">Read more</button>
+    </div>
+  </section>
+
+  <section id="programs">
+    <h2>Programs</h2>
+
+    <div class="card">
+      <h3>Grammar Adventures</h3>
+      <img src="grammar_adventures.jpg" alt="Grammar Adventures" />
+      <p>Explore English grammar through captivating stories. <strong>Free</strong></p>
+      <div class="toggle-content">
+        <ul>
+          <li>Interactive storytelling with grammar focus</li>
+          <li>Worksheets for parents & children</li>
+          <li>Perfect for ages 5–8</li>
+        </ul>
+      </div>
+      <button class="toggle-button" onclick="toggleContent(this)">Read more</button>
+    </div>
+
+    <div class="card">
+      <h3>StoryQuest Workshops</h3>
+      <img src="storyquest.jpg" alt="StoryQuest" />
+      <p>Ignite creativity and learn grammar in exciting workshops. <strong>$25/month</strong></p>
+      <div class="toggle-content">
+        <ul>
+          <li>Weekly live sessions</li>
+          <li>Creative writing exercises</li>
+          <li>Small group interaction</li>
+        </ul>
+      </div>
+      <button class="toggle-button" onclick="toggleContent(this)">Read more</button>
+    </div>
+
+    <div class="card">
+      <h3>Grammar Games</h3>
+      <img src="grammar_games.jpg" alt="Grammar Games" />
+      <p>Transform grammar into fun games. <strong>$50/month</strong></p>
+      <div class="toggle-content">
+        <ul>
+          <li>Game-based learning modules</li>
+          <li>Weekly grammar challenges</li>
+          <li>Progress tracking dashboard</li>
+        </ul>
+      </div>
+      <button class="toggle-button" onclick="toggleContent(this)">Read more</button>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What They Say</h2>
+
+    <div class="card">
+      <p>"My child now loves English thanks to CecCamp!"</p>
+      <strong>- Parent A</strong>
+    </div>
+    <div class="card">
+      <p>"The storytelling approach is genius. Highly recommended."</p>
+      <strong>- Parent B</strong>
+    </div>
+    <div class="card">
+      <p>"Best learning camp ever – my son improved drastically."</p>
+      <strong>- Parent C</strong>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="card">
+      <h3>Grammar Adventures</h3>
+      <p>$0/month</p>
+      <p>Learn basic grammar via storybooks.</p>
+    </div>
+
+    <div class="card">
+      <h3>StoryQuest Workshops</h3>
+      <p>$25/month</p>
+      <p>Creative storytelling + grammar training.</p>
+    </div>
+
+    <div class="card">
+      <h3>Grammar Games</h3>
+      <p>$50/month</p>
+      <p>Interactive grammar games to boost fun and learning.</p>
+    </div>
+  </section>
+
+  <script>
+    function toggleContent(button) {
+      const content = button.previousElementSibling;
+      const isVisible = content.style.display === "block";
+      content.style.display = isVisible ? "none" : "block";
+      button.textContent = isVisible ? "Read more" : "Show less";
+    }
+  </script>
+
+</body>
+</html>
