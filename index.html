@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="navbar black">
+  <!-- Navbar -->
+  <header class="navbar">
     <nav>
-      <ul class="nav-center white-text">
+      <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#episode">Episode</a></li>
@@ -25,154 +25,135 @@
     </nav>
   </header>
 
-  <!-- HOME -->
-  <section id="home" class="section black">
-    <div class="container row">
-      <img src="images/home.jpg" alt="home" class="half-img"/>
+  <!-- Sections -->
+  <section class="fixed-section" id="home">
+    <div class="container">
+      <div class="image-box">
+        <img src="home.png" alt="Home"/>
+      </div>
       <div class="text-box">
-        <h1 class="white-text">Welcome to CEC English Camp</h1>
-        <p class="white-text">Experience creative, confident, and community-based English learning.</p>
+        <h2>Welcome to CEC English Camp</h2>
+        <p class="description">
+          Experience creative, confident, and community-based English learning.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section black">
-    <div class="container row reverse">
-      <img src="images/about.jpg" alt="about" class="half-img"/>
-      <div class="text-box white-text">
+  <section class="fixed-section" id="about">
+    <div class="container">
+      <div class="image-box">
+        <img src="about.png" alt="About"/>
+      </div>
+      <div class="text-box">
         <h2>About Us</h2>
-        <p>[About.txt에서 제공한 내용 삽입]</p>
+        <p class="description">
+          [About.txt의 핵심 요약 삽입 예정] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in justo blandit.
+        </p>
+        <button class="read-more">Read More</button>
       </div>
     </div>
   </section>
 
-  <!-- EPISODE -->
-  <section id="episode" class="section purple">
-    <div class="container row">
-      <div class="text-box white-text">
-        <h2>Episode</h2>
-        <p>[Episode 내용 삽입]</p>
-        <button onclick="expandContent('ep1')">Read More</button>
-        <div id="ep1" class="hidden">
-          <p>[Title Robo, Jump & Me 내용]</p>
-        </div>
-      </div>
-      <img src="images/episode.jpg" alt="episode" class="half-img"/>
-    </div>
-  </section>
-
-  <!-- PROGRAMS -->
-  <section id="programs" class="section green">
-    <div class="container row programs-grid">
-      <div class="program-card">
-        <img src="images/prog1.jpg" alt="Program 1"/>
-        <h3>Program 1</h3>
-        <p>Mastery Through Narrative</p>
-        <button onclick="expandContent('prog1')">Read More</button>
-        <div id="prog1" class="hidden">
-          <p>[Program 1 Mastery 내용]</p>
-        </div>
-      </div>
-      <div class="program-card">
-        <img src="images/prog2.jpg" alt="Program 2"/>
-        <h3>Program 2</h3>
-        <p>Integrated Literacy</p>
-        <button onclick="expandContent('prog2')">Read More</button>
-        <div id="prog2" class="hidden">
-          <p>[Program 2 내용]</p>
-        </div>
-      </div>
-      <div class="program-card">
-        <img src="images/prog3.jpg" alt="Program 3"/>
-        <h3>Program 3</h3>
-        <p>Fluency & Confidence</p>
-        <button onclick="expandContent('prog3')">Read More</button>
-        <div id="prog3" class="hidden">
-          <p>[Program 3 내용]</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT THEY SAY -->
-  <section id="testimonials" class="section lightgreen">
-    <div class="container row testimonials-grid">
-      <div class="testimonial-card">
-        <img src="images/user1.jpg" alt="User"/>
-        <p>[What they say 1.txt]</p>
-      </div>
-      <div class="testimonial-card">
-        <img src="images/user2.jpg" alt="User"/>
-        <p>[What they say 2.txt]</p>
-      </div>
-      <div class="testimonial-card">
-        <img src="images/user3.jpg" alt="User"/>
-        <p>[What they say 3.txt]</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section id="pricing" class="section red fullpage">
-    <div class="container pricing-grid">
-      <div class="pricing-card">
-        <img src="images/price1.jpg" alt="Price 1"/>
-        <p>[Pricing 1 내용 + Read More]</p>
-      </div>
-      <div class="pricing-card">
-        <img src="images/price2.jpg" alt="Price 2"/>
-        <p>[Pricing 2 내용]</p>
-      </div>
-      <div class="pricing-card">
-        <img src="images/price3.jpg" alt="Price 3"/>
-        <p>[Pricing 3 내용]</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section id="how" class="section white fullpage">
-    <div class="container vertical-cards">
-      <div class="how-card">
-        <img src="images/how5.jpg" alt="how1"/>
-        <p>Creative expression</p>
-        <button onclick="expandContent('how1')">Read More</button>
-        <div id="how1" class="hidden">[How it works 5.txt]</div>
-      </div>
-      <div class="how-card">
-        <img src="images/how6.jpg" alt="how2"/>
-        <p>Community building</p>
-        <button onclick="expandContent('how2')">Read More</button>
-        <div id="how2" class="hidden">[How it works 6.txt]</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG -->
-  <section id="blog" class="section blue fullpage">
+  <section class="fixed-section" id="episode">
     <div class="container">
-      <h2 class="white-text">Blog</h2>
-      <p>Blog post preview here</p>
-      <button onclick="expandContent('blogPost')">Read More</button>
-      <div id="blogPost" class="hidden">[블로그 전체 본문]</div>
+      <div class="image-box">
+        <img src="episode.jpg" alt="Episode"/>
+      </div>
+      <div class="text-box">
+        <h2>Episode 1: Robo, Jump & Me</h2>
+        <p class="description">
+          [Episode 1 핵심 요약] Join the journey where learning meets fun!
+        </p>
+        <button class="read-more">Read More</button>
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section black">
+  <section class="fixed-section" id="programs">
     <div class="container">
-      <h2 class="white-text">Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Name"/>
-        <input type="email" placeholder="Email"/>
-        <input type="text" placeholder="Phone"/>
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <div class="image-box">
+        <img src="programs.jpg" alt="Programs"/>
+      </div>
+      <div class="text-box">
+        <h2>Our Programs</h2>
+        <p class="description">
+          Narrative mastery, integrated literacy, and fluent self-expression.
+        </p>
+        <button class="read-more">Explore</button>
+      </div>
     </div>
   </section>
 
-<script src="script.js"></script>
+  <section class="fixed-section" id="testimonials">
+    <div class="container">
+      <div class="image-box">
+        <img src="parent-quote.jpg" alt="What they say"/>
+      </div>
+      <div class="text-box">
+        <h2>What Parents Say</h2>
+        <p class="description">
+          "My kids love it! They're learning and laughing at the same time!"
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fixed-section" id="pricing">
+    <div class="container">
+      <div class="image-box">
+        <img src="pricing.jpg" alt="Pricing"/>
+      </div>
+      <div class="text-box">
+        <h2>Pricing Plans</h2>
+        <p class="description">
+          Free – Grammar Adventures<br/>
+          $25/mo – StoryQuest Workshops<br/>
+          $50/mo – Coaching & Games
+        </p>
+        <button class="read-more">See Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="fixed-section" id="how">
+    <div class="container">
+      <div class="image-box">
+        <img src="how.jpg" alt="How it works"/>
+      </div>
+      <div class="text-box">
+        <h2>How It Works</h2>
+        <p class="description">
+          Interactive learning, personal guidance, creativity, community.
+        </p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="fixed-section" id="blog">
+    <div class="container">
+      <div class="image-box">
+        <img src="blog-image.jpg" alt="Blog"/>
+      </div>
+      <div class="text-box">
+        <h2>Learning English at Home</h2>
+        <p class="description">
+          Simple ways to support your child’s English growth at home.
+        </p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="fixed-section" id="contact">
+    <div class="container">
+      <div class="text-box">
+        <h2>Contact Us</h2>
+        <p class="description">Name / Email / Message Form Placeholder</p>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
