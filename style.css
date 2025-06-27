@@ -1,89 +1,114 @@
-body {
+/* 전체 초기화 */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #dff5dd; /* 밝은 초록 */
+  background-color: #dff5dd;
   color: #222;
+  padding-top: 80px; /* 고정 헤더 공간 확보 */
 }
 
-/* 헤더 */
-.site-header {
-  background-color: black;
-  padding: 10px 0;
-  position: sticky;
+/* 헤더 고정 및 스타일 */
+header {
+  position: fixed;
   top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
 }
 
-.header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
+.logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logo img {
   height: 40px;
+  margin-right: 10px;
 }
 
-.main-nav ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav a {
-  color: white;
-  text-decoration: none;
+.logo span {
+  font-size: 20px;
   font-weight: bold;
 }
 
-/* 본문 레이아웃 */
+/* 내비게이션 수평 정렬 */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #007a5a;
+}
+
+/* 에피소드 본문 정렬 */
 .episode-main {
-  padding: 60px 30px;
   display: flex;
   justify-content: center;
+  padding: 60px 20px;
 }
 
 .episode-container {
   display: flex;
-  gap: 40px;
-  align-items: center;
+  background-color: #dff5dd;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
   max-width: 1100px;
   width: 100%;
+  gap: 40px;
+  align-items: center;
+  padding: 40px;
 }
 
 .episode-text {
   flex: 1;
+  max-width: 520px;
 }
 
 .episode-text h2 {
-  font-size: 1.6em;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 1.4em;
 }
 
 .episode-text p {
+  margin-bottom: 16px;
   line-height: 1.6;
-  margin-bottom: 15px;
+}
+
+.read-more-btn {
+  display: inline-block;
+  background-color: #007a5a;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.read-more-btn:hover {
+  background-color: #005e45;
 }
 
 .episode-image img {
-  max-width: 350px;
+  width: 320px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* 버튼 */
-.read-more-btn {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #008060;
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 5px;
-  text-decoration: none;
 }
