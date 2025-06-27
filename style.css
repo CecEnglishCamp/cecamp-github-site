@@ -1,65 +1,69 @@
-/* 전체 초기화 */
+/* 기본 설정 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #dff5dd;
+  background-color: #e2f8df; /* 연한 초록 배경 */
   color: #222;
-  padding-top: 80px; /* 고정 헤더 공간 확보 */
+  line-height: 1.6;
+  padding-top: 80px; /* fixed header 공간 확보 */
 }
 
-/* 헤더 고정 및 스타일 */
+/* 헤더 (네비게이션 바) */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  background-color: #000000; /* 검정 배경 */
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* 로고 */
 .logo {
   display: flex;
   align-items: center;
 }
 
 .logo img {
-  height: 40px;
+  height: 36px;
   margin-right: 10px;
 }
 
 .logo span {
   font-size: 20px;
   font-weight: bold;
+  color: #ffffff;
 }
 
-/* 내비게이션 수평 정렬 */
+/* 네비게이션 */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: 500;
   transition: color 0.2s;
 }
 
 .nav-links li a:hover {
-  color: #007a5a;
+  color: #a0ffd0;
 }
 
-/* 에피소드 본문 정렬 */
+/* 에피소드 섹션 */
 .episode-main {
   display: flex;
   justify-content: center;
@@ -68,47 +72,53 @@ header {
 
 .episode-container {
   display: flex;
-  background-color: #dff5dd;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff50; /* 투명도 있는 흰색 배경 */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 1100px;
   width: 100%;
   gap: 40px;
   align-items: center;
-  padding: 40px;
 }
 
 .episode-text {
   flex: 1;
-  max-width: 520px;
 }
 
 .episode-text h2 {
-  margin-bottom: 20px;
-  font-size: 1.4em;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #022b0a;
 }
 
 .episode-text p {
   margin-bottom: 16px;
-  line-height: 1.6;
+  font-size: 16px;
+  color: #333333;
 }
 
+/* Read More 버튼 */
 .read-more-btn {
   display: inline-block;
-  background-color: #007a5a;
-  color: white;
   padding: 10px 18px;
+  background-color: #007a4d;
+  color: #ffffff;
+  border: none;
   border-radius: 6px;
+  font-weight: bold;
   text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s;
 }
 
 .read-more-btn:hover {
-  background-color: #005e45;
+  background-color: #005f39;
 }
 
+/* 에피소드 이미지 */
 .episode-image img {
-  width: 320px;
+  max-width: 280px;
+  height: auto;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
