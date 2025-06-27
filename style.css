@@ -39,29 +39,14 @@ body {
 .episode-section {
   display: flex;
   justify-content: center;
-  padding: 60px 20px;
-}
-
-.episode-container {
-  display: flex;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;
-  width: 100%;
-}
-
-.episode-text, .episode-image {
-  flex: 1;
-  padding: 30px;
-  box-sizing: border-box;
+  align-items: flex-start;
+  padding: 60px 30px;
+  gap: 40px;
 }
 
 .episode-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1;
+  max-width: 500px;
 }
 
 .episode-text h2 {
@@ -69,9 +54,10 @@ body {
 }
 
 .episode-image img {
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .read-more-btn {
@@ -82,4 +68,5 @@ body {
   border-radius: 5px;
   text-decoration: none;
   width: fit-content;
+  display: inline-block;
 }
