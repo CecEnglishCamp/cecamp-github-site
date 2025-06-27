@@ -3,31 +3,34 @@ body {
   background-color: #2e004f;
   color: white;
   margin: 0;
+  padding: 0;
 }
 
-header {
-  background-color: #000;
-  padding: 10px 20px;
+/* 헤더 */
+.site-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px 20px;
 }
 
-.logo {
+.logo img {
   height: 40px;
 }
 
-.nav-links {
+.main-nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
-.nav-links a {
+.main-nav a {
   color: white;
   text-decoration: none;
 }
 
+/* 메인 콘텐츠 */
 .episode-container {
   display: flex;
   justify-content: space-between;
@@ -45,11 +48,11 @@ header {
 }
 
 .read-more-btn {
-  background: white;
+  background-color: white;
   color: #000;
   padding: 10px 14px;
   border-radius: 5px;
+  text-decoration: none;
   display: inline-block;
   margin-top: 15px;
-  text-decoration: none;
 }
