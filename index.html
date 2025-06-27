@@ -1,55 +1,45 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Robo, Jump & Me - Season 1 / Episode 1</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Episode | Robo, Jump & Me</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="episode-detail">
+<body class="episode-page">
 
-  <header>
-    <nav class="navbar">
-      <img src="/assets/images/logo.png" alt="CEC Logo" class="logo">
-      <span class="brand">CEC English Camp</span>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
-        <li><a href="#">Program</a></li>
-        <li><a href="#">What they say</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <img src="assets/images/logo.jpg" alt="Logo" class="logo"/>
+    <ul class="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Episode</a></li>
+      <li><a href="#">Programs</a></li>
+      <li><a href="#">What they say</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">How it works</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-  <main class="content-container">
-    <div class="text-section">
-      <h2>📘 점프 & 미소 – 시즌 1 / 에피소드 1</h2>
-      <h3>창고의 비밀 문서</h3>
+  <!-- Main Episode Section -->
+  <section class="episode-container">
+    <div class="episode-left">
+      <h2>📘 Short Novel, Title: Robo, Jump & Me - Season 1 / Episode 1</h2>
       <p>
-        “공이 어디 간 거지…”<br>
-        미소는 낮게 중얼이며, 할아버지의 낡은 창고 문을 밀었다. 문은 삐걱 소리를 내며 열렸고, 안쪽에 쌓인 먼지가 햇살을 타고 떠올랐다…<br>
-        ... (전체 소설 내용 계속)
+        어느 날 공이 사라졌습니다. 미소는 공을 찾기 위해 조용한 창고로 향합니다. 그곳에서 예상치 못한 빛나는 상자를 발견하게 되는데...
       </p>
+      <button onclick="location.href='readmore.html'" class="readmore-btn">Read More →</button>
     </div>
-
-    <div class="image-section">
-      <img src="/assets/images/robot_episode.png" alt="Episode Illustration" class="episode-image">
-
-      <div class="level-box">
-        <p><strong>학생의 영어 수준에 따라 아래 레벨을 선택하여 학습 콘텐츠로 이동하세요:</strong></p>
-        <div class="level-buttons">
-          <a href="level-a1.html" class="level-btn">A1</a>
-          <a href="level-a2.html" class="level-btn">A2</a>
-          <a href="level-b1.html" class="level-btn">B1</a>
-          <a href="level-b2.html" class="level-btn">B2</a>
-        </div>
-      </div>
+    <div class="episode-right">
+      <video controls class="episode-video">
+        <source src="assets/videos/episode.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
-  </main>
+  </section>
 
 </body>
 </html>
