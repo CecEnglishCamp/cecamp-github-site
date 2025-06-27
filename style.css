@@ -1,96 +1,84 @@
-/* 기본 설정 */
+/* 기본 리셋 */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #000;
-    color: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
 }
 
-/* 네비게이션 바 */
+/* 헤더 */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: black;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    height: 55px; /* 확대된 로고 */
-    width:auto
-    margin-right: 10px;
+  height: 63px; /* 기존보다 약 15% 증가 */
+  width: auto;
+  margin-right: 10px;
 }
 
 .logo span {
-    font-size: 1.1rem;
-    font-weight: bold;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #00ffff;
-}
-
-/* 메인 콘텐츠 */
+/* 메인 영역 */
 main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
 }
 
 .main-text {
-    flex: 1 1 50%;
-    max-width: 600px;
-    padding-right: 20px;
+  max-width: 50%;
 }
 
 .main-text h1 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
+  font-size: 2.8em;  /* 약간 줄임 */
+  margin-bottom: 20px;
 }
 
-.main-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+.main-text .intro {
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.main-text strong {
-    color: #00ffff;
-}
-
-/* 영상(또는 이미지) 영역 */
-.main-visual {
-    flex: 1 1 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.highlight {
+  color: aqua;
+  font-weight: bold;
+  font-size: 1.1em;
+  white-space: nowrap;
 }
 
 .main-visual video {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: contain;
+  width: 440px; /* 약 10% 증가 */
+  max-width: 100%;
+  height: auto;
 }
