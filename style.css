@@ -1,74 +1,36 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #000;
-  color: #fff;
+.testimonials-section {
+  background-color: #1c3c34; /* 깊은 초록, 프로그램과 동일 */
+  color: white;
+  padding: 80px 20px;
 }
 
-header {
+.testimonials-grid {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #000;
-}
-
-.logo img {
-  height: 50px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.logo span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  vertical-align: middle;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.testimonials {
-  padding: 60px 20px;
-  background-color: #111;
-  text-align: center;
-}
-
-.testimonials h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .testimonial-card {
-  background-color: #222;
-  margin: 20px auto;
-  max-width: 800px;
-  padding: 30px;
-  border-radius: 12px;
-  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
 }
 
-.testimonial-card h3 {
-  margin-top: 0;
-  font-size: 1.25rem;
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid white;
 }
 
-.testimonial-card .school {
-  font-weight: normal;
-  font-size: 0.95rem;
+.testimonial-name {
+  margin-top: 10px;
+  font-style: italic;
   color: #ccc;
-}
-
-.testimonial-card p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
 }
