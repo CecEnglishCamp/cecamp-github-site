@@ -1,84 +1,148 @@
-/* 기본 리셋 */
-body {
+/* 기본 설정 */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* 헤더 */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* 네비게이션 바 */
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-  background-color: black;
+  padding: 15px 40px;
+  z-index: 999;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 63px; /* 기존보다 약 15% 증가 */
-  width: auto;
-  margin-right: 10px;
-}
-
-.logo span {
-  font-size: 1.2em;
   font-weight: bold;
+  font-size: 18px;
   color: white;
 }
 
-nav .nav-links {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
+  gap: 20px;
 }
 
 .nav-links li a {
-  text-decoration: none;
   color: white;
-  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
 }
 
-/* 메인 영역 */
-main {
+.section {
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 50px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 100px 80px 60px;
 }
 
-.main-text {
-  max-width: 50%;
+/* Home Section */
+.home-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 60px;
 }
 
-.main-text h1 {
-  font-size: 2.8em;  /* 약간 줄임 */
+.home-text h1 {
+  font-size: 3em;
+  font-weight: 800;
   margin-bottom: 20px;
+  color: white;
 }
 
-.main-text .intro {
-  font-size: 1.05em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.highlight {
-  color: aqua;
-  font-weight: bold;
-  font-size: 1.1em;
+.scrolling-text {
+  font-size: 1.2em;
   white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: scrollText 12s linear infinite;
 }
 
-.main-visual video {
-  width: 440px; /* 약 10% 증가 */
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* About Section */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.about-image img {
+  max-height: 80vh;
+  width: auto;
+  display: block;
+}
+
+.about-text {
+  flex: 1;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.about-text h2 {
+  font-size: 2.4em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.about-text h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-text button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.about-text button:hover {
+  background-color: #e06600;
+}
+
+/* 이미지 섹션 공통 */
+.image img {
   max-width: 100%;
   height: auto;
 }
