@@ -2,44 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 네비게이션 바 -->
   <header>
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="CEC Logo" />
-      <span>CEC English Camp</span>
-    </div>
+    <div class="logo">CEC English Camp</div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">What they say</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#episode">Episode</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#testimonials">What they say</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <div class="main-text">
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="text home-text">
       <h1>Welcome to CEC English Camp</h1>
-      <p class="intro">
+      <p class="scrolling-text">
         Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.
       </p>
-      <marquee behavior="scroll" direction="left" scrollamount="5" class="highlight">
-        <strong>Explore language through joy, imagination, and connection.</strong> 🚀 🟦 ✨
-      </marquee>
     </div>
-    <div class="main-visual">
-      <video src="assets/videos/robo.mp4" autoplay muted loop playsinline></video>
+    <div class="image">
+      <img src="assets/img/home.png" alt="Home Image" />
     </div>
-  </main>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="image about-image">
+      <img src="assets/img/about.png" alt="About Image" />
+    </div>
+    <div class="text about-text">
+      <h2>Engaging English Learning</h2>
+      <h3>Discover the joy of language through stories</h3>
+      <p>
+        At CEC English Camp, we ignite a passion for English in kids through captivating short novels.
+        Our innovative approach focuses on grammar while making learning fun and engaging.
+        With a supportive environment, children develop their language skills, boost their confidence,
+        and build a lifelong love for reading. Join us in transforming the way young learners experience English!
+      </p>
+      <button>Get in touch</button>
+    </div>
+  </section>
 </body>
 </html>
