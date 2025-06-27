@@ -21,7 +21,8 @@ header {
 }
 
 .logo img {
-    height: 40px; /* 확대된 로고 */
+    height: 55px; /* 확대된 로고 */
+    width:auto
     margin-right: 10px;
 }
 
