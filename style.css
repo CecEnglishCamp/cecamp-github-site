@@ -1,108 +1,42 @@
-/* 기본 리셋 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.programs-section {
+  background-color: #1c3c34; /* 깊은 초록색 */
+  color: white;
+  padding: 80px 20px;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #def5dd;  /* 연한 초록색 */
-  color: #222;
-  line-height: 1.6;
-  padding: 0;
-  margin: 0;
-}
-
-/* 네비게이션 바 */
-header {
-  background-color: #000;
-  color: #fff;
+.programs-grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
+  gap: 30px;
 }
 
-header .logo {
-  display: flex;
-  align-items: center;
+.program-card {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
 }
 
-header .logo img {
-  height: 40px;
-  margin-right: 12px;
-}
-
-header .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-}
-
-header .nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-header .nav-links li a:hover {
-  color: #00e6b0;
-}
-
-/* 에피소드 영역 */
-.episode-main {
-  display: flex;
-  justify-content: center;
-  padding: 100px 60px 20px;
-}
-
-.episode-container {
-  display: flex;
-  align-items: center;
-  background-color: #ffffffd4;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 1100px;
+.program-card img {
   width: 100%;
-  gap: 40px;
-}
-
-.episode-text {
-  flex: 1;
-  max-width: 580px;
-}
-
-.episode-text h2 {
-  margin-bottom: 20px;
-  font-size: 22px;
-  color: #133b0d;
-}
-
-.episode-text p {
-  margin-bottom: 16px;
-}
-
-.read-more-btn {
-  display: inline-block;
-  background-color: #087b45;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-}
-
-.read-more-btn:hover {
-  background-color: #065f36;
-}
-
-/* 이미지 박스 */
-.episode-image img {
-  width: 280px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.program-card:hover {
+  transform: scale(1.03);
+}
+
+.program-details.hidden {
+  display: none;
+}
+
+.program-details {
+  margin-top: 15px;
+  text-align: left;
+  color: #f0f0f0;
 }
