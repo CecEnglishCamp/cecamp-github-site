@@ -1,90 +1,74 @@
-/* Base Reset */
-body, html {
-  margin: 0;
-  padding: 0;
+/* READ MORE PAGE */
+.readmore-page {
+  background-color: #ffffff;
+  color: #111;
   font-family: 'Segoe UI', sans-serif;
-  box-sizing: border-box;
 }
 
-/* Navigation Bar */
-.navbar {
+.readmore-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-  padding: 15px 20px;
-}
-
-.navbar .logo {
-  width: 60px;
-  height: auto;
-  margin-right: 20px;
-}
-
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-menu li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-/* Episode Section */
-.episode-page {
-  background-color: #2b003e; /* deep purple */
-  color: white;
-  min-height: 100vh;
-}
-
-.episode-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 60px 10%;
+  gap: 60px;
 }
 
-.episode-left {
-  width: 50%;
+.readmore-left {
+  flex: 2;
 }
 
-.episode-left h2 {
-  font-size: 24px;
+.readmore-left h2 {
+  font-size: 22px;
+  color: #000;
+}
+
+.readmore-left h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #222;
+}
+
+.readmore-left p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.readmore-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxbot-img {
+  width: 100%;
+  max-width: 250px;
   margin-bottom: 20px;
 }
 
-.episode-left p {
-  font-size: 16px;
-  line-height: 1.5;
+.level-box {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-.readmore-btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: white;
-  color: #2b003e;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.readmore-btn:hover {
-  background-color: #ccc;
-}
-
-/* Right Side (Video) */
-.episode-right {
-  width: 45%;
+.level-buttons {
+  margin-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.episode-video {
-  width: 100%;
-  max-width: 480px;
-  border-radius: 10px;
+.level-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.level-btn:hover {
+  background-color: #cc8400;
 }
