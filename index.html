@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Episode | Robo, Jump & Me</title>
+  <title>Episode 1 - 전체 보기</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="episode-page">
+<body class="readmore-page">
 
-  <!-- Navigation Bar -->
   <nav class="navbar">
     <img src="assets/images/logo.jpg" alt="Logo" class="logo"/>
     <ul class="nav-menu">
@@ -24,20 +23,31 @@
     </ul>
   </nav>
 
-  <!-- Main Episode Section -->
-  <section class="episode-container">
-    <div class="episode-left">
-      <h2>📘 Short Novel, Title: Robo, Jump & Me - Season 1 / Episode 1</h2>
+  <section class="readmore-container">
+    <!-- 왼쪽 소설 전체 -->
+    <div class="readmore-left">
+      <h2>📘 점프 & 미소 – 시즌 1 / 에피소드 1</h2>
+      <h3>창고의 비밀 문서</h3>
       <p>
-        어느 날 공이 사라졌습니다. 미소는 공을 찾기 위해 조용한 창고로 향합니다. 그곳에서 예상치 못한 빛나는 상자를 발견하게 되는데...
+        “공이 어디 간 거지…”<br />
+        미소는 낮게 중얼이며, 할아버지의 낡은 창고 문을 밀었다. 문은 삐걱 소리를 내며 열렸고, 안쪽에 쌓인 먼지가 햇살을 타고 떠올랐다...
+        <br /><br />
+        (이후 전체 한글 소설 내용 삽입)
       </p>
-      <button onclick="location.href='readmore.html'" class="readmore-btn">Read More →</button>
     </div>
-    <div class="episode-right">
-      <video controls class="episode-video">
-        <source src="assets/videos/episode.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+
+    <!-- 오른쪽 이미지 + 안내 + 버튼 -->
+    <div class="readmore-right">
+      <img src="assets/images/boxbot.png" alt="Boxbot" class="boxbot-img" />
+      <div class="level-box">
+        <p><strong>학생의 영어 수준에 따라 아래 레벨을 선택하여 학습 콘텐츠로 이동하세요:</strong></p>
+        <div class="level-buttons">
+          <a href="level-a1.html" class="level-btn">A1</a>
+          <a href="level-a2.html" class="level-btn">A2</a>
+          <a href="level-b1.html" class="level-btn">B1</a>
+          <a href="level-b2.html" class="level-btn">B2</a>
+        </div>
+      </div>
     </div>
   </section>
 
