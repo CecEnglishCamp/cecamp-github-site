@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Episode 1 - Robo, Jump & Me</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Robo, Jump & Me - Episode 1</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="episode-detail-page">
 
   <header>
-    <div class="logo">
-      <img src="assets/images/logo.jpg" alt="CEC Logo" class="logo-img" />
-      <span class="logo-text">CEC English Camp</span>
-    </div>
-    <nav>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/assets/img/logo.jpg" alt="CEC Logo">
+        <span>CEC English Camp</span>
+      </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="episode.html" class="active">Episode</a></li>
         <li><a href="#">Program</a></li>
         <li><a href="#">What they say</a></li>
         <li><a href="#">Pricing</a></li>
@@ -28,24 +27,29 @@
     </nav>
   </header>
 
-  <section class="episode">
-    <div class="episode-content">
+  <main class="episode-container">
+    <section class="episode-left">
       <h2>📘 점프 & 미소 – 시즌 1 / 에피소드 1</h2>
       <h3>창고의 비밀 문서</h3>
-      <p class="episode-text">
-        “공이 어디 간 거지…”<br />
-        미소는 낮게 중얼이며, 할아버지의 낡은 창고 문을 밀었다. 문은 삐걱 소리를 내며 열렸고, 안쪽에 쌓인 먼지가 햇살을 타고 떠올랐다...<br />
-        <strong>(내용 일부 생략)</strong>
+      <p>
+        “공이 어디 간 거지…”<br><br>
+        미소는 낮게 중얼이며, 할아버지의 낡은 창고 문을 밀었다...<br><br>
+        ... (전체 소설 내용 계속)
       </p>
-      <button class="read-more">Read More</button>
-    </div>
-    <div class="episode-video">
-      <video controls width="85%">
-        <source src="assets/videos/episode.mp4" type="video/mp4" />
-        브라우저에서 동영상을 지원하지 않습니다.
-      </video>
-    </div>
-  </section>
+    </section>
+
+    <section class="episode-right">
+      <div class="study-box">
+        <p>학생의 영어 수준에 따라 아래 레벨을 선택하여 학습 콘텐츠로 이동하세요:</p>
+        <div class="levels">
+          <a href="a1.html" class="level-btn">A1</a>
+          <a href="a2.html" class="level-btn">A2</a>
+          <a href="b1.html" class="level-btn">B1</a>
+          <a href="b2.html" class="level-btn">B2</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
