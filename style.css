@@ -1,104 +1,86 @@
-```css
 
-/* Reset and Base Styling */
+```css
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', 'Helvetica', sans-serif;
-  background-color: #fff;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0fbfd;
 }
 
-/* Header & Navigation */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
   color: white;
-  padding: 10px 30px;
+  padding: 1em 2em;
 }
+
 .logo {
   display: flex;
   align-items: center;
 }
+
 .logo img {
   height: 50px;
   margin-right: 10px;
 }
+
 .logo span {
-  font-size: 1.4rem;
   font-weight: bold;
-  color: white;
+  font-size: 1.2em;
 }
-nav ul.nav-links {
+
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 1em;
   margin: 0;
   padding: 0;
 }
-nav ul.nav-links li a {
+
+.nav-links li a {
+  text-decoration: none;
   color: white;
-  text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
-}
-nav ul.nav-links li a:hover {
-  text-decoration: underline;
 }
 
-/* Blog Section */
-.blog-section {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-.blog-title h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
 .blog-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.blog-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 400px;
-  text-align: left;
-}
-.blog-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.blog-card h3 {
-  margin-top: 15px;
-  font-size: 1.25rem;
-}
-.blog-card p {
-  font-size: 1rem;
-  margin-top: 10px;
-}
-.blog-card .blog-date {
-  font-size: 0.85rem;
-  color: #666;
-  margin-top: 6px;
-}
-.blog-card a {
-  display: inline-block;
-  margin-top: 12px;
-  color: purple;
-  font-weight: bold;
-  text-decoration: none;
-}
-.blog-card a:hover {
-  text-decoration: underline;
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1em;
 }
 
+.blog-post {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+  width: 100%;
+  max-height: 360px; /* Increased by 20% from 300px */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-post h2 {
+  margin-top: 1em;
+  font-size: 1.5em;
+  color: #000;
+}
+
+.blog-post p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1em;
+  color: purple;
+  text-decoration: none;
+  font-weight: bold;
+}
 ```
