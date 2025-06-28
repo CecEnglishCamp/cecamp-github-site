@@ -1,22 +1,106 @@
-// script.js
+/* 기본 설정 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f9f4;
+  color: #222;
+  line-height: 1.6;
+}
 
-// 프로그램 카드 토글 (자세히 보기 버튼 클릭 시 상세내용 열고 닫기)
-document.querySelectorAll('.program-card .pricing-btn, .program-card .read-more-btn').forEach((btn) => {
-  btn.addEventListener('click', function (e) {
-    e.preventDefault();
-    const details = this.closest('.program-card').querySelector('.program-details');
-    if (details) {
-      details.classList.toggle('hidden');
-    }
-  });
-});
+h1, h2, h3 {
+  color: #333;
+}
 
-// 모바일 내비게이션 토글 (필요 시 메뉴 아이콘에 따라 적용 가능)
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+/* 헤더 및 내비게이션 */
+.site-header {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* 섹션 공통 스타일 */
+section {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* 이미지 스타일 */
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+/* 가격표 섹션 */
+.pricing-plan {
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #e8f5e9;
+}
+
+/* 폼 요소 */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* 푸터 */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
 }
