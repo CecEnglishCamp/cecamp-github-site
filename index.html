@@ -2,151 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- 🔹 내비게이션 (Navigation Bar) -->
-<header>
-  <div class="logo">
-    <img src="assets/img/logo.jpg" alt="CEC Logo" />
-    <span>CEC English Camp</span>
-  </div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#episode">Episode</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#testimonials">What they say</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#howitworks">How it works</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- 🟡 헤더(Header) -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/img/logo.jpg" alt="CEC English Camp Logo" width="200" height="200" />
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#episode">Episode</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#testimonials">What they say</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- 🏠 홈 섹션 -->
-<section id="home" class="section">
-  <div class="main-text">
+  <!-- 🏠 Home 섹션 -->
+  <section id="home" class="home-section">
     <h1>Welcome to CEC English Camp</h1>
-    <p class="intro">Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</p>
-    <marquee behavior="scroll" direction="left" scrollamount="5" class="highlight">
-      <strong>Explore language through joy, imagination, and connection.</strong> 🚀 🟦 ✨
-    </marquee>
-  </div>
-  <div class="main-visual">
-    <video src="assets/videos/robo.mp4" autoplay muted loop playsinline></video>
-  </div>
-</section>
+    <p>Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</p>
+  </section>
 
-<!-- 🔍 어바웃 (About) -->
-<section id="about" class="section">
-  <div class="image about-image">
-    <img src="assets/img/about.png" alt="About Image" />
-  </div>
-  <div class="text about-text">
-    <h2>Engaging English Learning</h2>
-    <h3>Discover the joy of language through stories</h3>
-    <p>
-      At CEC English Camp, we ignite a passion for English in kids through captivating short novels. Our innovative approach focuses on grammar while making learning fun and engaging.
-    </p>
-    <div class="btn-container">
-      <button class="cta-btn">Get in touch</button>
+  <!-- 🔍 About 섹션 -->
+  <section id="about">
+    <h2>About CEC</h2>
+    <p>CEC는 어린이 영어 교육의 새로운 장을 여는 몰입형 캠프입니다.</p>
+    <img src="assets/img/about.png" alt="About CEC Image" />
+  </section>
+
+  <!-- 📖 Episode 섹션 -->
+  <section id="episode">
+    <h2>Short Novel: Robo, Jump & Me – S1/E1</h2>
+    <p>어느 날 공이 사라졌습니다. 미소는 공을 찾기 위해 조용한 창고로 향합니다...</p>
+    <img src="assets/img/episode.jpg" alt="Episode Image" />
+    <a href="#">Read More →</a>
+  </section>
+
+  <!-- 🧩 Programs 섹션 -->
+  <section id="programs">
+    <h2>Our Programs</h2>
+    <ul>
+      <li>Grammar Fun</li>
+      <li>Creative Reading</li>
+      <li>Daily Speaking Time</li>
+    </ul>
+    <img src="assets/img/program1.jpg" alt="Programs Image" />
+  </section>
+
+  <!-- 🗣️ What they say 섹션 -->
+  <section id="testimonials">
+    <h2>What Parents & Kids Say</h2>
+    <blockquote>“우리 아이가 영어를 처음으로 즐거워했어요!”</blockquote>
+  </section>
+
+  <!-- 💰 Pricing 섹션 -->
+  <section id="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-plan">
+      <h3>Basic</h3>
+      <p>$49/month</p>
     </div>
-  </div>
-</section>
-
-<!-- 📘 에피소드 섹션 (Episode) -->
-<section id="episode" class="section episode-main">
-  <div class="episode-container">
-    <div class="episode-text">
-      <h2>📘 Short Novel: Robo, Jump & Me – S1/E1</h2>
-      <p>어느 날 공이 사라졌습니다. 미소는 공을 찾기 위해 조용한 창고로 향합니다...</p>
-      <a class="read-more-btn" href="#">Read More →</a>
+    <div class="pricing-plan">
+      <h3>Premium</h3>
+      <p>$99/month</p>
     </div>
-    <div class="episode-image">
-      <img src="assets/img/episode.jpg" alt="Episode Image" />
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- 🎯 프로그램 섹션 (Programs) -->
-<section id="programs" class="section programs">
-  <div class="program-title"><h2>Our Programs</h2></div>
-  <!-- 프로그램 박스 3개 구성 -->
-  <!-- ... (필요시 콘텐츠 삽입 가능) -->
-</section>
+  <!-- ⚙️ How it works 섹션 -->
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Sign up</li>
+      <li>Join sessions</li>
+      <li>Enjoy English learning!</li>
+    </ol>
+  </section>
 
-<!-- 💬 후기가 담긴 섹션 (What they say) -->
-<section id="testimonials" class="section testimonials">
-  <h2>💬 What They Say</h2>
-  <!-- 세 명의 후기 -->
-  <div class="testimonial-card">
-    <div class="photo-circle"><img src="assets/img/testimonial1.jpg" alt="Jennie Photo" /></div>
-    <div class="testimonial-content">
-      <h3>Jennie <span class="school">– Fremont School District</span></h3>
-      <p>캠프의 창의적인 방식이 아이의 자신감을 높였어요.</p>
-    </div>
-  </div>
-  <!-- ... Ryan, David 후기도 포함됨 -->
-</section>
+  <!-- 📝 Blog 섹션 -->
+  <section id="blog">
+    <h2>Latest Blog Posts</h2>
+    <p>New insights about teaching English through storytelling.</p>
+  </section>
 
-<!-- 💰 프라이싱 섹션 (Pricing) -->
-<section id="pricing" class="section pricing">
-  <div class="pricing-title"><h2>💡 Choose Your Plan</h2></div>
-  <div class="pricing-container">
-    <div class="pricing-box">
-      <img src="assets/img/price1.jpg" alt="Plan 1" />
-      <h3>Language Bridge</h3>
-      <p>Build English basics with themed conversation and fun stories.</p>
-      <h4>$15/month</h4>
-    </div>
-    <!-- 다른 플랜도 동일한 방식 -->
-  </div>
-</section>
+  <!-- 📞 Contact 섹션 -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Name*" required />
+      <input type="email" name="email" placeholder="Email*" required />
+      <input type="tel" name="phone" placeholder="Phone number*" required />
+      <textarea name="message" placeholder="Message"></textarea>
+      <label><input type="checkbox" required /> I allow this website to store my submission to respond to my inquiry.</label>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-<!-- 🔧 학습 방법 섹션 (How it works) -->
-<section id="howitworks" class="section how-it-works">
-  <h2>🛠️ How It Works</h2>
-  <div class="step">
-    <h3>Step 1: Sign up and choose a plan</h3>
-    <p>간편한 가입으로 시작하세요.</p>
-  </div>
-  <div class="step">
-    <h3>Step 2: Join weekly online sessions</h3>
-    <p>스토리 기반 활동에 참여하며 문법을 배워요.</p>
-  </div>
-  <div class="step">
-    <h3>Step 3: Practice through creative projects</h3>
-    <p>문법을 실생활에서 활용해보세요.</p>
-  </div>
-</section>
+  <!-- 🔚 Footer -->
+  <footer>
+    <p>&copy; 2025 CEC English Camp. All rights reserved.</p>
+  </footer>
 
-<!-- 📚 블로그 섹션 (Blog) -->
-<section id="blog" class="section blog">
-  <h2>📚 Blog</h2>
-  <p>캠프의 소식과 학습 자료들을 만나보세요.</p>
-</section>
-
-<!-- ✉️ 컨택 섹션 (Contact) -->
-<section id="contact" class="section contact">
-  <h2>✉️ Contact Us</h2>
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" required />
-    <label for="email">Email:</label>
-    <input type="email" id="email" required />
-    <label for="message">Message:</label>
-    <textarea id="message" rows="5" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-<!-- 🔚 끝 -->
-<script src="script.js"></script>
 </body>
 </html>
