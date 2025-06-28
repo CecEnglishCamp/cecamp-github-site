@@ -1,5 +1,3 @@
-
-<!-- Start of: index.html.txt -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,380 +7,146 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="CEC Logo" />
-      <span>CEC English Camp</span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">What they say</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <div class="main-text">
-      <h1>Welcome to CEC English Camp</h1>
-      <p class="intro">
-        Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.
-      </p>
-      <marquee behavior="scroll" direction="left" scrollamount="5" class="highlight">
-        <strong>Explore language through joy, imagination, and connection.</strong> 🚀 🟦 ✨
-      </marquee>
+<!-- 🔹 내비게이션 (Navigation Bar) -->
+<header>
+  <div class="logo">
+    <img src="assets/img/logo.jpg" alt="CEC Logo" />
+    <span>CEC English Camp</span>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#episode">Episode</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#testimonials">What they say</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#howitworks">How it works</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- 🏠 홈 섹션 -->
+<section id="home" class="section">
+  <div class="main-text">
+    <h1>Welcome to CEC English Camp</h1>
+    <p class="intro">Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</p>
+    <marquee behavior="scroll" direction="left" scrollamount="5" class="highlight">
+      <strong>Explore language through joy, imagination, and connection.</strong> 🚀 🟦 ✨
+    </marquee>
+  </div>
+  <div class="main-visual">
+    <video src="assets/videos/robo.mp4" autoplay muted loop playsinline></video>
+  </div>
+</section>
+
+<!-- 🔍 어바웃 (About) -->
+<section id="about" class="section">
+  <div class="image about-image">
+    <img src="assets/img/about.png" alt="About Image" />
+  </div>
+  <div class="text about-text">
+    <h2>Engaging English Learning</h2>
+    <h3>Discover the joy of language through stories</h3>
+    <p>
+      At CEC English Camp, we ignite a passion for English in kids through captivating short novels. Our innovative approach focuses on grammar while making learning fun and engaging.
+    </p>
+    <div class="btn-container">
+      <button class="cta-btn">Get in touch</button>
     </div>
-    <div class="main-visual">
-      <video src="assets/videos/robo.mp4" autoplay muted loop playsinline></video>
+  </div>
+</section>
+
+<!-- 📘 에피소드 섹션 (Episode) -->
+<section id="episode" class="section episode-main">
+  <div class="episode-container">
+    <div class="episode-text">
+      <h2>📘 Short Novel: Robo, Jump & Me – S1/E1</h2>
+      <p>어느 날 공이 사라졌습니다. 미소는 공을 찾기 위해 조용한 창고로 향합니다...</p>
+      <a class="read-more-btn" href="#">Read More →</a>
     </div>
-  </main>
+    <div class="episode-image">
+      <img src="assets/img/episode.jpg" alt="Episode Image" />
+    </div>
+  </div>
+</section>
+
+<!-- 🎯 프로그램 섹션 (Programs) -->
+<section id="programs" class="section programs">
+  <div class="program-title"><h2>Our Programs</h2></div>
+  <!-- 프로그램 박스 3개 구성 -->
+  <!-- ... (필요시 콘텐츠 삽입 가능) -->
+</section>
+
+<!-- 💬 후기가 담긴 섹션 (What they say) -->
+<section id="testimonials" class="section testimonials">
+  <h2>💬 What They Say</h2>
+  <!-- 세 명의 후기 -->
+  <div class="testimonial-card">
+    <div class="photo-circle"><img src="assets/img/testimonial1.jpg" alt="Jennie Photo" /></div>
+    <div class="testimonial-content">
+      <h3>Jennie <span class="school">– Fremont School District</span></h3>
+      <p>캠프의 창의적인 방식이 아이의 자신감을 높였어요.</p>
+    </div>
+  </div>
+  <!-- ... Ryan, David 후기도 포함됨 -->
+</section>
+
+<!-- 💰 프라이싱 섹션 (Pricing) -->
+<section id="pricing" class="section pricing">
+  <div class="pricing-title"><h2>💡 Choose Your Plan</h2></div>
+  <div class="pricing-container">
+    <div class="pricing-box">
+      <img src="assets/img/price1.jpg" alt="Plan 1" />
+      <h3>Language Bridge</h3>
+      <p>Build English basics with themed conversation and fun stories.</p>
+      <h4>$15/month</h4>
+    </div>
+    <!-- 다른 플랜도 동일한 방식 -->
+  </div>
+</section>
+
+<!-- 🔧 학습 방법 섹션 (How it works) -->
+<section id="howitworks" class="section how-it-works">
+  <h2>🛠️ How It Works</h2>
+  <div class="step">
+    <h3>Step 1: Sign up and choose a plan</h3>
+    <p>간편한 가입으로 시작하세요.</p>
+  </div>
+  <div class="step">
+    <h3>Step 2: Join weekly online sessions</h3>
+    <p>스토리 기반 활동에 참여하며 문법을 배워요.</p>
+  </div>
+  <div class="step">
+    <h3>Step 3: Practice through creative projects</h3>
+    <p>문법을 실생활에서 활용해보세요.</p>
+  </div>
+</section>
+
+<!-- 📚 블로그 섹션 (Blog) -->
+<section id="blog" class="section blog">
+  <h2>📚 Blog</h2>
+  <p>캠프의 소식과 학습 자료들을 만나보세요.</p>
+</section>
+
+<!-- ✉️ 컨택 섹션 (Contact) -->
+<section id="contact" class="section contact">
+  <h2>✉️ Contact Us</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required />
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+    <label for="message">Message:</label>
+    <textarea id="message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- 🔚 끝 -->
+<script src="script.js"></script>
 </body>
 </html>
-
-<!-- End of: index.html.txt -->
-
-<!-- Start of: index.html - Copy.txt -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Navigation Bar -->
-  <header>
-    <div class="nav-container">
-      <div class="logo">
-        <img src="assets/img/logo.jpg" alt="CEC Logo" class="logo-img" />
-        <span class="logo-text">CEC English Camp</span>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Episode</a></li>
-          <li><a href="#">Programs</a></li>
-          <li><a href="#">What they say</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section class="section" style="margin-top: 100px;">
-    <div class="image about-image">
-      <img src="assets/img/about.png" alt="About Image" />
-    </div>
-    <div class="text about-text">
-      <h2>Engaging English Learning</h2>
-      <h3>Discover the joy of language through stories</h3>
-      <p>
-        At CEC English Camp, we ignite a passion for English in kids through captivating short novels.
-        Our innovative approach focuses on grammar while making learning fun and engaging.
-        With a supportive environment, children develop their language skills, boost their confidence,
-        and build a lifelong love for reading. Join us in transforming the way young learners experience English!
-      </p>
-      <div class="btn-container">
-        <button class="cta-btn">Get in touch</button>
-      </div>
-    </div>
-  </section>
-</body>
-</html>
-
-<!-- End of: index.html - Copy.txt -->
-
-<!-- Start of: index - Copy.txt -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="CEC Logo" />
-      <span>CEC English Camp</span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">What they say</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-  <!-- 에피소드 본문 -->
-  <main class="episode-main">
-    <div class="episode-container">
-      <div class="episode-text">
-        <h2>📘 Short Novel, Title: Robo, Jump & Me – Season 1 / Episode 1</h2>
-        <p>어느 날 공이 사라졌습니다. 미소는 공을 찾기 위해 조용한 창고로 향합니다. 그곳에서 예상치 못한 빛나는 상자를 발견하게 되는데...</p>
-        <p>이 이야기에는 상상력, 우정, 모험이 함께 펼쳐집니다. 아이들의 창의성과 상상력을 자극하기 위한 단편 시리즈로 구성되어 있으며, 각 에피소드는 짧지만 깊은 여운을 남깁니다.</p>
-        <a class="read-more-btn" href="readmore.html">Read More →</a>
-      </div>
-      <div class="episode-image">
-        <img src="assets/img/episode.jpg" alt="Episode Image" />
-      </div>
-    </div>
-  </main>
-</body>
-</html>
-
-<!-- End of: index - Copy.txt -->
-
-<!-- Start of: index.html.txt -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="CEC Logo" />
-      <span>CEC English Camp</span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">What they say</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="main-text">
-      <h1>Welcome to CEC English Camp</h1>
-      <p class="intro">
-        Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.
-      </p>
-      <marquee behavior="scroll" direction="left" scrollamount="5" class="highlight">
-        <strong>Explore language through joy, imagination, and connection.</strong> 🚀 🟦 ✨
-      </marquee>
-    </div>
-    <div class="main-visual">
-      <video src="assets/videos/robo.mp4" autoplay muted loop playsinline></video>
-    </div>
-  </main>
-</body>
-</html>
-
-<!-- End of: index.html.txt -->
-
-<!-- Start of: index.txt -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>What They Say - CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="CEC Logo" />
-      <span>CEC English Camp</span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">What they say</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="testimonials">
-    <h2>💬 What They Say</h2>
-
-    <div class="testimonial-card">
-      <div class="photo-circle">
-        <img src="assets/img/testimonial1.jpg" alt="Jennie Photo" />
-      </div>
-      <div class="testimonial-content">
-        <h3>Jennie <span class="school">– Fremont School District</span></h3>
-        <p>
-          As an educator, I appreciate the innovative approach that CecEnglishCamp takes in teaching English.
-          The use of short novels to explain grammar is both creative and effective. My daughter has improved her
-          writing and comprehension skills significantly. The camp's supportive environment encourages her to express
-          herself confidently. I am grateful for the positive impact it has had on her learning journey.
-        </p>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="photo-circle">
-        <img src="assets/img/testimonial2.jpg" alt="Ryan Photo" />
-      </div>
-      <div class="testimonial-content">
-        <h3>Ryan <span class="school">– Huang Family</span></h3>
-        <p>
-          CecEnglishCamp has been a fantastic experience for my son. He not only learned English grammar but also developed
-          a love for reading through the captivating stories. The instructors are patient and skilled, making every lesson
-          engaging and fun. My son has gained confidence in his language abilities and looks forward to each class.
-        </p>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="photo-circle">
-        <img src="assets/img/testimonial3.jpg" alt="David Photo" />
-      </div>
-      <div class="testimonial-content">
-        <h3>David <span class="school">– David Family</span></h3>
-        <p>
-          CecEnglishCamp has transformed my child's understanding of English in such a short time.
-          The engaging short novels not only captivate their attention but also reinforce grammar concepts effectively.
-          My child looks forward to each session, excited to explore new stories and learn.
-        </p>
-      </div>
-    </div>
-
-  </main>
-</body>
-</html>
-
-<!-- End of: index.txt -->
-
-<!-- Start of: index.html.txt -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="CEC Logo" />
-      <span>CEC English Camp</span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">What they say</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="main-text">
-      <h1>Welcome to CEC English Camp</h1>
-      <p class="intro">
-        Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.
-      </p>
-      <marquee behavior="scroll" direction="left" scrollamount="5" class="highlight">
-        <strong>Explore language through joy, imagination, and connection.</strong> 🚀 🟦 ✨
-      </marquee>
-    </div>
-    <div class="main-visual">
-      <video src="assets/videos/robo.mp4" autoplay muted loop playsinline></video>
-    </div>
-  </main>
-</body>
-</html>
-
-<!-- End of: index.html.txt -->
-
-<!-- Start of: index.html.txt -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="CEC Logo" />
-      <span>CEC English Camp</span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">What they say</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="main-text">
-      <h1>Welcome to CEC English Camp</h1>
-      <p class="intro">
-        Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.
-      </p>
-      <marquee behavior="scroll" direction="left" scrollamount="5" class="highlight">
-        <strong>Explore language through joy, imagination, and connection.</strong> 🚀 🟦 ✨
-      </marquee>
-    </div>
-    <div class="main-visual">
-      <video src="assets/videos/robo.mp4" autoplay muted loop playsinline></video>
-    </div>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
-
-<!-- End of: index.html.txt -->
-
