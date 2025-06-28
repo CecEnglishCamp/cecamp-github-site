@@ -1,57 +1,96 @@
-```html
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #def8fd;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CEC English Camp - Pricing</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <header>
-        <img src="assets/img/logo.jpg" alt="CEC English Camp Logo" class="logo" />
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Episode</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">What they say</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2 class="section-title">💡 Choose Your Plan</h2>
-        <div class="pricing-container">
-            <div class="pricing-card">
-                <img src="assets/img/price1.jpg" alt="Language Bridge" />
-                <h3>Language Bridge</h3>
-                <p>Build English basics with themed conversation and fun stories.</p>
-                <p class="price">$15/month</p>
-                <a href="#" class="btn">Read more</a>
-            </div>
-            <div class="pricing-card">
-                <img src="assets/img/price2.jpg" alt="StoryQuest Workshops" />
-                <h3>StoryQuest Workshops</h3>
-                <p>Interactive storytelling adventures for grammar and creativity.</p>
-                <p class="price">$25/month</p>
-                <a href="#" class="btn">Read more</a>
-            </div>
-            <div class="pricing-card">
-                <img src="assets/img/price3.jpg" alt="Grammar Games" />
-                <h3>Grammar Games</h3>
-                <p>Transform grammar lessons into fun and interactive games.</p>
-                <p class="price">$50/month</p>
-                <a href="#" class="btn">Read more</a>
-            </div>
-        </div>
-    </main>
-</body>
-</html>
+header {
+  background-color: black;
+  padding: 10px 0;
+}
 
-```
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main {
+  padding: 20px;
+}
+
+.pricing-section {
+  text-align: center;
+}
+
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.pricing-card {
+  background-color: #b3ecf9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.pricing-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.pricing-card h3 {
+  margin: 15px 0 10px;
+}
+
+.pricing-card .price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #008080;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #00695c;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
