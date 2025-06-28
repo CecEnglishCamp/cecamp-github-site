@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Navigation -->
   <header>
-    <div class="logo-area">
-      <img src="assets/img/logo.jpg" alt="CEC English Camp Logo" class="logo-img" />
-      <span class="site-title">CEC English Camp</span>
-    </div>
     <nav>
+      <img src="assets/images/logo.png" alt="CEC Logo" class="logo" />
+      <span class="site-name">CEC English Camp</span>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -26,36 +26,25 @@
       </ul>
     </nav>
   </header>
-<!-- About Section -->
-<section id="about" class="about-section">
-  <div class="about-content">
-    <h2>About <strong>CEC English Camp</strong></h2>
-    <p>
-      At CEC English Camp, we believe in the *power of creativity, curiosity, and connection*.
-      Our immersive English programs are crafted to empower young learners to grow not only in language fluency,
-      but also in confidence, collaboration, and global understanding.
-    </p>
-    <p>
-      Guided by experienced educators and a warm, supportive environment, students participate in
-      dynamic activities, themed projects, and cultural exchanges that make language learning meaningful and joyful.
-    </p>
-  </div>
-</section>
 
-  <section id="home" class="home-section">
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
     <h1>Welcome to <strong>CEC English Camp</strong></h1>
     <p>Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</p>
-    
-    <div class="main-visual">
-      <video autoplay muted loop playsinline>
-        <source src="assets/videos/robo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <marquee class="highlight" behavior="scroll" direction="left">
-      Through joy, imagination, and connection.
-    </marquee>
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="assets/videos/robo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slogan">Through joy, imagination, and connection.</p>
   </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <h2>About <strong>CEC English Camp</strong></h2>
+    <p>At CEC English Camp, we believe in the <em>*power of creativity, curiosity, and connection*</em>. Our immersive English programs are crafted to empower young learners to grow not only in language fluency, but also in confidence, collaboration, and global understanding.</p>
+    <p>Guided by experienced educators and a warm, supportive environment, students participate in dynamic activities, themed projects, and cultural exchanges that make language learning meaningful and joyful.</p>
+    <img src="assets/img/about.png" alt="About CEC" class="about-img"/>
+  </section>
+
 </body>
 </html>
