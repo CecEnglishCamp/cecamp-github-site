@@ -1,124 +1,50 @@
-/* General Reset and Font */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #d1ecf3; /* 연한 하늘색 배경 */
-  color: #121212;
-  line-height: 1.6;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #d4f1f9;
+  margin: 0;
+  padding: 0;
 }
-
-/* Navigation Bar */
-header {
+nav {
+  background-color: #000;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
-  color: #fff;
-  padding: 0.8rem 1.2rem;
-  flex-wrap: wrap;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo img {
-  width: 60px;  /* 로고 크기 약간 확대 */
-  height: auto;
-}
-
-.logo span {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: white;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  flex: 1;
-}
-
-nav ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 nav a {
-  color: white;
+  color: #fff;
+  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
 }
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Section Title */
-.section-title {
+.testimonials-section {
   text-align: center;
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #013a63;
+  padding: 2em 1em;
 }
-
-/* Testimonials Section */
-.testimonials {
-  padding: 2rem 1rem;
+.testimonial {
+  background-color: #b2ebf2;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1.5em auto;
+  max-width: 700px;
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 }
-
-.testimonial-card {
-  background-color: #b2ebf2;
-  padding: 1.5rem;
-  border-radius: 10px;
-  max-width: 85%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.testimonial-avatar {
-  width: 70px;
-  height: 70px;
+.testimonial img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  background-color: #ffffff;
-  flex-shrink: 0;
+  object-fit: cover;
+  margin-bottom: 1em;
 }
-
-.testimonial-content {
-  flex: 1;
+.testimonial h3 {
+  margin: 0.5em 0;
+  font-size: 1.2em;
 }
-
-.testimonial-name {
-  font-weight: bold;
-  margin-bottom: 0.25rem;
-  color: #015f89;
-}
-
-.testimonial-sub {
-  font-style: italic;
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 0.5rem;
+.testimonial p {
+  font-size: 1em;
+  line-height: 1.6em;
 }
