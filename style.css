@@ -1,56 +1,65 @@
-```css
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #000;
   color: #fff;
 }
 
-/* Header + Nav */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
 header {
   background-color: #000;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 10px 30px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
 }
 
-.logo {
+/* Logo area */
+.logo-area {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
-.logo img {
-  height: 50px;
-  margin-right: 10px;
+
+.logo-img {
+  height: 40px;
+  width: auto;
 }
+
+.site-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Nav menu */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
-}
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-.nav-links li a:hover {
-  color: #00e6b0;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
 }
 
-/* Home Section */
+/* Section: Home */
 .home-section {
-  padding-top: 120px;
-  padding: 60px 30px;
+  padding-top: 160px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,17 +67,9 @@ header {
   background-color: #000;
   text-align: center;
 }
-.main-text h1 {
-  font-size: 2.5em;
-  margin-bottom: 15px;
-}
-.intro {
-  font-size: 1.1em;
-  margin-bottom: 30px;
-}
-```css
+
 .main-visual video {
-  width: 300px;
+  width: 210px;
   max-width: 100%;
   height: auto;
   margin-top: 30px;
@@ -76,64 +77,9 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
 }
-```
-}
+
 .highlight {
   color: white;
-  font-size: 1.2em;
-  white-space: nowrap;
+  font-size: 1.1em;
+  margin-top: 10px;
 }
-```
-```css
-/* About Section */
-.about-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 80px 30px;
-  background-color: #000;
-  color: white;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 12px;
-}
-
-.about-text {
-  max-width: 600px;
-}
-
-.about-text h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.about-text h3 {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  color: #ccc;
-}
-
-.about-text p {
-  font-size: 1.05em;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.cta-btn {
-  padding: 10px 20px;
-  background-color: orange;
-  border: none;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.cta-btn:hover {
-  background-color: #e06600;
-}
-```
