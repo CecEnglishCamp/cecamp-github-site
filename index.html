@@ -1,117 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- 🟡 헤더(Header) -->
-  <header class="site-header">
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="CEC English Camp Logo" width="200" height="200" />
-    </div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#episode">Episode</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#testimonials">What they say</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#how-it-works">How it works</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- 🏠 Home 섹션 -->
-  <section id="home" class="home-section">
-    <h1>Welcome to CEC English Camp</h1>
-    <p>Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</p>
-  </section>
-
-  <!-- 🔍 About 섹션 -->
-  <section id="about">
-    <h2>About CEC</h2>
-    <p>CEC는 어린이 영어 교육의 새로운 장을 여는 몰입형 캠프입니다.</p>
-    <img src="assets/img/about.png" alt="About CEC Image" />
-  </section>
-
-  <!-- 📖 Episode 섹션 -->
-  <section id="episode">
-    <h2>Short Novel: Robo, Jump & Me – S1/E1</h2>
-    <p>어느 날 공이 사라졌습니다. 미소는 공을 찾기 위해 조용한 창고로 향합니다...</p>
-    <img src="assets/img/episode.jpg" alt="Episode Image" />
-    <a href="#">Read More →</a>
-  </section>
-
-  <!-- 🧩 Programs 섹션 -->
-  <section id="programs">
-    <h2>Our Programs</h2>
-    <ul>
-      <li>Grammar Fun</li>
-      <li>Creative Reading</li>
-      <li>Daily Speaking Time</li>
+<!-- ✅ 내비게이션 + 로고 -->
+<header>
+  <div class="logo">
+    <img src="assets/img/logo.jpg" alt="CEC Logo" />
+    <span>CEC English Camp</span>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#episode">Episode</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#testimonials">What they say</a></li>
+      <!-- 기타 항목도 연결 가능 -->
     </ul>
-    <img src="assets/img/program1.jpg" alt="Programs Image" />
-  </section>
+  </nav>
+</header>
 
-  <!-- 🗣️ What they say 섹션 -->
-  <section id="testimonials">
-    <h2>What Parents & Kids Say</h2>
-    <blockquote>“우리 아이가 영어를 처음으로 즐거워했어요!”</blockquote>
-  </section>
+<!-- ✅ HOME 섹션 -->
+<section id="home">
+  <div class="home-video">
+    <video autoplay muted loop>
+      <source src="assets/video/main.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
 
-  <!-- 💰 Pricing 섹션 -->
-  <section id="pricing">
-    <h2>Pricing Plans</h2>
-    <div class="pricing-plan">
-      <h3>Basic</h3>
-      <p>$49/month</p>
+<!-- ✅ ABOUT 섹션 -->
+<section id="about">
+  <div class="container">
+    <h2>About CEC</h2>
+    <p>CEC English Camp는 아이들의 영어 실력 향상을 위해 특별히 디자인된 프로그램을 운영합니다.</p>
+  </div>
+</section>
+
+<!-- ✅ EPISODE 섹션 -->
+<section id="episode">
+  <div class="container">
+    <h2>📚 Episode</h2>
+    <p>영어 교육 현장의 생생한 이야기와 경험을 나눕니다.</p>
+  </div>
+</section>
+
+<!-- ✅ PROGRAMS 섹션 -->
+<section id="programs" class="programs-section">
+  <div class="container">
+    <h2 class="section-title">Our Programs</h2>
+    <div class="programs-grid">
+
+      <!-- Program 1 -->
+      <div class="program-card">
+        <img src="assets/img/program1.jpg" alt="Program 1 Image">
+        <h3>Program 1: Mastery Through Narrative</h3>
+        <p>스토리텔링을 통해 문법과 어휘를 익힙니다.</p>
+        <button class="read-more-btn" data-target="program1-content">Read More</button>
+        <div id="program1-content" class="program-details hidden">
+          <p>
+            언어는 살아야 배워집니다. 이야기를 통해 영어 문장 구성과 어휘를 자연스럽게 익힙니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- Program 2 -->
+      <div class="program-card">
+        <img src="assets/img/program2.jpg" alt="Program 2 Image">
+        <h3>Program 2: Integrated Literacy</h3>
+        <p>읽기·쓰기·비판적 사고 능력 강화</p>
+        <button class="read-more-btn" data-target="program2-content">Read More</button>
+        <div id="program2-content" class="program-details hidden">
+          <p>
+            독해와 작문을 통해 사고력과 언어 이해력을 키우는 프로그램입니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- Program 3 -->
+      <div class="program-card">
+        <img src="assets/img/program3.jpg" alt="Program 3 Image">
+        <h3>Program 3: Fluency & Confident Expression</h3>
+        <p>자신감 있는 영어 말하기 훈련</p>
+        <button class="read-more-btn" data-target="program3-content">Read More</button>
+        <div id="program3-content" class="program-details hidden">
+          <p>
+            역할극과 활동을 통해 영어로 자신있게 표현하는 능력을 개발합니다.
+          </p>
+        </div>
+      </div>
+
     </div>
-    <div class="pricing-plan">
-      <h3>Premium</h3>
-      <p>$99/month</p>
+  </div>
+</section>
+
+<!-- ✅ WHAT THEY SAY 섹션 -->
+<section id="testimonials" class="testimonials">
+  <h2>💬 What They Say</h2>
+
+  <div class="testimonial-card">
+    <div class="photo-circle">
+      <img src="assets/img/testimonial1.jpg" alt="Jennie Photo" />
     </div>
-  </section>
+    <div class="testimonial-content">
+      <h3>Jennie <span class="school">– Fremont School District</span></h3>
+      <p>
+        CEC의 창의적인 문법 교육이 아이에게 큰 도움이 되었어요. 자존감이 높아졌습니다.
+      </p>
+    </div>
+  </div>
 
-  <!-- ⚙️ How it works 섹션 -->
-  <section id="how-it-works">
-    <h2>How It Works</h2>
-    <ol>
-      <li>Sign up</li>
-      <li>Join sessions</li>
-      <li>Enjoy English learning!</li>
-    </ol>
-  </section>
+  <div class="testimonial-card">
+    <div class="photo-circle">
+      <img src="assets/img/testimonial2.jpg" alt="Ryan Photo" />
+    </div>
+    <div class="testimonial-content">
+      <h3>Ryan <span class="school">– Huang Family</span></h3>
+      <p>
+        아이가 영어에 흥미를 갖게 되었고, 수업을 기대하는 모습이 감동적입니다.
+      </p>
+    </div>
+  </div>
 
-  <!-- 📝 Blog 섹션 -->
-  <section id="blog">
-    <h2>Latest Blog Posts</h2>
-    <p>New insights about teaching English through storytelling.</p>
-  </section>
+  <div class="testimonial-card">
+    <div class="photo-circle">
+      <img src="assets/img/testimonial3.jpg" alt="David Photo" />
+    </div>
+    <div class="testimonial-content">
+      <h3>David <span class="school">– David Family</span></h3>
+      <p>
+        짧은 시간 안에 아이가 놀랄 만큼 향상되었습니다. 소설을 통한 접근이 매우 효과적이에요.
+      </p>
+    </div>
+  </div>
+</section>
 
-  <!-- 📞 Contact 섹션 -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" name="name" placeholder="Name*" required />
-      <input type="email" name="email" placeholder="Email*" required />
-      <input type="tel" name="phone" placeholder="Phone number*" required />
-      <textarea name="message" placeholder="Message"></textarea>
-      <label><input type="checkbox" required /> I allow this website to store my submission to respond to my inquiry.</label>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
 
-  <!-- 🔚 Footer -->
-  <footer>
-    <p>&copy; 2025 CEC English Camp. All rights reserved.</p>
-  </footer>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEC English Camp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- 🟦 공통 내비게이션 -->
+<header class="navbar">
+  <div class="logo">
+    <img src="assets/img/logo.jpg" alt="CEC Logo">
+    <span>CEC English Camp</span>
+  </div>
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Episode</a>
+    <a href="#">Programs</a>
+    <a href="#">What they say</a>
+    <a href="#">Pricing</a>
+    <a href="#">How it works</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- 💰 Pricing Section -->
+<section class="pricing" id="pricing">
+  <div class="pricing-title">
+    <h2>💡 Choose Your Plan</h2>
+  </div>
+  <div class="pricing-container">
+    <div class="pricing-box">
+      <img src="assets/img/price1.jpg" alt="Plan 1">
+      <h3>Language Bridge</h3>
+      <p>Build English basics with themed conversation and fun stories.</p>
+      <h4>$15/month</h4>
+      <a href="#" class="pricing-btn">Read more</a>
+    </div>
+    <div class="pricing-box">
+      <img src="assets/img/price2.jpg" alt="Plan 2">
+      <h3>StoryQuest Workshops</h3>
+      <p>Interactive storytelling adventures for grammar and creativity.</p>
+      <h4>$25/month</h4>
+      <a href="#" class="pricing-btn">Read more</a>
+    </div>
+    <div class="pricing-box">
+      <img src="assets/img/price3.jpg" alt="Plan 3">
+      <h3>Grammar Games</h3>
+      <p>Transform grammar lessons into fun and interactive games.</p>
+      <h4>$50/month</h4>
+      <a href="#" class="pricing-btn">Read more</a>
+    </div>
+  </div>
+</section>
+
+<!-- ⚙️ How It Works Section -->
+<section class="how-it-works" id="how-it-works">
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step">
+      <img src="assets/img/step1.jpg" alt="Step 1">
+      <h3>Sign Up</h3>
+      <p>Register your child quickly and easily online.</p>
+    </div>
+    <div class="step">
+      <img src="assets/img/step2.jpg" alt="Step 2">
+      <h3>Choose a Program</h3>
+      <p>Select from exciting and educational English programs.</p>
+    </div>
+    <div class="step">
+      <img src="assets/img/step3.jpg" alt="Step 3">
+      <h3>Start Learning</h3>
+      <p>Access content and begin learning right away!</p>
+    </div>
+    <div class="step">
+      <img src="assets/img/step4.jpg" alt="Step 4">
+      <h3>Track Progress</h3>
+      <p>Parents and kids can track improvement and goals together.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 📝 Blog Section -->
+<section class="blog-container" id="blog">
+  <div class="blog-card">
+    <img src="assets/img/blog1.jpg" alt="Blog Image">
+    <div class="blog-content">
+      <h3>Unlocking English Through Short Novels</h3>
+      <div class="date">June 14, 2025</div>
+      <p>
+        Unlock the power of short novels to transform your child's English grammar skills at CecEnglishCamp! 
+        By immersing your child in captivating stories, we create an engaging and enjoyable learning environment...
+      </p>
+      <a href="#" class="read-more">Read more</a>
+    </div>
+  </div>
+</section>
+
+<!-- 📞 Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>We’re here to answer your questions!</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number*</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <div class="form-group checkbox">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent">I allow this website to store my submission so they can respond to my inquiry. *</label>
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <div class="contact-right">
+      <h3>Get in touch</h3>
+      <p><a href="mailto:info@cecenglishcamp.com">info@cecenglishcamp.com</a></p>
+      <h4>Location</h4>
+      <p>United States</p>
+      <h4>Hours</h4>
+      <ul>
+        <li>Monday – Friday: 9:00am – 10:00pm</li>
+        <li>Saturday: 9:00am – 6:00pm</li>
+        <li>Sunday: 9:00am – 12:00pm</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
+
+
