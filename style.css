@@ -66,10 +66,17 @@ header {
   font-size: 1.1em;
   margin-bottom: 30px;
 }
-.main-visual img {
-  width: 280px;
+```css
+.main-visual video {
+  width: 300px;
+  max-width: 100%;
   height: auto;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+```
 }
 .highlight {
   color: white;
