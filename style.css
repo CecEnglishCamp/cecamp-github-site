@@ -1,102 +1,266 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* ========== Reset ========== */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  box-sizing: border-box;
 }
 
-/* NAVBAR */
-.navbar {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d9f2db;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ========== Header / Navigation ========== */
+header {
   background-color: #000;
-  color: white;
+  color: #fff;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75em 2em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .logo img {
   height: 40px;
-  margin-right: 10px;
+  width: auto;
 }
 
-.nav-links a {
-  color: white;
-  margin: 0 12px;
-  text-decoration: none;
+.logo span {
   font-weight: bold;
+  font-size: 18px;
 }
 
-.contact-section {
-  padding: 4em 2em;
-}
-
-.contact-container {
+.nav-links {
+  list-style: none;
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  gap: 20px;
 }
 
-.contact-left,
-.contact-right {
-  flex: 1;
-  padding: 2em;
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.contact-left h2 {
-  font-size: 1.8em;
-  margin-bottom: 1em;
+.nav-links li a:hover {
+  color: #00cc99;
 }
 
-.form-group {
-  margin-bottom: 1.2em;
+/* ========== Episode Section ========== */
+.episode-main {
+  margin-top: 100px;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
 }
 
-input, textarea {
+.episode-container {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
   width: 100%;
-  padding: 0.75em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 30px;
+  gap: 30px;
 }
 
-.checkbox {
+.episode-text {
+  flex: 1.2;
+}
+
+.episode-text h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.episode-text p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.read-more-btn {
+  background-color: #006644;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #004d33;
+}
+
+.episode-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.episode-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+/* ========== Programs Section ========== */
+.programs-section {
+  background-color: #1c3c34;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.programs-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.programs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.program-card {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.program-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.program-card:hover {
+  transform: scale(1.03);
+}
+
+.program-card h3 {
+  margin: 15px 0 10px;
+}
+
+.program-details {
+  margin-top: 15px;
+  text-align: left;
+  color: #f0f0f0;
+}
+
+.program-details.hidden {
+  display: none;
+}
+
+/* ========== Testimonials Section ========== */
+.testimonials {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: #b2ebf2;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 85%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
   align-items: flex-start;
+  gap: 1rem;
 }
 
-.checkbox input {
-  margin-top: 6px;
-  margin-right: 8px;
+.testimonial-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  flex-shrink: 0;
 }
 
-button {
-  background-color: #28a745;
-  color: white;
-  padding: 0.9em 1.5em;
-  border: none;
-  border-radius: 4px;
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-name {
   font-weight: bold;
-  cursor: pointer;
-  width: 100%;
+  margin-bottom: 0.25rem;
+  color: #015f89;
 }
 
-.contact-right h3 {
-  margin-top: 0;
+.testimonial-sub {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
 }
 
-.contact-right ul {
-  list-style: none;
-  padding-left: 0;
+/* ========== Section Titles ========== */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #013a63;
 }
 
-.contact-right ul li {
-  margin-bottom: 0.5em;
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+  .episode-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .program-card {
+    width: 100%;
+  }
+
+  .episode-image img {
+    max-height: 250px;
+  }
 }
