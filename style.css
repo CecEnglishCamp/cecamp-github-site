@@ -1,95 +1,88 @@
-/* blog-style.css */
-
-body {
-  margin: 0;
-  padding: 0;
+```css
+/* Contact Section */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0fbfd;
 }
 
-header {
+.contact-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
-  color: white;
-  padding: 1em 2em;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 50px;
-  margin-right: 10px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1em;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ffcc00;
-}
-
-main {
-  padding: 2em;
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.blog-post {
-  background-color: white;
-  border-radius: 10px;
-  padding: 2em;
-  max-width: 700px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.contact-left,
+.contact-right {
+  flex: 1 1 450px;
 }
-/그림 사이즈/
-.blog-post img {
-  width: 100%;
-  max-width: 72%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 1em;
+
+.contact-left h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.contact-form label {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.blog-post h2 {
-  color: #111;
-  font-size: 1.4em;
-  margin-bottom: 0.5em;
-}
-
-.blog-post .date {
-  color: #666;
-  font-size: 0.9em;
-  margin-bottom: 1em;
-}
-
-.blog-post p {
-  line-height: 1.6;
-  color: #333;
-}
-
-.blog-post a {
-  color: purple;
-  text-decoration: none;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
-.blog-post a:hover {
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Contact Info (Right Box) */
+.contact-right {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+.contact-right h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-right p a {
+  color: #333;
   text-decoration: underline;
+}
+
+.hours {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
 }
