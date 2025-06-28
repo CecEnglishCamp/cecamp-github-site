@@ -21,6 +21,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   z-index: 1000;
 }
 
@@ -62,12 +63,13 @@ header {
 }
 
 .main-visual video {
-  width: 240px; /* 210 → 240 (15% 확대) */
+  width: 264px; /* 240 → 264 (10% 확대) */
   height: auto;
   margin-top: 30px;
   margin-bottom: 25px;
+  border: none; /* 테두리 제거 */
   border-radius: 10px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+  box-shadow: none;
 }
 
 /* Marquee */
