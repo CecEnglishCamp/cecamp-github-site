@@ -77,3 +77,56 @@ header {
   white-space: nowrap;
 }
 ```
+```css
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 30px;
+  background-color: #000;
+  color: white;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about-text h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.about-text p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cta-btn:hover {
+  background-color: #e06600;
+}
+```
