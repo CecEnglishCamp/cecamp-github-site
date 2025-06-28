@@ -1,128 +1,171 @@
 ```css
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* Reset & Font */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f0fbfd;
+  color: #121212;
+  line-height: 1.6;
 }
 
-/* ================= NAVBAR ================= */
-.navbar {
+/* Header & Navigation */
+header {
   background-color: #000;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75em 2em;
+  padding: 1em 2em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
-
 .logo {
   display: flex;
   align-items: center;
 }
-
 .logo img {
-  height: 40px;
+  height: 50px;
   margin-right: 10px;
 }
-
-.nav-links a {
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2em;
+}
+.nav-links li a {
   color: white;
-  margin: 0 12px;
   text-decoration: none;
   font-weight: bold;
 }
-
-/* ================= PRICING ================= */
-.pricing {
-  padding: 4em 2em;
-  background-color: #f0fbfd;
+.nav-links li a:hover {
+  color: #fcd34d;
 }
 
-.pricing-title {
-  text-align: center;
-  margin-bottom: 2em;
+/* Sections - 각 섹션 별 스타일 */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
 }
 
-.pricing-container {
+/* Home */
+.main-text h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+.highlight {
+  color: aqua;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.main-visual video {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* About */
+.about-text h2, .about-text h3 {
+  color: #fff;
+}
+.about-text button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+}
+
+/* Episode */
+.episode-container {
   display: flex;
-  justify-content: center;
-  gap: 2em;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  gap: 30px;
+}
+.read-more-btn {
+  background-color: #006644;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Programs */
+.programs-grid {
+  display: flex;
+  gap: 30px;
   flex-wrap: wrap;
 }
+.program-card {
+  background: #1c3c34;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
 
+/* Testimonials */
+.testimonials {
+  background: #b2ebf2;
+}
+.testimonial-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Pricing */
+.pricing-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
 .pricing-box {
+  background-color: #d4f2f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* How It Works */
+.how-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.how-box {
+  background-color: #1e4d3a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Blog */
+.blog-card {
   background: white;
   padding: 2em;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-  text-align: center;
-  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.pricing-box img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 1em;
-}
-
-.pricing-btn {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.6em 1.2em;
-  background-color: #28a745;
-  color: white;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* ================= CONTACT ================= */
-.contact-section {
-  padding: 4em 2em;
-}
-
+/* Contact */
 .contact-container {
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 2em;
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-}
-
-.contact-left,
-.contact-right {
-  flex: 1;
   padding: 2em;
+  border-radius: 8px;
 }
-
-.contact-left h2 {
-  font-size: 1.8em;
-  margin-bottom: 1em;
-}
-
-.form-group {
-  margin-bottom: 1.2em;
-}
-
 input, textarea {
   width: 100%;
   padding: 0.75em;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
-.checkbox {
-  display: flex;
-  align-items: flex-start;
-}
-
-.checkbox input {
-  margin-top: 6px;
-  margin-right: 8px;
-}
-
 button {
   background-color: #28a745;
   color: white;
@@ -130,20 +173,5 @@ button {
   border: none;
   border-radius: 4px;
   font-weight: bold;
-  cursor: pointer;
-  width: 100%;
-}
-
-.contact-right h3 {
-  margin-top: 0;
-}
-
-.contact-right ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.contact-right ul li {
-  margin-bottom: 0.5em;
 }
 ```
