@@ -2,10 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="contact-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - CEC English Camp</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="CEC Logo" />
+        <span>CEC English Camp</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Episode</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">What they say</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
   <section class="contact-section">
     <h1>Let's Talk</h1>
     <p>We would love to hear from you!</p>
@@ -35,7 +58,7 @@
         <label for="hours">Available Days/Hours</label>
         <select id="hours" name="hours">
           <option value="morning">Weekdays - Morning</option>
-          <option value="afternoon">Weekdays - Afternoon</option>
+          <option value="afternoon" selected>Weekdays - Afternoon</option>
           <option value="evening">Weekdays - Evening</option>
           <option value="weekend">Weekend</option>
         </select>
@@ -54,7 +77,5 @@
       <button type="submit">Submit</button>
     </form>
   </section>
-
-  <script src="contact-script.js"></script>
 </body>
 </html>
