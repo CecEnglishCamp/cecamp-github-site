@@ -1,59 +1,62 @@
 ```css
-/* 기본 설정 */
+
+/* Reset and Base Styling */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #333;
   margin: 0;
   padding: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  background-color: #fff;
+  color: #333;
 }
 
-/* 로고 영역 */
+/* Header & Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 10px 30px;
+}
 .logo {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
 }
 .logo img {
-  height: 40px;
+  height: 50px;
   margin-right: 10px;
 }
 .logo span {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  color: white;
 }
-
-/* 내비게이션 바 */
-nav {
-  background-color: #000;
-  padding: 10px 0;
-}
-.nav-links {
+nav ul.nav-links {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
+  gap: 25px;
   margin: 0;
+  padding: 0;
 }
-.nav-links li a {
+nav ul.nav-links li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
 }
-.nav-links li a:hover {
+nav ul.nav-links li a:hover {
   text-decoration: underline;
 }
 
-/* 블로그 섹션 */
+/* Blog Section */
 .blog-section {
-  padding: 50px 20px;
-  background-color: #e8f4ff;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
   text-align: center;
 }
 .blog-title h2 {
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .blog-container {
   display: flex;
@@ -64,28 +67,38 @@ nav {
 .blog-card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 20px;
-  width: 300px;
+  width: 400px;
   text-align: left;
 }
 .blog-card img {
-  width: 300px;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
-  display: block;
   border-radius: 8px;
 }
 .blog-card h3 {
   margin-top: 15px;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .blog-card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-top: 10px;
 }
 .blog-card .blog-date {
-  font-size: 0.8rem;
-  color: #777;
-  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 6px;
 }
+.blog-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: purple;
+  font-weight: bold;
+  text-decoration: none;
+}
+.blog-card a:hover {
+  text-decoration: underline;
+}
+
+```
