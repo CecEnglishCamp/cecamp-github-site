@@ -1,30 +1,30 @@
 ```css
-/* Reset & Font */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #f0fbfd;
-  color: #121212;
-  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
-/* Header & Navigation */
+/* Header + Nav */
 header {
   background-color: #000;
-  color: white;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 15px 30px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.2em;
+  gap: 20px;
 }
 .nav-links li a {
   color: white;
@@ -44,134 +44,36 @@ header {
   font-weight: bold;
 }
 .nav-links li a:hover {
-  color: #fcd34d;
+  color: #00e6b0;
 }
 
-/* Sections - 각 섹션 별 스타일 */
-section {
-  padding: 100px 20px;
+/* Home Section */
+.home-section {
+  padding-top: 120px;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
+  background-color: #000;
+  text-align: center;
 }
-
-/* Home */
 .main-text h1 {
-  font-size: 2.8em;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+.intro {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+.main-visual img {
+  width: 280px;
+  height: auto;
+  margin-bottom: 40px;
 }
 .highlight {
-  color: aqua;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-.main-visual video {
-  width: 100%;
-  max-width: 500px;
-}
-
-/* About */
-.about-text h2, .about-text h3 {
-  color: #fff;
-}
-.about-text button {
-  background-color: orange;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  font-weight: bold;
-}
-
-/* Episode */
-.episode-container {
-  display: flex;
-  background: #fff;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  gap: 30px;
-}
-.read-more-btn {
-  background-color: #006644;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-/* Programs */
-.programs-grid {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.program-card {
-  background: #1c3c34;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* Testimonials */
-.testimonials {
-  background: #b2ebf2;
-}
-.testimonial-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Pricing */
-.pricing-container {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-.pricing-box {
-  background-color: #d4f2f8;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* How It Works */
-.how-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-.how-box {
-  background-color: #1e4d3a;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* Blog */
-.blog-card {
-  background: white;
-  padding: 2em;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Contact */
-.contact-container {
-  display: flex;
-  gap: 2em;
-  background: white;
-  padding: 2em;
-  border-radius: 8px;
-}
-input, textarea {
-  width: 100%;
-  padding: 0.75em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-button {
-  background-color: #28a745;
-  color: white;
-  padding: 0.9em 1.5em;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
+  font-size: 1.2em;
+  white-space: nowrap;
 }
 ```
