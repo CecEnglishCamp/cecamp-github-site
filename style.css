@@ -1,48 +1,45 @@
-.contact-section {
-  background-color: #ffffff;
-  padding: 4rem 2rem;
+body {
+  margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .contact-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 40px;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .contact-left, .contact-right {
-  flex: 1;
-  min-width: 300px;
-}
-
-.contact-left h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
+  flex: 1 1 400px;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .contact-form label {
-  font-weight: 600;
-  margin-bottom: 0.3rem;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 0.8rem;
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem;
-  width: 100%;
 }
 
 .contact-form textarea {
@@ -50,54 +47,33 @@
 }
 
 .checkbox {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+  margin: 15px 0;
 }
 
 .submit-button {
-  background-color: #3bbf4d;
+  background-color: #28a745;
   color: white;
+  font-weight: bold;
+  padding: 12px;
   border: none;
-  padding: 0.9rem;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s ease;
   width: 100%;
-  max-width: 200px;
 }
 
 .submit-button:hover {
-  background-color: #32a944;
+  background-color: #218838;
 }
-
-/* Contact Info (right side) */
 
 .contact-info h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.contact-info p,
-.contact-info a {
-  font-size: 1rem;
-  color: #333;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
+.contact-info p, .contact-info ul {
+  margin: 0 0 10px 0;
 }
 
 .hours {
-  padding-left: 1.2rem;
-  margin-top: 0.5rem;
-}
-
-.hours li {
-  margin-bottom: 0.3rem;
-  font-size: 0.95rem;
+  padding-left: 20px;
 }
