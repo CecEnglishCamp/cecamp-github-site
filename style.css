@@ -1,106 +1,149 @@
-/* 기본 설정 */
+```css
 body {
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f9f4;
-  color: #222;
-  line-height: 1.6;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
-h1, h2, h3 {
-  color: #333;
-}
-
-/* 헤더 및 내비게이션 */
-.site-header {
+/* ================= NAVBAR ================= */
+.navbar {
   background-color: #000;
   color: white;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em 2em;
+}
+
+.logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logo img {
-  width: 60px;
-  height: auto;
+  height: 40px;
+  margin-right: 10px;
 }
 
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav a {
+.nav-links a {
   color: white;
+  margin: 0 12px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.main-nav a:hover {
-  text-decoration: underline;
+/* ================= PRICING ================= */
+.pricing {
+  padding: 4em 2em;
+  background-color: #f0fbfd;
 }
 
-/* 섹션 공통 스타일 */
-section {
-  padding: 40px 20px;
-  max-width: 960px;
-  margin: auto;
-  background-color: white;
-  margin-bottom: 20px;
+.pricing-title {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.pricing-box {
+  background: white;
+  padding: 2em;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;
 }
 
-/* 이미지 스타일 */
-section img {
+.pricing-box img {
   max-width: 100%;
   height: auto;
-  display: block;
-  margin-top: 20px;
-  border-radius: 6px;
+  margin-bottom: 1em;
 }
 
-/* 가격표 섹션 */
-.pricing-plan {
-  border: 2px solid #4caf50;
+.pricing-btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.6em 1.2em;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ================= CONTACT ================= */
+.contact-section {
+  padding: 4em 2em;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
   border-radius: 8px;
-  padding: 20px;
-  margin: 10px 0;
-  background-color: #e8f5e9;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
 
-/* 폼 요소 */
-form input,
-form textarea {
-  display: block;
+.contact-left,
+.contact-right {
+  flex: 1;
+  padding: 2em;
+}
+
+.contact-left h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.form-group {
+  margin-bottom: 1.2em;
+}
+
+input, textarea {
   width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
+  padding: 0.75em;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-form button {
-  background-color: #4caf50;
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkbox input {
+  margin-top: 6px;
+  margin-right: 8px;
+}
+
+button {
+  background-color: #28a745;
   color: white;
-  padding: 12px 20px;
+  padding: 0.9em 1.5em;
   border: none;
   border-radius: 4px;
+  font-weight: bold;
   cursor: pointer;
+  width: 100%;
 }
 
-form button:hover {
-  background-color: #45a049;
+.contact-right h3 {
+  margin-top: 0;
 }
 
-/* 푸터 */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
+.contact-right ul {
+  list-style: none;
+  padding-left: 0;
 }
+
+.contact-right ul li {
+  margin-bottom: 0.5em;
+}
+```
