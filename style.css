@@ -1,16 +1,19 @@
+/* blog-style.css */
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #14342b;
-  color: white;
+  padding: 0;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  padding: 10px 20px;
+  background-color: #007B99;
+  color: white;
+  padding: 1em 2em;
 }
 
 .logo {
@@ -19,63 +22,76 @@ header {
 }
 
 .logo img {
-  width: 40px;
-  height: 40px;
+  height: 50px;
   margin-right: 10px;
 }
 
 .nav-links {
-  list-style-type: none;
+  list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 1em;
 }
 
 .nav-links li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-links li a:hover,
-.nav-links li a:focus {
-  color: yellow;
+.nav-links li a.active {
+  border-bottom: 2px solid white;
 }
 
-section.how-it-works {
-  padding: 40px 20px;
-  text-align: center;
+.blog-container {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
-.how-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.how-box {
-  background-color: #1e4d3a;
-  padding: 20px;
+.blog-card {
+  background: #f9f9f9;
   border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
 }
 
-.how-box img {
+.blog-card img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
 }
 
-.how-box h3 {
-  color: #ffffff;
-  margin-top: 15px;
+.blog-content {
+  padding: 1em;
 }
 
-.how-box p {
-  font-size: 14px;
+.blog-content h3 {
+  margin-top: 0.5em;
+  color: #007B33;
 }
 
-.how-box a {
+.blog-content .date {
+  font-size: 0.9em;
+  color: #777;
+  margin: 0.5em 0;
+}
+
+.blog-content p {
+  line-height: 1.6;
+}
+
+.read-more {
   display: inline-block;
-  margin-top: 10px;
-  color: #fcd34d;
+  margin-top: 1em;
+  text-decoration: none;
+  color: #007B33;
   font-weight: bold;
+  border-bottom: 1px solid transparent;
+}
+
+.read-more:hover {
+  border-bottom: 1px solid #007B33;
 }
