@@ -1,18 +1,16 @@
-/* General Reset */
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #14342b;
+  color: white;
 }
 
-/* Logo and Navbar */
-.navbar {
-  background-color: #000;
-  color: white;
-  padding: 10px 20px;
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
 }
 
 .logo {
@@ -21,72 +19,63 @@
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
 
-.nav-menu a {
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
 }
 
-.nav-menu a.active {
-  color: #ffd700;
+.nav-links li a:hover,
+.nav-links li a:focus {
+  color: yellow;
 }
 
-/* How it works Page */
-body.howitworks-body {
-  background-color: #1c3c34;
-  color: white;
-  font-family: 'Arial', sans-serif;
-}
-
-.howitworks-section {
-  padding: 80px 20px;
+section.how-it-works {
+  padding: 40px 20px;
   text-align: center;
 }
 
-.howitworks-grid {
+.how-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  justify-items: center;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
 }
 
-.howit-box {
-  background-color: rgba(255, 255, 255, 0.05);
+.how-box {
+  background-color: #1e4d3a;
   padding: 20px;
   border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
 }
 
-.howit-box img {
+.how-box img {
   width: 100%;
-  max-width: 300px;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 15px;
 }
 
-.howit-box h3 {
+.how-box h3 {
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.how-box p {
+  font-size: 14px;
+}
+
+.how-box a {
+  display: inline-block;
   margin-top: 10px;
-  font-size: 1.3em;
-  color: #fff;
-}
-
-.howit-box .desc {
-  font-size: 0.95em;
-  margin-top: 10px;
-  color: #ddd;
-}
-
-.read-more {
-  color: #ffd700;
-  text-decoration: underline;
-  cursor: pointer;
+  color: #fcd34d;
+  font-weight: bold;
 }
