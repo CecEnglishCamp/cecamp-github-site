@@ -1,8 +1,8 @@
-```css
-/* blog-style.css - image sizing reverted */
+
+/* blog-style.css - fixed image size and font */
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   background-color: #fff;
   color: #333;
   margin: 0;
@@ -24,14 +24,8 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  height: 40px;
   margin-right: 10px;
-}
-
-.logo span {
-  font-weight: bold;
-  color: white;
-  font-size: 1.2em;
 }
 
 .nav-links {
@@ -40,40 +34,29 @@ header {
   gap: 1em;
 }
 
-.nav-links li a {
+.nav-links a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.nav-links li a:hover {
-  text-decoration: underline;
-}
-
-/* Blog Section */
-.blog-section {
-  max-width: 800px;
+.blog {
+  max-width: 900px;
   margin: 2em auto;
-  padding: 0 1em;
+  padding: 1em;
 }
 
 .blog-post {
   margin-bottom: 2em;
+  text-align: center;
 }
 
 .blog-post img {
-  width: 100%;
-  max-width: 600px;
+  max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto 1em;
+  border-radius: 8px;
 }
 
-.blog-post h2 {
-  color: #00704A;
+.blog-post h3 {
+  color: #007BFF;
 }
-
-.blog-post p {
-  line-height: 1.6;
-}
-```
