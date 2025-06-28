@@ -1,79 +1,122 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
-  color: #222;
-}
-
+/* Contact 섹션 전체 */
 .contact-section {
-  padding: 50px 20px;
-  max-width: 1200px;
-  margin: auto;
+  padding: 60px 0;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* 좌우 영역 나누기 */
 .contact-container {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.contact-left, .contact-right {
-  flex: 1 1 400px;
+/* 왼쪽: Form 영역 */
+.contact-left {
+  flex: 1 1 50%;
+  min-width: 300px;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
+.contact-left h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
 }
 
-.contact-form label {
-  margin-top: 15px;
-  font-weight: bold;
+/* 입력 필드 라벨 */
+.contact-left label {
+  display: block;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 6px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  font-size: 1em;
-  margin-top: 5px;
+/* 입력 필드 */
+.contact-left input[type="text"],
+.contact-left input[type="email"],
+.contact-left input[type="tel"],
+.contact-left textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
-.contact-form textarea {
+/* 메시지 박스 */
+.contact-left textarea {
   resize: vertical;
 }
 
+/* 체크박스 영역 */
 .checkbox {
-  margin: 15px 0;
+  margin-top: 15px;
+  font-size: 14px;
 }
 
+.checkbox input {
+  margin-right: 6px;
+}
+
+/* 제출 버튼 */
 .submit-button {
-  background-color: #28a745;
+  margin-top: 25px;
+  background-color: #3ab54a;
   color: white;
-  font-weight: bold;
-  padding: 12px;
   border: none;
-  border-radius: 4px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
-  width: 100%;
+  transition: background-color 0.2s ease;
 }
 
 .submit-button:hover {
-  background-color: #218838;
+  background-color: #31903c;
+}
+
+/* 오른쪽: Contact Info 영역 */
+.contact-right {
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+
+.contact-info {
+  background-color: #f5f5f5;
+  padding: 30px 24px;
+  border-radius: 8px;
 }
 
 .contact-info h3 {
+  font-size: 20px;
   margin-bottom: 10px;
-  margin-top: 20px;
+  color: #000;
 }
 
-.contact-info p, .contact-info ul {
-  margin: 0 0 10px 0;
+.contact-info p,
+.contact-info a {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  margin: 6px 0;
 }
 
-.hours {
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* 운영 시간 스타일 */
+.contact-info ul {
   padding-left: 20px;
+  margin-top: 10px;
+}
+
+.contact-info li {
+  margin-bottom: 6px;
 }
