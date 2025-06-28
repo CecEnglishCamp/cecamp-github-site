@@ -1,64 +1,46 @@
-/* contact-style.css */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f8f8f8;
-  margin: 0;
-  padding: 0;
+/* Navigation Bar */
+header {
+  background: #000;
+  color: #fff;
+  padding: 0.5em 0;
 }
 
-.contact-section {
-  max-width: 600px;
-  margin: 3em auto;
-  padding: 2em;
-  background: #ffffff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1em;
 }
 
-.contact-section h1 {
-  text-align: center;
-  margin-bottom: 0.3em;
+.navbar .logo {
+  display: flex;
+  align-items: center;
 }
 
-.contact-section p {
-  text-align: center;
-  margin-bottom: 2em;
-  color: #555;
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
 }
 
-form .form-group {
-  margin-bottom: 1.5em;
-}
-
-form label {
-  display: block;
-  margin-bottom: 0.5em;
+.navbar .logo span {
+  font-size: 1.2em;
   font-weight: bold;
 }
 
-form input,
-form select,
-form textarea {
-  width: 100%;
-  padding: 0.75em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1em;
-  box-sizing: border-box;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2em;
 }
 
-form button {
-  display: block;
-  width: 100%;
-  padding: 0.8em;
-  background: #007B33;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1em;
-  cursor: pointer;
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-form button:hover {
-  background: #005f28;
+.nav-links li a:hover {
+  text-decoration: underline;
 }
