@@ -59,7 +59,7 @@ main {
 /그림 사이즈/
 .blog-post img {
   width: 100%;
-  max-width: 80%;
+  max-width: 72%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1em;
