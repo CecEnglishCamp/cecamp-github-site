@@ -1,91 +1,84 @@
+```css
+
+/* style.css */
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #e0f7fa;
-  color: #333;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
 }
 
-header {
-  background-color: #000;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 30px;
+.header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 40px;
-  margin-right: 10px;
+    height: 50px;
+    margin-right: 20px;
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links li {
-  margin-left: 20px;
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.pricing {
+    padding: 30px;
+    text-align: center;
+    background: #ffffff;
 }
 
-.pricing-main {
-  text-align: center;
-  padding: 50px 20px;
+.pricing h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
-.pricing-title {
-  font-size: 32px;
-  margin-bottom: 30px;
-  color: #0277bd;
+.plan {
+    background-color: #b2ebf2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
 }
 
-.pricing-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
+.plan-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.pricing-card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 30px;
-  width: 280px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.pricing-card h3 {
-  color: #01579b;
-}
-
-.pricing-card p {
-  font-size: 15px;
-  margin: 15px 0;
+.plan h3 {
+    margin-top: 0;
 }
 
 .price {
-  font-size: 20px;
-  font-weight: bold;
-  color: #00796b;
+    font-weight: bold;
+    color: #00796b;
 }
 
-.pricing-card a {
-  display: inline-block;
-  margin-top: 15px;
-  text-decoration: none;
-  color: #0288d1;
-  font-weight: bold;
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #006064;
+    text-decoration: underline;
 }
+
+```
