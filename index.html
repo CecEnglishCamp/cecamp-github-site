@@ -1,46 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="CEC Logo" />
-      <span>CEC English Camp</span>
-    </div>
-    
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Episode</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">What they say</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a class="active" href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+```html
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>We're here to answer your questions!</h2>
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required />
 
-  <section class="blog-container">
-    <div class="blog-card">
-      <img src="assets/img/blog1.jpg" alt="Blog Image">
-      <div class="blog-content">
-        <h3>Unlocking English Through Short Novels</h3>
-        <div class="date">June 14, 2025</div>
-        <p>
-          Unlock the power of short novels to transform your child's English grammar skills at CecEnglishCamp! 
-          By immersing your child in captivating stories, we create an engaging and enjoyable learning environment...
-        </p>
-        <a href="#" class="read-more">Read more</a>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone number *</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <div class="checkbox">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent">I allow this website to store my submission so they can respond to my inquiry. *</label>
+        </div>
+
+        <button type="submit" class="submit-button">SUBMIT</button>
+      </form>
+    </div>
+
+    <div class="contact-right">
+      <div class="contact-info">
+        <h3>Get in touch</h3>
+        <p><a href="mailto:                    "></a></p>
+
+        <h3>Location</h3>
+        <p><a href="#"> US</a></p>
+
+        <h3>Hours</h3>
+        <ul class="hours">
+          <li>Monday: 9:00am – 10:00pm</li>
+          <li>Tuesday: 9:00am – 10:00pm</li>
+          <li>Wednesday: 9:00am – 10:00pm</li>
+          <li>Thursday: 9:00am – 10:00pm</li>
+          <li>Friday: 9:00am – 10:00pm</li>
+          <li>Saturday: 9:00am – 6:00pm</li>
+          <li>Sunday: 9:00am – 12:00pm</li>
+        </ul>
       </div>
     </div>
-  </section>
-</body>
-</html>
+  </div>
+</section>
