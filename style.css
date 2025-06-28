@@ -1,46 +1,102 @@
-/* Navigation Bar */
-header {
-  background: #000;
-  color: #fff;
-  padding: 0.5em 0;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
+/* NAVBAR */
 .navbar {
+  background-color: #000;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 1em;
+  padding: 0.75em 2em;
 }
 
-.navbar .logo {
+.logo {
   display: flex;
   align-items: center;
 }
 
-.navbar .logo img {
+.logo img {
   height: 40px;
   margin-right: 10px;
 }
 
-.navbar .logo span {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.2em;
-}
-
-.nav-links li a {
+.nav-links a {
   color: white;
+  margin: 0 12px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.nav-links li a:hover {
-  text-decoration: underline;
+.contact-section {
+  padding: 4em 2em;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  padding: 2em;
+}
+
+.contact-left h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.form-group {
+  margin-bottom: 1.2em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkbox input {
+  margin-top: 6px;
+  margin-right: 8px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.9em 1.5em;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-right h3 {
+  margin-top: 0;
+}
+
+.contact-right ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-right ul li {
+  margin-bottom: 0.5em;
 }
