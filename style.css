@@ -5,130 +5,117 @@ body {
   color: #fff;
 }
 
-.site-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 30px;
+  padding: 10px 50px;
   background-color: #000;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
+  box-sizing: border-box;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .logo img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
 }
 
-.logo span {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.nav a {
+.navbar a {
   margin: 0 10px;
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
 }
 
-.hero {
+.main {
+  padding-top: 100px;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
   align-items: center;
-  padding: 60px 80px 40px;
-  min-height: 90vh;
-  position: relative;
+  justify-content: space-between;
+  padding: 80px 50px 30px 50px;
 }
 
-.hero-text {
-  max-width: 50%;
+.main-text {
+  max-width: 45%;
 }
 
-.hero-text h1 {
+.main-text h1 {
   font-size: 42px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: 800;
 }
 
-.cec-title {
+.main-text h1 span {
   font-size: 36px;
-  font-weight: bold;
 }
 
-.hero-text p {
-  font-size: 16px;
+.main-text p {
+  margin-top: 20px;
+  font-size: 18px;
   line-height: 1.5;
+}
+
+.main-video video {
+  width: 380px;
+  height: auto;
+}
+
+.bottom-line {
+  text-align: center;
+  padding: 10px 0 20px 0;
+  font-style: italic;
+  font-size: 16px;
   color: #ccc;
 }
 
-.hero-image img {
-  width: 350px;
-  max-width: 100%;
-}
-
-.scrolling-text {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  font-style: italic;
-  font-size: 14px;
-  color: #aaa;
-}
-
-.about {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px 80px 60px;
+.about-section {
   background-color: #111;
+  min-height: 100vh;
+  padding: 120px 50px 80px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-image img {
-  width: 300px;
-  max-width: 100%;
-  transform: scale(1.1); /* 10% enlargement */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 420px;
+  height: auto;
+  margin-right: 50px;
 }
 
 .about-text {
-  max-width: 55%;
-  padding-left: 40px;
+  max-width: 600px;
 }
 
 .about-text h2 {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .about-text p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #ddd;
+  font-size: 17px;
+  line-height: 1.6;
   margin-bottom: 15px;
-}
-
-.footer-space {
-  height: 120px; /* Footer 공간 확보 */
-}
-
-.site-footer {
-  background-color: #000;
-  text-align: center;
-  padding: 20px;
-  color: #666;
-}
-
-.footer-bottom {
-  font-size: 13px;
 }
