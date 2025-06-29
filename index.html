@@ -188,6 +188,105 @@
     </div>
   </div>
 </section>
+.pricing-section {
+  background: #fffbe9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4vw;
+}
+.pricing-inner {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-inner h2 {
+  color: #e2882b;
+  font-size: 2.1em;
+  font-weight: 900;
+  margin-bottom: 44px;
+}
+.pricing-cards {
+  display: flex;
+  gap: 38px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pricing-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 3px 16px rgba(230,180,60,0.09);
+  width: 320px;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 26px 28px 26px;
+  transition: transform 0.18s, box-shadow 0.18s;
+  position: relative;
+  text-align: center;
+}
+.pricing-img img {
+  width: 92px;
+  height: 92px;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  background: #f5f5f5;
+}
+.pricing-card h3 {
+  font-size: 1.13em;
+  color: #e2882b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 2em;
+  color: #183983;
+  font-weight: 900;
+  margin: 6px 0 16px 0;
+  letter-spacing: -1.2px;
+}
+.pricing-card p {
+  color: #222;
+  font-size: 1em;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+.pricing-btn {
+  display: inline-block;
+  background-color: #e2882b;
+  color: #fffbe9;
+  border-radius: 7px;
+  padding: 11px 26px;
+  font-weight: bold;
+  font-size: 1.07em;
+  text-decoration: none;
+  margin-top: auto;
+  transition: background 0.19s, color 0.19s;
+}
+.pricing-btn:hover {
+  background: #183983;
+  color: #fff;
+}
+/* 카드 hover 효과 */
+.pricing-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 14px 32px rgba(226,136,43,0.13), 0 2px 8px rgba(34,52,100,0.11);
+}
+/* 반응형 */
+@media (max-width: 1100px) {
+  .pricing-cards { gap: 22px; }
+  .pricing-card { width: 44vw; min-width: 220px; max-width: 98vw; }
+}
+@media (max-width: 800px) {
+  .pricing-cards { flex-direction: column; gap: 18px; align-items: center; }
+  .pricing-card { width: 93vw; max-width: 370px; }
+}
 
   </main>
 </body>
