@@ -1,88 +1,99 @@
-/* 공통 */
-body {
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
   background-color: #000;
   color: #fff;
 }
 
-/* 헤더 */
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 50px;
   background-color: #000;
-  padding: 10px 40px;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 10;
 }
-.logo {
-  display: flex;
-  align-items: center;
-}
+
 .logo img {
-  width: 40px;
-  margin-right: 10px;
+  height: 40px;
+  vertical-align: middle;
 }
+.logo span {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 .navbar a {
-  margin: 0 12px;
+  margin: 0 10px;
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-weight: 500;
 }
 .navbar a:hover {
-  text-decoration: underline;
+  color: #ff9900;
 }
 
-/* 메인 섹션 */
+/* Main Section */
 .main {
   text-align: center;
-  padding-top: 60px;
+  padding: 80px 20px 40px;
 }
-.main h1 {
-  font-size: 2em;
+.main-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 .main-vid video {
-  margin-top: 20px;
-  width: 55%;
-  border: none;
+  width: 85%;
+  max-width: 720px;
+  margin-top: 30px;
 }
 .bottom-line {
-  margin-top: 30px;
+  margin-top: 20px;
   font-style: italic;
-  animation: scrollText 10s linear infinite;
-}
-@keyframes scrollText {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
 }
 
-/* About 섹션 */
+/* About Section */
 .about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 60px;
   background-color: #111;
-  padding: 60px 40px;
 }
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  gap: 60px;
   flex-wrap: wrap;
 }
 .about-img img {
-  width: 450px;
-  max-width: 90%;
+  width: 420px;
+  max-width: 100%;
 }
 .about-text {
-  max-width: 700px;
+  max-width: 600px;
 }
 .about-text h2 {
-  font-size: 1.8em;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 .about-text p {
-  margin-bottom: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+/* Footer space reservation */
+.footer-space {
+  height: 100px;
 }
