@@ -15,6 +15,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 10;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -47,7 +48,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 50px 50px 50px;
+  padding: 80px 50px 30px 50px;
 }
 
 .main-text {
@@ -55,12 +56,12 @@ body {
 }
 
 .main-text h1 {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 800;
 }
 
 .main-text h1 span {
-  font-size: 42px;
+  font-size: 36px;
 }
 
 .main-text p {
@@ -75,8 +76,8 @@ body {
 }
 
 .bottom-line {
-  text-align: right;
-  padding: 10px 50px;
+  text-align: center;
+  padding: 10px 0 20px 0;
   font-style: italic;
   font-size: 16px;
   color: #ccc;
@@ -85,7 +86,7 @@ body {
 .about-section {
   background-color: #111;
   min-height: 100vh;
-  padding: 100px 50px;
+  padding: 120px 50px 80px 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +99,7 @@ body {
 }
 
 .about-img img {
-  width: 385px; /* 10% 증가 */
+  width: 420px;
   height: auto;
   margin-right: 50px;
 }
