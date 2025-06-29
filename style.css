@@ -189,10 +189,12 @@ main {
 
 /* ======== Episode Section (밝은 블루) ======== */
 .episode-section {
-  background: #1888e4; /* 밝은 코발트 블루 */
+  background: #a8dbfa;   /* 매우 밝은 하늘색 */
   border-radius: 24px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.10);
   padding: 0 4vw;
+}
+
 }
 .episode-section .episode-image {
   flex: 1;
