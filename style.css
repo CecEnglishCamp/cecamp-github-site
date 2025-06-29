@@ -666,172 +666,193 @@ main {
     </section>
   </main>
 </body>
-</html>
-.howitworks-section {
+/* 전체 공통 */
+body {
+  font-family: 'Noto Sans KR', Arial, sans-serif;
   background: #fff;
-  min-height: 100vh;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+/* How it works */
+.howitworks-section {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 80px 0 60px 0;
+  padding: 60px 0 40px 0;
+  background: #fff;
 }
-
 .howitworks-inner {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1120px;
   margin: 0 auto;
 }
-
 .howitworks-inner h2 {
-  color: #183983;
-  font-size: 2.4em;
-  font-weight: 900;
-  margin-bottom: 48px;
-  text-align: center;
+  font-size: 2.2em;
+  color: #139383;
+  margin-bottom: 42px;
+  font-weight: 800;
   letter-spacing: -1px;
+  text-align: center;
 }
 
-.howitworks-cards {
+.howitworks-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 36px 48px;
-  width: 100%;
-  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
 }
-
-.howitworks-card {
+.how-card {
   background: #fff;
   border-radius: 22px;
-  box-shadow: 0 4px 28px 0 rgba(30, 40, 50, 0.07);
+  box-shadow: 0 4px 32px rgba(30,30,30,0.08);
+  padding: 36px 28px 28px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 36px 24px 30px 24px;
-  min-width: 0;
   transition: box-shadow 0.18s;
+  min-width: 0;
 }
-
-.how-img {
-  width: 240px;
-  height: 160px;
+.how-card img {
+  width: 160px;
+  max-width: 90%;
+  height: 120px;
   object-fit: cover;
   border-radius: 14px;
-  margin-bottom: 20px;
-  background: #f0f0f0;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.04);
-  display: block;
-}
-
-.howitworks-card h3 {
-  font-size: 1.25em;
-  color: #183983;
-  font-weight: bold;
-  margin: 8px 0 12px 0;
-  text-align: center;
-}
-
-.howitworks-card p {
-  color: #1a2330;
-  font-size: 1em;
   margin-bottom: 16px;
-  line-height: 1.6;
+}
+.how-card h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 10px;
   text-align: center;
+  color: #108d7c;
 }
-
-.howitworks-card a {
-  color: #183983;
+.how-card p {
   font-size: 1em;
+  margin-bottom: 18px;
+  text-align: center;
+  color: #333;
+}
+.how-card a {
+  font-size: 1em;
+  color: #139383;
   text-decoration: underline;
-  margin-top: 8px;
-  transition: color 0.16s;
+  transition: color 0.15s;
+}
+.how-card a:hover {
+  color: #0d6b5a;
 }
 
-.howitworks-card a:hover {
-  color: #0db559;
-}
-
-@media (max-width: 900px) {
-  .howitworks-cards {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  .how-img {
-    width: 96%;
-    height: 150px;
-  }
-}
-
-@media (max-width: 600px) {
-  .howitworks-section {
-    padding: 30px 0;
-  }
-  .howitworks-inner h2 {
-    font-size: 1.4em;
-  }
-  .how-img {
-    width: 100%;
-    height: 120px;
-  }
-  .howitworks-card {
-    padding: 18px 6px 18px 6px;
-  }
-
+/* Blog Section */
 .blog-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 100px 0;
   background: #fff;
-  padding: 100px 0 80px 0;
-  max-width: 1200px;
+}
+.blog-inner {
+  width: 100%;
+  max-width: 760px;
   margin: 0 auto;
 }
-.blog-header {
-  margin-bottom: 48px;
-}
-.blog-label {
-  color: #2ecc40;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 1.1em;
-}
-.blog-title {
-  font-size: 2.5em;
-  font-weight: 700;
-  margin-bottom: 0;
+.blog-inner h2 {
+  font-size: 2em;
+  color: #22ad36;
+  margin-bottom: 38px;
+  font-weight: 800;
+  text-align: left;
+  letter-spacing: -1px;
 }
 .blog-card {
-  display: flex;
-  gap: 48px;
   background: #fff;
-  border-radius: 24px;
-  box-shadow: 0 4px 32px rgba(50,60,80,0.07);
-  padding: 36px;
-  align-items: center;
+  border-radius: 22px;
+  box-shadow: 0 4px 32px rgba(30,30,30,0.08);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 32px;
 }
-.blog-img {
-  width: 340px;
-  height: 340px;
+.blog-card img {
+  width: 260px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  background: #f8f8f8;
 }
 .blog-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.blog-post-title {
-  font-size: 1.45em;
-  font-weight: 600;
-  margin-bottom: 12px;
+.blog-content h3 {
+  font-size: 1.32em;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #139383;
 }
 .blog-date {
-  display: block;
-  color: #888;
-  margin-bottom: 16px;
-  font-size: 1em;
+  font-size: 0.98em;
+  color: #aaa;
+  margin-bottom: 10px;
 }
-.blog-summary {
-  font-size: 1.17em;
+.blog-content p {
+  font-size: 1.08em;
+  color: #222;
   margin-bottom: 18px;
 }
-.blog-readmore {
-  font-size: 1.12em;
-  color: #219150;
+.blog-content a {
+  color: #139383;
   text-decoration: underline;
   font-weight: bold;
+  font-size: 1em;
+  transition: color 0.14s;
 }
+.blog-content a:hover {
+  color: #0d6b5a;
+}
+
+/* 반응형 */
+@media (max-width: 1100px) {
+  .howitworks-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 34px;
+  }
+  .how-card {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .blog-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    gap: 18px;
+  }
+  .blog-card img {
+    width: 92vw;
+    max-width: 380px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 700px) {
+  .howitworks-inner, .blog-inner {
+    padding: 0 10px;
+  }
+  .how-card, .blog-card {
+    padding: 16px 10px;
+  }
+  .blog-card img {
+    height: 120px;
+    max-width: 96vw;
+  }
+}
+
