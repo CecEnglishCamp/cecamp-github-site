@@ -671,52 +671,111 @@ main {
   background: #fff;
   min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 0 2vw;
+  align-items: flex-start;
+  padding: 80px 0 60px 0;
 }
+
 .howitworks-inner {
   width: 100%;
-  max-width: 1240px;
-  margin:0 auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.howitworks-inner h2 {
+  color: #183983;
+  font-size: 2.4em;
+  font-weight: 900;
+  margin-bottom: 48px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.howitworks-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px 48px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.howitworks-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 28px 0 rgba(30, 40, 50, 0.07);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 36px 24px 30px 24px;
+  min-width: 0;
+  transition: box-shadow 0.18s;
 }
-.howitworks-inner h2 {
+
+.how-img {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  background: #f0f0f0;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.04);
+  display: block;
+}
+
+.howitworks-card h3 {
+  font-size: 1.25em;
   color: #183983;
-  font-size: 2.2em;
-  font-weight: 900;
-  margin-bottom: 46px;
+  font-weight: bold;
+  margin: 8px 0 12px 0;
+  text-align: center;
 }
-.howitworks-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px 32px;
-    width:100%max-width:900px;
-    margin:0 auto
+
+.howitworks-card p {
+  color: #1a2330;
+  font-size: 1em;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  text-align: center;
 }
-.howitworks-card {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    padding: 32px 28px 24px 28px;
-    min-width: 280px;
-    max-width: 420px;
+
+.howitworks-card a {
+  color: #183983;
+  font-size: 1em;
+  text-decoration: underline;
+  margin-top: 8px;
+  transition: color 0.16s;
+}
+
+.howitworks-card a:hover {
+  color: #0db559;
+}
+
+@media (max-width: 900px) {
+  .howitworks-cards {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .how-img {
+    width: 96%;
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .howitworks-section {
+    padding: 30px 0;
+  }
+  .howitworks-inner h2 {
+    font-size: 1.4em;
+  }
+  .how-img {
     width: 100%;
-}
+    height: 120px;
+  }
+  .howitworks-card {
+    padding: 18px 6px 18px 6px;
+  }
 
-}
-
-/* 반응형 */
-@media (max-width: 1100px) {
-  .howitworks-cards { gap: 18px; }
-  .howitworks-card { width: 45vw; min-width: 220px; max-width: 98vw; }
-}
-@media (max-width: 800px) {
-  .howitworks-cards { flex-direction: column; gap: 15px; align-items: center; }
-  .howitworks-card { width: 93vw; max-width: 380px; }
-}
 .blog-section {
   background: #fff;
   padding: 100px 0 80px 0;
