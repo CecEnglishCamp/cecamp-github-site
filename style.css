@@ -774,8 +774,8 @@ body {
   box-shadow: 0 4px 32px 0 rgba(30, 30, 30, 0.14);
   border-radius: 32px;
   padding: 48px;
-  width: 60%;
-  max-width: 980px;
+  width: 40%;
+  max-width: 620px;
   min-width: 340px;
   gap: 40px;
   transition: box-shadow 0.2s;
