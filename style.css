@@ -368,3 +368,109 @@ main {
   .program-cards { flex-direction: column; gap: 18px; align-items: center; }
   .program-card { width: 93vw; max-width: 370px; }
 }
+.testimonials-section {
+  background: #e8f9fc; /* 연민트 */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4vw;
+}
+.testimonials-inner {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials-inner h2 {
+  color: #1888e4;
+  font-size: 2.2em;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+.testimonials-desc {
+  color: #147a9c;
+  margin-bottom: 40px;
+  font-size: 1.15em;
+}
+.testimonial-cards {
+  display: flex;
+  gap: 36px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 16px rgba(20,80,130,0.11);
+  width: 330px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.19s, box-shadow 0.19s;
+  padding: 36px 22px 22px 22px;
+  cursor: pointer;
+  position: relative;
+}
+.testimonial-card:hover {
+  transform: translateY(-9px) scale(1.03);
+  box-shadow: 0 14px 32px rgba(34,52,100,0.15), 0 2px 8px rgba(36,133,224,0.11);
+}
+.testimonial-photo {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.testimonial-content {
+  width: 100%;
+}
+.testimonial-name {
+  font-weight: bold;
+  color: #183983;
+  font-size: 1.05em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.testimonial-family {
+  color: #1897b3;
+  font-weight: 400;
+  font-size: 0.95em;
+}
+.testimonial-text {
+  color: #232d40;
+  font-size: 1em;
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* 반응형 */
+@media (max-width: 1000px) {
+  .testimonial-cards {
+    gap: 20px;
+  }
+  .testimonial-card {
+    width: 90vw;
+    max-width: 350px;
+  }
+}
+@media (max-width: 800px) {
+  .testimonial-cards {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .testimonial-card {
+    width: 95vw;
+    max-width: 380px;
+  }
+}
