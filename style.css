@@ -744,3 +744,62 @@ main {
   .howitworks-cards { flex-direction: column; gap: 15px; align-items: center; }
   .howitworks-card { width: 93vw; max-width: 380px; }
 }
+.blog-section {
+  background: #fff;
+  padding: 100px 0 80px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.blog-header {
+  margin-bottom: 48px;
+}
+.blog-label {
+  color: #2ecc40;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+.blog-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.blog-card {
+  display: flex;
+  gap: 48px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(50,60,80,0.07);
+  padding: 36px;
+  align-items: center;
+}
+.blog-img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.blog-content {
+  flex: 1;
+}
+.blog-post-title {
+  font-size: 1.45em;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.blog-date {
+  display: block;
+  color: #888;
+  margin-bottom: 16px;
+  font-size: 1em;
+}
+.blog-summary {
+  font-size: 1.17em;
+  margin-bottom: 18px;
+}
+.blog-readmore {
+  font-size: 1.12em;
+  color: #219150;
+  text-decoration: underline;
+  font-weight: bold;
+}
