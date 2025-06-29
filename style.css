@@ -667,3 +667,80 @@ main {
   </main>
 </body>
 </html>
+.howitworks-section {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2vw;
+}
+.howitworks-inner {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.howitworks-inner h2 {
+  color: #183983;
+  font-size: 2.2em;
+  font-weight: 900;
+  margin-bottom: 46px;
+}
+.howitworks-cards {
+  display: flex;
+  gap: 34px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.howitworks-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(80,120,220,0.10);
+  width: 270px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 18px 30px 18px;
+  transition: transform 0.19s, box-shadow 0.19s;
+  text-align: center;
+}
+.howitworks-card:hover {
+  transform: translateY(-8px) scale(1.035);
+  box-shadow: 0 16px 34px rgba(70,130,220,0.13), 0 2px 8px rgba(36,133,224,0.11);
+}
+.how-img {
+  width: 94px;
+  height: 94px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 17px;
+  background: #f2f6fa;
+}
+.howitworks-card h3 {
+  font-size: 1.13em;
+  color: #0061ad;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.howitworks-card p {
+  color: #1a2330;
+  font-size: 1em;
+  margin-bottom: 0;
+  line-height: 1.6;
+  min-height: 100px;
+  text-align: left;
+}
+
+/* 반응형 */
+@media (max-width: 1100px) {
+  .howitworks-cards { gap: 18px; }
+  .howitworks-card { width: 45vw; min-width: 220px; max-width: 98vw; }
+}
+@media (max-width: 800px) {
+  .howitworks-cards { flex-direction: column; gap: 15px; align-items: center; }
+  .howitworks-card { width: 93vw; max-width: 380px; }
+}
