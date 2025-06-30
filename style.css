@@ -1,290 +1,297 @@
-:root {
-  scroll-padding-top: 80px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEC English Camp</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+    /* 네비+공백 크기만큼 스크롤 오프셋 */
+  </style>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="logo">
+      <img src="assets/img/logo.jpg" alt="CEC Logo" />
+      <span>CEC English Camp</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#episode">Episode</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#what-they-say">What they say</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#howitworks">How it works</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-body {
-  background: #000;
-  color: #fff;
-  font-family: 'Noto Sans KR', sans-serif;
-  margin: 0;
-  padding: 0;
-}
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+      <div class="main-text home-text">
+        <h1>Welcome to CEC English Camp</h1>
+        <p class="intro">
+          Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.
+        </p>
+        <div class="highlight scrolling-text">
+          <strong>Explore language through joy, imagination, and connection.</strong> 🚀 🟦 ✨
+        </div>
+      </div>
+      <div class="main-visual">
+        <video src="assets/videos/robo.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </section>
 
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: #000;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  padding-left: 16px;
-}
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="image about-image">
+        <img src="assets/img/about.png" alt="About Image" />
+      </div>
+      <div class="text about-text">
+        <h2>Engaging English Learning</h2>
+        <h3>Discover the joy of language through stories</h3>
+        <p>
+          At CEC English Camp, we ignite a passion for English in kids through captivating short novels.
+          Our innovative approach focuses on grammar while making learning fun and engaging.
+          With a supportive environment, children develop their language skills, boost their confidence,
+          and build a lifelong love for reading. Join us in transforming the way young learners experience English!
+        </p>
+        <div class="btn-container">
+          <button class="cta-btn">Get in touch</button>
+        </div>
+      </div>
+    </section>
 
-.nav-logo {
-  width: 64px; height: 64px;
-  margin-right: 14px;
-}
-.nav-title {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-right: 40px;
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
-}
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.07rem;
-  transition: color 0.2s;
-  padding: 6px 10px;
-  border-radius: 5px;
-}
-.nav-links li a:hover,
-.nav-links li a.active {
-  color: #41e048;
-  background: #191919;
-}
+    <!-- Episode Section -->
+    <section id="episode" class="section episode-section">
+      <div class="image episode-image">
+        <img src="assets/img/episode.jpg" alt="Episode Image" />
+      </div>
+      <div class="text episode-text">
+        <h2>📘 Short Novel, Title: Robo, Jump & Me – Season 1 / Episode 1</h2>
+        <p>어느 날 공이 사라졌습니다. 미소는 공을 찾기 위해 조용한 창고로 향합니다. 그곳에서 예상치 못한 빛나는 상자를 발견하게 되는데...</p>
+        <p>이 이야기에는 상상력, 우정, 모험이 함께 펼쳐집니다. 아이들의 창의성과 상상력을 자극하기 위한 단편 시리즈로 구성되어 있으며, 각 에피소드는 짧지만 깊은 여운을 남깁니다.</p>
+        <a class="read-more-btn" href="learning/episode1.html" target="_blank">Read More →</a>
+      </div>
+    </section>
 
-.section {
-  padding: 65px 0;
-  box-sizing: border-box;
-  width: 100%;
-}
+    <!-- Programs Section -->
+    <section id="programs" class="section programs-section">
+      <div class="programs-inner">
+        <h2>Our English Programs</h2>
+        <div class="program-cards">
+          <!-- Program 1 -->
+          <div class="program-card">
+            <img src="assets/img/program1.jpg" alt="Mastery Through Narrative" />
+            <div class="program-card-body">
+              <h3>Mastery Through Narrative</h3>
+              <p>
+                Short novels bring grammar and vocabulary to life!<br/>
+                Children intuitively absorb language through vivid stories and relatable characters.<br/>
+                <ul>
+                  <li>Grammar discovered in action</li>
+                  <li>Repetition & reinforcement</li>
+                  <li>Authentic expression immersion</li>
+                  <li>Comfortable, focused cognitive load</li>
+                </ul>
+                <span style="color:#1888e4;font-weight:600;">By the end, your child won’t just understand English—they’ll feel it!</span>
+              </p>
+            </div>
+          </div>
+          <!-- Program 2 -->
+          <div class="program-card">
+            <img src="assets/img/program2.jpg" alt="Integrated Literacy & Critical Thinking" />
+            <div class="program-card-body">
+              <h3>Integrated Literacy & Critical Thinking</h3>
+              <p>
+                A full-language immersion experience: reading, writing, speaking, listening—integrated for real growth.<br/>
+                <ul>
+                  <li>Comprehension, inference, & creative writing</li>
+                  <li>Debates, presentations, empathy building</li>
+                  <li>Vocabulary & grammar as contextual tools</li>
+                </ul>
+                <span style="color:#1888e4;font-weight:600;">For English that’s clear, insightful, and authentic!</span>
+              </p>
+            </div>
+          </div>
+          <!-- Program 3 -->
+          <div class="program-card">
+            <img src="assets/img/program3.jpg" alt="Fluency & Confident Expression" />
+            <div class="program-card-body">
+              <h3>Fluency & Confident Expression</h3>
+              <p>
+                Words become tools—kids speak with poise and real-world confidence.<br/>
+                <ul>
+                  <li>Daily conversation & real-life simulation</li>
+                  <li>Pronunciation, intonation, rhythm</li>
+                  <li>Peer interviews, creative speaking, role play</li>
+                  <li>Holistic fluency & confidence-building</li>
+                </ul>
+                <span style="color:#1888e4;font-weight:600;">Students don’t just speak—they connect and shine!</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.section-title {
-  font-size: 2.3rem;
-  text-align: center;
-  margin: 0 0 36px 0;
-  font-weight: bold;
-  color: #41e048;
-}
+    <!-- What They Say Section -->
+    <section id="what-they-say" class="section testimonials-section">
+      <div class="testimonials-inner">
+        <h2>What They Say</h2>
+        <p class="testimonials-desc">Parents & educators share real stories</p>
+        <div class="testimonial-cards">
+          <!-- 카드 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-photo">
+              <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#e8e8e8"/><text x="32" y="40" text-anchor="middle" fill="#b0b0b0" font-size="28" font-family="Arial" dy="0.3em">👤</text></svg>
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-name">David <span class="testimonial-family">| David Family</span></div>
+              <div class="testimonial-text">
+                CecEnglishCamp has transformed my child's understanding of English in such a short time...
+              </div>
+            </div>
+          </div>
+          <!-- 카드 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-photo">
+              <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#e8e8e8"/><text x="32" y="40" text-anchor="middle" fill="#b0b0b0" font-size="28" font-family="Arial" dy="0.3em">👤</text></svg>
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-name">Jennie <span class="testimonial-family">| Fremont School District</span></div>
+              <div class="testimonial-text">
+                As an educator, I appreciate the innovative approach that CecEnglishCamp takes...
+              </div>
+            </div>
+          </div>
+          <!-- 카드 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-photo">
+              <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#e8e8e8"/><text x="32" y="40" text-anchor="middle" fill="#b0b0b0" font-size="28" font-family="Arial" dy="0.3em">👤</text></svg>
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-name">Ryan <span class="testimonial-family">| Huang Family</span></div>
+              <div class="testimonial-text">
+                CecEnglishCamp has been a fantastic experience for my son...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 0 70px 0;
-  gap: 60px;
-}
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing-section">
+      <div class="pricing-inner">
+        <h2>Pricing</h2>
+        <div class="pricing-cards">
+          <!-- 카드 1 -->
+          <div class="pricing-card">
+            <img src="assets/img/Pricing 1.jpg" alt="Grammar Adventures" class="pricing-img">
+            <h3>Grammar Adventures</h3>
+            <p class="pricing-desc">Explore English grammar through captivating stories...</p>
+            <div class="price">Free</div>
+            <a href="pricing/grammar-adventures.html" class="pricing-btn" target="_blank">Read More</a>
+          </div>
+          <!-- 카드 2 -->
+          <div class="pricing-card">
+            <img src="assets/img/Pricing 2.jpg" alt="StoryQuest Workshops" class="pricing-img">
+            <h3>StoryQuest Workshops</h3>
+            <p class="pricing-desc">Ignite creativity and learn grammar in exciting workshops...</p>
+            <div class="price">$25<span style="font-size:0.6em;">/month</span></div>
+            <a href="pricing/storyquest-workshops.html" class="pricing-btn" target="_blank">Read More</a>
+          </div>
+          <!-- 카드 3 -->
+          <div class="pricing-card">
+            <img src="assets/img/Pricing 3.jpg" alt="Grammar Games" class="pricing-img">
+            <h3>Grammar Games</h3>
+            <p class="pricing-desc">Transform grammar lessons into fun and interactive games...</p>
+            <div class="price">$50<span style="font-size:0.6em;">/month</span></div>
+            <a href="pricing/grammar-games.html" class="pricing-btn" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.hero-content {
-  flex: 1 1 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 30px;
-}
+    <!-- How it works Section -->
+    <section id="howitworks" class="section howitworks-section">
+      <div class="howitworks-inner">
+        <h2>How it works</h2>
+        <div class="howitworks-grid">
+          <!-- Card 1 -->
+          <div class="how-card">
+            <img src="assets/img/how1.jpg" alt="Interactive learning" />
+            <h3>Interactive learning</h3>
+            <p>Engage with interactive lessons that inspire creativity and critical thinking. At CecEnglishCamp, we believe that learning English should be an exciting adventure.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="how-card">
+            <img src="assets/img/how2.jpg" alt="Personalized guidance" />
+            <h3>Personalized guidance</h3>
+            <p>Receive personalized attention to nurture your child's unique learning style. Our instructors tailor lessons to support each student's individual progress.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <!-- Card 3 -->
+          <div class="how-card">
+            <img src="assets/img/how3.jpg" alt="Creative expression" />
+            <h3>Creative expression</h3>
+            <p>Allow your child to express themselves creatively while mastering English. Activities include storytelling, drama, and art projects to foster imagination.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <!-- Card 4 -->
+          <div class="how-card">
+            <img src="assets/img/how4.jpg" alt="Community building" />
+            <h3>Community building</h3>
+            <p>Build lasting friendships while enhancing English language skills. Our camp provides a welcoming environment for collaboration and communication.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.hero-title {
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-bottom: 14px;
-}
+    <!-- Blog Section -->
+    <section id="blog" class="section blog-main-section">
+      <div class="blog-main-title">
+        Engaging activities for young minds
+      </div>
+      <div class="blog-main-card">
+        <img src="assets/img/blog1.jpg" alt="Blog post main image" />
+        <div class="blog-main-card-content">
+          <h2>Unlocking english through short novels</h2>
+          <div class="date">June 14, 2025</div>
+          <p>
+            Unlock the power of short novels to transform your child's English grammar skills at CecEnglishCamp! ...
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>궁금하신 점이 있으면 언제든 문의해 주세요.<br>
+          <span class="contact-email">cec.english.camp@email.com</span>
+        </p>
+        <form class="contact-form" autocomplete="off">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
 
-.hero-sub {
-  font-size: 1.18rem;
-  margin-bottom: 20px;
-}
-
-.hero-highlight {
-  color: #00ebff;
-  font-weight: bold;
-  font-size: 1.08rem;
-  margin-top: 18px;
-  margin-left: 70px;
-  white-space: nowrap;
-  animation: hero-move 6s linear infinite alternate;
-}
-@keyframes hero-move {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-70px); }
-}
-
-.hero-robot {
-  flex: 0 0 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-robot img {
-  display: block;
-  width: 270px;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: none;
-  background: none;
-}
-
-@media (max-width: 900px) {
-  .hero-section { flex-direction: column; padding: 60px 0 30px 0; gap: 28px; }
-  .hero-content { padding-left: 0; align-items: center; text-align: center; }
-  .hero-highlight { margin-left: 0; }
-}
-
-/* About */
-.about-content {
-  max-width: 680px;
-  margin: 0 auto;
-  font-size: 1.15rem;
-  color: #fff;
-}
-
-/* 프로그램 카드 */
-.program-cards {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-.program-card {
-  background: #fff;
-  color: #222;
-  border-radius: 24px;
-  box-shadow: 0 4px 32px 0 rgba(30, 30, 30, 0.13);
-  width: 340px;
-  min-width: 260px;
-  padding: 36px 32px 32px 32px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.program-card img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 18px;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 1200px) {
-  .program-cards { flex-direction: column; align-items: center; }
-}
-
-/* 후기 */
-.testimonial-cards {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-.testimonial-card {
-  background: #fff;
-  color: #222;
-  border-radius: 24px;
-  box-shadow: 0 4px 32px 0 rgba(30, 30, 30, 0.11);
-  width: 340px;
-  min-width: 260px;
-  padding: 36px 32px 32px 32px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.testimonial-card .avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: #e5e5f7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  margin-bottom: 12px;
-}
-.testimonial-name {
-  font-size: 1.07rem;
-  color: #1b3578;
-  margin-bottom: 9px;
-}
-.testimonial-text {
-  font-size: 1rem;
-  color: #333;
-}
-
-@media (max-width: 1200px) {
-  .testimonial-cards { flex-direction: column; align-items: center; }
-}
-
-/* 블로그 카드 */
-.blog-section .blog-main-card {
-  background: #fff;
-  color: #222;
-  border-radius: 28px;
-  box-shadow: 0 4px 32px 0 rgba(30, 30, 30, 0.13);
-  padding: 44px 48px;
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  gap: 44px;
-}
-.blog-main-card img {
-  width: 200px;
-  height: 140px;
-  border-radius: 16px;
-  object-fit: cover;
-}
-.blog-main-card-content { flex: 1; }
-@media (max-width: 900px) {
-  .blog-section .blog-main-card { flex-direction: column; align-items: center; padding: 30px 12px; gap: 14px;}
-  .blog-main-card img { width: 100%; height: auto;}
-}
-
-/* 컨택트 */
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-title {
-  font-size: 2.1rem;
-  color: #41e048;
-  margin-bottom: 18px;
-}
-.contact-form {
-  background: #fff;
-  color: #222;
-  padding: 32px 26px;
-  border-radius: 18px;
-  box-shadow: 0 4px 32px 0 rgba(30, 30, 30, 0.09);
-  max-width: 420px;
-  width: 100%;
-  margin: 0 auto;
-}
-.contact-form label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 4px;
-}
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  margin-bottom: 14px;
-  border: 1.5px solid #eee;
-  border-radius: 8px;
-  padding: 10px 12px;
-  font-size: 1rem;
-}
-.contact-form button {
-  background: #41e048;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.contact-form button:hover { background: #2ac035; }
+  </main>
+</body>
+</html>
