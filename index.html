@@ -4,41 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+    /* 네비+공백 크기만큼 스크롤 오프셋 */
+  </style>
 </head>
 <body>
-  <nav>
-    <img src="assets/img/logo.jpg" alt="CEC Logo" class="nav-logo"/>
-    <span class="nav-title">CEC English Camp</span>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#episode">Episode</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#testimonials">What they say</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#howitworks">How it works</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="logo">
+      <img src="assets/img/logo.jpg" alt="CEC Logo" />
+      <span>CEC English Camp</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#episode">Episode</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#what-they-say">What they say</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#howitworks">How it works</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="hero-section section" id="home">
-    <div class="hero-content">
-      <div class="hero-title">Welcome to CEC English Camp</div>
-      <div class="hero-sub">Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.</div>
-      <div class="hero-highlight">Explore language through joy, imagination, and connection. 🚀🔷✨</div>
-      </div>
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+      <div class="main-text home-text">
+        <h1>Welcome to CEC English Camp</h1>
+        <p class="intro">
+          Empowering young learners through immersive English learning experiences in a fun and dynamic camp environment.
+        </p>
+        <div class="highlight scrolling-text">
+          <strong>Explore language through joy, imagination, and connection.</strong> 🚀 🟦 ✨
+        </div>
       </div>
       <div class="main-visual">
         <video src="assets/videos/robo.mp4" autoplay muted loop playsinline></video>
       </div>
     </section>
 
-    <h2 class="section-title">About</h2>
-    <div class="about-content">
-      <!-- About Section -->
+    <!-- About Section -->
     <section id="about" class="section about-section">
       <div class="image about-image">
         <img src="assets/img/about.png" alt="About Image" />
@@ -58,7 +69,7 @@
       </div>
     </section>
 
-      <!-- Episode Section -->
+    <!-- Episode Section -->
     <section id="episode" class="section episode-section">
       <div class="image episode-image">
         <img src="assets/img/episode.jpg" alt="Episode Image" />
@@ -70,67 +81,114 @@
         <a class="read-more-btn" href="learning/episode1.html" target="_blank">Read More →</a>
       </div>
     </section>
- 
-  <section class="program-section section" id="programs">
-    <h2 class="section-title">Our English Programs</h2>
-    <div class="program-cards">
-      <div class="program-card">
-        <img src="assets/img/program1.jpg" alt="Mastery Through Narrative"/>
-        <h3>Mastery Through Narrative</h3>
-        <p>Short novels bring grammar and vocabulary to life! Children intuitively absorb language through vivid stories and relatable characters.</p>
-        <ul>
-          <li>Grammar discovered in action</li>
-          <li>Repetition & reinforcement</li>
-          <li>Authentic expression immersion</li>
-          <li>Comfortable, focused cognitive load</li>
-        </ul>
-      </div>
-      <div class="program-card">
-        <img src="assets/img/program2.jpg" alt="Integrated Literacy"/>
-        <h3>Integrated Literacy & Critical Thinking</h3>
-        <p>A full-language immersion experience: reading, writing, speaking, listening—integrated for real growth.</p>
-        <ul>
-          <li>Comprehension, inference, & creative writing</li>
-          <li>Debates, presentations, empathy building</li>
-          <li>Vocabulary & grammar as contextual tools</li>
-        </ul>
-      </div>
-      <div class="program-card">
-        <img src="assets/img/program3.jpg" alt="Fluency & Expression"/>
-        <h3>Fluency & Confident Expression</h3>
-        <p>Words become tools—kids speak with poise and real-world confidence.</p>
-        <ul>
-          <li>Daily conversation & real-life simulation</li>
-          <li>Pronunciation, intonation, rhythm</li>
-          <li>Peer interviews, creative speaking, role play</li>
-          <li>Holistic fluency & confidence-building</li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
-  <section class="testimonial-section section" id="testimonials">
-    <h2 class="section-title">What They Say</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial-card">
-        <div class="avatar">👤</div>
-        <div class="testimonial-name"><strong>David</strong> | David Family</div>
-        <div class="testimonial-text">CEC English Camp has transformed my child's understanding of English in such a short time. The engaging short novels not only captivate their attention but also reinforce grammar concepts effectively.</div>
+    <!-- Programs Section -->
+    <section id="programs" class="section programs-section">
+      <div class="programs-inner">
+        <h2>Our English Programs</h2>
+        <div class="program-cards">
+          <!-- Program 1 -->
+          <div class="program-card">
+            <img src="assets/img/program1.jpg" alt="Mastery Through Narrative" />
+            <div class="program-card-body">
+              <h3>Mastery Through Narrative</h3>
+              <p>
+                Short novels bring grammar and vocabulary to life!<br/>
+                Children intuitively absorb language through vivid stories and relatable characters.<br/>
+                <ul>
+                  <li>Grammar discovered in action</li>
+                  <li>Repetition & reinforcement</li>
+                  <li>Authentic expression immersion</li>
+                  <li>Comfortable, focused cognitive load</li>
+                </ul>
+                <span style="color:#1888e4;font-weight:600;">By the end, your child won’t just understand English—they’ll feel it!</span>
+              </p>
+            </div>
+          </div>
+          <!-- Program 2 -->
+          <div class="program-card">
+            <img src="assets/img/program2.jpg" alt="Integrated Literacy & Critical Thinking" />
+            <div class="program-card-body">
+              <h3>Integrated Literacy & Critical Thinking</h3>
+              <p>
+                A full-language immersion experience: reading, writing, speaking, listening—integrated for real growth.<br/>
+                <ul>
+                  <li>Comprehension, inference, & creative writing</li>
+                  <li>Debates, presentations, empathy building</li>
+                  <li>Vocabulary & grammar as contextual tools</li>
+                </ul>
+                <span style="color:#1888e4;font-weight:600;">For English that’s clear, insightful, and authentic!</span>
+              </p>
+            </div>
+          </div>
+          <!-- Program 3 -->
+          <div class="program-card">
+            <img src="assets/img/program3.jpg" alt="Fluency & Confident Expression" />
+            <div class="program-card-body">
+              <h3>Fluency & Confident Expression</h3>
+              <p>
+                Words become tools—kids speak with poise and real-world confidence.<br/>
+                <ul>
+                  <li>Daily conversation & real-life simulation</li>
+                  <li>Pronunciation, intonation, rhythm</li>
+                  <li>Peer interviews, creative speaking, role play</li>
+                  <li>Holistic fluency & confidence-building</li>
+                </ul>
+                <span style="color:#1888e4;font-weight:600;">Students don’t just speak—they connect and shine!</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="testimonial-card">
-        <div class="avatar">👤</div>
-        <div class="testimonial-name"><strong>Jennie</strong> | Fremont School District</div>
-        <div class="testimonial-text">As an educator, I appreciate the innovative approach that CEC English Camp takes in teaching English. The use of short novels to explain grammar is both creative and effective.</div>
+    </section>
+
+    <!-- What They Say Section -->
+    <section id="what-they-say" class="section testimonials-section">
+      <div class="testimonials-inner">
+        <h2>What They Say</h2>
+        <p class="testimonials-desc">Parents & educators share real stories</p>
+        <div class="testimonial-cards">
+          <!-- 카드 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-photo">
+              <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#e8e8e8"/><text x="32" y="40" text-anchor="middle" fill="#b0b0b0" font-size="28" font-family="Arial" dy="0.3em">👤</text></svg>
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-name">David <span class="testimonial-family">| David Family</span></div>
+              <div class="testimonial-text">
+                CecEnglishCamp has transformed my child's understanding of English in such a short time...
+              </div>
+            </div>
+          </div>
+          <!-- 카드 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-photo">
+              <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#e8e8e8"/><text x="32" y="40" text-anchor="middle" fill="#b0b0b0" font-size="28" font-family="Arial" dy="0.3em">👤</text></svg>
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-name">Jennie <span class="testimonial-family">| Fremont School District</span></div>
+              <div class="testimonial-text">
+                As an educator, I appreciate the innovative approach that CecEnglishCamp takes...
+              </div>
+            </div>
+          </div>
+          <!-- 카드 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-photo">
+              <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#e8e8e8"/><text x="32" y="40" text-anchor="middle" fill="#b0b0b0" font-size="28" font-family="Arial" dy="0.3em">👤</text></svg>
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-name">Ryan <span class="testimonial-family">| Huang Family</span></div>
+              <div class="testimonial-text">
+                CecEnglishCamp has been a fantastic experience for my son...
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="testimonial-card">
-        <div class="avatar">👤</div>
-        <div class="testimonial-name"><strong>Ryan</strong> | Huang Family</div>
-        <div class="testimonial-text">My son has gained confidence in his language abilities and looks forward to each class. I couldn't be happier with the progress he has made.</div>
-      </div>
-    </div>
-  </section>
-      
-<!-- Pricing Section -->
+    </section>
+
+    <!-- Pricing Section -->
     <section id="pricing" class="section pricing-section">
       <div class="pricing-inner">
         <h2>Pricing</h2>
@@ -162,8 +220,8 @@
         </div>
       </div>
     </section>
-      
-<!-- How it works Section -->
+
+    <!-- How it works Section -->
     <section id="howitworks" class="section howitworks-section">
       <div class="howitworks-inner">
         <h2>How it works</h2>
@@ -198,32 +256,42 @@
           </div>
         </div>
       </div>
-    </section>   
-      
-  <section class="blog-section section" id="blog">
-    <h2 class="section-title">Engaging activities for young minds</h2>
-    <div class="blog-main-card">
-      <img src="assets/img/blog1.jpg" alt="Blog post main image"/>
-      <div class="blog-main-card-content">
-        <h2>Unlocking english through short novels</h2>
-        <div class="date">June 14, 2025</div>
-        <p>Unlock the power of short novels to transform your child's English grammar skills at CecEnglishCamp! By immersing your child in captivating stories, we create an engaging and enjoyable learning environment that makes mastering grammar a fun adventure.</p>
-        <a href="#">Read more</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contact-section section" id="contact">
-    <h2 class="contact-title">Contact Us</h2>
-    <form class="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <!-- Blog Section -->
+    <section id="blog" class="section blog-main-section">
+      <div class="blog-main-title">
+        Engaging activities for young minds
+      </div>
+      <div class="blog-main-card">
+        <img src="assets/img/blog1.jpg" alt="Blog post main image" />
+        <div class="blog-main-card-content">
+          <h2>Unlocking english through short novels</h2>
+          <div class="date">June 14, 2025</div>
+          <p>
+            Unlock the power of short novels to transform your child's English grammar skills at CecEnglishCamp! ...
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>궁금하신 점이 있으면 언제든 문의해 주세요.<br>
+          <span class="contact-email">cec.english.camp@email.com</span>
+        </p>
+        <form class="contact-form" autocomplete="off">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>
