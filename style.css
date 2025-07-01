@@ -228,22 +228,7 @@ main {
   margin-bottom: 16px;
   font-size: 1.07em;
 }
-.readmore-btn {
-  display: inline-block;
-  background: #35d6ed;
-  color: #1a1a1a;
-  font-weight: 600;
-  font-size: 1.1rem;
-  border-radius: 8px;
-  padding: 0.7em 1.8em;
-  margin-top: 1.5em;
-  text-decoration: none;
-  transition: background 0.18s;
-}
-.readmore-btn:hover {
-  background: #fff;
-  color: #35d6ed;
-}
+
 
 /* ======== 이미지 공통 ======== */
 .image img {
