@@ -189,61 +189,44 @@ main {
 }
 
 /* ======== Episode Section (밝은 블루) ======== */
-.episode-section {
-  background: #000;   
-  border-radius: 24px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-  padding: 0 4vw;
+.episode-card {
+  display: flex;
+  background: #181818;
+  border-radius: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+  padding: 2rem;
+  align-items: center;
+  gap: 3rem;
+}
+.episode-image img {
+  width: 360px;
+  height: 360px;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+.episode-content {
+  flex: 1;
+  color: #fffbe0;
+}
+.novel-title { font-size: 2.2rem; font-weight: 700; }
+.season, .episode { font-size: 1.1rem; color: #ffe66d; }
+.episode-description { font-size: 1.18rem; margin: 1.1rem 0 1.7rem 0; }
+.read-more-btn {
+  display: inline-block;
+  background: #ffe66d;
+  color: #1a1a1a;
+  padding: 0.8rem 1.8rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.read-more-btn:hover {
+  background: #ffae1a;
+  color: #fff;
 }
 
-}
-.episode-section .episode-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.episode-section .episode-image img {
-  max-width: 36vw;
-  max-height: 62vh;
-  width: auto;
-  height: auto;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-}
-.episode-section .episode-text {
-  color: #fff;
-  max-width: 560px;
-  min-width: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.episode-section .episode-text h2 {
-  color: #fffbe9; /* 크림 포인트 */
-  font-size: 1.4em;
-  margin-bottom: 18px;
-}
-.episode-section .episode-text p {
-  margin-bottom: 16px;
-  font-size: 1.07em;
-}
-.episode-section .read-more-btn {
-  display: inline-block;
-  background-color: #fffbe9;
-  color: #1888e4;
-  padding: 10px 22px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  margin-top: 14px;
-  font-size: 1.1em;
-  transition: background-color 0.2s, color 0.2s;
-}
-.episode-section .read-more-btn:hover {
-  background-color: #fff;
-  color: #005aab;
 }
 
 /* ======== 이미지 공통 ======== */
