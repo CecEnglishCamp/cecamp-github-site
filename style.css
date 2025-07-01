@@ -237,13 +237,6 @@ main {
   display: block;
 }
 
-/* ======== 반응형 (공통) ======== */
-@media (max-width: 900px) {
-  .section {
-    flex-direction: column;
-    padding: 0 10px;
-    gap: 18px;
-  }
   .main-visual video,
   .about-image img,
   .episode-image img {
