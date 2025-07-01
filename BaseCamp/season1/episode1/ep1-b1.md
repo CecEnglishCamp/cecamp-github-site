@@ -28,6 +28,8 @@ Jump looks around. Miso says, “We will wake the village!” The river sounds l
 - **Reported Speech**:  
   Robo warned that there was danger.  
   Miso said that they would wake the village.
+👉 [Reported Speech 더 배우기 (Grammar Base Camp)](https://www.notion.so/English-Grammar-Base-Camp-1e8740fce0da8077a791e271923f1263?source=copy_link)
+  
 - **Adverbs**:  
   Miso spoke bravely. Jump moved quickly.
 
