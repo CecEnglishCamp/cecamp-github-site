@@ -187,6 +187,7 @@ main {
 .about-text button:hover {
   background-color: #e06600;
 }
+
 /* ======== Episode Section (밝은 블루) ======== */
 .episode-section {
   background: #000;   
@@ -228,7 +229,22 @@ main {
   margin-bottom: 16px;
   font-size: 1.07em;
 }
-
+.episode-section .read-more-btn {
+  display: inline-block;
+  background-color: #fffbe9;
+  color: #1888e4;
+  padding: 10px 22px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 14px;
+  font-size: 1.1em;
+  transition: background-color 0.2s, color 0.2s;
+}
+.episode-section .read-more-btn:hover {
+  background-color: #fff;
+  color: #005aab;
+}
 
 /* ======== 이미지 공통 ======== */
 .image img {
@@ -237,6 +253,13 @@ main {
   display: block;
 }
 
+/* ======== 반응형 (공통) ======== */
+@media (max-width: 900px) {
+  .section {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 18px;
+  }
   .main-visual video,
   .about-image img,
   .episode-image img {
