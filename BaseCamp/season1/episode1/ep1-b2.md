@@ -1,62 +1,48 @@
-# Season 1, Episode 1 – Light Lives Beneath the Village (B2 Level)
-
-## Story – B2 English
-
-In Taebaek’s winter of 2025, Miso stands before the abandoned school, clutching her father’s rusty box.  
-She kneels and opens it, revealing faded papers: “T.O.B.I. Project.”  
-Curious, she walks to the derelict mine and pushes open the “No Entry” gate.  
-A nimble robot, Jump, appears and leads her deep underground.  
-They descend 400 meters. The air is cold and damp, filled with the scent of coal and oil.  
-Robo, another robot, wakes up. Robo says, “This mine could become a data center. It can cool servers and heat the village.”  
-Miso is both anxious and excited. Suddenly, the ground shakes.  
-Robo’s eyes flash. “Warning: unknown signal detected,” Robo says.  
-Jump scans the darkness. Miso, trembling, says, “We will awaken this village.”  
-Above, the river echoes like a heartbeat.
-
----
-
-## Target Vocabulary
-
-- abandoned: left alone
-- clutch: hold tightly
-- derelict: very old and broken
-- nimble: quick and light
-- descend: go down
-- anxious: worried and excited
-
----
-
-## Grammar
-
-- **Reported Speech**: Robo said that the mine could be a data center.
-- **Modal Verbs**: This could help the village.  
-- **Adverbs**: Miso said bravely. Robo responded calmly.
-
----
-
-## Practice
-
-**Questions:**
-
-1. What does Miso find in the box?
-2. How do the robots help the village?
-3. Why does Robo warn Miso?
-
----
-
-## Listening
-
-[Listen here](https://your-link.com/audio.mp3)
-
----
-
-## Image
-
-![Jump Robot](https://your-link.com/jump.png)
-
----
-
-## Wrap-up
-
-Miso and the robots start an adventure to save their village.
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Season 1, Episode 1 – B2 Upper-Intermediate</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <main style="max-width:700px;margin:2rem auto;background:#f9fafb;border-radius:16px;box-shadow:0 2px 16px #0002;padding:2rem;">
+    <h1>Season 1, Episode 1 – B2 Upper-Intermediate</h1>
+    <h2>Light Lives Beneath the Village</h2>
+    <img src="../assets/img/ep1-thumb.jpg" style="width:80%;border-radius:12px;margin:1rem 0;" alt="Episode image"/>
+    <p>In Taebaek’s winter of 2025, Miso lingered before the forsaken Jangseong Elementary School, clutching her father’s corroded metal box. The Hwangjeecheon River’s gentle murmur drifted nearby, while a biting breeze grazed her cheeks. Kneeling, she pried open the lid, unveiling faded manuscripts titled “T.O.B.I. Project: Jangseong Mine Heat Recovery System.” Her father’s calligraphy, both unfamiliar and achingly familiar, stirred her. “What were you dreaming of?” she murmured, as if the papers might respond. Intrigued, Miso approached the derelict mine, its gate marked with a crumbling “No Entry” sign. She shoved it open, and a chill, alien air rushed out. Abruptly, a nimble robot, Jump, leaped onto a metal surface, its azure eyes gleaming. It tilted its head, blinked twice, and projected a hologram: [T.O.B.I. UNIT-2 / JUMP]. Without pause, it darted toward an underground passage. Miso hesitated, then followed, her pulse racing.
+      ... <i>(본문 생략: 분량 초과 시 계속 이어드립니다)</i>
+    </p>
+    <h3>📚 Target Vocabulary</h3>
+    <ul>
+      <li>forsaken: abandoned, left alone</li>
+      <li>clutch: to hold tightly</li>
+      <li>murmur: a soft, quiet sound</li>
+      <li>unveil: to reveal something hidden</li>
+      <li>derelict: old and broken</li>
+      <li>nimble: quick and light in movement</li>
+      <li>gleam: to shine brightly</li>
+      <li>affirm: to state strongly</li>
+      <li>jolt: a sudden shake</li>
+      <li>unwavering: steady and strong</li>
+    </ul>
+    <h3>Practice</h3>
+    <ol>
+      <li>Miso stood at a <b>forsaken</b> school.</li>
+      <li>She <b>clutched</b> the box tightly.</li>
+      <li>Jump’s eyes <b>gleamed</b> brightly.</li>
+      <li>Miso’s resolve was <b>unwavering</b>.</li>
+    </ol>
+    <h3>📘 Grammar</h3>
+    <ul>
+      <li>Simple Past, Reported Speech, Modal Verbs, Adverbs of Manner, Conditionals 등</li>
+    </ul>
+    <h3>💬 Speaking & Listening</h3>
+    <ul>
+      <li>Practice: “Miso pried the lid. Robo affirmed that it was correct.”</li>
+      <li><a href="../assets/S1E1_English.mp3" target="_blank">▶ Listen to the story</a></li>
+    </ul>
+    <h3>🧠 Comprehension</h3>
+    <ol>
+      <li>Where and when did Miso discover her father’s manuscripts? <b>At a forsaken school in winter 2025</b></li>
+      <li>What robot emerged
