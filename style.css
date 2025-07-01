@@ -188,35 +188,46 @@ main {
   background-color: #e06600;
 }
 /* ======== Episode Section (밝은 블루) ======== */
-.episode-card {
-  background: rgba(0,0,0,0.85);
-  color: #fff;
-  padding: 2rem 2.5rem;
+.episode-section {
+  background: #000;   
+  border-radius: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 0 4vw;
+}
+
+}
+.episode-section .episode-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.episode-section .episode-image img {
+  max-width: 36vw;
+  max-height: 62vh;
+  width: auto;
+  height: auto;
   border-radius: 20px;
-  max-width: 600px;
-  margin: 3rem auto 1rem auto;
-  box-shadow: 0 8px 36px rgba(0,0,0,0.2);
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
-
-.episode-card h2 {
-  margin-bottom: 0.2em;
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: #35d6ed;
+.episode-section .episode-text {
+  color: #fff;
+  max-width: 560px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.episode-meta {
-  font-size: 1.15rem;
-  color: #ffd479;
-  margin-bottom: 1.2rem;
+.episode-section .episode-text h2 {
+  color: #fffbe9; /* 크림 포인트 */
+  font-size: 1.4em;
+  margin-bottom: 18px;
 }
-
-.series-tagline {
-  font-style: italic;
-  color: #ffd479;
-  margin-top: 1em;
+.episode-section .episode-text p {
+  margin-bottom: 16px;
+  font-size: 1.07em;
 }
-
 .readmore-btn {
   display: inline-block;
   background: #35d6ed;
