@@ -47,4 +47,18 @@ li {
   font-size: 1.18rem;
   margin-bottom: 0.8em;
 }
+.btn-back {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #2323e6;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btn-back:hover {
+  background: #6c63ff;
+}
 
