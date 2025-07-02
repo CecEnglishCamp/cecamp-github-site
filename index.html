@@ -1,8 +1,152 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <title>Robo Chat Demo</title>
+  <style>
+    body {
+      background: #222;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 0;
+      min-height: 100vh;
+    }
+    .chat-container {
+      width: 420px;
+      background: #181818;
+      border-radius: 18px;
+      box-shadow: 0 3px 24px rgba(0,0,0,0.18);
+      padding: 32px 24px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .robo-avatar {
+      width: 88px; height: 88px;
+      border-radius: 18px;
+      margin: 0 auto 8px auto;
+      display: block;
+      background: #333;
+      box-shadow: 0 0 0 4px #4442;
+    }
+    .bubble-row { display: flex; align-items: flex-end; margin: 12px 0;}
+    .bubble-robo {
+      background: #222a34;
+      color: #c7eeff;
+      border-radius: 18px 18px 18px 8px;
+      padding: 13px 20px;
+      max-width: 75%;
+      font-size: 1.08em;
+      margin-left: 16px;
+      position: relative;
+    }
+    .bubble-robo::before {
+      content: "";
+      position: absolute;
+      left: -16px; top: 18px;
+      width: 0; height: 0;
+      border-top: 12px solid transparent;
+      border-right: 16px solid #222a34;
+      border-bottom: 12px solid transparent;
+    }
+    .bubble-user {
+      background: #48d16c;
+      color: #fff;
+      border-radius: 18px 18px 8px 18px;
+      padding: 13px 20px;
+      max-width: 75%;
+      font-size: 1.08em;
+      margin-left: auto;
+      margin-right: 10px;
+      position: relative;
+    }
+    .bubble-user::before {
+      content: "";
+      position: absolute;
+      right: -16px; top: 18px;
+      width: 0; height: 0;
+      border-top: 12px solid transparent;
+      border-left: 16px solid #48d16c;
+      border-bottom: 12px solid transparent;
+    }
+    .chat-input-row {
+      display: flex;
+      margin-top: 18px;
+    }
+    .chat-input {
+      flex: 1;
+      padding: 11px 15px;
+      border-radius: 14px;
+      border: none;
+      background: #292929;
+      color: #fff;
+      font-size: 1em;
+      outline: none;
+    }
+    .chat-send-btn {
+      margin-left: 10px;
+      background: #48d16c;
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+      font-weight: bold;
+      padding: 0 24px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.15s;
+    }
+    .chat-send-btn:hover { background: #38bb55; }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <img src="YOUR_ROBO_IMAGE.png" alt="Robo" class="robo-avatar">
+    <div id="chat-window">
+      <div class="bubble-row">
+        <div class="bubble-robo">안녕! 나는 <b>로보</b>야.<br>영어 공부, 궁금한 건 뭐든지 물어봐!</div>
+      </div>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" class="chat-input" id="chat-input" placeholder="Type here..." />
+      <button class="chat-send-btn" onclick="sendMsg()">Send</button>
+    </div>
+  </div>
+  <script>
+    // 아주 간단한 챗봇 시뮬레이션
+    function sendMsg() {
+      const input = document.getElementById('chat-input');
+      const chat = document.getElementById('chat-window');
+      const text = input.value.trim();
+      if(!text) return;
+      chat.innerHTML += `
+        <div class="bubble-row" style="justify-content:flex-end;">
+          <div class="bubble-user">${text}</div>
+        </div>`;
+      input.value = "";
+      setTimeout(()=>{
+        let reply = "";
+        // 아주 간단히 대답 예시 (여기에 실제 AI 연결 가능)
+        if(text.toLowerCase().includes("hello") || text.includes("안녕")) reply = "Hello! How can I help you with English today?";
+        else if(text.includes("study") || text.includes("공부")) reply = "영어 회화, 문법, 단어 무엇이 궁금해?";
+        else reply = "좋은 질문이야! 더 자세히 말해줄래?";
+        chat.innerHTML += `
+          <div class="bubble-row">
+            <div class="bubble-robo">${reply}</div>
+          </div>`;
+        chat.scrollTop = chat.scrollHeight;
+      }, 800);
+    }
+    document.getElementById('chat-input').addEventListener('keydown', function(e){
+      if(e.key === 'Enter') sendMsg();
+    });
+  </script>
+</body>
+</html>
+=====================
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
