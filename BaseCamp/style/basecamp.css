@@ -137,4 +137,24 @@ header nav a {
   .episode-card { flex-direction: column; align-items: center; }
   .episode-img { width: 140px; }
 }
+.episode-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.episode-img img {
+  width: 160px; /* 원하는 사이즈 */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.episode-korean {
+  flex: 1;
+}
+
+.episode-english {
+  width: 100%;
+  margin-top: 32px;
+}
 
