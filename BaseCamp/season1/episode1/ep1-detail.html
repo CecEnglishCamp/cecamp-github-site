@@ -2,17 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Episode 1 - Detail</title>
+  <title>Episode 1 – Level Select</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      background: #23272f;
+      color: #fff;
+      font-family: 'Noto Sans', Arial, sans-serif;
+      margin: 0; padding: 0;
+    }
+    .ep-detail-wrap {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #222;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px #0004;
+      padding: 2.5rem;
+      text-align: center;
+    }
+    .level-btns {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2.5rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .level-btns a {
+      display: block;
+      background: #2e8af6;
+      color: #fff;
+      font-weight: bold;
+      padding: 1.1rem 2.3rem;
+      border-radius: 2rem;
+      font-size: 1.15rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .level-btns a:hover {
+      background: #2161a0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Season 1 - Episode 1: Choose Your English Level</h1>
-  <ul>
-    <li><a href="ep1-a1.html">A1 Beginner</a></li>
-    <li><a href="ep1-a2.html">A2 Elementary</a></li>
-    <li><a href="ep1-b1.html">B1 Intermediate</a></li>
-    <li><a href="ep1-b2.html">B2 Upper-Intermediate</a></li>
-  </ul>
+  <div class="ep-detail-wrap">
+    <h2>Season 1 - Episode 1<br>
+      <span style="font-size:1.1rem;font-weight:normal;">Choose Your English Level</span>
+    </h2>
+    <img src="../../assets/img/welcome.png" alt="Episode 1" style="max-width:80%; border-radius: 8px; margin:1rem 0;">
+    <div class="level-btns">
+      <a href="ep1-a1.html">A1 Beginner</a>
+      <a href="ep1-a2.html">A2 Elementary</a>
+      <a href="ep1-b1.html">B1 Intermediate</a>
+      <a href="ep1-b2.html">B2 Upper-Intermediate</a>
+    </div>
+    <div style="margin-top:2.5rem;">
+      <a href="../index.html" style="color:#2e8af6;text-decoration:underline;">← Back to Episode List</a>
+    </div>
+  </div>
 </body>
 </html>
-
