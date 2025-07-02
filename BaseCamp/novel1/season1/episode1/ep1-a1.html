@@ -20,16 +20,34 @@
       box-shadow: 0 4px 32px rgba(0,0,0,0.18);
       padding: 42px 40px 32px 40px;
     }
-    h1 {
-      font-size: 2.3em;
-      margin-bottom: 12px;
-      font-weight: 700;
-    }
-    h2 {
-      margin: 24px 0 10px 0;
-      color: #75d5f6;
-      font-weight: 700;
-      font-size: 1.3em;
+ <body>
+  <div class="container">
+    <!-- 여기가 바로 '본문 자리'! -->
+    
+    <!-- 1. 여기에 복사한 레이아웃 코드 붙여넣기 -->
+    <div class="episode-layout">
+      <!-- 왼쪽: 그림 -->
+      <div class="episode-img">
+        <img src="../assets/img/ep1-a1.png" alt="에피소드1 삽화" />
+      </div>
+
+      <!-- 오른쪽: 한글 요약 -->
+      <div class="episode-korean">
+        <h3>한글 요약</h3>
+        <p>여기에 한글 스토리...</p>
+      </div>
+    </div>
+
+    <!-- 아래: 영어공부 -->
+    <div class="episode-english">
+      <h3>English Study</h3>
+      <p>여기에 영어 리딩/문제/단어 등...</p>
+    </div>
+
+    <!-- (기존에 있던 다른 내용이 있다면, 여기에 이어서...) -->
+  </div>
+</body>
+
     }
     .story-img {
       display: block;
