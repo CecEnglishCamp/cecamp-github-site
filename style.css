@@ -14,6 +14,29 @@ body {
   color: white;
   overflow-x: hidden;
 }
+/* style.css에 추가 */
+.btn, .modern-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #23e6fe 60%, #1fcfa4 100%);
+  color: #181b20;
+  border: none;
+  border-radius: 32px;
+  font-size: 1.13em;
+  font-weight: 600;
+  padding: 12px 38px;
+  margin: 10px 12px 0 0;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  transition: background 0.28s, color 0.2s, transform 0.14s, box-shadow 0.14s;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.btn:hover, .modern-btn:hover {
+  background: linear-gradient(90deg, #43e5c7 60%, #24ffe9 100%);
+  color: #0d0e0f;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 7px 26px rgba(0,0,0,0.18);
+}
 
 /* ======== 헤더 & 네비게이션 ======== */
 header {
