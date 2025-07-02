@@ -1,238 +1,153 @@
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #10151c;
-  color: #fafafa;
+  font-family: 'Segoe UI', 'Noto Sans KR', Arial, sans-serif;
+  background: #23242a;
+  color: #24292f;
   margin: 0;
   padding: 0;
 }
-header {
-  padding: 2rem 1.5rem 1rem 1.5rem;
-  background: #151a21;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-header h1 {
-  margin: 0 0 0.5em 0;
-  font-size: 2.2rem;
-  color: #38e6e6;
-  font-weight: bold;
-}
-header nav a {
-  color: #ffd479;
-  margin-right: 1.6rem;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.18s;
-}
-header nav a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-main {
-  padding: 2.5rem;
-  max-width: 800px;
-  margin: auto;
-}
-h2 {
-  font-size: 1.7rem;
-  color: #57e2e5;
-}
-ul {
-  margin: 1.5rem 0;
-  padding-left: 1.2em;
-}
-li {
-  font-size: 1.18rem;
-  margin-bottom: 0.8em;
-}
-.btn-back {
-  display: inline-block;
-  margin-top: 1.5rem;
-  background: #2323e6;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-.btn-back:hover {
-  background: #6c63ff;
-}
-body {
-  background: #22272e;
-  color: #f5f6fa;
-  font-family: 'Noto Sans KR', sans-serif;
-  margin: 0;
-}
 
-header {
-  padding: 1.5em 2em 1em 2em;
-  background: #1a1d22;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header h1 {
-  color: #02d3c7;
-  margin: 0;
-  font-size: 2em;
-}
-header nav a {
-  color: #ffe74c;
-  margin-right: 1em;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-.episode-card {
-  display: flex;
-  align-items: flex-start;
-  background: #262b33;
-  border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
-  padding: 2em;
-  margin: 3em auto 2em auto;
-  max-width: 780px;
-  gap: 2.5em;
-}
-.episode-img {
-  width: 220px;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-}
-.episode-card h2 {
-  margin-top: 0;
-  color: #02d3c7;
-}
-
-.btn-camp {
-  display: inline-block;
-  margin: 10px 8px 0 0;
-  padding: 0.8em 1.7em;
-  background: #02d3c7;
-  color: #20232a;
-  border-radius: 10px;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.13em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  transition: background 0.2s, color 0.2s;
-}
-.btn-camp:hover {
-  background: #ffe74c;
-  color: #1a1d22;
-}
-
-.camp-links {
-  text-align: center;
-  margin-top: 2em;
-}
-
-@media (max-width: 900px) {
-  .episode-card { flex-direction: column; align-items: center; }
-  .episode-img { width: 140px; }
-}
-.episode-layout {
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-}
-
-.episode-img img {
-  width: 160px; /* 원하는 사이즈 */
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-.episode-korean {
-  flex: 1;
-}
-
-.episode-english {
-  width: 100%;
-  margin-top: 32px;
-}
-.episode-layout {
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-}
 .episode-container {
-  background: #23242a;
+  background: #21232b;
   border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-  padding: 32px 24px;
-  max-width: 850px;
-  margin: 32px auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 38px 26px 34px 26px;
+  max-width: 860px;
+  margin: 40px auto;
+  animation: fadein 0.9s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: none;}
 }
 
 .episode-main {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
+  gap: 38px;
 }
 
 .episode-img img {
+  width: 135px;
   border-radius: 18px;
-  width: 160px;
-  height: auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.17);
   border: 4px solid #fff3cd;
   background: #fffbef;
+  transition: transform .2s;
+}
+.episode-img img:hover {
+  transform: scale(1.06) rotate(-4deg);
+  box-shadow: 0 8px 26px #ffe7807c;
 }
 
 .episode-korean {
   flex: 1;
-  background: #ffefba;
-  border-radius: 14px;
-  padding: 18px 20px;
+  background: #fffbe6;
+  border-radius: 18px;
+  padding: 18px 24px 20px 24px;
   margin-bottom: 18px;
-  font-size: 1.1em;
+  font-size: 1.13em;
   color: #333;
+  box-shadow: 0 2px 8px #fff6cd50;
+  border: 2px dashed #ffec99;
+}
+.episode-korean h2 {
+  margin-top: 0;
+  color: #ffa502;
+  font-size: 1.22em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.4em;
 }
 
 .episode-english {
-  background: #f0faff;
-  border-radius: 14px;
-  padding: 20px;
-  margin-top: 26px;
+  background: #eafaff;
+  border-radius: 18px;
+  padding: 20px 24px 18px 24px;
+  margin-top: 28px;
   color: #2a3d66;
-  font-size: 1.08em;
-  box-shadow: 0 2px 10px rgba(145,206,255,0.13);
+  font-size: 1.1em;
+  box-shadow: 0 2px 10px #74f2f930;
+  border: 2px dashed #a2ecff;
+}
+.episode-english h2 {
+  color: #26c6da;
+  margin-top: 0;
+  margin-bottom: 0.55em;
+  font-size: 1.14em;
+  font-weight: 700;
 }
 
 .episode-extra h2 {
-  margin-top: 26px;
-  font-size: 1.25em;
-  color: #36b2e9;
+  margin-top: 28px;
+  font-size: 1.17em;
+  color: #4a79f7;
+  margin-bottom: 0.6em;
+  font-weight: 800;
+  letter-spacing: 0.03em;
 }
+
+.vocab-list ul {
+  list-style: none;
+  padding: 0 0 0 6px;
+}
+.vocab-list li {
+  background: linear-gradient(90deg,#ffe59c, #c5edfa 60%);
+  display: inline-block;
+  border-radius: 10px;
+  margin: 4px 7px 4px 0;
+  padding: 4px 12px 4px 10px;
+  font-size: 1em;
+  color: #3c4253;
+  font-weight: 500;
+  transition: background 0.18s;
+}
+.vocab-list li:hover {
+  background: #ffd479;
+  color: #173e6c;
+  font-weight: 700;
+}
+
+.practice, .quiz {
+  background: #f2f2ff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-top: 1em;
+  color: #484c60;
+  box-shadow: 0 2px 10px #babafd1e;
+  border-left: 6px solid #6c63ff;
+  font-size: 1em;
+}
+.practice b, .quiz b { color: #3a60f6; }
 
 .episode-buttons {
-  margin-top: 28px;
+  margin-top: 34px;
   display: flex;
-  gap: 16px;
+  gap: 18px;
 }
-
 .back-btn {
   background: linear-gradient(90deg, #b7f8db 0%, #50a7c2 100%);
   color: #222;
-  padding: 10px 24px;
+  padding: 12px 30px;
   border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.08em;
+  font-size: 1.13em;
   transition: box-shadow .2s;
   box-shadow: 0 2px 10px #72e1e9a1;
+  border: none;
+  outline: none;
+  letter-spacing: 0.03em;
 }
-.back-btn:hover { box-shadow: 0 8px 24px #4aeaff72; }
+.back-btn:hover { box-shadow: 0 8px 24px #4aeaff65; background: #ffe74c; color: #123;}
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .episode-main { flex-direction: column; align-items: center; }
-  .episode-img img { width: 70vw; max-width: 180px; }
+  .episode-img img { width: 32vw; min-width: 88px; max-width: 180px; }
+  .episode-korean { margin-top: 14px; }
 }
-
+@media (max-width: 480px) {
+  .episode-container { padding: 9vw 4vw; }
+  .episode-korean, .episode-english { padding: 10px 7px; font-size: 0.98em;}
+  .episode-extra h2 { font-size: 1em; }
+}
