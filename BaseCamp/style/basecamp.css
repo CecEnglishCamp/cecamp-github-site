@@ -138,3 +138,87 @@ header nav a {
   .episode-card { flex-direction: column; align-items: center; }
   .episode-img { width: 140px; }
 }
+body {
+  background: #f6f7fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.episode-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.09);
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 36px 32px 30px 32px;
+}
+.episode-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+}
+.episode-img img {
+  border-radius: 14px;
+  width: 210px;
+  box-shadow: 0 3px 14px rgba(64,176,255,0.13);
+  background: #eafaff;
+  border: 4px solid #eef9ff;
+}
+.episode-korean {
+  flex: 1;
+  background: #ffefd3;
+  border-radius: 13px;
+  padding: 18px 22px;
+  font-size: 1.13em;
+  color: #222;
+}
+.episode-english {
+  margin-top: 36px;
+  background: #e4f3ff;
+  border-radius: 13px;
+  padding: 22px 22px 10px 22px;
+  color: #222e4a;
+  font-size: 1.09em;
+  box-shadow: 0 2px 12px rgba(145,206,255,0.12);
+}
+.episode-extra {
+  margin-top: 30px;
+}
+.episode-extra h2 {
+  color: #2cb8ff;
+  font-size: 1.25em;
+  margin-top: 0;
+}
+ul { margin: 1.2em 0 0 0; padding-left: 1.2em; }
+li { font-size: 1.11em; margin-bottom: 0.65em; }
+
+.practice, .quiz {
+  background: #fff6e0;
+  border-radius: 8px;
+  padding: 14px 16px 9px 16px;
+  margin: 19px 0 0 0;
+  color: #3c1a07;
+  font-size: 1em;
+}
+
+.episode-buttons {
+  margin-top: 30px;
+}
+.back-btn {
+  background: linear-gradient(90deg,#b7f8db 0%,#50a7c2 100%);
+  color: #222;
+  padding: 10px 26px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.10em;
+  box-shadow: 0 2px 10px #72e1e9a1;
+  margin-top: 20px;
+  display: inline-block;
+}
+.back-btn:hover { box-shadow: 0 8px 24px #4aeaff72; }
+
+@media (max-width: 900px) {
+  .episode-main { flex-direction: column; align-items: center; gap: 20px; }
+  .episode-img img { width: 80vw; max-width: 210px; }
+}
