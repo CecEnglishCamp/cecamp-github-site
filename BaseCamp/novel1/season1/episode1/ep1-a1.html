@@ -1,90 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <title>Season 1, Episode 1 – A1 Beginner</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #1d1f23;
-      color: #fff;
-      font-family: 'Montserrat', Arial, sans-serif;
+      background: #121417;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
     }
     .container {
-      background: #23242a;
       max-width: 800px;
-      margin: 40px auto;
-      border-radius: 18px;
-      box-shadow: 0 4px 32px rgba(0,0,0,0.18);
-      padding: 42px 40px 32px 40px;
+      margin: 50px auto;
+      padding: 40px;
+      background: #1e1f26;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     }
     h1 {
-      font-size: 2.3em;
-      margin-bottom: 12px;
-      font-weight: 700;
-      text-align: center;
-      color: #75d5f6;
+      font-size: 2.2em;
+      color: #5bdde0;
     }
     h2 {
-      margin: 24px 0 10px 0;
-      color: #75d5f6;
-      font-weight: 700;
-      font-size: 1.3em;
+      font-size: 1.5em;
+      color: #9de8fc;
+      margin-top: 40px;
     }
     .story-img {
-      display: block;
-      margin: 0 auto 30px auto;
-      width: 320px;
+      width: 100%;
+      max-width: 360px;
       border-radius: 16px;
-      box-shadow: 0 2px 18px rgba(0,0,0,0.14);
+      display: block;
+      margin: 20px auto;
     }
     .pair {
       display: flex;
       justify-content: space-between;
-      background: #1e1f25;
-      padding: 12px 16px;
-      border-radius: 10px;
+      background: #262831;
+      padding: 14px 20px;
       margin-bottom: 10px;
+      border-radius: 10px;
     }
     .pair div {
       width: 48%;
-    }
-    .pair div:nth-child(2) {
-      color: #a8e6ff;
-      font-style: italic;
-    }
-    ul {
-      padding-left: 22px;
-    }
-    .quiz, .practice {
-      background: #141c2b;
-      border-radius: 10px;
-      padding: 15px 18px;
-      margin-bottom: 17px;
-      font-size: 1.03em;
+      font-size: 1.05em;
     }
     .vocab-list {
       columns: 2;
-      column-gap: 40px;
-      font-size: 1.01em;
+      font-size: 1em;
+      margin-top: 20px;
     }
-    .back-button {
+    .quiz, .practice {
+      background: #0f172a;
+      padding: 18px;
+      margin-top: 20px;
+      border-radius: 12px;
+      font-size: 1em;
+    }
+    .return-button {
       display: block;
-      margin: 40px auto 0 auto;
-      text-align: center;
-      background: #5e4b8b;
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 28px;
-      border-radius: 8px;
-      font-weight: bold;
       width: fit-content;
-      transition: background 0.3s;
+      margin: 40px auto 0 auto;
+      padding: 12px 24px;
+      background-color: #a78bfa;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1em;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+      transition: background 0.3s ease;
     }
-    .back-button:hover {
-      background: #775fb5;
+    .return-button:hover {
+      background-color: #c4b5fd;
     }
   </style>
 </head>
@@ -93,15 +86,20 @@
     <h1>Season 1, Episode 1 – A1 Beginner</h1>
     <img src="/BaseCamp/assets/img/episode1.png" alt="Episode Illustration" class="story-img">
 
-    <div class="pair"><div>미소는 태백의 폐교에 갔다. 겨울이었다.</div><div>Miso is at an old school in Taebaek. It is winter.</div></div>
-    <div class="pair"><div>황지천이 물소리를 냈다.</div><div>The river makes a soft sound.</div></div>
-    <div class="pair"><div>미소는 아빠의 오래된 상자를 열었다. 상자에 설계도가 있었다.</div><div>She opens her dad’s old box. The box is rusty. She opens it. There is a plan inside.</div></div>
-    <div class="pair"><div>‘T.O.B.I. 프로젝트’였다. 미소는 폐광으로 갔다.</div><div>The plan is about a mine. Miso goes to the mine.</div></div>
-    <div class="pair"><div>점프가 나왔다. 점프는 빠른 로봇이다. 점프는 미소를 지하 400미터로 데려갔다.</div><div>A robot comes. It is Jump. Jump is fast. Jump takes Miso 400 meters underground.</div></div>
-    <div class="pair"><div>지하는 차가웠다. 로보가 깨어났다. 로보는 로봇이다.</div><div>The air is cold. Robo wakes up. Robo is a robot.</div></div>
-    <div class="pair"><div>로보는 말했다. “이 폐광은 데이터센터가 될 수 있어. 마을을 따뜻하게 할 수 있어.”</div><div>Robo says, “This mine can be a data center. It can warm the village.”</div></div>
+    <h2>🌱 한글 & 영어 페어 스토리</h2>
+    <div class="pair"><div>미소는 태백의 폐교에 갔다. 겨울이었다.</div><div><i>Miso is at an old school in Taebaek. It is winter.</i></div></div>
+    <div class="pair"><div>황지천이 물소리를 냈다.</div><div><i>The river makes a soft sound.</i></div></div>
+    <div class="pair"><div>미소는 아빠의 오래된 상자를 열었다. 상자에 설계도가 있었다.</div><div><i>She has her dad’s old box. She opens it. There is a plan inside.</i></div></div>
+    <div class="pair"><div>‘T.O.B.I. 프로젝트’였다. 미소는 폐광으로 갔다.</div><div><i>The plan is about a mine. Miso goes to the mine.</i></div></div>
+    <div class="pair"><div>점프가 나왔다. 점프는 빠른 로봇이다.</div><div><i>A robot comes. It is Jump. Jump is fast.</i></div></div>
+    <div class="pair"><div>점프는 미소를 지하 400미터로 데려갔다.</div><div><i>Jump takes Miso deep in the mine. It is 400 meters down.</i></div></div>
+    <div class="pair"><div>로보가 깨어났다. 로보는 로봇이다.</div><div><i>Robo wakes up. Robo is a robot.</i></div></div>
+    <div class="pair"><div>로보는 말했다. “이 폐광은 데이터센터가 될 수 있어.”</div><div><i>Robo says, “This mine can be a data center.”</i></div></div>
+    <div class="pair"><div>마을을 따뜻하게 할 수 있어.”</div><div><i>“It can warm the village.”</i></div></div>
+    <div class="pair"><div>갑자기 땅이 흔들렸다.</div><div><i>Suddenly, the ground shakes.</i></div></div>
+    <div class="pair"><div>미소는 무서웠지만 말했다. “우리가 마을을 깨울 거야!”</div><div><i>Miso is scared but says, “We will wake the village.”</i></div></div>
 
-    <h2>📚 Target Vocabulary</h2>
+    <h2>🧠 Target Vocabulary</h2>
     <div class="vocab-list">
       <ul>
         <li><b>school:</b> a place to learn</li>
@@ -119,7 +117,7 @@
       </ul>
     </div>
 
-    <div class="practice">
+    <div class="quiz">
       <b>Practice Using the Words:</b><br>
       1. Miso is at an old <b>school</b>.<br>
       2. She opens a <b>rusty</b> box.<br>
@@ -133,7 +131,7 @@
       Robo <i>talks</i> about the mine. Miso <i>helps</i> the village.
     </div>
 
-    <a class="back-button" href="/BaseCamp/index.html">🔙 베이스캠프로 돌아가기</a>
+    <a href="/BaseCamp/index.html" class="return-button">← 베이스캠프로 돌아가기</a>
   </div>
 </body>
 </html>
