@@ -3,162 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Episode 1 – CEC English Camp</title>
-
+  <title>Episode 1 – B1 Intermediate</title>
   <style>
     body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #111;
       color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      padding: 1em;
+      line-height: 1.8;
     }
-    .episode-header {
-      display: flex;
-      align-items: center;
-      gap: 1.5em;
-      margin-bottom: 2em;
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #000;
     }
-    .episode-header img {
-      width: 120px;
+    header h1 {
+      color: #66f5ff;
+      font-size: 2rem;
+    }
+    .image-box {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .image-box img {
+      max-width: 300px;
       border-radius: 12px;
     }
-    .line {
+    .pairing-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      padding: 1rem 10%;
+    }
+    .pair {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+    .left, .right {
+      flex: 1;
+      padding: 1rem;
       background-color: #1c1c1c;
-      padding: 1em;
-      margin-bottom: 1em;
-      border-radius: 10px;
+      border-radius: 8px;
     }
-    .line .kr {
-      font-size: 1.1em;
-      font-weight: bold;
-      margin-bottom: 0.5em;
-    }
-    .line .en {
+    .right {
+      color: #99e0ff;
       font-style: italic;
-      color: #84f2ff;
     }
-    section {
-      background-color: #1b1b1b;
-      padding: 1em 1.5em;
-      border-radius: 10px;
-      margin-top: 2em;
+    section.study {
+      background-color: #222;
+      padding: 2rem 10%;
+      margin-top: 3rem;
+      border-top: 2px solid #333;
     }
-    section h2 {
-      color: #5af3f8;
-      margin-bottom: 0.5em;
+    h2 {
+      color: #66f5ff;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
     }
-    section ul {
-      padding-left: 1.2em;
+    ul, ol {
+      padding-left: 1.4rem;
     }
-    section li {
-      margin-bottom: 0.4em;
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #000;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #999;
     }
   </style>
 </head>
-
 <body>
-  <!-- 타이틀 + 이미지 -->
-  <div class="episode-header">
-    <img src="https://cecenglishcamp.github.io/BaseCamp/assets/img/episode1.png" alt="Episode 1" />
-    <h1>📘 Episode 1 – 마을 아래, 빛이 살아 있다 (B1)</h1>
+
+  <header>
+    <h1>📘 Season 1, Episode 1 – B1 Intermediate</h1>
+  </header>
+
+  <div class="image-box">
+    <img src="/BaseCamp/assets/img/episode1.png" alt="Episode Illustration" />
   </div>
 
-  <!-- 본문 줄쌍 페어 -->
-  <div class="line">
-    <div class="kr">태백, 2025년 겨울. 미소는 폐교 앞에 섰다. 황지천은 얼지 않은 채 조용히 흘렀고, 찬바람이 뺨을 스쳤다.</div>
-    <div class="en">In Taebaek, winter 2025, Miso stood in front of an empty school. The river flowed nearby with a soft sound. A cold wind touched her face.</div>
-  </div>
-  <div class="line">
-    <div class="kr">그녀는 아버지의 낡은 철제 상자를 열었고, 그 안엔 ‘T.O.B.I. 프로젝트’라는 폐광 열 회수 시스템 설계가 있었다.</div>
-    <div class="en">She opened her father’s old rusty box. Inside, she found a plan for a “T.O.B.I. Project”—a mine’s heat system.</div>
-  </div>
-  <div class="line">
-    <div class="kr">호기심에 문을 밀고 폐광 안으로 들어간 미소. 그 순간, 작은 로봇이 나타났다.</div>
-    <div class="en">Miso was curious and entered the old mine. She pushed the rusty gate open. Suddenly, a robot appeared.</div>
-  </div>
-  <div class="line">
-    <div class="kr">“내 이름은 점프!” 푸른 눈을 가진 빠른 로봇은 그녀를 지하 깊은 곳으로 이끌었다.</div>
-    <div class="en">“My name is Jump!” It was fast with bright blue eyes. Jump took Miso deep into the mine.</div>
-  </div>
-  <div class="line">
-    <div class="kr">또 다른 로봇, 로보가 움직이기 시작했다. “이곳은 데이터센터가 될 수 있어요. 마을을 따뜻하게 할 수 있죠.”</div>
-    <div class="en">Another robot, Robo, started to move. “This mine can be a data center. It can heat the village.”</div>
-  </div>
-  <div class="line">
-    <div class="kr">미소는 흥분했다. “이건 마을을 살릴 수 있어!”</div>
-    <div class="en">Miso was excited. “This can save our village!”</div>
-  </div>
-  <div class="line">
-    <div class="kr">땅이 흔들렸다. 로보는 경고했다. “위험 신호가 있어요!”</div>
-    <div class="en">The ground shook. Robo warned, “There is a danger signal!”</div>
-  </div>
-  <div class="line">
-    <div class="kr">점프는 어둠 속을 바라보았다. 미소의 심장은 빨리 뛰기 시작했다. “이건 단순한 폐광이 아니야.”</div>
-    <div class="en">Jump looked into the dark. Miso’s heart beat fast. “This is not just a mine.”</div>
-  </div>
-  <div class="line">
-    <div class="kr">밖의 강물 소리는 마치 심장박동처럼 울렸다.</div>
-    <div class="en">The river’s sound outside was like a heartbeat.</div>
+  <div class="pairing-container">
+    <div class="pair">
+      <div class="left">태백, 2025년 겨울. 폐교된 장성초 앞에 선 미소는 아버지의 녹슨 철제 상자를 들고 있었다.</div>
+      <div class="right">In Taebaek’s winter of 2025, Miso lingered before the forsaken Jangseong Elementary School, clutching her father’s corroded metal box.</div>
+    </div>
+    <div class="pair">
+      <div class="left">황지천은 얼지 않은 물소리를 내며 흐르고, 바람은 유리처럼 차갑게 뺨을 스쳤다.</div>
+      <div class="right">The Hwangjeecheon River’s gentle murmur drifted nearby, while a biting breeze grazed her cheeks.</div>
+    </div>
+    <div class="pair">
+      <div class="left">그녀는 무릎을 꿇고 상자를 열었다. 그 안엔 ‘장성탄광 열 회수 시스템’이란 제목의 바랜 종이들이 있었다.</div>
+      <div class="right">Kneeling, she pried open the lid, unveiling faded manuscripts titled “T.O.B.I. Project: Jangseong Mine Heat Recovery System.”</div>
+    </div>
+    <div class="pair">
+      <div class="left">익숙하고도 낯선 아버지의 붓글씨는, 종이 속에서 말을 건네는 듯했다.</div>
+      <div class="right">Her father’s calligraphy, both unfamiliar and achingly familiar, stirred her—as if the papers might respond.</div>
+    </div>
+    <!-- 계속 같은 방식으로 추가 가능 -->
   </div>
 
-  <!-- 학습 확장 섹션들 -->
-  <section>
+  <section class="study">
     <h2>📚 Target Vocabulary</h2>
     <ul>
-      <li><b>empty:</b> with nothing inside</li>
-      <li><b>soft:</b> quiet or gentle</li>
-      <li><b>rusty:</b> old and red with rust</li>
-      <li><b>curious:</b> wanting to know more</li>
-      <li><b>push:</b> to move something forward</li>
-      <li><b>cold:</b> not warm</li>
-      <li><b>warn:</b> to tell about danger</li>
-      <li><b>excited:</b> very happy</li>
-      <li><b>scared:</b> afraid</li>
-      <li><b>strong:</b> powerful</li>
+      <li><strong>empty</strong>: with nothing inside</li>
+      <li><strong>soft</strong>: quiet or gentle</li>
+      <li><strong>rusty</strong>: old and red with rust</li>
+      <li><strong>curious</strong>: wanting to know more</li>
+      <li><strong>push</strong>: to move something forward</li>
+      <li><strong>cold</strong>: not warm</li>
+      <li><strong>warn</strong>: to tell about danger</li>
+      <li><strong>excited</strong>: very happy</li>
+      <li><strong>scared</strong>: afraid</li>
+      <li><strong>strong</strong>: powerful</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>📘 Target Grammar</h2>
+    <h2>📝 Practice Using the Words</h2>
+    <ol>
+      <li>Miso stood at an ________ school. (empty)</li>
+      <li>The river made a ________ sound. (soft)</li>
+      <li>Miso was ________ to know more. (curious)</li>
+      <li>Miso felt ________ but strong. (scared)</li>
+    </ol>
+
+    <h2>📘 Grammar Points</h2>
     <ul>
-      <li><b>Simple Past:</b> "Miso pushed."</li>
-      <li><b>Reported Speech:</b> Robo warned that there was a danger signal.</li>
-      <li><b>Adverbs of Manner:</b> Miso said bravely. Jump moved quickly.</li>
-      <li><b>Can for Ability:</b> This can save the village.</li>
+      <li><strong>Simple Past:</strong> Miso pushed the box.</li>
+      <li><strong>Reported Speech:</strong> Robo warned that there was a danger signal.</li>
+      <li><strong>Adverbs of Manner:</strong> Miso said bravely. Jump moved quickly.</li>
+      <li><strong>Can for Ability:</strong> The mine can heat houses.</li>
     </ul>
-  </section>
 
-  <section>
     <h2>💬 Speaking Practice</h2>
-    <p>Jump ________ (take) Miso. Miso ________ (say) they would wake the village.</p>
-  </section>
+    <ul>
+      <li>Jump ________ (take) Miso. Miso ________ (say) they would wake the village.</li>
+      <li>Robo ________ (warn) seriously. This ________ (save) the village.</li>
+    </ul>
 
-  <section>
     <h2>👂 Listening Practice</h2>
     <ul>
       <li>What did Miso find? a) Plan ✅ b) Letter</li>
       <li>What shook? a) Ground ✅ b) Sky</li>
     </ul>
-  </section>
 
-  <section>
     <h2>✍️ Writing Practice</h2>
-    <p>Miso ________ (push) the box. Robo ________ (warn) that there was a danger signal.</p>
-  </section>
+    <ul>
+      <li>Miso ________ (push) the box.</li>
+      <li>Robo ________ (warn) that there was a danger signal.</li>
+      <li>Jump ________ (take) Miso.</li>
+      <li>Miso ________ (say) they would wake the village.</li>
+    </ul>
 
-  <section>
     <h2>🧠 Comprehension Questions</h2>
     <ul>
-      <li>Where was Miso? → <b>At an empty school ✅</b></li>
-      <li>Who led her into the mine? → <b>Jump ✅</b></li>
-      <li>What did Robo say? → <b>The mine can heat the village ✅</b></li>
+      <li>Where was Miso when she found the papers? → At an empty school ✅</li>
+      <li>Who led Miso into the mine? → Jump, a robot ✅</li>
+      <li>What did Robo say about the mine? → It can be a data center ✅</li>
+      <li>What happened at the end? → The ground shook; she said they would wake the village ✅</li>
     </ul>
+
+    <h2>🧾 Wrap-up Summary</h2>
+    <p><strong>What We Learned:</strong> Vocabulary (empty, soft, rusty...), grammar (simple past, reported speech), and comprehension activities.</p>
+    <p>Try saying: “Miso pushed the box. Robo warned that there was a danger signal.”</p>
   </section>
 
-  <section>
-    <h2>🧾 Wrap-up Summary</h2>
-    <p><b>Let’s Try:</b> “Miso pushed the box. Robo warned that there was a danger signal.”</p>
-  </section>
+  <footer>
+    BaseCamp English – Episode 1 B1 Level © 2025
+  </footer>
+
 </body>
 </html>
