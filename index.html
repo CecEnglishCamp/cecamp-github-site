@@ -1,152 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Robo Chat Demo</title>
-  <style>
-    body {
-      background: #222;
-      color: #fff;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 0;
-      min-height: 100vh;
-    }
-    .chat-container {
-      width: 420px;
-      background: #181818;
-      border-radius: 18px;
-      box-shadow: 0 3px 24px rgba(0,0,0,0.18);
-      padding: 32px 24px 24px 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .robo-avatar {
-      width: 88px; height: 88px;
-      border-radius: 18px;
-      margin: 0 auto 8px auto;
-      display: block;
-      background: #333;
-      box-shadow: 0 0 0 4px #4442;
-    }
-    .bubble-row { display: flex; align-items: flex-end; margin: 12px 0;}
-    .bubble-robo {
-      background: #222a34;
-      color: #c7eeff;
-      border-radius: 18px 18px 18px 8px;
-      padding: 13px 20px;
-      max-width: 75%;
-      font-size: 1.08em;
-      margin-left: 16px;
-      position: relative;
-    }
-    .bubble-robo::before {
-      content: "";
-      position: absolute;
-      left: -16px; top: 18px;
-      width: 0; height: 0;
-      border-top: 12px solid transparent;
-      border-right: 16px solid #222a34;
-      border-bottom: 12px solid transparent;
-    }
-    .bubble-user {
-      background: #48d16c;
-      color: #fff;
-      border-radius: 18px 18px 8px 18px;
-      padding: 13px 20px;
-      max-width: 75%;
-      font-size: 1.08em;
-      margin-left: auto;
-      margin-right: 10px;
-      position: relative;
-    }
-    .bubble-user::before {
-      content: "";
-      position: absolute;
-      right: -16px; top: 18px;
-      width: 0; height: 0;
-      border-top: 12px solid transparent;
-      border-left: 16px solid #48d16c;
-      border-bottom: 12px solid transparent;
-    }
-    .chat-input-row {
-      display: flex;
-      margin-top: 18px;
-    }
-    .chat-input {
-      flex: 1;
-      padding: 11px 15px;
-      border-radius: 14px;
-      border: none;
-      background: #292929;
-      color: #fff;
-      font-size: 1em;
-      outline: none;
-    }
-    .chat-send-btn {
-      margin-left: 10px;
-      background: #48d16c;
-      border: none;
-      border-radius: 12px;
-      color: #fff;
-      font-weight: bold;
-      padding: 0 24px;
-      cursor: pointer;
-      font-size: 1em;
-      transition: background 0.15s;
-    }
-    .chat-send-btn:hover { background: #38bb55; }
-  </style>
-</head>
-<body>
-  <div class="chat-container">
-    <img src="YOUR_ROBO_IMAGE.png" alt="Robo" class="robo-avatar">
-    <div id="chat-window">
-      <div class="bubble-row">
-        <div class="bubble-robo">안녕! 나는 <b>로보</b>야.<br>영어 공부, 궁금한 건 뭐든지 물어봐!</div>
-      </div>
-    </div>
-    <div class="chat-input-row">
-      <input type="text" class="chat-input" id="chat-input" placeholder="Type here..." />
-      <button class="chat-send-btn" onclick="sendMsg()">Send</button>
-    </div>
-  </div>
-  <script>
-    // 아주 간단한 챗봇 시뮬레이션
-    function sendMsg() {
-      const input = document.getElementById('chat-input');
-      const chat = document.getElementById('chat-window');
-      const text = input.value.trim();
-      if(!text) return;
-      chat.innerHTML += `
-        <div class="bubble-row" style="justify-content:flex-end;">
-          <div class="bubble-user">${text}</div>
-        </div>`;
-      input.value = "";
-      setTimeout(()=>{
-        let reply = "";
-        // 아주 간단히 대답 예시 (여기에 실제 AI 연결 가능)
-        if(text.toLowerCase().includes("hello") || text.includes("안녕")) reply = "Hello! How can I help you with English today?";
-        else if(text.includes("study") || text.includes("공부")) reply = "영어 회화, 문법, 단어 무엇이 궁금해?";
-        else reply = "좋은 질문이야! 더 자세히 말해줄래?";
-        chat.innerHTML += `
-          <div class="bubble-row">
-            <div class="bubble-robo">${reply}</div>
-          </div>`;
-        chat.scrollTop = chat.scrollHeight;
-      }, 800);
-    }
-    document.getElementById('chat-input').addEventListener('keydown', function(e){
-      if(e.key === 'Enter') sendMsg();
-    });
-  </script>
-</body>
-</html>
-
-  
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CEC English Camp</title>
   <link rel="stylesheet" href="style.css" />
@@ -158,7 +14,7 @@
   <!-- Header & Navigation -->
   <header>
     <div class="logo">
-      <img src="assets/img/logo.png" alt="CEC Logo" />
+      <img src="assets/img/logo.jpg" alt="CEC Logo" />
       <span>CEC English Camp</span>
     </div>
     <nav>
@@ -220,21 +76,9 @@
       </div>
       <div class="text episode-text">
         <h2>📘 Short Novel, Title: Robo, Jump & Me – Season 1 / Episode 1</h2>
-        <p># Season 1, Episode 1
-         마을 아래, 빛이 살아 있다 
-         태백, 2025년 겨울.
-         황지천은 얼어붙지 않은 물소리를 내며 흐르고 있었다. 하늘에서 부는 바람은 얇은 유리조각처럼 미소의 뺨을 스쳤다.
-         폐교된 장성초 앞에 멈춰선 그녀의 손에는 오래된 철제 상자가 들려 있었다. 잠금쇠엔 녹이 가득 껴 있었고, 열쇠는 오래전에 잃어버렸다.
-         미소는 한쪽 무릎을 꿇고, 상자를 들여다봤다. 손톱으로 눌러 열린 뚜껑 안에는 바랜 종이 뭉치가 차분히 들어 있었다.
-         **‘T.O.B.I. 프로젝트 – 장성탄광 열 회수 시스템’**
-         붓펜으로 써내려간 아버지의 필체. 낯설지만, 동시에 아득히 익숙한 곡선들.
-         “이걸로… 뭘 하려고 했던 거야?”
-         마치 종이 안쪽에서 대답이 새어 나올 것만 같았다.
-         **“출입금지”**
-         녹슨 철문에 붙은 팻말은 낡아 거의 떨어질 지경이었다.
-         하지만 미소는 밀었다...</p>
+        <p>어느 날 공이 사라졌습니다. 미소는 공을 찾기 위해 조용한 창고로 향합니다. 그곳에서 예상치 못한 빛나는 상자를 발견하게 되는데...</p>
         <p>이 이야기에는 상상력, 우정, 모험이 함께 펼쳐집니다. 아이들의 창의성과 상상력을 자극하기 위한 단편 시리즈로 구성되어 있으며, 각 에피소드는 짧지만 깊은 여운을 남깁니다.</p>
-        <a href="https://cecenglishcamp.github.io/BaseCamp/index.html" class="read-more-btn" target="_blank">Read More</a>
+        <a class="read-more-btn" href="learning/episode1.html" target="_blank">Read More →</a>
         <!-- Read More 클릭 시, 별도 학습 자료로 이동 (새 탭) -->
       </div>
     </section>
@@ -415,7 +259,7 @@
   <header>
     <!-- 기존 내비게이션 바 복사/붙여넣기 -->
     <div class="logo">
-      <img src="../assets/img/logo.png" alt="CEC Logo"/>
+      <img src="../assets/img/logo.jpg" alt="CEC Logo"/>
       <span>CEC English Camp</span>
     </div>
     <nav>
