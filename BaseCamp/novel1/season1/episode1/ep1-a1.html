@@ -1,114 +1,49 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>Season 1, Episode 1 – A1 Beginner</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: #121417;
-      color: #ffffff;
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 40px;
-      background: #1e1f26;
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-    h1 {
-      font-size: 2.2em;
-      color: #5bdde0;
-    }
-    h2 {
-      font-size: 1.5em;
-      color: #9de8fc;
-      margin-top: 40px;
-    }
-    .story-img {
-      width: 100%;
-      max-width: 360px;
-      border-radius: 16px;
-      display: block;
-      margin: 20px auto;
-    }
-    .pair {
-      display: flex;
-      justify-content: space-between;
-      background: #262831;
-      padding: 14px 20px;
-      margin-bottom: 10px;
-      border-radius: 10px;
-    }
-    .pair div {
-      width: 48%;
-      font-size: 1.05em;
-    }
-    .vocab-list {
-      columns: 2;
-      font-size: 1em;
-      margin-top: 20px;
-    }
-    .quiz, .practice {
-      background: #0f172a;
-      padding: 18px;
-      margin-top: 20px;
-      border-radius: 12px;
-      font-size: 1em;
-    }
-    .return-button {
-      display: block;
-      width: fit-content;
-      margin: 40px auto 0 auto;
-      padding: 12px 24px;
-      background-color: #a78bfa;
-      color: #fff;
-      font-weight: bold;
-      border: none;
-      border-radius: 12px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 1em;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-      transition: background 0.3s ease;
-    }
-    .return-button:hover {
-      background-color: #c4b5fd;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Season 1, Episode 1 – A1 Beginner</h1>
-    <img src="/BaseCamp/assets/img/episode1.png" alt="Episode Illustration" class="story-img">
+<div class="episode-container">
+  <div class="episode-main">
+    <!-- 왼쪽: 그림 -->
+    <div class="episode-img">
+      <img src="https://cecenglishcamp.github.io/BaseCamp/assets/img/episode1.png" alt="Episode 1" style="width: 170px; border-radius: 18px;">
+    </div>
+    <!-- 오른쪽: 한글 -->
+    <div class="episode-korean">
+      <h2>한글 요약</h2>
+      <p>
+        <b>태백에서 시작된 봄 - 시즌1 에피소드 1: 마을 아래, 빛이 살아 있다</b><br>
+        미소는 태백의 폐교에 갔다. 겨울이었다. 황지천이 물소리를 냈다. 미소는 아빠의 오래된 상자를 열었다. 
+        상자에 설계도가 있었다. ‘T.O.B.I. 프로젝트’였다. 미소는 폐광으로 갔다. 점프가 나왔다. 점프는 빠른 로봇이다.
+        점프는 미소를 지하 400미터로 데려갔다. 지하는 차가웠다. 로보가 깨어났다. 로보는 로봇이다. 로보는 말했다. 
+        “이 폐광은 데이터센터가 될 수 있어. 마을을 따뜻하게 할 수 있어.” 미소는 놀랐다. “마을을 살릴 수 있어!” 
+        갑자기 땅이 흔들렸다. 로보가 말했다. “위험한 신호야.” 점프는 어둠을 봤다. 미소는 무서웠지만 말했다. 
+        “우리가 마을을 깨울 거야!” 황지천 물소리가 들렸다. 미소는 점프와 로보를 보며 힘을 냈다.
+      </p>
+    </div>
+  </div>
+  <!-- 아래: 영어 -->
+  <div class="episode-english">
+    <h2>English Study</h2>
+    <p>
+      Miso is at an old school in Taebaek. It is winter. The river makes a soft sound. 
+      She has her dad’s old box. The box is rusty. She opens it. There is a plan inside. 
+      The plan is about a mine. Miso goes to the mine. A robot comes. It is Jump. 
+      Jump is fast with blue eyes. Jump takes Miso deep in the mine. It is 400 meters down. 
+      The air is cold. Another robot, Robo, wakes up. 
+      Robo says, “This mine can help the village. It can make houses warm.” Miso is happy. 
+      “We can save the village!” The ground moves. 
+      Robo says, “Danger!” Miso is scared but says, “We will wake the village!” 
+      The river makes a sound outside.
+    </p>
+  </div>
 
-    <h2>🌱 한글 & 영어 페어 스토리</h2>
-    <div class="pair"><div>미소는 태백의 폐교에 갔다. 겨울이었다.</div><div><i>Miso is at an old school in Taebaek. It is winter.</i></div></div>
-    <div class="pair"><div>황지천이 물소리를 냈다.</div><div><i>The river makes a soft sound.</i></div></div>
-    <div class="pair"><div>미소는 아빠의 오래된 상자를 열었다. 상자에 설계도가 있었다.</div><div><i>She has her dad’s old box. She opens it. There is a plan inside.</i></div></div>
-    <div class="pair"><div>‘T.O.B.I. 프로젝트’였다. 미소는 폐광으로 갔다.</div><div><i>The plan is about a mine. Miso goes to the mine.</i></div></div>
-    <div class="pair"><div>점프가 나왔다. 점프는 빠른 로봇이다.</div><div><i>A robot comes. It is Jump. Jump is fast.</i></div></div>
-    <div class="pair"><div>점프는 미소를 지하 400미터로 데려갔다.</div><div><i>Jump takes Miso deep in the mine. It is 400 meters down.</i></div></div>
-    <div class="pair"><div>로보가 깨어났다. 로보는 로봇이다.</div><div><i>Robo wakes up. Robo is a robot.</i></div></div>
-    <div class="pair"><div>로보는 말했다. “이 폐광은 데이터센터가 될 수 있어.”</div><div><i>Robo says, “This mine can be a data center.”</i></div></div>
-    <div class="pair"><div>마을을 따뜻하게 할 수 있어.”</div><div><i>“It can warm the village.”</i></div></div>
-    <div class="pair"><div>갑자기 땅이 흔들렸다.</div><div><i>Suddenly, the ground shakes.</i></div></div>
-    <div class="pair"><div>미소는 무서웠지만 말했다. “우리가 마을을 깨울 거야!”</div><div><i>Miso is scared but says, “We will wake the village.”</i></div></div>
-
-    <h2>🧠 Target Vocabulary</h2>
+  <!-- Target Vocabulary, Practice, Quiz, 돌아가기 버튼 등 추가 -->
+  <div class="episode-extra">
+    <h2>🌈 Target Vocabulary</h2>
     <div class="vocab-list">
       <ul>
         <li><b>school:</b> a place to learn</li>
-        <li><b>rusty:</b> old and red with rust</li>
         <li><b>box:</b> something to hold things</li>
-        <li><b>curious:</b> wanting to know more</li>
+        <li><b>rusty:</b> old and red with rust</li>
+        <li><b>plan:</b> a paper with ideas</li>
         <li><b>mine:</b> a place under the ground</li>
-      </ul>
-      <ul>
         <li><b>robot:</b> a machine that moves</li>
         <li><b>warm:</b> not cold</li>
         <li><b>happy:</b> feeling good</li>
@@ -116,22 +51,25 @@
         <li><b>danger:</b> not safe</li>
       </ul>
     </div>
-
-    <div class="quiz">
-      <b>Practice Using the Words:</b><br>
+    <div class="practice" style="margin-top:1.2em;">
+      <b>Practice:</b><br>
       1. Miso is at an old <b>school</b>.<br>
-      2. She opens a <b>rusty</b> box.<br>
-      3. Miso is <b>curious</b> to know more.<br>
+      2. The box is <b>rusty</b>.<br>
+      3. Robo makes houses <b>warm</b>.<br>
       4. Miso is <b>scared</b> but wants to help.
     </div>
-
-    <div class="practice">
-      <b>Practice Simple Present and Can:</b><br>
-      Miso is at the school. The mine can make houses warm.<br>
-      Robo <i>talks</i> about the mine. Miso <i>helps</i> the village.
+    <div class="quiz" style="margin-top:1.2em;">
+      <b>Quiz:</b><br>
+      1. What does Miso find in the box?<br>
+      ☐ a) A plan ☐ b) A toy<br><br>
+      2. Who takes Miso to the mine?<br>
+      ☐ a) Jump ☐ b) A friend
     </div>
 
-    <a href="/BaseCamp/index.html" class="return-button">← 베이스캠프로 돌아가기</a>
+
+    
+    <div class="episode-buttons">
+      <a href="../index.html" class="back-btn">← Back to Level Select</a>
+    </div>
   </div>
-</body>
-</html>
+</div>
