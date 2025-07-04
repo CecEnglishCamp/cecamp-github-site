@@ -1,75 +1,190 @@
-<div class="episode-container">
-  <div class="episode-main">
-    <!-- 왼쪽: 그림 -->
-    <div class="episode-img">
-      <img src="https://cecenglishcamp.github.io/BaseCamp/assets/img/episode1.png" alt="Episode 1" style="width: 170px; border-radius: 18px;">
-    </div>
-    <!-- 오른쪽: 한글 -->
-    <div class="episode-korean">
-      <h2>한글 요약</h2>
-      <p>
-        <b>태백에서 시작된 봄 - 시즌1 에피소드 1: 마을 아래, 빛이 살아 있다</b><br>
-        미소는 태백의 폐교에 갔다. 겨울이었다. 황지천이 물소리를 냈다. 미소는 아빠의 오래된 상자를 열었다. 
-        상자에 설계도가 있었다. ‘T.O.B.I. 프로젝트’였다. 미소는 폐광으로 갔다. 점프가 나왔다. 점프는 빠른 로봇이다.
-        점프는 미소를 지하 400미터로 데려갔다. 지하는 차가웠다. 로보가 깨어났다. 로보는 로봇이다. 로보는 말했다. 
-        “이 폐광은 데이터센터가 될 수 있어. 마을을 따뜻하게 할 수 있어.” 미소는 놀랐다. “마을을 살릴 수 있어!” 
-        갑자기 땅이 흔들렸다. 로보가 말했다. “위험한 신호야.” 점프는 어둠을 봤다. 미소는 무서웠지만 말했다. 
-        “우리가 마을을 깨울 거야!” 황지천 물소리가 들렸다. 미소는 점프와 로보를 보며 힘을 냈다.
-      </p>
-    </div>
-  </div>
-  <!-- 아래: 영어 -->
-  <div class="episode-english">
-    <h2>English Study</h2>
-    <p>
-      Miso is at an old school in Taebaek. It is winter. The river makes a soft sound. 
-      She has her dad’s old box. The box is rusty. She opens it. There is a plan inside. 
-      The plan is about a mine. Miso goes to the mine. A robot comes. It is Jump. 
-      Jump is fast with blue eyes. Jump takes Miso deep in the mine. It is 400 meters down. 
-      The air is cold. Another robot, Robo, wakes up. 
-      Robo says, “This mine can help the village. It can make houses warm.” Miso is happy. 
-      “We can save the village!” The ground moves. 
-      Robo says, “Danger!” Miso is scared but says, “We will wake the village!” 
-      The river makes a sound outside.
-    </p>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Season 1, Episode 1 – A1 Beginner</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2em;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #66f5ff;
+      font-size: 2em;
+    }
+
+    .episode-image {
+      display: flex;
+      justify-content: center;
+      margin: 2em 0;
+    }
+
+    .episode-image img {
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #222;
+    }
+
+    .dual-text {
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      justify-content: center;
+      margin-bottom: 1.5em;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .kr, .en {
+      flex: 1;
+      padding: 1em;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+    }
+
+    .kr {
+      font-weight: bold;
+    }
+
+    .en {
+      font-style: italic;
+      color: #9fe5ff;
+    }
+
+    .lesson-section {
+      max-width: 1000px;
+      margin: 4em auto;
+      background-color: #141414;
+      padding: 2em;
+      border-radius: 12px;
+    }
+
+    .lesson-section h2 {
+      color: #a0faff;
+      margin-top: 1.5em;
+    }
+
+    .lesson-section ul, .lesson-section ol {
+      padding-left: 1.2em;
+    }
+
+    .lesson-section li {
+      margin-bottom: 0.4em;
+    }
+
+    .back-button {
+      display: block;
+      text-align: center;
+      margin: 3em auto 1em;
+      font-size: 1.1em;
+      color: #66f5ff;
+      text-decoration: none;
+      border: 1px solid #66f5ff;
+      padding: 0.6em 1.2em;
+      border-radius: 6px;
+      width: fit-content;
+    }
+
+    .back-button:hover {
+      background-color: #66f5ff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 Season 1, Episode 1 – A1 Beginner</h1>
+
+  <div class="episode-image">
+    <img src="/BaseCamp/assets/img/episode1.png" alt="Episode 1 Image">
   </div>
 
-  <!-- Target Vocabulary, Practice, Quiz, 돌아가기 버튼 등 추가 -->
-  <div class="episode-extra">
-    <h2>🌈 Target Vocabulary</h2>
-    <div class="vocab-list">
-      <ul>
-        <li><b>school:</b> a place to learn</li>
-        <li><b>box:</b> something to hold things</li>
-        <li><b>rusty:</b> old and red with rust</li>
-        <li><b>plan:</b> a paper with ideas</li>
-        <li><b>mine:</b> a place under the ground</li>
-        <li><b>robot:</b> a machine that moves</li>
-        <li><b>warm:</b> not cold</li>
-        <li><b>happy:</b> feeling good</li>
-        <li><b>scared:</b> afraid</li>
-        <li><b>danger:</b> not safe</li>
-      </ul>
-    </div>
-    <div class="practice" style="margin-top:1.2em;">
-      <b>Practice:</b><br>
-      1. Miso is at an old <b>school</b>.<br>
-      2. The box is <b>rusty</b>.<br>
-      3. Robo makes houses <b>warm</b>.<br>
-      4. Miso is <b>scared</b> but wants to help.
-    </div>
-    <div class="quiz" style="margin-top:1.2em;">
-      <b>Quiz:</b><br>
-      1. What does Miso find in the box?<br>
-      ☐ a) A plan ☐ b) A toy<br><br>
-      2. Who takes Miso to the mine?<br>
-      ☐ a) Jump ☐ b) A friend
-    </div>
-
-
-    
-    <div class="episode-buttons">
-      <a href="../index.html" class="back-btn">← Back to Level Select</a>
-    </div>
+  <!-- 한영 페어 스토리 -->
+  <div class="dual-text">
+    <div class="kr">미소는 태백의 오래된 학교에 있다.</div>
+    <div class="en">Miso is at an old school in Taebaek.</div>
   </div>
-</div>
+  <div class="dual-text">
+    <div class="kr">겨울이다. 강이 조용한 소리를 낸다.</div>
+    <div class="en">It is winter. The river makes a soft sound.</div>
+  </div>
+  <div class="dual-text">
+    <div class="kr">그녀는 아빠의 오래된 상자를 연다.</div>
+    <div class="en">She opens her dad’s old box.</div>
+  </div>
+  <div class="dual-text">
+    <div class="kr">안에는 광산 계획이 있다.</div>
+    <div class="en">There is a plan about a mine.</div>
+  </div>
+  <div class="dual-text">
+    <div class="kr">미소는 광산으로 간다. 점프라는 로봇이 나온다.</div>
+    <div class="en">Miso goes to the mine. A robot named Jump appears.</div>
+  </div>
+  <div class="dual-text">
+    <div class="kr">점프는 미소를 지하 400m로 데려간다.</div>
+    <div class="en">Jump takes Miso 400 meters down underground.</div>
+  </div>
+  <div class="dual-text">
+    <div class="kr">로보라는 또 다른 로봇이 깨어난다.</div>
+    <div class="en">Another robot, Robo, wakes up.</div>
+  </div>
+  <div class="dual-text">
+    <div class="kr">로보는 "이 광산은 마을을 따뜻하게 할 수 있어요"라고 말한다.</div>
+    <div class="en">Robo says, “This mine can make the village warm.”</div>
+  </div>
+  <div class="dual-text">
+    <div class="kr">미소는 놀라고 말한다. “우리는 마을을 살릴 수 있어요!”</div>
+    <div class="en">Miso is surprised and says, “We can save the village!”</div>
+  </div>
+
+  <!-- 학습 섹션 -->
+  <div class="lesson-section">
+    <h2>📚 Target Vocabulary</h2>
+    <ul>
+      <li><strong>school</strong>: a place to learn</li>
+      <li><strong>box</strong>: something to hold things</li>
+      <li><strong>plan</strong>: a paper with ideas</li>
+      <li><strong>mine</strong>: a place under the ground</li>
+      <li><strong>robot</strong>: a machine that moves</li>
+      <li><strong>warm</strong>: not cold</li>
+      <li><strong>scared</strong>: afraid</li>
+      <li><strong>save</strong>: to help or rescue</li>
+      <li><strong>cold</strong>: not warm</li>
+      <li><strong>wake</strong>: to start or open</li>
+    </ul>
+
+    <h2>📝 Practice</h2>
+    <ol>
+      <li>Miso is at an old <strong>______</strong>. (school)</li>
+      <li>The robot helps <strong>______</strong> the village. (save)</li>
+      <li>It is <strong>______</strong> underground. (cold)</li>
+      <li>Robo is a <strong>______</strong>. (robot)</li>
+    </ol>
+
+    <h2>✍️ Writing Practice</h2>
+    <ul>
+      <li>Miso ________ the box. (opens)</li>
+      <li>Jump ________ Miso to the mine. (takes)</li>
+      <li>Robo ________ to make houses warm. (wants)</li>
+      <li>Miso ________ the village. (saves)</li>
+    </ul>
+
+    <h2>🧠 Comprehension Questions</h2>
+    <ol>
+      <li>Where is Miso? → At an old school ✅</li>
+      <li>What does Robo say? → The mine can warm the village ✅</li>
+      <li>What does Miso want to do? → Save the village ✅</li>
+    </ol>
+  </div>
+
+  <a href="/BaseCamp/index.html" class="back-button">← 베이스캠프로 돌아가기</a>
+
+</body>
+</html>
