@@ -1,148 +1,287 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>Season 1, Episode 1 – B1 Intermediate</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Season 1, Episode 1 – B2 Upper-Intermediate</title>
   <style>
     body {
-      background: #111;
+      background-color: #0f0f0f;
       color: #fff;
-      font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
-      margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2em;
+      line-height: 1.6;
     }
-    .container {
-      max-width: 860px;
-      margin: 40px auto;
-      background: #181818;
-      border-radius: 30px;
-      box-shadow: 0 2px 30px #0005;
-      padding: 2.5rem 2.8rem;
-    }
-    h1 {
-      color: #64fff4;
-      font-size: 2.4rem;
-      margin-bottom: 1em;
-    }
-    .episode-illus {
-      display: block;
-      margin: 0 auto 1.5em;
-      width: 100%;
-      max-width: 440px;
-      border-radius: 18px;
-      box-shadow: 0 0 32px #0004;
-    }
-    .line {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 1.2em;
-      margin-bottom: 1.2em;
-    }
-    .kr, .en {
-      width: 50%;
-      line-height: 1.65;
-    }
-    .kr { color: #e0e0e0; }
-    .en { color: #a0d8ef; font-style: italic; }
 
-    .vocab-box {
-      background: #21293a;
-      border-radius: 14px;
-      padding: 1.2em 1.5em;
+    h1 {
+      text-align: center;
+      color: #62f2e5;
+      font-size: 2em;
+    }
+
+    .episode-image {
+      display: flex;
+      justify-content: center;
       margin: 2em 0;
     }
-    .quiz-box {
-      background: #231c2e;
+
+    .episode-image img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #222;
+    }
+
+    .dual-text {
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      justify-content: center;
+      margin-bottom: 1.5em;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .kr, .en {
+      flex: 1;
+      padding: 1em;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+    }
+
+    .kr {
+      font-weight: bold;
+    }
+
+    .en {
+      font-style: italic;
+      color: #9fe5ff;
+    }
+
+    .lesson-section {
+      max-width: 1000px;
+      margin: 4em auto;
+      background-color: #141414;
+      padding: 2em;
       border-radius: 12px;
-      padding: 1em 1.2em;
-      margin-top: 2em;
-    }
-    .quiz-q { color: #ffbe76; }
-    .quiz-a { color: #7dffa4; }
-
-    .btn-back {
-      display: inline-block;
-      color: #5af3f8;
-      margin-top: 2em;
-      font-size: 1.05em;
-      text-decoration: underline;
-      border: none;
-      background: none;
-      cursor: pointer;
     }
 
-    @media (max-width: 600px) {
-      .line { flex-direction: column; }
-      .kr, .en { width: 100%; }
+    .lesson-section h2 {
+      color: #a0faff;
+      margin-top: 1.5em;
+    }
+
+    .lesson-section ul, .lesson-section ol {
+      padding-left: 1.2em;
+    }
+
+    .lesson-section p {
+      margin-top: 0.5em;
+    }
+
+    .lesson-section li {
+      margin-bottom: 0.4em;
+    }
+
+    .lesson-section code {
+      background: #333;
+      padding: 2px 6px;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Season 1, Episode 1 – B1 Intermediate</h1>
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="Episode Illustration" class="episode-illus" />
 
-    <!-- Episode Korean-English Paired Lines -->
-    <div class="line">
-      <div class="kr">태백, 2025년 겨울 미소는 폐교 앞에 섰다. 강이 조용히 흘렀고 찬바람이 뺨을 스쳤다.</div>
-      <div class="en">In Taebaek, winter 2025, Miso stood in front of an empty school. The river flowed nearby with a soft sound. A cold wind touched her face.</div>
-    </div>
-    <div class="line">
-      <div class="kr">그녀는 아버지의 오래된 철 상자를 열어 ‘T.O.B.I. 프로젝트’ 계획을 발견한다.</div>
-      <div class="en">Miso opened her father’s old rusty box. Inside, she found a plan for a “T.O.B.I. Project”—a mine’s heat system.</div>
-    </div>
-    <div class="line">
-      <div class="kr">호기심 많은 미소는 폐광 안으로 들어갔다. 녹슨 문을 밀자 갑자기 로봇이 나타났다.</div>
-      <div class="en">Miso was curious and entered the old mine. She pushed the rusty gate open. Suddenly, a robot appeared.</div>
-    </div>
-    <div class="line">
-      <div class="kr">“내 이름은 점프!” 푸른 눈을 가진 로봇은 미소를 데리고 광산 깊숙이 들어갔다.</div>
-      <div class="en">“My name is Jump!” It was fast with bright blue eyes. Jump took Miso deep into the mine.</div>
-    </div>
-    <div class="line">
-      <div class="kr">또 다른 로봇 로보가 등장해 “이 광산은 데이터센터가 될 수 있어. 마을 난방도 가능해.”</div>
-      <div class="en">Another robot, Robo, started to move. Robo said, “This mine can be a data center. It can heat the village.”</div>
-    </div>
-    <div class="line">
-      <div class="kr">미소는 흥분했다. “이걸로 우리 마을을 구할 수 있어!”</div>
-      <div class="en">Miso was excited. “This can save our village!”</div>
-    </div>
-    <div class="line">
-      <div class="kr">그때 땅이 흔들렸고, 로보는 경고했다. “위험 신호가 감지됐어!”</div>
-      <div class="en">The ground shook. Robo warned, “There is a danger signal!”</div>
-    </div>
-    <div class="line">
-      <div class="kr">점프는 어둠 속을 바라봤고 미소는 심장이 뛰는 것을 느꼈다.</div>
-      <div class="en">Jump looked into the dark. Miso’s heart beat fast.</div>
-    </div>
-    <div class="line">
-      <div class="kr">“이건 단순한 광산이 아니야.” 강물 소리는 심장 박동처럼 들렸다.</div>
-      <div class="en">“This is not just a mine,” she said. The river’s sound outside was like a heartbeat.</div>
-    </div>
+  <h1>Season 1, Episode 1 – B2 Upper-Intermediate</h1>
 
-    <!-- Target Vocabulary -->
-    <div class="vocab-box">
-      <strong>📚 Target Vocabulary</strong>
-      <ul>
-        <li>empty: with nothing inside</li>
-        <li>rusty: old and red with rust</li>
-        <li>curious: wanting to know more</li>
-        <li>data center: a place that stores data</li>
-        <li>danger signal: warning sign</li>
-      </ul>
-    </div>
-
-    <!-- Quiz Section -->
-    <div class="quiz-box">
-      <div class="quiz-q"><b>Quiz 1:</b> What did Miso find inside the old box?</div>
-      <div class="quiz-a">A plan for a “T.O.B.I. Project” (mine’s heat system).</div>
-      <div class="quiz-q"><b>Quiz 2:</b> How did Miso feel when the ground shook?</div>
-      <div class="quiz-a">She was excited but also scared.</div>
-    </div>
-
-    <button class="btn-back" onclick="history.back();">&larr; Back to Level Select</button>
+  <div class="episode-image">
+    <img src="https://cecenglishcamp.github.io/BaseCamp/assets/img/episode1.png" alt="Episode 1 Image">
   </div>
+
+  <!-- 한영 페어 스토리 -->
+  <div class="dual-text">
+    <div class="kr">태백, 2025년 겨울. 폐교된 장성초 앞에 선 미소는 아버지의 녹슨 철제 상자를 들고 있었다.</div>
+    <div class="en">In Taebaek’s winter of 2025, Miso lingered before the forsaken Jangseong Elementary School, clutching her father’s corroded metal box.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">황지천은 얼지 않은 물소리를 내며 흐르고, 바람은 유리처럼 차갑게 뺨을 스쳤다.</div>
+    <div class="en">The Hwangjeecheon River’s gentle murmur drifted nearby, while a biting breeze grazed her cheeks.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">그녀는 무릎을 꿇고 상자를 열었다. 그 안엔 ‘장성탄광 열 회수 시스템’이란 제목의 바랜 종이들이 있었다.</div>
+    <div class="en">Kneeling, she pried open the lid, unveiling faded manuscripts titled “T.O.B.I. Project: Jangseong Mine Heat Recovery System.”</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">익숙하고도 낯선 아버지의 붓글씨는, 종이 속에서 말을 건네는 듯했다.</div>
+    <div class="en">Her father’s calligraphy, both unfamiliar and achingly familiar, stirred her—as if the papers might respond.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">“출입금지”라는 팻말이 붙은 녹슨 철문 앞에서, 미소는 문을 밀고 들어갔다.</div>
+    <div class="en">Intrigued, Miso approached the derelict mine, its gate marked with a crumbling “No Entry” sign. She shoved it open.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">그 순간, 네 다리로 착지한 작은 로봇이 튀어나왔다. 파란 렌즈 눈, 홀로그램: [T.O.B.I. UNIT-2 / JUMP]</div>
+    <div class="en">Abruptly, a nimble robot, Jump, leaped onto a metal surface, its azure eyes gleaming. It projected a hologram: [T.O.B.I. UNIT-2 / JUMP]</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">미소는 몇 걸음 망설이다가 결국 따라갔다. 심장은 쿵쾅거렸다.</div>
+    <div class="en">Miso hesitated, then followed, her pulse racing.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">리프트는 덜컹이며 내려갔다: 80m, 180m, 400m. 지하 400m 공기는 습하고 차가웠다.</div>
+    <div class="en">The lift creaked downward: 80m, 180m, 400m. At 400 meters, damp air enveloped her.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">벽에 장착된 장치를 작동시키자, 미세한 진동과 함께 벽이 열리고 로보가 움직이기 시작했다.</div>
+    <div class="en">Jump sprang to a wall, activating a cube-like device. With a hum, a panel slid open, and Robo stirred.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">“T.O.B.I. UNIT-1: ROBO. 대기일수: 3,672일”</div>
+    <div class="en">“T.O.B.I. UNIT-1: ROBO. Standby: 3,672 days,” it intoned.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">“지하수 9.8도, 하루 유출량 5,000톤. 냉각 효율 92.4%.”</div>
+    <div class="en">“Groundwater: 9.8°C, 5,000 tons daily. Cooling efficiency 92.4%.”</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">“…이거, 데이터센터야?”</div>
+    <div class="en">“A data center?”</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">“정확합니다. 에스토니아, 핀란드, 노르웨이 사례 기반.”</div>
+    <div class="en">“Correct. Estonia, Finland, Norway precedents validate feasibility.”</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">“마을 난방 전환 효율 86%.”</div>
+    <div class="en">“Village heating efficiency 86%.”</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">그때, 진동이 땅을 울리고, 로보의 눈이 깜빡였다.</div>
+    <div class="en">A tremor jolted the ground. Robo’s eyes flickered rapidly.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">“T.O.B.I. 프로토콜 위반. 외부 신호 감지.”</div>
+    <div class="en">“Warning: unidentified signal detected. T.O.B.I. protocol violation.”</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">“무언가 있었어. 사람은 아니야.”</div>
+    <div class="en">“Something’s there—not human,” it signaled.</div>
+  </div>
+
+  <div class="dual-text">
+    <div class="kr">“우리가 이 마을을 깨울 거야. 시작은 여기야.”</div>
+    <div class="en">“We’ll awaken this village. It starts here.”</div>
+  </div>
+
+  <!-- 학습 자료 -->
+  <div class="lesson-section">
+    <h2>📚 Target Vocabulary</h2>
+    <ul>
+      <li><strong>forsaken</strong>: abandoned, left alone</li>
+      <li><strong>clutch</strong>: to hold tightly</li>
+      <li><strong>murmur</strong>: a soft, quiet sound</li>
+      <li><strong>unveil</strong>: to reveal something hidden</li>
+      <li><strong>derelict</strong>: old and broken</li>
+      <li><strong>nimble</strong>: quick and light in movement</li>
+      <li><strong>gleam</strong>: to shine brightly</li>
+      <li><strong>affirm</strong>: to state strongly</li>
+      <li><strong>jolt</strong>: a sudden shake</li>
+      <li><strong>unwavering</strong>: steady and strong</li>
+    </ul>
+    <h3><strong>Practice Using the Words</strong></h3>
+    <ol>
+      <li>Miso stood at a <code>________</code> school. (forsaken)</li>
+      <li>She <code>________</code> the box tightly. (clutched)</li>
+      <li>Jump’s eyes <code>________</code> brightly. (gleamed)</li>
+      <li>Miso’s resolve was <code>________</code>. (unwavering)</li>
+    </ol>
+
+    <h2>📘 Target Grammar Points</h2>
+    <ul>
+      <li><strong>Simple Past</strong>: Miso pried, Robo stirred to life.</li>
+      <li><strong>Reported Speech</strong>: Robo affirmed that it was correct.</li>
+      <li><strong>Adverbs of Manner</strong>: Miso murmured softly, Jump darted nimbly.</li>
+      <li><strong>Modal Verbs for Possibility</strong>: This could save the village, They might uncover a threat.</li>
+      <li><strong>Basic Conditional</strong>: If we awaken the village, it will thrive.</li>
+    </ul>
+
+    <h2>💬 Speaking Practice</h2>
+    <p><strong>Practice Simple Past and Reported Speech</strong></p>
+    <ul>
+      <li>Miso pried the lid. Robo affirmed that it was correct.</li>
+      <li>Jump <code>________</code> (leap) onto the surface. Miso <code>________</code> (vow) that they would awaken the village.</li>
+    </ul>
+    <p><strong>Practice Modal Verbs and Adverbs</strong></p>
+    <ul>
+      <li>This could save the village. Miso murmured softly.</li>
+      <li>They <code>________</code> (uncover) a threat. Jump <code>________</code> (dart) nimbly.</li>
+    </ul>
+
+    <h2>👂 Listening Practice</h2>
+    <p><strong>Listen and Choose</strong></p>
+    <ol>
+      <li>What did Miso unveil? a) Plan ✅ b) Map</li>
+      <li>What jolted? a) Ground ✅ b) Sky</li>
+    </ol>
+    <p><strong>Listen and Repeat</strong></p>
+    <ul>
+      <li>"Miso pried the lid."</li>
+      <li>"Robo affirmed that it was correct."</li>
+    </ul>
+
+    <h2>✍️ Writing Practice</h2>
+    <p><strong>Complete the Sentences</strong></p>
+    <ul>
+      <li>Miso <code>________</code> (pry) the lid.</li>
+      <li>Robo <code>________</code> (affirm) that it was correct.</li>
+      <li>Jump <code>________</code> (leap) onto the surface.</li>
+      <li>Miso <code>________</code> (vow) that they would awaken the village.</li>
+    </ul>
+
+    <p><strong>Write Your Own Sentences</strong></p>
+    <ul>
+      <li>Example: Robo affirmed that it was correct confidently.</li>
+      <li>Miso vowed that they would awaken the village resolutely.</li>
+    </ul>
+
+    <h2>🧠 Comprehension Questions</h2>
+    <ol>
+      <li>Where and when did Miso discover her father’s manuscripts?<br>→ At a forsaken school in winter 2025 ✅</li>
+      <li>What robot emerged in the mine, and what did it do?<br>→ Jump; led Miso underground ✅</li>
+      <li>What did Robo propose, and what precedents supported it?<br>→ A data center; Estonia, Finland, Norway ✅</li>
+      <li>What disrupted their discovery, and how did Miso react?<br>→ A tremor and signal; she vowed to awaken the village ✅</li>
+    </ol>
+
+    <h2>🧾 Wrap-up Summary</h2>
+    <ul>
+      <li><strong>Vocabulary:</strong> forsaken, clutch, murmur, unveil, derelict, nimble, gleam, affirm, jolt, unwavering</li>
+      <li><strong>Grammar:</strong> Simple Past, Reported Speech, Adverbs, Modal Verbs, Conditionals</li>
+      <li><strong>Practice:</strong> Reporting, Expressing Possibilities, Writing with Adverbs</li>
+    </ul>
+    <p><strong>Let’s Try!</strong><br>“Miso pried the lid. Robo affirmed that it was correct.”</p>
+
+    <h3>Notes</h3>
+    <ul>
+      <li>Audio files saved in “Season 1 Audio” folder.</li>
+      <li>Use Word template <code>English_Textbook_v2.docx</code> for formatting.</li>
+      <li>Ensure CEFR B2 alignment.</li>
+    </ul>
+  </div>
+
 </body>
 </html>
