@@ -1,202 +1,175 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Episode 1 – A1 Level</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BaseCamp PE1 - A1</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
-      color: #fff;
-      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
     }
+
     header {
+      background: #1e90ff;
+      color: white;
+      padding: 1rem;
       text-align: center;
-      padding: 2rem;
-      background-color: #000;
     }
-    header h1 {
-      color: #66f5ff;
-      font-size: 2rem;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 10px;
     }
-    .image-box {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .image-box img {
-      max-width: 300px;
-      border-radius: 12px;
-    }
-    .pairing-container {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-      padding: 1rem 10%;
-    }
-    .pair {
+
+    .container {
       display: flex;
       flex-direction: row;
-      gap: 1rem;
-    }
-    .left, .right {
-      flex: 1;
-      padding: 1rem;
-      background-color: #1c1c1c;
-      border-radius: 8px;
-    }
-    .right {
-      color: #99e0ff;
-      font-style: italic;
-    }
-    section.study {
-      background-color: #222;
-      padding: 2rem 10%;
-      margin-top: 3rem;
-      border-top: 2px solid #333;
-    }
-    h2 {
-      color: #66f5ff;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.3rem;
-      margin-top: 2rem;
-    }
-    ul, ol {
-      padding-left: 1.4rem;
-    }
-    footer {
-      text-align: center;
+      justify-content: space-between;
       padding: 2rem;
-      color: #777;
-      font-size: 0.9rem;
+      gap: 2rem;
+    }
+
+    .block {
+      width: 48%;
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #1e90ff;
+    }
+
+    section {
+      padding: 2rem;
+      background: #ffffff;
+      margin: 1rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .button-back {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: #1e90ff;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .button-back:hover {
+      background-color: #0e70d1;
+    }
+
+    ul {
+      padding-left: 1.2rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Season 1, Episode 1 – A1 Beginner</h1>
-  </header>
+<header>
+  <h1>📘 PE1 - A1 레벨 스토리북</h1>
+</header>
 
-  <div class="image-box">
-    <img src="/BaseCamp/assets/img/episode1.png" alt="Episode Illustration" />
+<img src="/BaseCamp/assets/img/episode1.png" alt="Episode Illustration" />
+
+<div class="container">
+  <div class="block">
+    <h2>📖 한글 요약</h2>
+    <p>미소는 태백의 폐교에 갔다. 겨울이었다. 황지천이 물소리를 냈다. 미소는 아빠의 오래된 상자를 열었다. 상자에 설계도가 있었다. ‘T.O.B.I. 프로젝트’였다. 미소는 폐광으로 갔다. 점프가 나왔다. 점프는 빠른 로봇이다. 점프는 미소를 지하 400미터로 데려갔다. 지하는 차가웠다. 로보가 깨어났다. 로보는 로봇이다. 로보는 말했다. “이 폐광은 데이터센터가 될 수 있어. 마을을 따뜻하게 할 수 있어.” 미소는 놀랐다. “마을을 살릴 수 있어!” 갑자기 땅이 흔들렸다. 로보가 말했다. “위험한 신호야.” 점프는 어둠을 봤다. 미소는 무서웠지만 말했다. “우리가 마을을 깨울 거야!” 황지천 물소리가 들렸다. 미소는 점프와 로보를 보며 힘을 냈다.</p>
   </div>
 
-  <div class="pairing-container">
-    <div class="pair">
-      <div class="left">미소는 태백의 폐교에 갔다. 겨울이었다.</div>
-      <div class="right">Miso is at an old school in Taebaek. It is winter.</div>
-    </div>
-    <div class="pair">
-      <div class="left">황지천이 물소리를 냈다.</div>
-      <div class="right">The river makes a soft sound.</div>
-    </div>
-    <div class="pair">
-      <div class="left">미소는 아빠의 오래된 상자를 열었다. 상자에 설계도가 있었다.</div>
-      <div class="right">She has her dad’s old box. The box is rusty. She opens it. There is a plan inside.</div>
-    </div>
-    <div class="pair">
-      <div class="left">‘T.O.B.I. 프로젝트’였다. 미소는 폐광으로 갔다.</div>
-      <div class="right">The plan is about a mine. Miso goes to the mine.</div>
-    </div>
-    <div class="pair">
-      <div class="left">점프가 나왔다. 점프는 빠른 로봇이다. 점프는 미소를 지하 400미터로 데려갔다.</div>
-      <div class="right">A robot comes. It is Jump. Jump is fast with blue eyes. Jump takes Miso deep in the mine. It is 400 meters down.</div>
-    </div>
-    <div class="pair">
-      <div class="left">지하는 차가웠다. 로보가 깨어났다. 로보는 로봇이다.</div>
-      <div class="right">The air is cold. Another robot, Robo, wakes up. Robo is a robot.</div>
-    </div>
-    <div class="pair">
-      <div class="left">로보는 말했다. “이 폐광은 데이터센터가 될 수 있어. 마을을 따뜻하게 할 수 있어.”</div>
-      <div class="right">Robo says, “This mine can help the village. It can make houses warm.”</div>
-    </div>
-    <div class="pair">
-      <div class="left">미소는 놀랐다. “마을을 살릴 수 있어!”</div>
-      <div class="right">Miso is happy. “We can save the village!”</div>
-    </div>
-    <div class="pair">
-      <div class="left">갑자기 땅이 흔들렸다. 로보가 말했다. “위험한 신호야.”</div>
-      <div class="right">The ground moves. Robo says, “Danger!”</div>
-    </div>
-    <div class="pair">
-      <div class="left">미소는 무서웠지만 말했다. “우리가 마을을 깨울 거야!”</div>
-      <div class="right">Miso is scared but says, “We will wake the village!”</div>
-    </div>
-    <div class="pair">
-      <div class="left">황지천 물소리가 들렸다. 미소는 점프와 로보를 보며 힘을 냈다.</div>
-      <div class="right">The river makes a sound outside. Miso sees Jump and Robo and feels strong.</div>
-    </div>
+  <div class="block">
+    <h2>📖 English (A1 Version)</h2>
+    <p>Miso is at an old school in Taebaek. It is winter. The river makes a soft sound. She has her dad’s old box. The box is rusty. She opens it. There is a plan inside. The plan is about a mine. Miso goes to the mine. A robot comes. It is Jump. Jump is fast with blue eyes. Jump takes Miso deep in the mine. It is 400 meters down. The air is cold. Another robot, Robo, wakes up. Robo says, “This mine can help the village. It can make houses warm.” Miso is happy. “We can save the village!” The ground moves. Robo says, “Danger!” Miso is scared but says, “We will wake the village!” The river makes a sound outside.</p>
   </div>
+</div>
 
-  <section class="study">
-    <h2>📚 Target Vocabulary</h2>
-    <ul>
-      <li><strong>school</strong>: a place to learn</li>
-      <li><strong>box</strong>: something to hold things</li>
-      <li><strong>rusty</strong>: old and red with rust</li>
-      <li><strong>plan</strong>: a paper with ideas</li>
-      <li><strong>mine</strong>: a place under the ground</li>
-      <li><strong>robot</strong>: a machine that moves</li>
-      <li><strong>warm</strong>: not cold</li>
-      <li><strong>happy</strong>: feeling good</li>
-      <li><strong>scared</strong>: afraid</li>
-      <li><strong>danger</strong>: not safe</li>
-    </ul>
+<section>
+  <h2>📚 Target Vocabulary</h2>
+  <ul>
+    <li>school: a place to learn</li>
+    <li>box: something to hold things</li>
+    <li>rusty: old and red with rust</li>
+    <li>plan: a paper with ideas</li>
+    <li>mine: a place under the ground</li>
+    <li>robot: a machine that moves</li>
+    <li>warm: not cold</li>
+    <li>happy: feeling good</li>
+    <li>scared: afraid</li>
+    <li>danger: not safe</li>
+  </ul>
+</section>
 
-    <h2>📘 Target Grammar Points</h2>
-    <ul>
-      <li><strong>Simple Present</strong>: "Miso is." (facts or habits)</li>
-      <li><strong>Simple Past</strong>: "Miso opened." (past actions)</li>
-    </ul>
+<section>
+  <h2>📘 Grammar Points</h2>
+  <ul>
+    <li><strong>Simple Present</strong>: "Miso is." (facts or habits)</li>
+    <li><strong>Simple Past</strong>: "Miso opened." (past actions)</li>
+  </ul>
+</section>
 
-    <h2>💬 Speaking Practice</h2>
-    <p><strong>Practice Simple Present</strong></p>
-    <ul>
-      <li>Robo ________ (talk) about the mine. Miso ________ (want) to save the village.</li>
-    </ul>
-    <p><strong>Practice Simple Past</strong></p>
-    <ul>
-      <li>Jump ________ (come). Miso ________ (go) to the mine.</li>
-    </ul>
+<section>
+  <h2>💬 Speaking Practice</h2>
+  <ul>
+    <li><strong>Simple Present:</strong> Miso is at the school. Jump takes Miso.</li>
+    <li><strong>Simple Past:</strong> Miso opened the box. Robo woke up.</li>
+  </ul>
+</section>
 
-    <h2>👂 Listening Practice</h2>
-    <ul>
-      <li>What does Miso find? a) Plan ✅ b) Toy</li>
-      <li>Where does Jump take Miso? a) Mine ✅ b) Park</li>
-    </ul>
+<section>
+  <h2>👂 Listening Practice</h2>
+  <ul>
+    <li><strong>Listen and Choose:</strong> What does Miso find? (Plan ✅)</li>
+    <li><strong>Where does Jump take Miso?</strong> (Mine ✅)</li>
+  </ul>
+</section>
 
-    <h2>✍️ Writing Practice</h2>
-    <ul>
-      <li>Miso ________ (open) the box.</li>
-      <li>Robo ________ (wake) up.</li>
-      <li>Jump ________ (take) Miso.</li>
-      <li>Miso ________ (say) we will wake the village.</li>
-    </ul>
-    <p>Write 2 sentences about the story.<br>Example: Miso found a plan. Robo talked about the mine.</p>
+<section>
+  <h2>✍️ Writing Practice</h2>
+  <ul>
+    <li>Miso <strong>opened</strong> the box.</li>
+    <li>Robo <strong>woke</strong> up.</li>
+    <li>Jump <strong>took</strong> Miso.</li>
+    <li>Miso <strong>said</strong> we will wake the village.</li>
+  </ul>
+</section>
 
-    <h2>🧠 Comprehension Questions</h2>
-    <ol>
-      <li>What does Miso find in the box? → A plan ✅</li>
-      <li>Who takes Miso to the mine? → Jump ✅</li>
-      <li>What does Robo say about the mine? → It can help the village ✅</li>
-      <li>What happens at the end? → The ground moves, and Miso wants to wake the village ✅</li>
-    </ol>
+<section>
+  <h2>🧠 Comprehension Questions</h2>
+  <ol>
+    <li>What does Miso find in the box? → <strong>A plan ✅</strong></li>
+    <li>Who takes Miso to the mine? → <strong>Jump ✅</strong></li>
+    <li>What does Robo say about the mine? → <strong>It can help the village ✅</strong></li>
+    <li>What happens at the end? → <strong>The ground moves, and Miso wants to wake the village ✅</strong></li>
+  </ol>
+</section>
 
-    <h2>🧾 Wrap-up Summary</h2>
-    <p><strong>What We Learned</strong></p>
-    <ul>
-      <li>Vocabulary: school, box, rusty, plan, mine, robot, warm, happy, scared, danger</li>
-      <li>Grammar: Simple Present (Miso is), Simple Past (Miso opened)</li>
-      <li>Practice: Talking about actions now and in the past</li>
-    </ul>
-    <p><strong>Let’s Try!</strong> Example: “Miso opened the box. Robo woke up.”</p>
-  </section>
+<section>
+  <h2>🧾 Wrap-up Summary</h2>
+  <p><strong>What We Learned:</strong></p>
+  <ul>
+    <li>Vocabulary: school, box, rusty, plan, mine, robot, warm, happy, scared, danger</li>
+    <li>Grammar: Simple Present (Miso is), Simple Past (Miso opened)</li>
+    <li>Practice: Talking about actions now and in the past</li>
+  </ul>
+</section>
 
-  <footer>
-    &copy; 2025 CEC BaseCamp – A1 Level
-  </footer>
+<a class="button-back" href="https://cecenglishcamp.github.io/BaseCamp/index.html">📘 에피소드로 돌아가기</a>
 
 </body>
 </html>
