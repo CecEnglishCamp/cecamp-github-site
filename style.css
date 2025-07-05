@@ -647,7 +647,7 @@ main {
 .howitworks-section {
   display: flex;
   justify-content: center;
-  padding: 64px 0 64px 0;
+  padding: 60px 0 60px 0;
   background: #000;
 }
 .howitworks-inner {
@@ -658,7 +658,7 @@ main {
 .howitworks-inner h2 {
   font-size: 2.2em;
   color: #139383;
-  margin-bottom: 42px;
+  margin-bottom: 90px;
   font-weight: 800;
   letter-spacing: -1px;
   text-align: center;
@@ -686,18 +686,18 @@ main {
   height: 120px;
   object-fit: cover;
   border-radius: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 90px;
 }
 .how-card h3 {
   font-size: 1.25em;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 90px;
   text-align: center;
   color: #108d7c;
 }
 .how-card p {
   font-size: 1em;
-  margin-bottom: 18px;
+  margin-bottom: 90px;
   text-align: center;
   color: #333;
 }
@@ -718,7 +718,7 @@ main {
     align-items: center;
     background: #000;
     min-height: 100vh;
-    padding: 32px 0;
+    padding: 90px 0;
 }
 .blog-main-title {
     color: #4BE048;
@@ -734,7 +734,7 @@ main {
     align-items: center;
     box-shadow: 0 4px 32px 0 rgba(30,30,30,0.14);
     border-radius: 32px;
-    padding: 48px 56px;
+    padding: 90px 56px;
     max-width: 900px;
     width: 65vw;
     min-width: 340px;
@@ -759,17 +759,17 @@ main {
     color: #11946b;
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 90px;
 }
 .blog-main-card-content .date {
     font-size: 1.1rem;
     color: #888;
-    margin-bottom: 18px;
+    margin-bottom: 90px;
 }
 .blog-main-card-content p {
     font-size: 1.18rem;
     color: #222;
-    margin-bottom: 14px;
+    margin-bottom: 90px;
 }
 .blog-main-card-content a {
     color: #11946b;
@@ -783,7 +783,7 @@ main {
         align-items: center;
         width: 92vw;
         max-width: 98vw;
-        padding: 32px 10px;
+        padding: 60px 10px;
         gap: 22px;
     }
     .blog-main-card img {
@@ -871,5 +871,24 @@ main {
   }
   .contact-section {
     padding: 36px 0 20px 0;
+  }
+}
+section {
+  margin-bottom: 90px; /* or 원하는 크기, 기존 80px→90~120px 추천 */
+  padding-top: 50px;   /* 각 섹션 위에도 여유! */
+}
+
+/* 각 주요 section에도 별도로 */
+.pricing-section, .howitworks-section, .testimonials-section, .programs-section, .blog-main-section {
+  margin-bottom: 90px !important; /* 아래 간격 */
+  padding-top: 60px !important;   /* 위 간격 */
+}
+
+/* 필요시 */
+@media (max-width: 900px) {
+  section,
+  .pricing-section, .howitworks-section, .testimonials-section, .programs-section, .blog-main-section {
+    margin-bottom: 56px !important;
+    padding-top: 32px !important;
   }
 }
