@@ -562,7 +562,7 @@ main {
   color: #183983;
   font-size: 2.1em;
   font-weight: 900;
-  margin-bottom: 44px;
+  margin-bottom: 90px;
 }
 .pricing-cards {
   display: flex;
@@ -594,19 +594,19 @@ main {
   height: 88px;
   border-radius: 18px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 56px;
   background: #f5f5f5;
 }
 .pricing-card h3 {
   font-size: 1.17em;
   color: #e2882b;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 90px;
 }
 .pricing-desc {
   color: #222;
   font-size: 1em;
-  margin-bottom: 24px;
+  margin-bottom: 90px;
   line-height: 1.55;
   min-height: 112px;
   text-align: left;
@@ -638,7 +638,7 @@ main {
   .pricing-cards { gap: 22px; }
   .pricing-card { width: 45vw; min-width: 220px; max-width: 98vw; }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .pricing-cards { flex-direction: column; gap: 18px; align-items: center; }
   .pricing-card { width: 93vw; max-width: 380px; }
 }
