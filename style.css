@@ -511,7 +511,7 @@ main {
 }
 .pricing-cards {
   display: flex;
-  gap: 38px;
+  gap: 24px;
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
@@ -521,11 +521,11 @@ main {
   border-radius: 18px;
   box-shadow: 0 3px 16px rgba(0,0,0,0.09);
   width: 330px;
-  min-height: 510px;
+  min-height: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 22px 28px 22px;
+  padding: 22px 12px 18px 12px;
   transition: transform 0.19s, box-shadow 0.19s;
   position: relative;
   text-align: center;
@@ -551,9 +551,9 @@ main {
 .pricing-desc {
   color: #222;
   font-size: 1em;
-  margin-bottom: 24px;
-  line-height: 1.55;
-  min-height: 112px;
+  margin-bottom: 12px;
+  line-height: 1.42;
+  min-height: 40px;
   text-align: left;
 }
 .price {
