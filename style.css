@@ -69,9 +69,11 @@ header {
 .blog-main-section,
 .contact-section {
   scroll-margin-top: 120px;
-  padding-top: 40px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
+/* --- 모바일용 여백 최적화 --- */
 @media (max-width: 900px) {
   .section,
   .programs-section,
@@ -80,18 +82,18 @@ header {
   .howitworks-section,
   .blog-main-section,
   .contact-section {
-    scroll-margin-top: 84px;
-    padding-top: 24px;
+    scroll-margin-top: 80px;
+    padding-top: 38px;
+    padding-bottom: 38px;
   }
 }
 
 /* ======== 메인 섹션 공통 ======== */
 main {
-  margin-top: 100px; /* fixed header 보정 */
+  margin-top: 100px;
 }
 .section {
   min-height: 100vh;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,12 +143,8 @@ main {
   animation: scrollText 12s linear infinite;
 }
 @keyframes scrollText {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+  from { transform: translateX(100%);}
+  to   { transform: translateX(-100%);}
 }
 .main-visual video {
   width: 440px;
@@ -155,6 +153,10 @@ main {
 }
 
 /* ======== About Section ======== */
+.about-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .about-section .about-image,
 .about-image {
   flex: 1;
@@ -218,7 +220,9 @@ main {
   background: #000;
   border-radius: 24px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-  padding: 0 4vw;
+  padding: 50px 4vw 50px 4vw;   /* 충분한 상하 padding */
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .episode-section .episode-image {
   flex: 1;
@@ -305,7 +309,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 4vw;
+  padding: 80px 4vw 80px 4vw;   /* 상하 공간 넓게 */
+  margin-bottom: 60px;
 }
 .programs-inner {
   width: 100%;
@@ -325,7 +330,7 @@ main {
 }
 .program-cards {
   display: flex;
-  gap: 36px;
+  gap: 48px;    /* 카드 간격 넉넉히 */
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
@@ -341,6 +346,7 @@ main {
   overflow: hidden;
   transition: transform 0.24s cubic-bezier(.19,1,.22,1), box-shadow 0.24s;
   cursor: pointer;
+  margin-bottom: 36px;
 }
 .program-card:hover {
   transform: translateY(-10px) scale(1.04);
@@ -385,7 +391,7 @@ main {
   line-height: 1.5;
 }
 @media (max-width: 1100px) {
-  .program-cards { gap: 22px; }
+  .program-cards { gap: 28px; }
   .program-card { width: 44vw; min-width: 220px; max-width: 98vw; }
 }
 @media (max-width: 800px) {
@@ -400,7 +406,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 4vw;
+  padding: 90px 4vw 90px 4vw;   /* 상하 공간 넓게 */
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .testimonials-inner {
   width: 100%;
@@ -440,6 +448,7 @@ main {
   padding: 36px 22px 22px 22px;
   cursor: pointer;
   position: relative;
+  margin-bottom: 24px;
 }
 .testimonial-card:hover {
   transform: translateY(-9px) scale(1.03);
@@ -494,7 +503,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 4vw 32px 4vw;
+  padding: 85px 4vw 85px 4vw;   /* 넉넉한 상하 패딩 */
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .pricing-inner {
   width: 100%;
@@ -511,7 +522,7 @@ main {
 }
 .pricing-cards {
   display: flex;
-  gap: 24px;
+  gap: 36px;
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
@@ -529,6 +540,7 @@ main {
   transition: transform 0.19s, box-shadow 0.19s;
   position: relative;
   text-align: center;
+  margin-bottom: 30px;
 }
 .pricing-card:hover {
   transform: translateY(-8px) scale(1.03);
@@ -580,7 +592,7 @@ main {
   color: #fff;
 }
 @media (max-width: 1100px) {
-  .pricing-cards { gap: 22px; }
+  .pricing-cards { gap: 24px; }
   .pricing-card { width: 45vw; min-width: 220px; max-width: 98vw; }
 }
 @media (max-width: 800px) {
@@ -592,8 +604,10 @@ main {
 .howitworks-section {
   display: flex;
   justify-content: center;
-  padding: 36px 0 64px 0;
+  padding: 80px 0 80px 0;  /* 넉넉한 상하 padding */
   background: #000;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .howitworks-inner {
   width: 100%;
@@ -663,7 +677,9 @@ main {
     align-items: center;
     background: #000;
     min-height: 100vh;
-    padding: 32px 0;
+    padding: 80px 0 80px 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .blog-main-title {
     color: #1888e4;
@@ -683,7 +699,7 @@ main {
     max-width: 900px;
     width: 65vw;
     min-width: 340px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     gap: 42px;
     transition: box-shadow 0.25s;
 }
@@ -741,10 +757,12 @@ main {
 /* ======== Contact Section ======== */
 .contact-section {
   background: #000;
-  padding: 80px 0 60px 0;
+  padding: 80px 0 80px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .contact-container {
   background: #161616;
@@ -815,6 +833,8 @@ main {
     padding: 22px 8px 20px 8px;
   }
   .contact-section {
-    padding: 36px 0 20px 0;
+    padding: 36px 0 36px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
