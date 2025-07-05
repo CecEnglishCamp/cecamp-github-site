@@ -287,3 +287,33 @@ main { margin-top: 100px; }
   .contact-container { padding: 22px 8px 20px 8px; }
   .contact-section { padding: 36px 0 20px 0; }
 }
+/* ====== 섹션별 간격(여백) 보강 ====== */
+.section,
+.programs-section,
+.testimonials-section,
+.pricing-section,
+.howitworks-section,
+.blog-main-section {
+  margin-bottom: 90px;   /* 아래 간격 충분히! */
+}
+
+@media (max-width: 900px) {
+  .section,
+  .programs-section,
+  .testimonials-section,
+  .pricing-section,
+  .howitworks-section,
+  .blog-main-section {
+    margin-bottom: 48px;
+  }
+}
+
+/* 단일 섹션 내부 여백 보강 (원한다면 추가!) */
+.programs-section { padding-top: 70px; }
+.testimonials-section { padding-top: 70px; }
+.pricing-section { padding-top: 70px; }
+.howitworks-section { padding-top: 70px; }
+.blog-main-section { padding-top: 70px; }
+
+/* 필요시 Contact 위도 여백 조정 */
+.contact-section { margin-top: 40px; }
