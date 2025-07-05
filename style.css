@@ -317,3 +317,60 @@ main { margin-top: 100px; }
 
 /* 필요시 Contact 위도 여백 조정 */
 .contact-section { margin-top: 40px; }
+/* --- 모바일 헤더 로고/텍스트 크기 조정 --- */
+@media (max-width: 600px) {
+  header .logo img {
+    width: 44px;
+    height: 44px;
+  }
+  header .logo span {
+    font-size: 1.45rem;
+    line-height: 1.1;
+  }
+  header {
+    padding: 10px 3vw;
+  }
+}
+
+/* --- 모바일 스크롤 텍스트(지나가는 글씨) 안정화 --- */
+@media (max-width: 600px) {
+  .scrolling-text {
+    white-space: normal;
+    overflow: visible;
+    animation: none !important;
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+}
+
+/* --- 에피소드 이미지 모바일에서 크게 --- */
+@media (max-width: 600px) {
+  .episode-image img {
+    width: 80vw !important;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* --- How it works 한 줄씩 세로 배치 --- */
+@media (max-width: 900px) {
+  .howitworks-grid {
+    flex-direction: column !important;
+    gap: 26px;
+  }
+  .how-card {
+    width: 100% !important;
+    max-width: 98vw !important;
+    margin: 0 auto;
+  }
+}
+
+/* --- 섹션 배경색(검정) 통일화 예시, 원하시면 선택적으로 --- */
+/* 
+.section {
+  background: #000 !important;
+  color: #fff !important;
+}
+*/
+
