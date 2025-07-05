@@ -3,218 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Episode 1 – 마을 아래, 빛이 살아 있다</title>
+  <title>📘 Episode 1 – 마을 아래, 빛이 살아 있다</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      font-family: 'Gowun Dodum', sans-serif;
       background-color: #111;
       color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.8;
-      margin: 0;
-      padding: 0;
     }
-    header, footer {
-      background-color: #000;
-      text-align: center;
-      padding: 1rem 0;
-    }
+
     h1 {
-      color: #66f5ff;
+      text-align: center;
+      color: #42e8f4;
+      padding: 24px 10px 0;
     }
-    .pairing-container {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1.5rem 5%;
+
+    h2 {
+      text-align: center;
+      color: #42e8f4;
+      margin-top: 50px;
     }
+
     .pair {
       display: flex;
       flex-direction: row;
-      gap: 1rem;
-    }
-    .left, .right {
-      flex: 1;
-      padding: 1rem;
-      background-color: #1c1c1c;
+      justify-content: space-between;
+      background-color: #1a1a1a;
       border-radius: 8px;
+      margin: 8px 10px;
+      padding: 16px;
     }
-    .right {
-      color: #99e0ff;
+
+    .pair > div {
+      width: 48%;
+      padding: 5px;
+    }
+
+    .korean {
+      font-weight: bold;
+    }
+
+    .english {
       font-style: italic;
+      font-family: 'Roboto', sans-serif;
+      color: #66d9ef;
     }
-    section.study {
-      background-color: #222;
-      padding: 2rem 5%;
-      margin-top: 2rem;
-      border-top: 2px solid #333;
+
+    .quiz-section {
+      background-color: #1a1a1a;
+      margin: 30px 10px;
+      border-radius: 8px;
+      padding: 20px;
     }
-    h2 {
-      color: #66f5ff;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.3rem;
+
+    .quiz-section h3 {
+      color: #42e8f4;
+      margin-bottom: 15px;
     }
-    ul, ol {
-      padding-left: 1.5rem;
+
+    .quiz-item {
+      margin-bottom: 15px;
+    }
+
+    .quiz-item label {
+      display: block;
+      margin: 5px 0;
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 50px 0 30px;
     }
 
     .back-button {
-      display: flex;
-      justify-content: center;
-      margin: 3rem 0 1rem;
-    }
-    .back-button a {
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      border: 1px solid #33ffc4;
+      background: none;
+      border: 2px solid #42e8f4;
+      color: #42e8f4;
+      font-size: 1.1em;
+      padding: 12px 20px;
       border-radius: 8px;
-      background-color: transparent;
-      color: #33ffc4;
       text-decoration: none;
-      transition: 0.3s;
+      transition: background 0.3s, color 0.3s;
     }
-    .back-button a:hover {
-      background-color: #33ffc4;
-      color: #000;
+
+    .back-button:hover {
+      background: #42e8f4;
+      color: #111;
     }
 
     footer {
       background-color: #000;
-      color: #999;
-      font-size: 0.9rem;
-      padding: 1rem;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 0.95em;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .pair {
+        flex-direction: column;
+      }
+
+      .pair > div {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>📘 Episode 1 – 마을 아래, 빛이 살아 있다</h1>
-  </header>
+  <h1>Season 1, Episode 1 – B1-Intermediate</h1>
+  <h1>📘 Episode 1 – 마을 아래, 빛이 살아 있다</h1>
 
-  <div class="pairing-container">
+  <!-- Pair Blocks -->
+  <div class="pair"><div class="korean">태백, 2025년 겨울. 황지천은 얼어붙지 않은 물소리를 내며 흐르고 있었다.</div><div class="english">In Taebaek, winter 2025, the Hwangjeecheon River flowed with a soft sound.</div></div>
+  <div class="pair"><div class="korean">하늘에서 부는 바람은 얇은 유리조각처럼 미소의 뺨을 스쳤다.</div><div class="english">A cold wind touched her face.</div></div>
+  <div class="pair"><div class="korean">그녀는 폐교 앞에 서 있었다. 손에는 녹슨 철제 상자가 들려 있었다.</div><div class="english">She stood in front of the empty school. She held her dad’s rusty metal box tightly.</div></div>
+  <div class="pair"><div class="korean">상자를 열자 오래된 종이 뭉치가 나왔다. ‘T.O.B.I. 프로젝트 – 장성탄광 열 회수 시스템’</div><div class="english">She opened it and found old papers. They were plans for the T.O.B.I. Project about a mine’s heat system.</div></div>
+  <div class="pair"><div class="korean">미소는 궁금해졌다. 녹슨 철문을 밀고 탄광 안으로 들어갔다.</div><div class="english">Miso became curious and pushed the rusty gate open. She walked into the old mine.</div></div>
+  <div class="pair"><div class="korean">갑자기 로봇 하나가 나타났다. 이름은 점프였다. 파란 눈이 반짝였다.</div><div class="english">Suddenly, a robot appeared. Its name was Jump. It had bright blue eyes.</div></div>
+  <div class="pair"><div class="korean">점프는 미소를 데리고 지하로 내려갔다. 리프트는 400m까지 내려갔다.</div><div class="english">Jump took Miso deep into the mine. The lift went down to 400 meters.</div></div>
+  <div class="pair"><div class="korean">그곳은 차갑고 축축했다. 오래된 기계들과 파이프가 있었다. 석탄 먼지와 기름 냄새가 났다.</div><div class="english">The air was cold and wet. Old machines and pipes were everywhere. She smelled coal dust and oil.</div></div>
+  <div class="pair"><div class="korean">다른 로봇이 깨어났다. 로보였다. 그는 말했다. “이 탄광은 데이터센터가 될 수 있어요.”</div><div class="english">Another robot, Robo, woke up. Robo said, “I am T.O.B.I. UNIT-1. This mine can be a data center."</div></div>
+  <div class="pair"><div class="korean">“이곳은 기계를 냉각하고 마을을 따뜻하게 할 수 있어요.”</div><div class="english">"It can cool machines and heat the village.”</div></div>
+  <div class="pair"><div class="korean">미소는 말했다. “이게 우리 마을을 구할 수 있어!”</div><div class="english">Miso was excited. “This can save our village!” she says.</div></div>
+  <div class="pair"><div class="korean">그 순간, 땅이 흔들렸다. 로보는 경고했다. “위험 신호 감지!”</div><div class="english">Then, the ground shakes. Robo warns, “There is a danger signal!”</div></div>
+  <div class="pair"><div class="korean">점프는 어둠 속을 살폈다. “무언가 있어요. 사람은 아니에요.”</div><div class="english">Jump looks into the dark and says, “Something is there, not a person.”</div></div>
+  <div class="pair"><div class="korean">미소의 심장이 빨리 뛰었다. “이건 단순한 폐광이 아니야.”</div><div class="english">Miso’s heart beats fast. “This is not just a mine,” she says.</div></div>
+  <div class="pair"><div class="korean">그녀는 로보와 점프를 바라보며 말했다. “우리가 이 마을을 깨울 거야!”</div><div class="english">She looks at Robo and Jump. “We will wake this village!”</div></div>
+  <div class="pair"><div class="korean">밖에서 들려오는 물소리는 심장박동처럼 느껴졌다.</div><div class="english">The river’s sound outside was like a heartbeat.</div></div>
 
-    <!-- 페어링 블록은 생략 없이 전부 포함 -->
-    <div class="pair">
-      <div class="left">태백, 2025년 겨울. 황지천은 얼어붙지 않은 물소리를 내며 흐르고 있었다.</div>
-      <div class="right">In Taebaek, winter 2025, the Hwangjeecheon River flowed with a soft sound.</div>
-    </div>
-    <div class="pair">
-      <div class="left">하늘에서 부는 바람은 얇은 유리조각처럼 미소의 뺨을 스쳤다.</div>
-      <div class="right">A cold wind touched her face.</div>
-    </div>
-    <div class="pair">
-      <div class="left">그녀는 폐교 앞에 서 있었다. 손에는 녹슨 철제 상자가 들려 있었다.</div>
-      <div class="right">She stood in front of the empty school. She held her dad’s rusty metal box tightly.</div>
-    </div>
-    <div class="pair">
-      <div class="left">상자를 열자 오래된 종이 뭉치가 나왔다. ‘T.O.B.I. 프로젝트 – 장성탄광 열 회수 시스템’</div>
-      <div class="right">She opened it and found old papers. They were plans for the T.O.B.I. Project about a mine’s heat system.</div>
-    </div>
-    <div class="pair">
-      <div class="left">미소는 궁금해졌다. 녹슨 철문을 밀고 탄광 안으로 들어갔다.</div>
-      <div class="right">Miso became curious and pushed the rusty gate open. She walked into the old mine.</div>
-    </div>
-    <div class="pair">
-      <div class="left">갑자기 로봇 하나가 나타났다. 이름은 점프였다. 파란 눈이 반짝였다.</div>
-      <div class="right">Suddenly, a robot appeared. Its name was Jump. It had bright blue eyes.</div>
-    </div>
-    <div class="pair">
-      <div class="left">점프는 미소를 데리고 지하로 내려갔다. 리프트는 400m까지 내려갔다.</div>
-      <div class="right">Jump took Miso deep into the mine. The lift went down to 400 meters.</div>
-    </div>
-    <div class="pair">
-      <div class="left">거긴 차고 습했다. 오래된 기계들과 파이프가 있었다. 석탄과 기름 냄새가 났다.</div>
-      <div class="right">It was cold and wet. Old machines and pipes were everywhere. She smelled coal and oil.</div>
-    </div>
-    <div class="pair">
-      <div class="left">다른 로봇 하나가 깨어났다. “나는 로보. T.O.B.I. UNIT-1.”</div>
-      <div class="right">Another robot, Robo, woke up. “I am Robo. T.O.B.I. UNIT-1.”</div>
-    </div>
-    <div class="pair">
-      <div class="left">로보는 말했다. “이 광산은 데이터센터가 될 수 있어요. 마을을 데울 수 있어요.”</div>
-      <div class="right">Robo said, “This mine can be a data center. It can heat the village.”</div>
-    </div>
-    <div class="pair">
-      <div class="left">미소는 말했다. “이거면 마을을 살릴 수 있어!”</div>
-      <div class="right">Miso said, “This can save our village!”</div>
-    </div>
-    <div class="pair">
-      <div class="left">그때 땅이 흔들렸다. 로보가 경고했다. “위험 신호 감지!”</div>
-      <div class="right">Then the ground shook. Robo warned, “There is a danger signal!”</div>
-    </div>
-    <div class="pair">
-      <div class="left">점프가 어둠 속을 살폈다. “뭔가 있어. 사람이 아니야.”</div>
-      <div class="right">Jump looked into the dark. “Something is there, not a person.”</div>
-    </div>
-    <div class="pair">
-      <div class="left">미소의 심장이 빨리 뛰었다. “이건 단순한 폐광이 아니야.”</div>
-      <div class="right">Miso’s heart beat fast. “This is not just a mine.”</div>
-    </div>
-    <div class="pair">
-      <div class="left">그녀는 로보와 점프를 보며 말했다. “우리가 이 마을을 깨울 거야!”</div>
-      <div class="right">She looked at Robo and Jump. “We will wake this village!”</div>
+  <!-- 연습문제 -->
+  <h2>✏️ 연습문제</h2>
+  <div class="quiz-section">
+    <h3>1. What was in the metal box?</h3>
+    <div class="quiz-item">
+      <label><input type="radio" name="q1"> Old photos</label>
+      <label><input type="radio" name="q1"> A map</label>
+      <label><input type="radio" name="q1"> Old papers with a project plan ✅</label>
     </div>
 
+    <h3>2. What is Jump?</h3>
+    <div class="quiz-item">
+      <label><input type="radio" name="q2"> A robot ✅</label>
+      <label><input type="radio" name="q2"> A person</label>
+      <label><input type="radio" name="q2"> A machine part</label>
+    </div>
+
+    <h3>3. What can the mine be used for?</h3>
+    <div class="quiz-item">
+      <label><input type="radio" name="q3"> A museum</label>
+      <label><input type="radio" name="q3"> A data center ✅</label>
+      <label><input type="radio" name="q3"> A school</label>
+    </div>
   </div>
 
-  <section class="study">
-    <h2>📚 Vocabulary</h2>
-    <ul>
-      <li><strong>empty</strong>: with nothing inside</li>
-      <li><strong>soft</strong>: quiet or gentle</li>
-      <li><strong>rusty</strong>: old and red with rust</li>
-      <li><strong>curious</strong>: wanting to know more</li>
-      <li><strong>push</strong>: to move something forward</li>
-      <li><strong>cold</strong>: not warm</li>
-      <li><strong>warn</strong>: to tell about danger</li>
-      <li><strong>excited</strong>: very happy</li>
-      <li><strong>shake</strong>: to move quickly</li>
-      <li><strong>strong</strong>: powerful</li>
-    </ul>
+  <!-- 문법 퀴즈 -->
+  <h2>🔤 문법 퀴즈</h2>
+  <div class="quiz-section">
+    <h3>Choose the correct form:</h3>
+    <div class="quiz-item">
+      Miso <strong>______</strong> excited.<br/>
+      <label><input type="radio" name="g1"> is ✅</label>
+      <label><input type="radio" name="g1"> are</label>
+      <label><input type="radio" name="g1"> be</label>
+    </div>
 
-    <h2>📝 Practice</h2>
-    <ol>
-      <li>Miso stands at an ________ school. (empty)</li>
-      <li>The river makes a ________ sound. (soft)</li>
-      <li>Miso is ________ to know more. (curious)</li>
-      <li>The ground starts to ________. (shake)</li>
-    </ol>
-
-    <h2>📘 Grammar</h2>
-    <ul>
-      <li><strong>Simple Past:</strong> Miso pushed the box.</li>
-      <li><strong>Reported Speech:</strong> Robo warned that there was a danger signal.</li>
-      <li><strong>Adverbs of Manner:</strong> Jump moved quickly.</li>
-      <li><strong>Can for Ability:</strong> The mine can heat houses.</li>
-    </ul>
-
-    <h2>💬 Speaking Practice</h2>
-    <ul>
-      <li>Jump <em>took</em> Miso. Miso <em>said</em> they would wake the village.</li>
-      <li>Robo <em>warned</em> seriously. This <em>can</em> save the village.</li>
-    </ul>
-
-    <h2>✍️ Writing Practice</h2>
-    <ul>
-      <li>Miso ________ (push) the box.</li>
-      <li>Robo ________ (warn) that there was a danger signal.</li>
-      <li>Jump ________ (take) Miso.</li>
-      <li>Miso ________ (say) they would wake the village.</li>
-    </ul>
-
-    <h2>🧠 Comprehension Check</h2>
-    <ol>
-      <li>Where is Miso when she finds the papers? → At an empty school ✅</li>
-      <li>Who takes Miso into the mine? → Jump, a robot ✅</li>
-      <li>What does Robo say about the mine? → It can be a data center ✅</li>
-      <li>What happens at the end? → The ground shakes, and Miso wants to wake the village ✅</li>
-    </ol>
-  </section>
-
-  <div class="back-button">
-    <a href="https://cecenglishcamp.github.io/BaseCamp/index.html">← 베이스캠프로 돌아가기</a>
+    <div class="quiz-item">
+      The robot <strong>______</strong> blue eyes.<br/>
+      <label><input type="radio" name="g2"> has ✅</label>
+      <label><input type="radio" name="g2"> have</label>
+      <label><input type="radio" name="g2"> had</label>
+    </div>
   </div>
 
+  <!-- 단어 연습 -->
+  <h2>🧠 단어 연습</h2>
+  <div class="quiz-section">
+    <ul>
+      <li><strong>rusty</strong> – 녹슨</li>
+      <li><strong>mine</strong> – 탄광</li>
+      <li><strong>robot</strong> – 로봇</li>
+      <li><strong>heat</strong> – 열</li>
+      <li><strong>village</strong> – 마을</li>
+    </ul>
+  </div>
+
+  <!-- Return Button -->
+  <div class="button-container">
+    <a class="back-button" href="https://cecenglishcamp.github.io/BaseCamp/index.html">← 베이스캠프로 돌아가기</a>
+  </div>
+
+  <!-- Footer -->
   <footer>
     BaseCamp English – Episode 1 B1 Level © 2025
   </footer>
